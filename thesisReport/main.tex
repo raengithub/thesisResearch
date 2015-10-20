@@ -1,0 +1,52 @@
+\RequirePackage[l2tabu,orthodox]{nag}
+
+% TODO: decide if one-sided/two-sided
+%\documentclass[headsepline,footsepline,footinclude=false,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc,BCOR=12mm,DIV=12]{scrbook} % two-sided
+\documentclass[headsepline,footsepline,footinclude=false,oneside,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc]{scrbook} % one-sided
+
+\input{settings/packages}
+\input{settings/settings}
+\input{settings/commands}
+
+\makeglossaries
+\input{glossary/terms} 
+\input{glossary/acronyms}
+
+\begin{document}
+
+\input{pages/cover}
+
+\frontmatter{}
+
+\input{pages/title}
+\input{pages/disclaimer}
+\input{pages/acknowledgements}
+\input{pages/abstract}
+\microtypesetup{protrusion=false}
+\tableofcontents{}
+\microtypesetup{protrusion=true}
+
+\mainmatter{}
+
+\input{chapters/introduction}
+% later\input{chapters/literature_review}
+%later\input{chapters/system_design}
+%later\input{chapters/results}
+%later\input{chapters/discussions}
+%later\input{chapters/conclusion}
+%later\input{chapters/future_directions}
+%later\input{chapters/appendices}
+
+\appendix{}
+
+\glsaddall{} % add all defined terms to glossary, even if not referenced in text
+%\printglossaries{}
+\printglossary[type=\acronymtype]
+
+\microtypesetup{protrusion=false}
+\listoffigures{}
+%later\listoftables{}
+\microtypesetup{protrusion=true}
+\printbibliography{}
+
+\end{document}

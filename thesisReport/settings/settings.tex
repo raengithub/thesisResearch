@@ -1,0 +1,105 @@
+\bibliography{bibliography/literature}
+
+\setkomafont{disposition}{\normalfont\bfseries} % use serif font for headings
+\linespread{1.05} % adjust line spread for mathpazo font
+
+% Settings for glossaries TODO: remove the following block if glossary not needed
+\renewcommand{\glsnamefont}[1]{\normalfont\bfseries #1} % use serif font for glossary entry titles
+\makeglossaries{}
+
+% Settings for pgfplots
+\pgfplotsset{compat=1.9} % TODO: adjust to your installed version
+\pgfplotsset{
+  % For available color names, see http://www.latextemplates.com/svgnames-colors
+  cycle list={CornflowerBlue\\Dandelion\\ForestGreen\\BrickRed\\},
+}
+
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+
+\colorlet{punct}{red!60!black}
+\definecolor{background}{HTML}{EEEEEE}
+\definecolor{delim}{RGB}{20,105,176}
+\colorlet{numb}{magenta!60!black}
+
+
+% \lstdefinestyle{customJava}{
+% belowcaptionskip=1\baselineskip,
+% breaklines=true,
+% frame=L,
+% xleftmargin=\parindent,
+% language=Java,
+% showstringspaces=false,
+% showspaces=false,
+% backgroundcolor=\color{background},
+% breakatwhitespace=true,
+% basicstyle=\footnotesize\ttfamily,
+% commentstyle=\color{pgreen},
+% keywordstyle=\color{pblue},
+% stringstyle=\color{pred},
+% moredelim=[il][\textcolor{pgrey}]{\$},
+% moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%}
+% }
+
+\lstdefinestyle{customJava}{
+basicstyle=\normalfont\ttfamily,
+belowcaptionskip=1\baselineskip,
+numbers=left,
+numberstyle=\scriptsize,
+stepnumber=1,
+numbersep=8pt,
+breaklines=true,
+frame=lines,
+xleftmargin=\parindent,
+language=Java,
+showstringspaces=false,
+showspaces=false,
+backgroundcolor=\color{background},
+breakatwhitespace=true,
+commentstyle=\color{pgreen},
+keywordstyle=\color{pblue},
+stringstyle=\color{pred},
+moredelim=[il][\textcolor{pgrey}]{\$},
+moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%}
+}
+
+\lstdefinelanguage{json}{
+basicstyle=\normalfont\ttfamily,
+numbers=left,
+numberstyle=\scriptsize,
+stepnumber=1,
+numbersep=8pt,
+showstringspaces=false,
+breaklines=true,
+frame=lines,
+backgroundcolor=\color{background},
+literate=
+*{0}{{{\color{numb}0}}}{1}
+{1}{{{\color{numb}1}}}{1}
+{2}{{{\color{numb}2}}}{1}
+{3}{{{\color{numb}3}}}{1}
+{4}{{{\color{numb}4}}}{1}
+{5}{{{\color{numb}5}}}{1}
+{6}{{{\color{numb}6}}}{1}
+{7}{{{\color{numb}7}}}{1}
+{8}{{{\color{numb}8}}}{1}
+{9}{{{\color{numb}9}}}{1}
+{:}{{{\color{punct}{:}}}}{1}
+{,}{{{\color{punct}{,}}}}{1}
+{\{}{{{\color{delim}{\{}}}}{1}
+{\}}{{{\color{delim}{\}}}}}{1}
+{[}{{{\color{delim}{[}}}}{1}
+{]}{{{\color{delim}{]}}}}{1},
+}
+
+% Settings for lstlistings
+\lstset{%
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  autogobble,
+  style=customJava
+}
+
+\FloatBarrier

@@ -1,0 +1,277 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{anyt}{anyt}
+    \entry{Alonso:2015aa}{report}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=0a0fdfaae209e32f225c274c28e01b40}{Alonso}{A\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5357a740a7bad0d0773a539ada77ee3c}{Agrawal}{A\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0f6ee0374c25ca16978c73192448bdf2}{Abbadi}{A\bibinitperiod}{A.\bibnamedelimi El}{A\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f044a5732122c2a28083aeffb89f5004}{Mohan}{M\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{2}{%
+        {IBM Almaden Research Center}%
+        {Institute of Information Systems}%
+      }
+      \strng{namehash}{d417fc56950dcc87e9402cf3ab91bfac}
+      \strng{fullhash}{d417fc56950dcc87e9402cf3ab91bfac}
+      \field{labelalpha}{Alo+np}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Functionality and Limitations of Current Workow Management Systems}
+      \field{type}{techreport}
+      \field{year}{np}
+    \endentry
+    \entry{Cohn:2015aa}{report}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=2745583746f919bc8daaf5e067978d7e}{Cohn}{C\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bbb6ac3d71ba4b81b2cc50e54cf9d355}{Hull}{H\bibinitperiod}{Richard}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {IBM T.J. Watson Research Laboratory}%
+      }
+      \strng{namehash}{aba33467cf309a6b03375c22ad7bd041}
+      \strng{fullhash}{aba33467cf309a6b03375c22ad7bd041}
+      \field{labelalpha}{CHnp}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Business Artifacts: A Data-centric Approach to Modeling Business Operations and Processes}
+      \field{type}{techreport}
+      \field{year}{np}
+    \endentry
+    \entry{Chakraborty:2015aa}{report}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=a57e12e843efed07f6db4ae775e2920d}{Chakraborty}{C\bibinitperiod}{Sandip}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a891652a2db5149bfe481025cadda0df}{Majumder}{M\bibinitperiod}{Soumyadip}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9af6c56f25d68ed24d70f848f988c42a}{Goswami}{G\bibinitperiod}{Diganta}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Indian Institute of Technology}%
+      }
+      \strng{namehash}{4950414f95623ea5293330b950eb9210}
+      \strng{fullhash}{4950414f95623ea5293330b950eb9210}
+      \field{labelalpha}{CMGnp}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Model for Load Balancing in Distributed System using -Congestion Game}
+      \field{type}{techreport}
+      \field{year}{np}
+    \endentry
+    \entry{Dogac:2015aa}{report}{}
+      \name{author}{10}{}{%
+        {{uniquename=0,hash=134e236ec47c8fc5715741cd1be26a43}{Dogac}{D\bibinitperiod}{Asuman}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7b2b3e2268344a6668dd10ebc1329953}{Gokkoca}{G\bibinitperiod}{Esin}{E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0935584bfcbc870e0b74310239204125}{Arpinar}{A\bibinitperiod}{Sena}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4d2a95592f2f7f67f180772f7a547082}{Koksal}{K\bibinitperiod}{Pinar}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ae78f1ec4649ff3b78b9fb5449cec7ae}{Cingil}{C\bibinitperiod}{Ibrahim}{I\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f3e956604f403a42d0002e5991d7d3d1}{Arpinar}{A\bibinitperiod}{Budak}{B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c4c3bc79de252f04014f60bbbe926165}{Tatbul}{T\bibinitperiod}{Nesime}{N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a963e701af4426b8d55554a27901d2db}{Karagoz}{K\bibinitperiod}{Pinar}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0f9af05a7f17cb62f501d82b96119560}{Halici}{H\bibinitperiod}{Ugur}{U\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=031c4b676b62f45fe829e175fd762ac4}{Altinel}{A\bibinitperiod}{Mehmet}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Middle East Technical University}%
+      }
+      \strng{namehash}{06e631c43ff2412d1cb60e650bd4ce7a}
+      \strng{fullhash}{458cd69ab1ad8cf19585728006e47a36}
+      \field{labelalpha}{Dog+np}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Design and Implementation of a Distributed Workow Management System METUFlow}
+      \field{type}{techreport}
+      \field{year}{np}
+    \endentry
+    \entry{Jergler:2015aa}{report}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=83728e5d9bbdbea4676b0b3bf3a07823}{Jergler}{J\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9e20c298c98d6fd231df2bacfa7e2ca2}{Sadoghi}{S\bibinitperiod}{Mohammad}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ea92f9ebc3ace54ebda154ff2ca3d7fc}{Jacobsen}{J\bibinitperiod}{Hans-Arno}{H\bibinithyphendelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Technische Universitaet Munich}%
+      }
+      \strng{namehash}{048a5b00d2d1255e9066641949b2a91d}
+      \strng{fullhash}{048a5b00d2d1255e9066641949b2a91d}
+      \field{labelalpha}{JSJnp}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{D2WORM: A Management Infrastructure for Distributed Data-centric Workflows}
+      \field{type}{techreport}
+      \field{year}{np}
+    \endentry
+    \entry{Kuz:2008aa}{report}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=3777fb3b86f4deb29bbe1a05066be544}{Kuz}{K\bibinitperiod}{Ihor}{I\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=00ee4874ccb0f2a9bf23e1a5b45ee481}{Chakravarty}{C\bibinitperiod}{Manuel\bibnamedelimb M.\bibnamedelimi T.}{M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=22cbcffae9ccc9f40eba5c2eda212e66}{Heiser}{H\bibinitperiod}{Gernot}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {The University of New South Wales}%
+      }
+      \strng{namehash}{d8977a2e63f46e443e6ed79e59fd00b6}
+      \strng{fullhash}{d8977a2e63f46e443e6ed79e59fd00b6}
+      \field{labelalpha}{KCH08}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{COMP9243 --- Week 1}
+      \field{type}{techreport}
+      \field{year}{2008}
+    \endentry
+    \entry{Lee:2000aa}{report}{}
+      \name{author}{3}{}{%
+        {{uniquename=1,hash=f4b4ab51440eb41a198e26d62daabaa0}{Lee}{L\bibinitperiod}{Seung\bibnamedelima Il}{S\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0232fb29d22993d04bc942bb81c1e64a}{Han}{H\bibinitperiod}{Dongsoo}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=0b000c9219519a64339e36d6805a46e7}{Lee}{L\bibinitperiod}{Dongman}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{2}{%
+        {Information}%
+        {Communications University}%
+      }
+      \strng{namehash}{5f0ddf61dd50c223de9d92f990ce7b44}
+      \strng{fullhash}{5f0ddf61dd50c223de9d92f990ce7b44}
+      \field{labelalpha}{LHL00}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Pattern for Managing Distributed Workflows}
+      \field{type}{techreport}
+      \field{year}{2000}
+    \endentry
+    \entry{Ludascher:2005aa}{report}{}
+      \name{author}{9}{}{%
+        {{uniquename=0,hash=f704570ff81872ea96a1250def7e919c}{Ludäscher}{L\bibinitperiod}{Bertram}{B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=caa2cb18490c993aadedd5e7514c20f5}{Altintas}{A\bibinitperiod}{Ilkay}{I\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b9b36f8c5879488dd9839a22a9d39c3d}{Berkley}{B\bibinitperiod}{Chad}{C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a5cd7bc4434ff78bda37a6b077dbce9e}{Higgins}{H\bibinitperiod}{Dan}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8dade7569bf4192cabfce47268237080}{Jaeger}{J\bibinitperiod}{Efrat}{E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c77dbf772134f7f7f4dd9b564c86fc1e}{Jones}{J\bibinitperiod}{Matthew}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=dc5d19a16c612508d6d50c639309195d}{Lee}{L\bibinitperiod}{Edward\bibnamedelima A.}{E\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3fab339093165fe8e10c2037f193f515}{Tao}{T\bibinitperiod}{Jing}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f0e7d180081df6c4c59c600f7c044474}{Zhao}{Z\bibinitperiod}{Yang}{Y\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6d067e700c2ae329bc10635871805898}
+      \strng{fullhash}{2af5fa9885a8a232a624969fb173bfe2}
+      \field{labelalpha}{Lud+05}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Scientific Workflow Management and the Kepler System}
+      \field{type}{techreport}
+      \field{year}{2005}
+    \endentry
+    \entry{AMIT-SHETH:1995aa}{report}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=e1dd7f32fbb6813de44dd70dc2ccf0a3}{SHETH}{S\bibinitperiod}{AMIT}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=cd26fdb077ca31a64a9776825228677f}{GEORGAKOPOULOS}{G\bibinitperiod}{DIIMITRIOS}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=10521e52a4b4ec74ab5c8d81ea2935ff}{HORNICK}{H\bibinitperiod}{MARK}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Kluwer Academic Publishers}%
+      }
+      \strng{namehash}{47701f50ab9c843474aa44f8966b4789}
+      \strng{fullhash}{47701f50ab9c843474aa44f8966b4789}
+      \field{labelalpha}{SGH95}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An Overview of Workflow Management: From Process Modeling to Workflow Automation Infrastructure}
+      \field{type}{techreport}
+      \field{year}{1995}
+    \endentry
+    \entry{Schneider:2015aa}{report}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=e10bc5b0eaab63c2740171c00878541a}{Schneider}{S\bibinitperiod}{Joerg}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=265097cf72d6efb52d1100ec9dc4af87}{Linnert}{L\bibinitperiod}{Barry}{B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=eec70784f081214778fced28a647353a}{Burchard}{B\bibinitperiod}{Lars-Olof}{L\bibinithyphendelim O\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Technische Universitaet Berlin}%
+      }
+      \strng{namehash}{62347c136c8da29bb866f4a854394b9f}
+      \strng{fullhash}{62347c136c8da29bb866f4a854394b9f}
+      \field{labelalpha}{SLBnp}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Distributed Workflow Management for Large-Scale Grid Environments}
+      \field{type}{techreport}
+      \field{year}{np}
+    \endentry
+    \entry{Steen:2011aa}{report}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=7ef720d0b57800861b86b5ce45425837}{Steen}{S\bibinitperiod}{Maarten}{M\bibinitperiod}{van}{v\bibinitperiod}{}{}}%
+        {{uniquename=0,hash=bb37e321fa3ed17bc6156ce02846444c}{Pierre}{P\bibinitperiod}{Guillaume}{G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f254d4a9a2e272f08bf5062e1e481af2}{Voulgaris}{V\bibinitperiod}{Spyros}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {np}%
+      }
+      \strng{namehash}{4346990432efa9aaf23ee4580921fc60}
+      \strng{fullhash}{4346990432efa9aaf23ee4580921fc60}
+      \field{labelalpha}{SPV11}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Challenges in very large distributed systems}
+      \field{type}{techreport}
+      \field{year}{2011}
+    \endentry
+    \entry{Stoilova:2015aa}{report}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=871d59d0612deba41c0f5379fb9112fe}{Stoilova}{S\bibinitperiod}{Krasimira\bibnamedelima P.}{K\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e815d0c8b16ada81faab1a265d53b1cf}{Stoilov}{S\bibinitperiod}{Todor\bibnamedelima A.}{T\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{2}{%
+        {Institute of Computer}%
+        {Communication Systems}%
+      }
+      \strng{namehash}{b0ac5368630f145d28127239f24c6d00}
+      \strng{fullhash}{b0ac5368630f145d28127239f24c6d00}
+      \field{labelalpha}{SSnp}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Evolution of the workflow management systems}
+      \field{type}{techreport}
+      \field{year}{np}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
