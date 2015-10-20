@@ -1,0 +1,68 @@
+A typical server side enterprise application has either layered or hexagonal architecture and consists of various components such as :
+Presentation components
+Business logic
+Database access logic
+Application integration logic
+Additionally, it has to support various types of clients such as browser, mobile browsers, native applications and 3rd party applications. 
+
+This can be achieved by applying scale cube to the application architecture. First apply y-axis scaling (functional decomposition) into a set of collaborating components, each component fulfilling a part of small business functions. Each component are then scaled along X-axis (cloning) and then z-axis(partitionaling database).[1]
+
+How do we chose the individual functional components?
+1. by verb or usecase
+2. by noun or resources : determine grouping operations around a single resource.
+3. using Single Responsibility Principle: each service should have only small set of responsibilities adhering to SRP which mentions that each class should have only one reason to change and maps responsibility of a class as a reason to change.
+4. by following the analogy to design of Unix utilities. each unix does exactly one thing well and can be combined with other utilities. We can select the functionalities which do not provide business value by themselves but are used by services such as loging service etc.[1]
+5. Another most common technique used is Domain driven design. A business domain is divided into a set of business capabilities, each business capability is then mapped into a set of bounded contexts. Each bounded context fulfills a single business capability and encapsulates data related to the capability. Each bounded context has its own view of the domain model and only deals with the attributes it finds interesting.[2]
+Neuro-linguistic programming provides a technique called chunking, which can be used to derive levels of abstraction way up from individual object towards business capability and thus defining the bounded context.  Microservice perforoms a single task around a specific business capability and within a single distributed bounded context. [3]
+
+Unpacking the domain
+Neuro-linguistic programming can be used to dig deep into domain and uncover various layers of abstraction while following Single Responsibility principle.
+Consider following user story for log in.
+    Story: User logs in
+    Scenario: User with valid credentials
+    Given an unauthenticated user
+    When the user tries to navigate to the welcome page
+    Then they should be redirected to the login page
+    When the user enters a valid name in the Name field
+    And the user enters the corresponding password in the Password field
+    And the user presses the Login button
+    Then they should be directed to the welcome page
+    
+When we see this scenario and analyze, It has terms from different domains such as authentication, UI and web. Each domain has a specific stakeholder. So, if we develop a single application based on this scenario, there are more than one stakeholder affecting this scenario and thus more than one reason to change or break.
+In order to restrict the focus of the scenario, we can use Neuro-linguistic programming. Firstly we ash 'what for' question to the scenario. The clear answer is user authentication. It can be a wholesome domain for the scenario and has a single stakeholder. In order to formulate further layers of abstractions, We as 'how'. We get following scenario. Finally, at each abstraction, we achieve single responsiblity small enough for the layer. [4]
+
+    Scenario: User with valid credentials
+
+    Given an unauthenticated user
+    When the user tries to access a restricted asset
+    Then they should be denied the access.
+    When the user provides valid credentials
+    Then they should be provided with the content.
+    
+Here, the scenario description again speaks only within a single domain. However, each scenario description points does not answer the details of 'how' but only merely abstraction of 'what' of 'how' of the layer above. So, any laver is what of successor layer and how of the predecessor layer. In this way we can divide a domain into various layers of subdomains. [4]
+
+Reusability and loose coupling are among the goals of service orientation. However if we make microservices very small to increase reusability then we tend to compromise loose coupling. The size of microservice should be optimum to balance both reusability and loose coupling. The coupling becomes catostrophic if we use synchronous communication in such finely grained microservices. So, in order determine the size we also need to consider 8 fallacies of distributed computing. At this point it is important to mention an example for creating a legal entity which also creates an address. We should not only consider the usecase to create microservices but also how the microservices will be used to create business value.
+We should also consider the rule, 1 usecase = 1 transaction = 1 aggregate
+The way data is changed or used determines the boundary. Since, address is created everytime a legal entity is created, we need to put these into a single entity or aggregate. Another reason is that the existing relation between legal entity and Address is parent-child relationship, meaning that both are updated, created at the same time. So, they should be inside same boundary.
+By doing so, we apply tactical design of DDD and give authority to a single entity and maintain consistency within the boundary. By doing so we make sure that there is only one authority to the data and since we are creating boundary around business functionality, the rules as well as the data which the rules apply resides within the boundary. This also means that there will be single reason to change and comply Single Responsibility principle. 
+Applying bounded context, consistency rule helps to define clear boundary between services (or divide data/services) and perserves autonomy. It will be better to look in to an example of boundaries sales order and Product and what happens when we want to add order confirmation usecase. This usecase can be achieved by implementing the usecase in Sales order by duplicating the product. This way it some how loosely follow SRP but provides autonomy. The other way is to create a different microservices and duplicate product there. This will follow autonomy as well as SRP and will be easy to replace. One way communication (events) can be used to ensure autonomy. If we create services around business capabilities rather than technical capabilities then we can achieve single reason to change each service and which is the business usecase it is responsible for.[5]
+
+"
+With coherent I’m thinking about both communicational cohesion (logic and the data the logic is working on are both part of the same service), layered cohesion (a service is responsible for data persistence, handling business-related-security*, user interface, etc.) and Temporal cohesion (the parts / aspects involved in the handling services functionality are grouped together so that they can be executed close to each other in time). Without communicational cohesion and layered cohesion, it is impossible to achieve Temporal cohesion which is a prerequisite for the Second SOA Principle “Services are autonomous.”
+" [6]
+    
+
+
+
+drawbacks:
+Increased Memory consumption: "The microservices architecture replaces N monolithic application instances with NxM services instances. If each service runs in its own JVM (or equivalent), which is usually necessary to isolate the instances, then there is the overhead of M times as many JVM runtimes. Moreover, if each service runs on its own VM (e.g. EC2 instance), as is the case at Netflix, the overhead is even higher."  ---- need to find out for deployment and scaling of microservices [1]
+
+
+References:
+1.http://microservices.io/patterns/microservices.html
+2.http://www.mattstine.com/2014/06/30/microservices-are-solid
+3.http://bovon.org/archives/350
+4.http://dannorth.net/2011/01/31/whose-domain-is-it-anyway/
+5.https://www.tigerteam.dk/2014/microservices-its-not-only-the-size-that-matters-its-also-how-you-use-them-part-4/
+6.https://www.tigerteam.dk/2014/soa-synchronous-communication-data-ownership-and-coupling/
+

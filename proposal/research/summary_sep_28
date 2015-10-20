@@ -1,0 +1,105 @@
+url: http://gorodinski.com/blog/2013/04/29/sub-domains-and-bounded-contexts-in-domain-driven-design-ddd/
+keywords: Bounded context, subdomain, domain
+The domain in effect is the problem to be addressed by a software. The domain model is the abstraction of the domain to solve the problem. There can be more than one abstraction to solve the problem. However, subdomain is the classification of the whole problem space to various smaller problem, each individual small problem space is then a subdomain. For eg> product catalog or accounting can be subdomains of big domain e-commerce.
+Sub-domain is in the problem space defining a part of the big problem whereas bounded context is in the solution space and gives how to solve the problem described by sub-domain technically. While sub-domain defines the boundaries within domain, bounded context defines boundaries within domain models. There can be one-to-one mapping between bounded context to sub-domain or there can be many bounded context for a particular sub-domain. Bounded context are software artifacts.
+However, in real applcations it cannot be as as direct as it looks like, may involve some compromises.
+i. In cases of legacy softwares build without consent of domain-driven-design, there may not be mapping of bounded context and domain. There will only be software artifacts or bounded context.
+ii. When 3rd party software are used, there may not be intersection of the context and models used in them comparing to the system under development.
+iii. Sometimes, bounded context can be more technical in nature, for eg. full text search system can be a bounded context inside product catalog.
+According to conways law, the boundaries of subdomain are determined by the characteristics of the communication within the organization.
+Bounded context and subdomains are evolved along the way, each reflecting changes on the other and vice versa, which is called Model Exploration Whirlpool, a term given by Eric Evans.
+
+
+url: http://programmers.stackexchange.com/questions/237513/what-in-reference-to-ddd-is-a-bounded-context
+keywords: bounded context, subdomain
+"If you want to achieve precise, unambiguous models, you need to make their boundaries explicit, and speak many little Ubiquitous Languages, each one within a single Bounded Context, with a well defined purpose."
+
+url: http://martinfowler.com/bliki/BoundedContext.html
+keywords: bounded context
+Domain driven design deals with large domain models, divide them into smaller bounded context, each with explicit boundaries and interrelationship between the bounded context. It is the process of developing software using domain models as ubiquotous language among developers and domain expert, acting as the common understanding of the concept and behavior. Which means, how the system is divided into various models, objects and functions so that there is no contradiction in the concept inside each and is internally consistent.
+It gets complicated to satisfy a large system with a common unified domain model. There will be different vocabulary in different parts of the system and there will be polysemes also, where a single term may mean different thing in different parts. So, using DDD, a huge system is divided into bounded context, each with its own unified model.
+
+
+url: http://stackoverflow.com/questions/588163/ddd-how-to-divide-application-to-bounded-contexts-besides-e-commerce-sample
+keyword: level of bounded context
+"I found that, at first, bounded contexts and aggregate roots seemed like the easiest concept in DDD. This is until you actually come to implement a DDD application with a real world problem. There is no easy answer here. It totally depends on your business requirements (scalability, availability, latency, consistency, etc). The "correct" solution is the one that balances these concerns to best fit your need.
+
+With the example you give, there are a few choices:
+
+-One large bounded context
+-Separate bounded contexts, with duplicated data (possibly implemented using a publish/subscribe messaging system)
+-Pull Users and CatalogItems into their own bounded context and have other bounded contexts access them via a service
+One thing to bear in mind is that querying needs are often very different to "writing" needs. It can often simplify your application design to have separate bounded contexts purely for querying. If this sounds like it might apply, look into CQRS."
+
+
+url: https://laracasts.com/discuss/channels/general-discussion/domain-driven-design-extracting-subdomain-and-bounded-contexts-with-an-example?page=1
+keywords: bounded context
+"As I mentioned, a bounded context mapping one-to-one with a subdomain isn't always the case, but what's important is that the identification of a bounded context occurs because you discover that the language your business uses changes based on context. For example, when a student starts to complete an application for a scholarship, they think of themselves as a "student". However, when they meet the requirements for some scholarship, they become a "candidate" in the context of selection. The difference is subtle, but important. In addition, personnel in the "finances" context may not even care that a student exists as a concept at all."
+
+
+url: https://msdn.microsoft.com/en-us/library/jj591572.aspx
+keyword: bounded context, CQRS
+"Bounded contexts are autonomous components, with their own domain models and their own ubiquitous language. They should not have any dependencies on each other at run time and should be capable of running in isolation. However they are a part of the same overall system and do need to exchange data with one another. If you are implementing the CQRS pattern in a bounded context, you should use events for this type of communication: your bounded context can respond to events that are raised outside of the bounded context, and your bounded context can publish events that other bounded contexts may subscribe to. Events (one-way, asynchronous messages that publish information about something that has already happened), enable you to maintain the loose coupling between your bounded contexts. This guidance uses the term integration event to refer to an event that crosses bounded contexts."
+
+url: http://blog.xebia.com/2015/05/27/microservices-architecture-principle-3-small-bounded-contexts-over-one-comprehensive-model/
+keywords: bounded context, microservice, size
+microservices and bounded context map with each other according to their definition. Context Mapping is an excellent tool for identifying and designing microservices. The size of the microservice should be small enough for its domain model to be understood by developer and should have clear bounded context so that there is no misunderstanding and overlap between context. We should see the scope of microservice and how it relates to other microservices.
+
+
+url: https://www.nginx.com/blog/microservices-at-netflix-architectural-best-practices/
+keyword: bounded context, microservices
+"Cockcroft defines a microservices architecture as a service-oriented architecture composed of loosely coupled elements that have bounded contexts."
+"The concept of bounded contexts comes from the book Domain Driven Design by Eric Evans. A microservice with correctly bounded context is self-contained for the purposes of software development. You can understand and update the microservice’s code without knowing anything about the internals of its peers, because the microservices and its peers interact strictly through APIs and so don’t share data structures, database schemata, or other internal representations of objects."
+
+
+url: https://www.nginx.com/blog/adopting-microservices-at-netflix-lessons-for-team-and-process-design/
+keyword: microservice
+technical guidelines and best approaches to implement microservices architecture
+
+book: Implementing DDD, Chapter 4. Service-Oriented
+keyword: microservice, bounded context, domain driven design
+
+We should focus more on business capability or usecase rather than technical functionality when implementing SOA and DDD. The technical size of a single service or resource is not a strong factor for dividing bounded context into further smaller units. It should be driven by the principle of DDD giving clear boundary around a set of data models which will have common understand and Again it will also comply with the SOA manifesto so realizing the bounded context with SOA will give priority to service creating focusing on strategic goals and business values rather than technical strategy and project specific benifits. The autonomy of service is maintained when developed around bounded context.
+Futhermore, each service can also be realized by hexagonal or port and adapter architecture.
+
+url: https://blog.codecentric.de/2015/07/microservices-strategie-vor-taktik/
+keyword: model exploration whirlpool, bounded context, microservices
+
+The size of the microservices should be equivalent to the bounded context. It also demonstrates one example to apply strategic modeling.
+"Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat. - Sun Tzu"
+
+url: http://www.ben-morris.com/how-big-is-a-microservice/
+keyword: bounded context, microservice, size
+The size of a microservices should be not bigger than bounded context and not smaller than aggreagate.
+
+url: http://images.domain.com.au/img/pdf/20141020/4/29a95a6a-a2ac-4821-a0ce-c3c183b79337.pdf
+keyword: microservices
+Microservices combine the best concept of agile software, DevOps and reactive systems. It has various articles based on microservices. Soundcloud applied bounded context. Devops are important part of microservices. It also specifies various communication patterns to be used in microservices. (api gateway, synchronous, asynchronous)
+
+url: http://www.slideshare.net/chris.e.richardson/microservices-decomposing-applications-for-deployability-and-scalability-jax
+keyword: microservices, communication patterns
+Api Gateway pattern is used to communication between web app client and services. Content router used between browser and UI microservices. It gives a clear overall picture for communication architecture. Various partition tecniques for definining microservices are SRP, noun, verb or unix utilities. Decentralized data management can be aided using event sourcing.
+
+Further Reading
+I love software books that are both old and still-relevant. One of my favorite such books is William Kent's Data and Reality. I still remember his short description of the polyseme of Oil Wells.
+
+There are two ways to approach a solution: one directly creating models for domain and subdomains and the other taking consent of bounded context. various discussion topics are discussed in https://vimeo.com/63635620
+
+Eric Evans describes how an explicit use of a bounded context can allow teams to graft new functionality in legacy systems using a bubble context. The example illustrates how related Bounded Contexts have similar yet distinct models and how you can map between them.
+
+http://domainlanguage.com/ddd/reference/DDD_Reference_2015-03.pdf
+
+http://domainlanguage.com/ddd/reference/
+
+choosing bounded context in a system https://msdn.microsoft.com/en-us/library/jj591575.aspx
+
+https://www.tigerteam.dk/2014/micro-services-its-not-only-the-size-that-matters-its-also-how-you-use-them-part-1/
+
+https://www.tigerteam.dk/2014/soa-synchronous-communication-data-ownership-and-coupling/
+
+Search term:
+how to divide application into domains and bounded context
+difference between domain and bounded context
+
+
+

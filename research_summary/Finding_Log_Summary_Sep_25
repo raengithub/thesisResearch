@@ -1,0 +1,45 @@
+Microservice, although is undoubtedly an integral part of a whole application, it has distinctive feature of being an autonomous and a completely independent system in itself. It is not just a bunch of code adhering to some design models but is a combination of code, operating system, platform, framework, runtime and dependencies and act as a single unit of execution. A microservice has independent life cycle and single responsibility. Similarly, microservices shift complexities from application architecture towards network as well as integration, while making the individual units smart and  the connection between them dumb. These facts are important before we go further to answer various questions regarding microservices.
+
+How are microservices defined?
+A huge requirements for an application is described by a number of small chunck of requirements in ubiquotous language. Each ubiquotous chunch of requirement is the first step to define domain models. The domain models can be either entities, value objects or services. Now, these models are grouped to reflect a single domain context and called aggregates. Each aggregate is a single bounded context with its independent repository and a clear intention-revealing interface. Other aggregates can access the attributes only through the interface of root entity. With this segregation, each bounded context is independently upgradable and replaceable. These are the major goals of microservices. Nevertheless, this type of arrangement along bounded context will give high cohesion and low coupling.
+
+
+
+Size of Microservice?
+Microservices cannot be designed by refining a system into fine grain as objects. It will create huge complexities regarding network and integration when tried to fulfil high order business goals. 
+Additionally, the more fine grain a microservice is,we will have high number of microservices and untimately to support that we would need more number of servers,huge infrastructure and high operation overhead.This slightly suggest one view of looking into the size of a microservice. It depends upon how much our practical capability of infrastructure or operation is.
+There is another analogy to view the size. The major goal of designing  a system is to make it easy to understand for developers. This assists developers to use their technical knowledge to build the system and change them by complying the exact goals of the application. This is highy related to the average mental ability of brain because no matter how complex the code or architectre of the system is, the infrastructure can run it and still give result. So, the size of microservice should be such that it is easy for developer to understand. Incoherent ideas are hard to understand if put together so only highly cohesive ideas should be structured into microservice to promote single meaning.
+
+What next?
+
+is there more clear way to define boundary around a bounded context?
+ - it will give some idea about size as well as candidate microservice.
+ 
+how DDD is applied in SOA?
+ - it will give some insight about how bounded context and microservices are related.
+ 
+how much responsibility is Single Responsibility?
+ - it wound be better to know given the context of microserivce is around Single Responsibility Principle.
+ 
+what are the approaches to clearly define responsibility and context of a module?
+ - if there is a way then it can be used as a tool in addition to ubiqutous language to define bounded context.
+
+different approaches to bounded context(smart usecase & event storming) & tactical, with pros and cons
+mapping of microservices and bounded context?
+
+
+may be but not important how is microservice different from SOA?
+
+important will be to compare monolithic application and SOA(microservices being one way of that)
+
+take some real example and explain with scientific overview and another (different is preferable)  for hybris
+workflow to show strategic and tactical
+think about who, when , how ... etc when defining anything
+
+find out the process to define microservices in scientific approach and other approach also discuss similarity and differences between them
+
+
+
+ 
+ 
+
