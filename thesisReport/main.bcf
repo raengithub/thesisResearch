@@ -2237,22 +2237,6 @@
     <bcf:datasource type="file" datatype="bibtex">bibliography/literature.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">AMIT-SHETH:1995aa</bcf:citekey>
-    <bcf:citekey order="2">Alonso:2015aa</bcf:citekey>
-    <bcf:citekey order="3">Ludascher:2005aa</bcf:citekey>
-    <bcf:citekey order="4">AMIT-SHETH:1995aa</bcf:citekey>
-    <bcf:citekey order="4">Stoilova:2015aa</bcf:citekey>
-    <bcf:citekey order="5">Lee:2000aa</bcf:citekey>
-    <bcf:citekey order="6">Schneider:2015aa</bcf:citekey>
-    <bcf:citekey order="6">Alonso:2015aa</bcf:citekey>
-    <bcf:citekey order="7">Dogac:2015aa</bcf:citekey>
-    <bcf:citekey order="8">Alonso:2015aa</bcf:citekey>
-    <bcf:citekey order="9">Jergler:2015aa</bcf:citekey>
-    <bcf:citekey order="9">Cohn:2015aa</bcf:citekey>
-    <bcf:citekey order="10">Jergler:2015aa</bcf:citekey>
-    <bcf:citekey order="11">Kuz:2008aa</bcf:citekey>
-    <bcf:citekey order="12">Chakraborty:2015aa</bcf:citekey>
-    <bcf:citekey order="12">Steen:2011aa</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="anyt" type="entry" sortscheme="anyt">
   <bcf:sorting>
