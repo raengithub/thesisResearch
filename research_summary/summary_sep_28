@@ -80,12 +80,57 @@ url: http://www.slideshare.net/chris.e.richardson/microservices-decomposing-appl
 keyword: microservices, communication patterns
 Api Gateway pattern is used to communication between web app client and services. Content router used between browser and UI microservices. It gives a clear overall picture for communication architecture. Various partition tecniques for definining microservices are SRP, noun, verb or unix utilities. Decentralized data management can be aided using event sourcing.
 
+url: http://www.diva-portal.org/smash/get/diva2:23243/FULLTEXT01.pdf
+keyword: coupling, cohesion
+"
+The degree of coupling is a measurement on the interdependence between components.
+The effect of having “highly” or “tightly” coupled components is generally that a change
+in one component will affect the workings of other components, i.e. the other component
+will stop functioning or deliver a faulty result. (Pfleeger, 2001, p. 220) In terms of
+software development and maintenance hard coupling result in complex systems, as it is
+usually hard to find and understand all the links between different modules once the
+software has been written. Incorporation of even a minor change in a hard-coupled
+component will generally result in extensive modifications of related components.
+(Pfleeger, 2001, p. 220-222; Natis, 2005) Coupling cannot, however, be completely
+avoided if components should be able to communicate. The optimum sought for is
+therefore not uncoupled, but loosely coupled, components (Pfleeger, 2001, p. 220-222;
+Erl, 2005, p. 297; Newcomer & Lomow, 2005, p. 75; Dromey, 1996).
+Loosely coupled components are dependent in that they communicate some piece of
+information, but are in other aspects independent. There are three types of coupling to
+consider: interface, technology and process coupling. Interface coupling refers to the
+requirements an information, or service, providing component sets up for callers to
+adhere to; does a caller, for instance, need to name arguments in a given order or have
+knowledge of how the provider internally have organized data? Technology coupling
+represents how technology dependent the component is. Some components depend so
+heavily on functions provided by, for instance, the type of computer they are running on,
+that they cannot communicate with a component running on a different kind of
+computer. Process coupling, at last, is the dependence on being a part of a specific
+(business) process. A component may be specified in a way so that it only makes sense in
+the context of a given process. (Newcomer & Lomow, 2005, p. 76-77) "
+
+
+url: http://www.diva-portal.org/smash/get/diva2:23243/FULLTEXT01.pdf
+keyword: SOA
+"
+Components represent reusable units of logic and immutable data. Organizations,
+however, often have a need to build structures for reuse of both logic and dynamically
+created data, that is, they want a running instance of a component. For example, a
+component capable of storing customer data will be of marginal use, unless it actually
+contains some customer data. Ideally, enterprises would like to have its customer data
+stored in one single place that can be accessed and manipulated from any device in any
+business process. This entails having, not only a unit of deployment, but rather a
+running service. The easiest way of envisioning a service is to look at it as an
+instantiated component; a component that is already running and maintained by
+someone (Szyperski, 2002, p. 470). 
+"
 Further Reading
 I love software books that are both old and still-relevant. One of my favorite such books is William Kent's Data and Reality. I still remember his short description of the polyseme of Oil Wells.
 
 There are two ways to approach a solution: one directly creating models for domain and subdomains and the other taking consent of bounded context. various discussion topics are discussed in https://vimeo.com/63635620
 
 Eric Evans describes how an explicit use of a bounded context can allow teams to graft new functionality in legacy systems using a bubble context. The example illustrates how related Bounded Contexts have similar yet distinct models and how you can map between them.
+
+Bounded context: A specific responsibility enforced by explicit boundaries.
 
 http://domainlanguage.com/ddd/reference/DDD_Reference_2015-03.pdf
 

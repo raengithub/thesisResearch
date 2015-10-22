@@ -2237,6 +2237,36 @@
     <bcf:datasource type="file" datatype="bibtex">bibliography/literature.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">Linthicum:2015aa</bcf:citekey>
+    <bcf:citekey order="2">Raf-Haesen:2015aa</bcf:citekey>
+    <bcf:citekey order="3">Linthicum:2015aa</bcf:citekey>
+    <bcf:citekey order="4">Padmal-Vitharana:2004aa</bcf:citekey>
+    <bcf:citekey order="5">Peter-Herzum:2000aa</bcf:citekey>
+    <bcf:citekey order="6">Hafedh-Mili:2001aa</bcf:citekey>
+    <bcf:citekey order="7">Zhongjie-Wang:2005aa</bcf:citekey>
+    <bcf:citekey order="8">Sims:2005aa</bcf:citekey>
+    <bcf:citekey order="9">Abdelkarim-Erradi:2006aa</bcf:citekey>
+    <bcf:citekey order="10">Abdelkarim-Erradi:2006aa</bcf:citekey>
+    <bcf:citekey order="11">Naveen-Kulkarni:2008aa</bcf:citekey>
+    <bcf:citekey order="12">Steghuis:2006aa</bcf:citekey>
+    <bcf:citekey order="13">Peter-Herzum:2000aa</bcf:citekey>
+    <bcf:citekey order="14">Raf-Haesen:2015aa</bcf:citekey>
+    <bcf:citekey order="14">Peter-Herzum:2000aa</bcf:citekey>
+    <bcf:citekey order="15">Raf-Haesen:2015aa</bcf:citekey>
+    <bcf:citekey order="16">Peter-Herzum:2000aa</bcf:citekey>
+    <bcf:citekey order="17">Raf-Haesen:2015aa</bcf:citekey>
+    <bcf:citekey order="18">Pierre-Reldin:2007aa</bcf:citekey>
+    <bcf:citekey order="19">Raf-Haesen:2015aa</bcf:citekey>
+    <bcf:citekey order="20">Foody:2005aa</bcf:citekey>
+    <bcf:citekey order="21">Raf-Haesen:2015aa</bcf:citekey>
+    <bcf:citekey order="22">Lawrence-Wilkes:2004aa</bcf:citekey>
+    <bcf:citekey order="23">Pierre-Reldin:2007aa</bcf:citekey>
+    <bcf:citekey order="24">Pierre-Reldin:2007aa</bcf:citekey>
+    <bcf:citekey order="25">Pierre-Reldin:2007aa</bcf:citekey>
+    <bcf:citekey order="26">Raf-Haesen:2015aa</bcf:citekey>
+    <bcf:citekey order="27">Xiao-jun:2015aa</bcf:citekey>
+    <bcf:citekey order="28">Mikhail-Perepletchikov:2015aa</bcf:citekey>
+    <bcf:citekey order="29">Bingu-Shim:2008aa</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="anyt" type="entry" sortscheme="anyt">
   <bcf:sorting>

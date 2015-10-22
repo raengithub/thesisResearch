@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  20 OCT 2015 18:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  22 OCT 2015 11:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1763,13 +1763,13 @@ LaTeX Info: Redefining \nameref on input line 15.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
 line 15.
  (./pages/cover.tex
-<logos/tum.png, id=63, 53.4798pt x 28.6671pt>
+<logos/tum.png, id=67, 53.4798pt x 28.6671pt>
 File: logos/tum.png Graphic file (type png)
  <use logos/tum.png>
 Package pdftex.def Info: logos/tum.png used on input line 13.
 (pdftex.def)             Requested size: 113.81102pt x 61.01012pt.
 
-<logos/faculty.png, id=64, 34.2078pt x 37.0986pt>
+<logos/faculty.png, id=68, 34.2078pt x 37.0986pt>
 File: logos/faculty.png Graphic file (type png)
  <use logos/faculty.png>
 Package pdftex.def Info: logos/faculty.png used on input line 31.
@@ -1863,16 +1863,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 
+l.28 
       [1
 
 
 
-]) (./main.acr
+]
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/pplx/m/it' tried instead on input line 1.
- [2]
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 5.
+(Font)              Font shape `T1/pplx/m/it' tried instead on input line 28.
+ [2] [3] [4]) (./main.acr [5]
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 6.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -1881,7 +1881,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) [3
+) [6
 
 
 
@@ -1893,42 +1893,57 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 47
 \tf@lof=\write10
 \openout10 = `main.lof'.
 
-[4
+[7
 
 
-] [5
+]
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 50.
+
+! Misplaced alignment tab character &.
+<argument> John Wiley &
+                        Sons
+l.50 \printbibliography{
+                        }
+? 
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 50.
+
+[8
 
 
 ]
 No complaints by nag.
-[6]
+[9]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 52.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 52.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 52.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 52.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CADF01BA83EFB8CFFE0EFDF051659EB5;401.
+(rerunfilecheck)             Checksum: 63CF585C8C884D76E6BB5F1208AFFD1D;494.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43513 strings out of 493089
- 936273 string characters out of 6134843
- 1605397 words of memory out of 5000000
- 45964 multiletter control sequences out of 15000+600000
- 41460 words of font info for 158 fonts, out of 8000000 for 9000
+ 43610 strings out of 493089
+ 937393 string characters out of 6134843
+ 1611613 words of memory out of 5000000
+ 45973 multiletter control sequences out of 15000+600000
+ 45448 words of font info for 212 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,8n,95p,1814b,1652s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (12 pages, 78257 bytes).
+Output written on main.pdf (15 pages, 88538 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 126 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 28855 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 230 PDF objects out of 1000 (max. 8388607)
+ 190 compressed objects within 2 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 28863 words of extra memory for PDF output out of 29859 (max. 10000000)
 

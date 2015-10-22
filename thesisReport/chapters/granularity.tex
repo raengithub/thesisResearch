@@ -1,59 +1,69 @@
 \chapter{Granularity}\label{chapter:granularity}
 \section{Introduction}\label{section:granularity/introduction}
-The granularity of a service is often ambiguous and has different interpretation. In simple term, it refers to the size of the service. However, the size itself can be vague. It can neither be defined as a single quantitative value nor it can be defined in terms of single dependent criterion. It is difficult to define granularity in terms of number because the concepts defining granularity are vague and subjective in nature. If we choose an activity supported by the service to determine its granularity then we cannot have one fixed value instead a hierarchical list of answers; where an activity can either refer to a simple state change, any action performed by an actor or a complete business process. [1][2]
+The granularity of a service is often ambiguous and has different interpretation. In simple term, it refers to the size of the service. However, the size itself can be vague. It can neither be defined as a single quantitative value nor it can be defined in terms of single dependent criterion. It is difficult to define granularity in terms of number because the concepts defining granularity are vague and subjective in nature. If we choose an activity supported by the service to determine its granularity then we cannot have one fixed value instead a hierarchical list of answers; where an activity can either refer to a simple state change, any action performed by an actor or a complete business process. \cite{Linthicum:2015aa}, \cite{Raf-Haesen:2015aa}
 \\
-Although the interest upon the granularity of a component or service for the business users only depends upon their business value, there is no doubt that the granularity affects the architecture of a system. The honest granularity of a service should reflect upon both business perspective and should also consider the impact upon the overall architecture.
+Although, the interest upon the granularity of a component or service for the business users only depends upon their business value, there is no doubt that the granularity affects the architecture of a system. The honest granularity of a service should reflect upon both business perspective and should also consider the impact upon the overall architecture.
 \\
 If we consider other units of software application, we come from object oriented to component based and then to service oriented development. Such a transistion has been considered with the increase in size of the individual unit. The increase in size is contributed by the interpretation or the choice of the abstraction used. For example, in case of object oriented paradigm, the abstraction is chosen to represent close impression of real world objects, each unit representing fine grained abstraction with some attributes and functionalities. 
 \\
-Nevertheless, such abstraction is a good approach towards development simplicity and understanding, it is not sufficient when high order business goals have to be implemented. It indicates the necessity of coarser-grained units than units of object oriented paradigm. Moreover, component based development introduced the concept of business components which target the business problems and are coarser grained. The services provide access to application where each application is composed of various component services. [1]
+Such abstraction is a good approach towards development simplicity and understanding, however it is not sufficient when high order business goals have to be implemented. It indicates the necessity of coarser-grained units than units of object oriented paradigm. Moreover, component based development introduced the concept of business components which target the business problems and are coarser grained. The services provide access to application where each application is composed of various component services. \cite{Linthicum:2015aa}
 
 
-1. https://msdn.microsoft.com/en-us/library/bb833022.aspx
-2. http://link.springer.com/chapter/10.1007/978-3-540-69534-9_29
-3. http://dl.acm.org/citation.cfm?id=555657,   Herzum and Sims
-4. http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=1347298,  Vitharana et al
-5. http://www.soa-zone.com/index.php?/archives/11-Getting-web-servicegranularity-right.html, Foody, D.: Getting web service granularity right (August 2005)
-6. https://msdn.microsoft.com/en-us/library/aa480028.aspx#aj2service_topic8, Wilkes, L., Veryard, R.: Service-oriented architecture: Considerations for agile systems (April 2004),
-7. http://www.diva-portal.org/smash/get/diva2:23243/FULLTEXT01.pdf
-8.http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5362767&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D5362767
-9. http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=4159685&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D4159685
-10. http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=4724572&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D4724572
-11.  Herzum, P., Sims, O.: Business Components Factory: A Comprehensive Overview
-of Component-Based Development for the Enterprise. John Wiley & Sons, Inc.,
-New York (2000)
-12. Mili, H., Mili, A., Yacoub, S., Addy, E.: Reuse-Based Software Engineering: Techniques,
-Organizations, and Controls. John Wiley & Sons, Chichester (2002)
-13. Wang, Z., Xu, X., Zhan, D.: A survey of business component identification methods
-and related techniques. International Journal of Information Technology 2, 229–238
-(2005)
-14.  Sims, O.: Developing the architectural framework for SOA - part 2-service granularity
-and dependency management. CBDI Forum Journal (June 2005)
 \section{Related Work}\label{section:granularity/relatedwork}
 
 A number of researches have been done in the area of service and component granularity. The focus of the researches includes various areas such as definition, effect, its dependent criteria and various measurement metrics.
 \\
-According to Hazen and Sims [11], component granularity is rather recursive as a component can be composed of various fine-grained components. They further classify recursion as of discrete or continuous nature but then prefer on discrete recursion. Thus, component granularity can be divide into three discrete layers: system, business and distributed where the composition happens from right to left order and granularity decreases in the opposite order.
-It is also useful to relate granularity with reusability. Coarse-grained components have high reuse efficiency because they are well focused to a specific business functionality. Whereas fine-grained components have high reusability since they focus on small functionality and thus can be used by other coarse-grained components to accomplish higher level business capabilities. [12, 13]
-Additionally, Sims [14] gave some insights to measure granularity. The granularity can be measured either a) by the number of components called from an operation on a service interface, b) by the number components calling the service interface or c) by the number of database tables updated.
+According to \cite{Padmal-Vitharana:2004aa}, the granularity of a component is inversely related to various non functional qualities such as customization and maintainaibility.
+\\
+According to Hazen and Sims \cite{Peter-Herzum:2000aa}, component granularity is rather recursive as a component can be composed of various fine-grained components. They further classify recursion as of discrete or continuous nature but then prefer on discrete recursion. Thus, component granularity can be divide into three discrete layers: system, business and distributed where the composition happens from right to left order and granularity decreases in the opposite order.
+It is also useful to relate granularity with reusability. Coarse-grained components have high reuse efficiency because they are well focused to a specific business functionality. Whereas fine-grained components have high reusability since they focus on small functionality and thus can be used by other coarse-grained components to accomplish higher level business capabilities. \cite{Hafedh-Mili:2001aa}, \cite{Zhongjie-Wang:2005aa}
+\\
+Additionally, Sims \cite{Sims:2005aa} gave some insights to measure granularity. The granularity can be measured either a) by the number of components called from an operation on a service interface, b) by the number of components calling the service interface or c) by the number of database tables updated.
+\\
+Service Oriented Architecture Framework (\acrshort{SOAF} \cite{Abdelkarim-Erradi:2006aa} also gives some way to measure the granularity in terms of quantitative value. The value can be derived from a) the number of components that are invoked by the service interface and b) the number of changes of states in resources like the database tables updates influenced by the service. Again, the granularity can affect reusability and the network communication to accomplish any task. Coarse grained components have more volume of data exchanged where as fine grained components have high frequency of round trips to complete the full business functionality. It is recommended to balance them which can depend upon various factors such as abstraction level, change expectation rate, service complexity, desired coupling and cohesion. Furthermore, the granularity can be at different levels within an application. High-level business process can be realized as a coarse-grained services and each coarse-grained component can be composed of various fine-grained services.
+\\
+The idea of multi-layered granularity is further supported by Security Trading case study \cite{Abdelkarim-Erradi:2006aa} and International Financial and Brokerage Services \acrshort{IFBS} case study \cite{Naveen-Kulkarni:2008aa}. The design of pilot application for Security Trading consists of various services across various levels such as process, application, shared data and infrastructures and containing services with granularity decreasing from left to the right in the order they are listed. The application for IFBS is refactored from large number of fine-grained service to multi-layered granular services such as process services, business services, composite services or orchestration services, utility services etc.
+\\
+A research performed by Steghuis \cite{Steghuis:2006aa} talks about various aspects of granularity such as functionality, flexibility, reusability, complexity, context-independence, Performance, Genericity and sourcing. Some differenciating aspects in comparision to previous researches are context-independence, genericity and sourcing. Context-independence means independence and self sufficiency in terms of data as well as logic. It promotes loose coupling and insists lack of knowledge of state of surrounding and inessential maintainance of own state. Genericity is the quality of making generic services which can be used in different situations such as messaging service. Finally, sourcing is the process of identifying cohesive group of tasks which can be outsourced by considering the coupling associated.
 
 %here
 
-Hazem and Sims have also supported the hierarchical nature of components granularity. A component functionality is composed of various fine grained components and thus leads to a hierarchy level of granularity. [3]
-According to [4], the granularity of a component is inversely related to various non functional qualities such as customization and maintainaibility. 
+\section{Basic Principles Related to Service Granularity}\label{section:granularity/principles}
+In addition to quantitative perspective on granularity, it can be helpful to approach the granularity qualitatively. The points below are some basic principls derived from various scientific and research papers, which attempt to define the qualitative properties of granularity. Hopefully, these principles will be helpful to come with the service of right granularity.
 
-The following section provides some views regarding the granularity based on various research papers.
-1. The correct granularity of a component or a service is dependent upon the time. The various supporting technologies that evolve during time can also be an important factor to define the level of vertical decomposition. [3]
-2. A good candidate for a service should be independent upon the implementation but depends upon the understandability of domain experts.
-[2, 3]
-3. A service should be an autonomous reusable component and should support various cohesion such as functional (group similar functions), temporal(change in the service should not affect other services),run-time(allocate similar runtime environment for similar jobs; eg. provide same address space for jobs of similar computing intensity) and actor ( a component should provide service to similar users).
-[2, 3]
-4. A service should not support huge number of operations. If it happens, it will affect high number of customers on any change and there will be no unified view on the functionality. [2]
-5. A service should provide transaction integrity and compensation. The activities supported by a service should be within the scope of one transaction. Additionally, the compensation should be provided when the transaction fails. [2,5]
-6. The notion of right granularity is more important than that of fine or coarse. It depends upon the usage condition and moreover is about balancing various qualities such as reusability, network usage, completeness of context etc. [2, 6]
-7. The level of abstraction of the services should reflect the level of real world business activities. [7]
+\begin{enumerate}
+\item The correct granularity of a component or a service is dependent upon the time. The various supporting technologies that evolve during time can also be an important factor to define the level of vertical decomposition. For eg: with the improvement in virtualization, containerization as well as platform as a service technologies, it is fast and easy for deployment automation which supports multiple fine-grained services creation.\cite{Peter-Herzum:2000aa}
+\item A good candidate for a service should be independent upon the implementation but should depend upon the understandability of domain experts.
+\cite{Raf-Haesen:2015aa, Peter-Herzum:2000aa}
+\item A service should be an autonomous reusable component and should support various cohesion such as functional (group similar functions), temporal(change in the service should not affect other services), run-time(allocate similar runtime environment for similar jobs; eg. provide same address space for jobs of similar computing intensity) and actor (a component should provide service to similar users).
+\cite{Raf-Haesen:2015aa}, \cite{Peter-Herzum:2000aa}
+\item A service should not support huge number of operations. If it happens, it will affect high number of customers on any change and there will be no unified view on the functionality. Furthermore, if the interface of the service is small, it will be easy to maintain and understand.\cite{Raf-Haesen:2015aa}, \cite{Pierre-Reldin:2007aa}
+\item A service should provide transaction integrity and compensation. The activities supported by a service should be within the scope of one transaction. Additionally, the compensation should be provided when the transaction fails. \cite{Raf-Haesen:2015aa}, \cite{Foody:2005aa}
+\item The notion of right granularity is more important than that of fine or coarse. It depends upon the usage condition and moreover is about balancing various qualities such as reusability, network usage, completeness of context etc. \cite{Raf-Haesen:2015aa}, \cite{Lawrence-Wilkes:2004aa}
+\item The level of abstraction of the services should reflect the level of real world business activities. \cite{Pierre-Reldin:2007aa}
+\item There can be two better approaches for breaking down an abstraction. One way is to separate redundant data or data with different semanting meaning. The other approach is to divide services with limited control and scope. For example: A Customer Enrollment service which deals with registration of new customers and assignment of unique customer ID can be divided into two independent fine-grained services: Customer Registration and ID Generation, each service will have limited scope and separate context of Customer.\cite{Pierre-Reldin:2007aa}
+\end{enumerate}
+
+Dimensions of Granularity
+The factors affecting the granularity of any service is presented by R3 model. The three dimensions of the model are as given below:
+Reach: It gives answer to “Who can use the functionality? ”.  It provides the levels the functionality of service is accessible from. It can be a customer, the customers within an organization, supplier etc.
+Range: It gives answer to “Which functionality is available? ”. It provides the level of information shared with other systems. It can be a simple data access, a transaction, message transfer etc. 
+Realm: It gives answer to “What kind of functionality? “.  It focuses more on the functionality in terms of business value which is the value as perceived by the stakeholders. \cite{Pierre-Reldin:2007aa}
 
 
+ 
+Fig: R3 model to present various level of granularity
+
+
+Another interpretation but similar approach has also been published, which presents three different criteria to affect granularity of any service. 
+Data granularity: It evaluates how much data is passed to the interface of the service or returned by the service. 
+Business value granularity:  It measures the inclination of the service towards the business. The business value can be predicted by e3 approach or i* framework.  Moreover, it considers contribution of service towards the achievement of business goals and values.
+Functionality granularity: It refers to the default functionality offered by the service as well as additional optional functionalities provided by the service.
+\cite{Raf-Haesen:2015aa}
+
+An additional contribution to defining the granularity has been made when the differentiating features of distributed system are taken into consideration. The granularity of a service depends upon the coupling and cohesion. In order to find the right granularity for a service, we need to balance between coupling and cohesion.
+The coupling can be determined from the dependency graph between a service and its consumers. The goal is to minimize the coupling of individual service and to the application as a whole.
+The cohesion is evaluated by the likeliness of the operations supported by the service. It considers that higher the similarities among the operations, higher the cohesion is.  \cite{Xiao-jun:2015aa}, \cite{Mikhail-Perepletchikov:2015aa}, \cite{Bingu-Shim:2008aa}
 
 Service Hierarchy
 
