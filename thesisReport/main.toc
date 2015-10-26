@@ -12,10 +12,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}Related Work}{2}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Basic Principles Related to Service Granularity}{3}{section.1.3}
+\contentsline {section}{\numberline {1.3}Basic Principles to Service Granularity}{3}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyms}{6}{section*.3}
+\contentsline {section}{\numberline {1.4}Dimensions of Granularity}{4}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{7}{appendix*.5}
+\contentsline {subsection}{\numberline {1.4.1}Dimension by Interface}{4}{subsection.1.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{8}{appendix*.6}
+\contentsline {subsection}{\numberline {1.4.2}Dimension by Interface Realization}{5}{subsection.1.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.3}R\textsuperscript {3} Dimension}{7}{subsection.1.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.4}Retrospective}{9}{subsection.1.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acronyms}{12}{section*.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Figures}{13}{appendix*.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{14}{appendix*.10}
