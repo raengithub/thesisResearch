@@ -1,0 +1,38 @@
+\chapter{Quality of Service}\label{chapter:quality_of_service}
+\section{Introduction}\label{section:quality_of_service/introduction}
+In addition to allign with the business requirements, an important goal of software engineering is to provide high quality. The quality assessment in the context of service oriented product becomes more crucial as the complexity of the system is getting higher by time. \cite{Zhang:2009aa, Goeb:2011aa, Nematzadeh:2014aa} Quality models have been devised over time to evaluate quality of a software. A quality model is defined by quality attributes and quality metrics. Quality attributes are the expected properties of software artifacts defined by the chosen quality model. And, quality metrics give the techniques to measure the quality attributes. \cite{Mancioppi:2015aa} The software quality attributes can again be categorized into two types: internal and external attributes. \cite{Mancioppi:2015aa, Briand:1996aa} The internal quality attributes are the design time attributes which should be fulfilled during the design of the software. Some of the external quality attributes are loose coupling, cohesion, granularity, autonomy etc.\cite{Rostampour:2011aa, Sindhgatta:2015aa, Elhag:2014aa} On the other hand, the external quality attributes are the traits of the software artifacts produced at the end of Software Development Life Cycle \acrshort{SDLC}.Some of them are reusability, maintainability etc. \cite{Elhag:2014aa, Mancioppi:2015aa, Feuerlicht:2007aa, Feuerlicht:2013aa} For that reason, the external quality attributes can only be measure after the end of development. However, it has been evident that internal quality attributes have huge impact upon the value of external quality attributes and thus can be used to predict them. \cite{Henry:1990aa, Briand:2015aa, Alshayeb:2003aa, Bingu-Shim:2008aa}The evaluation of both internal and external quality attributes are valuable in order to produce high quality software.\cite{Mancioppi:2015aa, Perepletchikov:2007aa, Mikhail-Perepletchikov:2015aa}
+
+\section{Quality Attributes}\label{section:quality_of_service/quality_attributes}
+As already mentioned in section \ref{section:quality_of_service/introduction}, the internal and external qualities determine the overall value of the service composed. There are different researches and studies which have been performed to find the features affecting the service qualities. Based on the published research papers, a comprehensive table \ref{tab:quality_of_service/quality_attributes} has been created. The table provides a minimum list of quality attributes which have been considerd in various research papers. 
+
+  \begin{table}[h!]
+  \centering
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{*{14}{|c}|}%%{|c|c|c|c|c|c|c|c|}
+  \hline
+  \# & Attribute & \cite{Sindhgatta:2015aa} & \cite{Xiao-jun:2015aa} & \cite{Saad-Alahmari:2011aa} & \cite{Bingu-Shim:2008aa} & \cite{Ma:2009aa} & \cite{Feuerlicht:2007aa}\\
+  \hline
+  \hline
+   1 & Coupling & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark\\ 
+   2 & Cohesion & \checkmark & X & \checkmark & \checkmark & \checkmark & \checkmark\\
+   3 & Autonomy & \checkmark & X & X & X & X & X\\
+   4 & Granularity & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark\\
+   5 & Reusability & \checkmark & X & X & \checkmark & X & \checkmark\\
+   6 & Abstraction & \checkmark & X & X & X & X & X\\
+   7 & Complexity & X & X & X & \checkmark & X & X\\
+  \hline
+\end{tabular}
+\end{adjustbox}
+  \caption{Quality Attributes}
+  \label{tab:quality_of_service/quality_attributes}
+\end{table}
+
+The table \ref{tab:quality_of_service/quality_attributes} gives a picture of the studies done so far around service quality attributes. It can be deduced that most of the papers focus on coupling and granularity of the service and only few of them focus on other attributes such as complexity and autonomy.
+
+Coupling refers to the dependency and interaction among services. The interaction becomes inevitable when a service requires a functionality provided by another service in order to accomplish its own goals. Similarly, Cohesion of any system is the extent of appropriate arrangement of elements to perform the functionalities. It affects the degree of understandability and sensibility of its interface for its consumers. Whereas, the complexity attribute provides the way to evaluate the difficulty in understanding and reasoning the context of the service or component.\cite{Elhag:2014aa}
+\\
+The reusability attribute for a service measures the degree to which it can be used by multiple consumer services and can undergo multiple composition to accoplish various high order functionalities. \cite{Feuerlicht:2007aa}
+\\
+Autonomy is a broad term which refers to the ability of a service for self-containment, self-controlling, self-governance. Autonomy defines the boundary and context of the service. \cite{Ma:2007aa} Finally, granularity is described in chapter \ref{chapter:granularity} in detail. The basic signifance of granularity is the diversity and size of the functionalities offered by the service. \cite{Elhag:2014aa}
+
+\section{Related Work}\label{section:quality_of_service/related_work}

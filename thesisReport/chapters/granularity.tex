@@ -38,7 +38,7 @@ In addition to quantitative perspective on granularity, it can be helpful to app
 \item A service should not support huge number of operations. If it happens, it will affect high number of customers on any change and there will be no unified view on the functionality. Furthermore, if the interface of the service is small, it will be easy to maintain and understand.\cite{Raf-Haesen:2015aa}, \cite{Pierre-Reldin:2007aa}
 \item A service should provide transaction integrity and compensation. The activities supported by a service should be within the scope of one transaction. Additionally, the compensation should be provided when the transaction fails. \cite{Raf-Haesen:2015aa}, \cite{Foody:2005aa}
 \item The notion of right granularity is more important than that of fine or coarse. It depends upon the usage condition and moreover is about balancing various qualities such as reusability, network usage, completeness of context etc. \cite{Raf-Haesen:2015aa}, \cite{Lawrence-Wilkes:2004aa}
-\item The level of abstraction of the services should reflect the level of real world business activities. \cite{Pierre-Reldin:2007aa}
+\item The level of abstraction of the services should reflect the real world business activities. Doing so will help to map business requirements and technical capabilities. \cite{Pierre-Reldin:2007aa}
 \item There can be two better approaches for breaking down an abstraction. One way is to separate redundant data or data with different semanting meaning. The other approach is to divide services with limited control and scope. For example: A Customer Enrollment service which deals with registration of new customers and assignment of unique customer ID can be divided into two independent fine-grained services: Customer Registration and ID Generation, each service will have limited scope and separate context of Customer.\cite{Pierre-Reldin:2007aa}
 \end{enumerate}
 
@@ -122,8 +122,9 @@ The consideration of all aspects of a service including 'Reach', 'Range' and 'Re
 \subsection{Retrospective}\label{subsection:granularity/dimensions/retrospective}
 The sections \ref{subsection:granularity/dimensions/interface} and \ref{subsection:granularity/dimensions/interface_realization} classified granularity of a service along three different directions: data, functionality and business value. Moreover, the interpretation from the viewpoint of interface by consumer and the viewpoint of producer for realization were also made.
 Again, the section \ref{subsection:granularity/dimensions/r3} divides the aspect of granularity along Reach, Range and Realm space, the granularity given by the volume in the R\textsuperscript{3} space.
-Despite of good explanation regarding the aspects, the classification along data, functionality and business value do not provide discrete metrics to define granularity in terms of quantitatively. However, the given explanations and criteria are well rounded to compare two different services regarding granularity. These can be effectively used to classify if a service is fine-grained than other service.
-The R\textsuperscript{3} model \ref{subsection:granularity/dimensions/r3} additionally provides various levels of granularity along each axis. This makes it easy to at least measure the granularity and provides flexibility to compare the granularity between various services.
+Despite of good explanation regarding each aspect, the classification along data, functionality and business value do not provide discrete metrics to define granularity in terms of quantitatively. However, the given explanations and criteria are well rounded to compare two different services regarding granularity. These can be effectively used to classify if a service is fine-grained than other service.
+The R\textsuperscript{3} model in section \ref{subsection:granularity/dimensions/r3} additionally provides various levels of granularity along each axis. This makes it easy to at least measure the granularity and provides flexibility to compare the granularity between various services.
+\\
 A case study \cite{Pierre-Reldin:2007aa} using data, functionality and business criteria to evaluate the impact of granularity on the complexity in the architecture is held. The study was done at KBC Bank & Insurance Group of central Europe. Along the study, the impact of each kind of granularity is verified. The important results fromt the study are listed below.
 
 \begin{enumerate}
@@ -143,12 +144,12 @@ Similarly, a study was carried out in Handelsbanken in sweden, which has been wo
 The right value of granularity for an organization is highly influenced by its IT infrastructure. The organization should be capable of handling the complexities such as communication, runtime, infrastructure etc if they choose low granularity. \cite{Pierre-Reldin:2007aa}
 \end{framed}
 
-A single service can be divided into number of granular services by dividing across either Reach, Range or Realm. The basic idea is to make the volume as low as possible as long as it can be supported by IT-infrastructure. Similarly, each dimension is not completely independent from other. For example: If the reach of a service has to be increased from domestic to global in an organization then the realm of the functionality has to be decreased in order to make the volume as low as possible, keep the development and runtime complexities in check. \cite{Pierre-Reldin:2007aa}
+Additionally, it is observed that a single service can be divided into number of granular services by dividing across either Reach, Range or Realm. The basic idea is to make the volume as low as possible as long as it can be supported by IT-infrastructure. Similarly, each dimension is not completely independent from other. For example: If the reach of a service has to be increased from domestic to global in an organization then the realm of the functionality has to be decreased in order to make the volume as low as possible, keep the development and runtime complexities in check. \cite{Pierre-Reldin:2007aa}
 
 \begin{framed}
 \textbf{\textit{Principle: Keep the volume low if possible.}}
 \\
-If supported by IT-infrastructure, it is recommended to keep the volume of service as low as possible by managing the values of Reach, Range and Realm. It will help to development and maintenance overload. \cite{Pierre-Reldin:2007aa}
+If supported by IT-infrastructure, it is recommended to keep the volume of service as low as possible, which can be achieved by managing the values of Reach, Range and Realm. It will help to decrease development and maintenance overload. \cite{Pierre-Reldin:2007aa}
 \end{framed}
 
 
