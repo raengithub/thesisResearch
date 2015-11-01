@@ -1,6 +1,6 @@
 \chapter{Quality of Service}\label{chapter:quality_of_service}
 \section{Introduction}\label{section:quality_of_service/introduction}
-In addition to allign with the business requirements, an important goal of software engineering is to provide high quality. The quality assessment in the context of service oriented product becomes more crucial as the complexity of the system is getting higher by time. \cite{Zhang:2009aa, Goeb:2011aa, Nematzadeh:2014aa} Quality models have been devised over time to evaluate quality of a software. A quality model is defined by quality attributes and quality metrics. Quality attributes are the expected properties of software artifacts defined by the chosen quality model. And, quality metrics give the techniques to measure the quality attributes. \cite{Mancioppi:2015aa} The software quality attributes can again be categorized into two types: internal and external attributes. \cite{Mancioppi:2015aa, Briand:1996aa} The internal quality attributes are the design time attributes which should be fulfilled during the design of the software. Some of the external quality attributes are loose coupling, cohesion, granularity, autonomy etc.\cite{Rostampour:2011aa, Sindhgatta:2015aa, Elhag:2014aa} On the other hand, the external quality attributes are the traits of the software artifacts produced at the end of Software Development Life Cycle \acrshort{SDLC}.Some of them are reusability, maintainability etc. \cite{Elhag:2014aa, Mancioppi:2015aa, Feuerlicht:2007aa, Feuerlicht:2013aa} For that reason, the external quality attributes can only be measure after the end of development. However, it has been evident that internal quality attributes have huge impact upon the value of external quality attributes and thus can be used to predict them. \cite{Henry:1990aa, Briand:2015aa, Alshayeb:2003aa, Bingu-Shim:2008aa}The evaluation of both internal and external quality attributes are valuable in order to produce high quality software.\cite{Mancioppi:2015aa, Perepletchikov:2007aa, Mikhail-Perepletchikov:2015aa}
+In addition to allign with the business requirements, an important goal of software engineering is to provide high quality. The quality assessment in the context of service oriented product becomes more crucial as the complexity of the system is getting higher by time. \cite{Zhang:2009aa, Goeb:2011aa, Nematzadeh:2014aa} Quality models have been devised over time to evaluate quality of a software. A quality model is defined by quality attributes and quality metrics. Quality attributes are the expected properties of software artifacts defined by the chosen quality model. And, quality metrics give the techniques to measure the quality attributes. \cite{Mancioppi:2015aa} The software quality attributes can again be categorized into two types: internal and external attributes. \cite{Mancioppi:2015aa, Briand:1996aa} The internal quality attributes are the design time attributes which should be fulfilled during the design of the software. Some of the external quality attributes are loose coupling, cohesion, granularity, autonomy etc.\cite{Rostampour:2011aa, Sindhgatta:2015aa, Elhag:2014aa} On the other hand, the external quality attributes are the traits of the software artifacts produced at the end of Software Development Life Cycle \acrshort [{SDLC}]. Some of them are reusability, maintainability etc. \cite{Elhag:2014aa, Mancioppi:2015aa, Feuerlicht:2007aa, Feuerlicht:2013aa} For that reason, the external quality attributes can only be measure after the end of development. However, it has been evident that internal quality attributes have huge impact upon the value of external quality attributes and thus can be used to predict them. \cite{Henry:1990aa, Briand:2015aa, Alshayeb:2003aa, Bingu-Shim:2008aa}The evaluation of both internal and external quality attributes are valuable in order to produce high quality software.\cite{Mancioppi:2015aa, Perepletchikov:2007aa, Mikhail-Perepletchikov:2015aa}
 
 \section{Quality Attributes}\label{section:quality_of_service/quality_attributes}
 As already mentioned in section \ref{section:quality_of_service/introduction}, the internal and external qualities determine the overall value of the service composed. There are different researches and studies which have been performed to find the features affecting the service qualities. Based on the published research papers, a comprehensive table \ref{tab:quality_of_service/quality_attributes} has been created. The table provides a minimum list of quality attributes which have been considerd in various research papers. 
@@ -35,4 +35,181 @@ The reusability attribute for a service measures the degree to which it can be u
 \\
 Autonomy is a broad term which refers to the ability of a service for self-containment, self-controlling, self-governance. Autonomy defines the boundary and context of the service. \cite{Ma:2007aa} Finally, granularity is described in chapter \ref{chapter:granularity} in detail. The basic signifance of granularity is the diversity and size of the functionalities offered by the service. \cite{Elhag:2014aa}
 
-\section{Related Work}\label{section:quality_of_service/related_work}
+\section{Quality Metrics}\label{section:quality_of_service/quality_metrics}
+There have been many studies made to define metrics for quality components.A major portion of the research have been done for object oriented and component based development. These metrics are refined to be used in service oriented systems.\cite{Xiao-jun:2015aa, Sindhgatta:2015aa} Firslty, various papers related to quality metrics of service oriented systems are collected. The papers which conducted their findings or proposition based on quality amount of scientific studies and have produced convincing result are only selected.  Additionally, the evaluation presented in the research papers were only done using the case studies of their own and not real life scenarios. Furthermore, they have used diversity of equations to define the quality metrics. On the basis of case studies made in the papers only, a fair comparision and choice of only one way to evaluate the quality metrics cannot be made. This is further added by the fact that the few papers cover most of the quality metrics, most of them focus on only few quality metrics such as coupling but not all of them focus on all the quality metrics. Nevertheless, they do not discuss about the relationship between all quality metrics. \cite{Elhag:2014aa} This creates difficulty to map all the quality metrics into a common calculation family. 
+\\
+With such situation, this section will focus on facilitating the understanding of the metrics. Despite the case that there is no idea of threshold value of metrics discussed to define the optimal quality level, the discussed method can still be used to evaualte the quality along various metrics and compare the various design artifacts. This will definitely help to choose the optimum design based on the criteria. Also, there is complexity in understanding and confusion to follow a single proposed metrics procudure. But, the existing procedures can be broken down further to the simple understandable terms. By doing so, the basic terms which are the driving factors for the quality attributes and at the same time followed by most of the procedures as defined in the papers, can be identified.
+The remaining part of this section consists of tabularized view of various definition proposed for each metrics in the papers.
+%coupling metrics
+\begin{table}[h!]
+  \centering
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{*{14}{|c}|}%%{|c|c|l|}
+  \hline
+  \# & Papers & Metrics Definition \\
+  \hline
+  \hline
+   1 & \cite{Sindhgatta:2015aa} & 
+                    \begin{tabular}{cl}
+                    \multirow{3}{*}{Defines various metrics}
+                    &\acrshort{SOCI} : number of operation of other services invoked by the given service\\
+                    &\acrshort{ISCI} : number of services invoked by a given service\\
+                    &\acrshort{SMCI} : total number of messages from information model required by the operations
+                    \end{tabular}\\
+                    \hline
+   2 & \cite{Xiao-jun:2015aa} &
+                    \begin{tabular}{cl}
+                    \multirow{3}{*}{}
+                    &evaluated as information entropy of a complex service component where entropy is calculated using various \\
+                    &data such as total number of atomic components connected, total number of links to atomic \\ 
+                    &components and total number of atomic components
+                    \end{tabular}\\
+                    \hline
+   3 & \cite{Kazemi:2011aa} & measured by the services required by the given service to complete its functionalities\\
+   \hline
+   4 & \cite{Bingu-Shim:2008aa} & given by the average number of directly connected services\\
+  \hline
+\end{tabular}
+\end{adjustbox}
+  \caption{Coupling Metrics}
+  \label{tab:quality_of_service/quality_attributes/coupling_metrics}
+\end{table}
+
+The table \ref{tab:quality_of_service/quality_attributes/coupling_metrics} shows simpler form of metrics proposed for coupling. The coupling of a service is defined in terms of the number of connections it creates with other services in order to fulfill its functionalities. The connections can be due to the dependency with operations of other services or input expectency of the messages. The more dependency or connection a service has, the coupling increases as well.
+
+
+%cohesion metrics
+\begin{table}[h!]
+  \centering
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{*{14}{|c}|}%%{|c|c|l|}
+  \hline
+  \# & Papers & Metrics Definition \\
+  \hline
+  \hline
+   1 & \cite{Sindhgatta:2015aa} & 
+                    \begin{tabular}{cl}
+                    \multirow{2}{*}{}
+                    &defines \acrshort{SFCI} which measures the fraction of operations using similar messages out of total\\
+                    &number of operations in the service operations of the service
+                    \end{tabular}\\
+                    \hline
+   2 & \cite{Perepletchikov:2007aa} &
+                    \begin{tabular}{cl}
+                    \multirow{3}{*}{Defines various metrics}
+                    &\acrshort{SIDC} : defines cohesiveness as the fraction of operations based on commonality of the messages they operate on\\
+                    &\acrshort{SIUC} : defines the degree of consumption pattern of the service operations which is based on the similarity of consumers of the operations\\ 
+                    &components and total number of atomic components
+                    \end{tabular}\\
+                    \hline
+   3 & \cite{Bingu-Shim:2008aa} & given by the inverse of average number of consumed messages by a service\\
+  \hline
+\end{tabular}
+\end{adjustbox}
+  \caption{Cohesion Metrics}
+  \label{tab:quality_of_service/quality_attributes/cohesion_metrics}
+\end{table}
+
+The table \ref{tab:quality_of_service/quality_attributes/cohesion_metrics} gives simplified view for the cohesion metrics. In the basic way, the cohesion is defined in terms of the commonality of the messages consumed by the operations and similarity in the consumer of the operations.
+
+%granularity metrics
+\begin{table}[h!]
+  \centering
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{*{14}{|c}|}%%{|c|c|l|}
+  \hline
+  \# & Papers & Metrics Definition \\
+  \hline
+  \hline
+   1 & \cite{Sindhgatta:2015aa} & 
+                    given by the number of operations in a service and number of messages consumed by the operations\\
+                    \hline
+   2 & \cite{Saad-Alahmari:2011aa} &
+                    \begin{tabular}{cl}
+                    \multirow{2}{*}{Defines various metrics}
+                    &\acrshort{ODC} : evaluated in terms of number of input and output parameters and their type such as simple, user-defined and complex\\
+                    &Functional Granularity : defined as the level of logic provided by the operations of the services
+                    \end{tabular}\\
+                    \hline
+   3 & \cite{Bingu-Shim:2008aa} & evaluated as the ratio of squared number of operations to the squared number of messages consumed\\
+  \hline
+\end{tabular}
+\end{adjustbox}
+  \caption{Granularity Metrics}
+  \label{tab:quality_of_service/quality_attributes/granularity_metrics}
+\end{table}
+
+The table \ref{tab:quality_of_service/quality_attributes/granularity_metrics} presents various view of granularity metrics based on different research papers. The chapter \ref{chapter:granularity} discuss in detail regarding the topic. Here, the focus is made on the metrics. The granularity is evaluated by the number and type of the parameters, number of operations and number of messages consumed.
+
+
+%Complexity metrics
+\begin{table}[h!]
+  \centering
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{*{14}{|c}|}%%{|c|c|l|}
+  \hline
+  \# & Papers & Metrics Definition \\
+  \hline
+  \hline
+   1 & \cite{Sindhgatta:2015aa} & 
+                    \begin{tabular}{cl}
+                    \multirow{2}{*}{Defines various metrics}
+                    &\acrshort{RCS} : complexity given by the degree of coupling for a service and evaluated as the fraction of its coupling to the total number of services\\
+                    &\acrshort{RIS} : measured as the fraction of number of consumers to the total number of services
+                    \end{tabular}\\
+                    \hline
+   2 & \cite{Saad-Alahmari:2011aa} & given by the total number of operations in a service including synchronous and asynchronous\\
+  \hline
+\end{tabular}
+\end{adjustbox}
+  \caption{Complexity Metrics}
+  \label{tab:quality_of_service/quality_attributes/complexity_metrics}
+\end{table}
+
+\ref{tab:quality_of_service/quality_attributes/complexity_metrics} provides the way to interprete complexity metrics. The complexity is highly dependent upong coupling and functionality granularity of the service.
+
+%Autonomy metrics
+\begin{table}[h!]
+  \centering
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{*{14}{|c}|}%%{|c|c|l|}
+  \hline
+  \# & Papers & Metrics Definition \\
+  \hline
+  \hline
+   1 & \cite{Zhang:2009aa} & 
+                   \begin{tabular}{cl}
+                    \multirow{2}{*}{Defines two metrics}
+                    &\acrshort{SLC} : defined as the degree of control of a service upon its operations to act on its Business entities only\\
+                    &\acrshort{DEP} : given by the degree of coupling of the given service with other services
+                    \end{tabular}\\
+  \hline
+\end{tabular}
+\end{adjustbox}
+  \caption{Autonomy Metrics}
+  \label{tab:quality_of_service/quality_attributes/autonomy_metrics}
+\end{table}
+
+\ref{tab:quality_of_service/quality_attributes/autonomy_metrics} shows a way to interprete autonomy. It is calculated by the difference \acrshort{SLC}-\acrshort{DEP} when \acrshort{SLC} is greater than \acrshort{DEP}. In other cases it is taken as zero. So, autonomy increases as the operations of the services have full control upon its business entities but decreases if the service is dependent upon other services.
+
+%Reusability metrics
+\begin{table}[h!]
+  \centering
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{*{14}{|c}|}%%{|c|c|l|}
+  \hline
+  \# & Papers & Metrics Definition \\
+  \hline
+  \hline
+   1 & \cite{Rostampour:2011aa} & 
+                    defines \acrshort{SRI} as the number of existing consumers of the service\\
+                    \hline
+   2 & \cite{Bingu-Shim:2008aa} & evaluated by subtracting weighted value of cohesion from weighted sum of coupling and service granularity\\
+  \hline
+\end{tabular}
+\end{adjustbox}
+  \caption{Reusability Metrics}
+  \label{tab:quality_of_service/quality_attributes/reusability_metrics}
+\end{table}
+
+The table \ref{tab:quality_of_service/quality_attributes/reusability_metrics} shows the reusability metrics evaluation. Reusability depends upon coupling, cohesion and granularity. It decreases as coupling and granularity increases.

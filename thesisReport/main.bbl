@@ -196,6 +196,29 @@
       \field{type}{techreport}
       \field{year}{1990}
     \endentry
+    \entry{Kazemi:2011aa}{report}{}
+      \name{author}{6}{}{%
+        {{uniquename=0,hash=f073559ea4ebdcc441b4ee503e9e6f6b}{Kazemi}{K\bibinitperiod}{Ali}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7c5ab6f8dbbaf497bf4c40054a1a4ea3}{Azizkandi}{A\bibinitperiod}{Ali\bibnamedelima Nasirzadeh}{A\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=577cbbd290a592761a155d0f58c47e8e}{Rostampour}{R\bibinitperiod}{Ali}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4ce983e8be5236b9e9b22afc880413ef}{Haghighi}{H\bibinitperiod}{Hassan}{H\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ac3fa7065c9e1283af5f18092faf6d64}{Jamshidi}{J\bibinitperiod}{Pooyan}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a886678800c95107568a3a3cea3adcfa}{Shams}{S\bibinitperiod}{Fereidoon}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Automated Software Engineering Research Group}%
+      }
+      \strng{namehash}{f7652251b027a71845221a40f8c8af05}
+      \strng{fullhash}{6af78c8a713843e3f96369ae6bf261f0}
+      \field{labelalpha}{Kaz+11}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Measuring the Conceptual Coupling of Services Using Latent Semantic Indexing}
+      \field{type}{techreport}
+      \field{year}{2011}
+    \endentry
     \entry{Ma:2009aa}{report}{}
       \name{author}{4}{}{%
         {{uniquename=1,hash=beb327f6d227200a9e027ca2b839e2a7}{Ma}{M\bibinitperiod}{Qian}{Q\bibinitperiod}{}{}{}{}}%
