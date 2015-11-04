@@ -1,0 +1,82 @@
+\begin{itemize}[leftmargin=.5in]
+\item the business domain is realized as $ P = \{p_1, p_2...p_s \} $
+\item a set of services realizing an application is defined as $ S = \{s_1, s_2...s_s \} $
+\item for any service $ s \epsilon S$, the set of operations of s is given by $O(s) = \{o_1, o_2,...o_o\}$ and $ |O(s)| $ = O
+\item an operation $ o \epsilon O(s) $ has a set of input and output messages M(o). Then the set of messages of all operations of the service is given by $ M(s) = \cup_{o \epsilon O(s)} M(o)$
+\item the consumers of the service $ s \epsilon S $ is given by $ S_{consumer}(s) = \{ S_{c1}, S_{c2},...S{{cn}\}$
+\end{itemize}
+
+Measuring the Quality of Service Oriented Design
+$ SOCI(s) = | \{ o_{i} \epsilon s_{i}: \exists_{o \epsilon s} calls(o, o_{i}) \wedge s \neq s_{i} \} | $
+
+$ ISCI(s) = | \{ s_{i} : \exists_{o \epsilon s}, \exists_{o_{i} \epsilon s_{i}} calls(o, o_{i}) \wedge s \neq s_{i} \} | $
+
+$ SMCI(s) = | \cup M (o_{i}) : ( o_{i} \epsilon s_{i}) \vee ( \exists_{o \epsilon s}, \exists_{o_{i} \epsilon s_{i} } calls(o, o_{i}) \wedge s \neq s_{i} ) | $
+
+$ SMCI(s) = \frac{max (\mu(m) )}{|O(s)|} $
+If the number of operations using a message m  is \mu(m) where $ m \epsilon M(s) $ and |O(s)| > 0
+
+SRI(s) = P + Q where $ P = | \{ s_{i} : \exists_{o \epsilon s} , \exists_{o_{i} \epsilon s_{i}} calls(o_{i}, o) \wedge s \neq s_{i}} \}|$
+$ Q = |\{ p \epsilon P : s \epsilon p \}|$
+
+Service Granularity: |O(s)| and |M(s)|
+
+Metrics for Evaluating Coupling and Service Granularity in Service Oriented Architecture
+
+Coupling($ S_i $) = $ p \sum_{j=1}^{n_s} (-log(P_L(j)))$ = $ \frac{1}{n} \sum_{j=1}^{n_s} (-log(P_L(j)))$
+
+Measuring the Conceptual Coupling of Services Using Latent Semantic Indexing 
+
+Coupling = $ \frac{\sum_{i \epsilon D} \sum_{k \epsilon O(s)}CCO(i,k)}{|O(s)|.K}$
+
+% A design quality model for Service-Oriented Architecture
+Coupling = $ \frac{number of connected consumer services + number of connected producer services}{total number of services}$
+
+$ cohesion =  \frac{total number of services}{number of messages consumed}$
+
+$ granularity = \frac{square of number of operation}{square of messages consumed}
+
+Cohesion Metrics for Predicting Maintainability of Service-Oriented Software 
+
+$ SIDC = \frac{ |set of operations in a service sharing same parameter types | }{total parameter types} $
+
+$ SIUC = \frac{|operations used by clients|}{number of clients * |O(s)|}$
+
+$ SSUC = \frac{|set of sequentially used operations|}{number of clients * |O(s)|}$
+
+A Metrics Framework for Evaluating SOA Service Granularity
+$ ODG = 1 - \bigg( \frac{ \sum_{i=1}^{n_io} W_{pi}}{ \sum_{i=1}^{n_is} W_{pi}} + \frac{\sum_{j=1}^{n_jo} W_{pj}}{ \sum_{j=1}^{n_js} W_{pj}} \bigg)$
+- $W_{pi}$ is the weight of input parameter
+- $W_{pj}$ is the weight of output parameter
+- $n_io$ is the number of input parameters in an operation
+- $n_jo$ is the number of output parameters in an operation
+- $n_is$ is the number of input parameters in the service
+- $n_js$ is the number of output parameters in the service
+
+$ OFG = $ \frac{W_i(o)}{ \sum_{i=1}{|O(S)|}W_i(o)}
+
+- $W_i(o)$ is the weight of an operation of the service
+- $ |O(S)| $ is the number operations in the service
+
+
+$ SOG = \sum_{i=1}{|O(S)|} ODG(i) * OFG(i) $
+
+Complexity metrics for service-oriented systems
+$ RCS = \frac{CS(s_i)}{|S|}$
+$ RIS = \frac{IS(s_i)}{|S|}$
+refer to the document for effect of RCS and RIS on complixity
+
+Measures of Structural Complexity and Service Autonomy
+
+$ SLC = \frac{1}{h_2 - l_2 + 1} \sum_{i= l_2}^{h_2} \sum_{sr \epsilon SR} (BE_{i,sr} X V_{sr})$
+
+\begin{comment}
+$ DEP = \frac{\sum_{j= l_{1i}}^{h_{1i}}\sum_{k=1}^{#BE}V_{sr_{jk}} - \sum_{j= l_{1i}}^{h_{1i}}\sum_{k=l2_i}^{h2_i} V_{sr_{jk}}{nc}$
+\end{comment}
+
+$ DEP = \frac{\sum_{j=L1_i}^{h1_i} \sum_{k=1}^{BE} V_{sr_{jk}} - \sum_{j=L1_i}^{h1_i} \sum_{k=L2_i}^{j2_i} V_{sr_{jk}} }{nc}$
+ - nc is the number of relations with other services
+ - $ V_{sr_{jk} $ is the corresponding value of the action in jkth element of CRUD matrix, it gives the weight of corresponding business capability affecting a business entity
+- $ l1_i, h1_i, l2_i, h2_i$ are bounding indices in CRUD of ith service
+
+Autonomy = SLC - DEP if SLC>DEP else 0

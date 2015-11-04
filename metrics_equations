@@ -1,0 +1,12 @@
+
+Measures of Structural Complexity and Service Autonomy
+
+$ SLC = \frac{1}{h_2 - l_2 + 1} \sum_{i= l_2}^{h_2} \sum_{sr \epsilon SR} (BE_{i,sr} X V_{sr})$
+
+
+$ DEP = \frac{\sum_{j=L1_i}^{h1_i} \sum_{k=1}^{BE} V_{sr_{jk}} - \sum_{j=L1_i}^{h1_i} \sum_{k=L2_i}^{j2_i} V_{sr_{jk}} }{nc}$
+ - nc is the number of relations with other services
+ - $ V_{sr_{jk} $ is the corresponding value of the action in jkth element of CRUD matrix, it gives the weight of corresponding business capability affecting a business entity
+- $ l1_i, h1_i, l2_i, h2_i$ are bounding indices in CRUD of ith service
+
+Autonomy = SLC - DEP if SLC>DEP else 0

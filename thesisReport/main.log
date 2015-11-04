@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  1 NOV 2015 23:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  4 NOV 2015 17:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1671,9 +1671,32 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen257
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks58
+\thm@bodyfont=\toks59
+\thm@headfont=\toks60
+\thm@notefont=\toks61
+\thm@headpunct=\toks62
+\thm@preskip=\skip88
+\thm@postskip=\skip89
+\thm@headsep=\skip90
+\dth@everypar=\toks63
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip91
+\enit@outerparindent=\dimen258
+\enit@toks=\toks64
+\enit@inbox=\box54
+\enitdp@description=\count355
 )
 (./settings/settings.tex
 \glswrite=\write5
@@ -1689,13 +1712,33 @@ Package glossaries Info: Writing glossary file main.acn on input line 8.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 ))
-(./settings/commands.tex) (./glossary/terms.tex) (./glossary/acronyms.tex)
+(./settings/commands.tex) (./glossary/terms.tex) (./glossary/acronyms.tex
+
+! Package glossaries Error: Glossary entry `RCS' has already been defined.
+
+See the glossaries package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...ym{RCS}{RCS}{Relative Coupling of Service}
+                                                  
+? 
+
+! Package glossaries Error: Glossary entry `RIS' has already been defined.
+
+See the glossaries package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...{RIS}{RIS}{Relative Importance of Service}
+                                                  
+? 
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package biblatex Info: Trying to load language 'american'...
 Package biblatex Info: ... file 'american.lbx' found.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/american.lbx
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/american.lbx
 File: american.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -1742,17 +1785,17 @@ Package biblatex Info: Reference section=0 on input line 15.
 Package biblatex Info: Reference segment=0 on input line 15.
  (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count355
-\scratchdimen=\dimen258
-\scratchbox=\box54
-\nofMPsegments=\count356
-\nofMParguments=\count357
-\everyMPshowfont=\toks58
-\MPscratchCnt=\count358
-\MPscratchDim=\dimen259
-\MPnumerator=\count359
-\makeMPintoPDFobject=\count360
-\everyMPtoPDFconversion=\toks59
+\scratchcounter=\count356
+\scratchdimen=\dimen259
+\scratchbox=\box55
+\nofMPsegments=\count357
+\nofMParguments=\count358
+\everyMPshowfont=\toks65
+\MPscratchCnt=\count359
+\MPscratchDim=\dimen260
+\MPnumerator=\count360
+\makeMPintoPDFobject=\count361
+\everyMPtoPDFconversion=\toks66
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1768,7 +1811,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count361
+\c@lstlisting=\count362
 Package scrhack Info: undefining \float@addtolists on input line 15.
 
 ABD: EveryShipout initializing macros
@@ -1798,7 +1841,7 @@ Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box55
+\AtBeginShipoutBox=\box56
 Package hyperref Info: Link coloring OFF on input line 15.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1807,7 +1850,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count362
+\c@section@level=\count363
 )
 LaTeX Info: Redefining \ref on input line 15.
 LaTeX Info: Redefining \pageref on input line 15.
@@ -1820,13 +1863,13 @@ LaTeX Info: Redefining \nameref on input line 15.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
 line 15.
  (./pages/cover.tex
-<logos/tum.png, id=71, 53.4798pt x 28.6671pt>
+<logos/tum.png, id=99, 53.4798pt x 28.6671pt>
 File: logos/tum.png Graphic file (type png)
  <use logos/tum.png>
 Package pdftex.def Info: logos/tum.png used on input line 13.
 (pdftex.def)             Requested size: 113.81102pt x 61.01012pt.
 
-<logos/faculty.png, id=72, 34.2078pt x 37.0986pt>
+<logos/faculty.png, id=100, 34.2078pt x 37.0986pt>
 File: logos/faculty.png Graphic file (type png)
  <use logos/faculty.png>
 Package pdftex.def Info: logos/faculty.png used on input line 31.
@@ -1935,7 +1978,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 26
 ] (./chapters/quality_of_service.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 2.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 14.
 
 ! Package glossaries Error: Glossary entry `.' has not been defined.
 
@@ -1943,7 +1986,7 @@ See the glossaries package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3 ...Development Life Cycle \acrshort [{SDLC}]. 
+l.15 ...evelopment Life Cycle \acrshort [{SDLC}]. 
                                                   Some of them are reusabili...
 
 ? 
@@ -1954,7 +1997,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.31 
+l.43 
       [1
 
 
@@ -1962,32 +2005,269 @@ l.31
 ]
 
 LaTeX Warning: Reference `chapter:granularity' on page 2 undefined on input lin
-e 36.
+e 48.
 
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/pplx/m/it' tried instead on input line 77.
+(Font)              Font shape `T1/pplx/m/it' tried instead on input line 56.
 [2]
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 57.
+LaTeX Font Info:    Try loading font information for OMS+pplx on input line 62.
+
+LaTeX Font Info:    No file OMSpplx.fd. on input line 62.
+
+
+LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 62.
+
+
+Overfull \hbox (6.93349pt too wide) in paragraph at lines 62--63
+[]\T1/pplx/m/n/10.95 (-20) the busi-ness do-main is re-al-ized with var-i-ous p
+ro-cesses de-fined as $\OML/zplm/m/it/10.95 P \OT1/zplm/m/n/10.95 = \OMS/zplm/m
+/n/10.95 f\OML/zplm/m/it/10.95 p[]\OT1/pplx/m/n/10.95 (-20) , \OML/zplm/m/it/10
+.95 p[]\OT1/pplx/m/n/10.95 (-20) ...\OML/zplm/m/it/10.95 p[]\OMS/zplm/m/n/10.95
+ g$ 
+ []
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.66 ...sumer}(s) = \{ S_{c1}, S_{2},...S{{n_c}\}$
+                                                  ; $n_c$ gives the number o...
+
+? 
+[3]
+! Missing } inserted.
+<inserted text> 
+                }
+l.67 ...ducer}(s) = \{ S_{c1}, S_{2},...S{{n_p}\}$
+                                                  ; $n_p$ gives the number o...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 \subsection
+                {Coupling Metrics}{\label{section:quality_of_service/quality...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 \cite
+          {Xiao-jun:2015aa} defines
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 \cite
+          {Kazemi:2011aa} defines
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 110--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--169
+
+ []
+
+[5]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 w
+       here,
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
+
+ []
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.190 \item
+            $n_{pt}$ is the total number of distinct parameter types in the ...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.190 \item $
+             n_{pt}$ is the total number of distinct parameter types in the ...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.190 \item $
+             n_{pt}$ is the total number of distinct parameter types in the ...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.190 \item $n_
+               {pt}$ is the total number of distinct parameter types in the ...
+
+? 
+! Undefined control sequence.
+l.193 \emd
+          {itemize}
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.197 \\w
+         here,
+? 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6]
+! Display math should end with $$.
+<to be read again> 
+                    
+l.252 ...\frac{W_i(o)}{ \sum_{i=1}{|O(S)|}W_i(o)}$
+                                                  
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--259
+
+ []
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.285                     &
+                           \acrshort{SOG} : defined by the sum of product of...
+
+? 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+LaTeX Warning: Reference `chapter:granularity' on page 7 undefined on input lin
+e 296.
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 304--308
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 315--319
+
+ []
+
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[8]
 
-LaTeX Warning: Reference `chapter:granularity' on page 3 undefined on input lin
-e 142.
+! LaTeX Error: There's no line here to end.
 
-[3]) [4] (./main.acr [5]
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369 w
+       here,
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 369--371
+
+ []
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.373 \item $ V_{sr_{jk} $
+                           is the corresponding value of the action in jkth ...
+
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.390                     &
+                           autonomy is given by the difference of \acrshort{...
+
+? 
+[9]
+! Extra }, or forgotten $.
+l.406 ...{i}} calls(o_{i}, o) \wedge s \neq s_{i}}
+                                                   \}|$$ and
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.409 \\ \cite
+              {Bingu-Shim:2008aa} defines
+? 
+) (./main.acr [10]
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 5.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmss.fd
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) [6
+) [11
 
 
 
@@ -1999,7 +2279,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 48
 \tf@lof=\write10
 \openout10 = `main.lof'.
 
-[7
+ [12
 
 
 ]
@@ -2009,22 +2289,35 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 49
 \tf@lot=\write11
 \openout11 = `main.lot'.
 
- [8
+ [13
 
 
-] [9
+] [14
 
 
 ]
 No complaints by nag.
-[10]
+[15]
+
+! LaTeX Error: \begin{itemize} on input line 188 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 \end{document}
+                   
+? 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
- (./main.aux)
+(./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 41613DECA041283E058476CDF70BE396;531.
+(rerunfilecheck)             Checksum: 97A74DD3FAD4371351D775A1ED1A7953;1034.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
@@ -2032,24 +2325,58 @@ LaTeX Warning: There were undefined references.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
- ) 
+ )
+(\end occurred inside a group at level 8)
+
+### simple group (level 8) entered at line 402 ({)
+### simple group (level 7) entered at line 352 ({)
+### simple group (level 6) entered at line 300 ({)
+### simple group (level 5) entered at line 239 ({)
+### semi simple group (level 4) entered at line 188 (\begingroup)
+### simple group (level 3) entered at line 162 ({)
+### simple group (level 2) entered at line 72 ({)
+### simple group (level 1) entered at line 57 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 44798 strings out of 493089
- 957332 string characters out of 6134843
- 1634942 words of memory out of 5000000
- 47110 multiletter control sequences out of 15000+600000
- 45695 words of font info for 204 fonts, out of 8000000 for 9000
+ 45631 strings out of 493089
+ 969040 string characters out of 6134843
+ 1641876 words of memory out of 5000000
+ 47866 multiletter control sequences out of 15000+600000
+ 56296 words of font info for 246 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,19n,95p,2011b,1652s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (16 pages, 101093 bytes).
+ 75i,18n,95p,2011b,2656s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{glo:SOG} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:SDG} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:SCG} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:ODG} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:OFG} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:SSUC} has been referenced but does not exist, r
+eplaced by a fixed one
+
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (21 pages, 150379 bytes).
 PDF statistics:
- 314 PDF objects out of 1000 (max. 8388607)
- 271 compressed objects within 3 object streams
- 72 named destinations out of 1000 (max. 500000)
- 28871 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 449 PDF objects out of 1000 (max. 8388607)
+ 395 compressed objects within 4 object streams
+ 90 named destinations out of 1000 (max. 500000)
+ 29439 words of extra memory for PDF output out of 29859 (max. 10000000)
 

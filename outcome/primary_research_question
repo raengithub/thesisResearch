@@ -1,0 +1,29 @@
+Understand and document; 
+what is microservice; 
+how does the architecture look like; 
+how is it done in Hybris; 
+
+
+In Hybris:
+What are these 11 domains; 
+Which are the services at mashup layers, business layer and the core services;
+
+High level decisions why the 11 services look the way they look like.
+
+
+Classical service oriented design - comparision; (or b/w monolithic and micro services)
+
+
+Doc the design 
+
+Desin guidelines and Principles; 
+Promises - transactions;
+
+Anecdotes - examples; trade-offs; 
+Rules; Dangers - What to do and what not to do (Pitfalls - Antipatterns)
+
+Notifications and events; how to handle them; how communication is handled in microservices?
+how transactions are handled? what happens if any service failes along the business usecase?
+
+DevOps how is it done? How is failure handled?
+

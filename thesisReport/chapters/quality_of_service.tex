@@ -1,4 +1,16 @@
+%comment from Manoj
+\begin{comment}
+try to reference ISO/IEC 9126 for the quality attributes: refer to the slides sent by Manoj on Nov 02
+Also include the formula of the metrics and discuss about them and simplify them: refer to the slides sent by Manoj on Nov 02
+The quality attributes which can make more sense according to the priority to microservices: refer to the slides sent by Manoj on Nov 02
+Relationship between the quality attributes and their tradeoffs, what happens when we try to increase cohesion.. how it affect other attributes?
+create wiki page in the sebis page to document the literature review.
+\end{comment}
+
+
+
 \chapter{Quality of Service}\label{chapter:quality_of_service}
+
 \section{Introduction}\label{section:quality_of_service/introduction}
 In addition to allign with the business requirements, an important goal of software engineering is to provide high quality. The quality assessment in the context of service oriented product becomes more crucial as the complexity of the system is getting higher by time. \cite{Zhang:2009aa, Goeb:2011aa, Nematzadeh:2014aa} Quality models have been devised over time to evaluate quality of a software. A quality model is defined by quality attributes and quality metrics. Quality attributes are the expected properties of software artifacts defined by the chosen quality model. And, quality metrics give the techniques to measure the quality attributes. \cite{Mancioppi:2015aa} The software quality attributes can again be categorized into two types: internal and external attributes. \cite{Mancioppi:2015aa, Briand:1996aa} The internal quality attributes are the design time attributes which should be fulfilled during the design of the software. Some of the external quality attributes are loose coupling, cohesion, granularity, autonomy etc.\cite{Rostampour:2011aa, Sindhgatta:2015aa, Elhag:2014aa} On the other hand, the external quality attributes are the traits of the software artifacts produced at the end of Software Development Life Cycle \acrshort [{SDLC}]. Some of them are reusability, maintainability etc. \cite{Elhag:2014aa, Mancioppi:2015aa, Feuerlicht:2007aa, Feuerlicht:2013aa} For that reason, the external quality attributes can only be measure after the end of development. However, it has been evident that internal quality attributes have huge impact upon the value of external quality attributes and thus can be used to predict them. \cite{Henry:1990aa, Briand:2015aa, Alshayeb:2003aa, Bingu-Shim:2008aa}The evaluation of both internal and external quality attributes are valuable in order to produce high quality software.\cite{Mancioppi:2015aa, Perepletchikov:2007aa, Mikhail-Perepletchikov:2015aa}
 
@@ -39,11 +51,76 @@ Autonomy is a broad term which refers to the ability of a service for self-conta
 There have been many studies made to define metrics for quality components.A major portion of the research have been done for object oriented and component based development. These metrics are refined to be used in service oriented systems.\cite{Xiao-jun:2015aa, Sindhgatta:2015aa} Firslty, various papers related to quality metrics of service oriented systems are collected. The papers which conducted their findings or proposition based on quality amount of scientific studies and have produced convincing result are only selected.  Additionally, the evaluation presented in the research papers were only done using the case studies of their own and not real life scenarios. Furthermore, they have used diversity of equations to define the quality metrics. On the basis of case studies made in the papers only, a fair comparision and choice of only one way to evaluate the quality metrics cannot be made. This is further added by the fact that the few papers cover most of the quality metrics, most of them focus on only few quality metrics such as coupling but not all of them focus on all the quality metrics. Nevertheless, they do not discuss about the relationship between all quality metrics. \cite{Elhag:2014aa} This creates difficulty to map all the quality metrics into a common calculation family. 
 \\
 With such situation, this section will focus on facilitating the understanding of the metrics. Despite the case that there is no idea of threshold value of metrics discussed to define the optimal quality level, the discussed method can still be used to evaualte the quality along various metrics and compare the various design artifacts. This will definitely help to choose the optimum design based on the criteria. Also, there is complexity in understanding and confusion to follow a single proposed metrics procudure. But, the existing procedures can be broken down further to the simple understandable terms. By doing so, the basic terms which are the driving factors for the quality attributes and at the same time followed by most of the procedures as defined in the papers, can be identified.
-The remaining part of this section consists of tabularized view of various definition proposed for each metrics in the papers.
+\\
+The remaining part of this section will attempt to collaborate the metrics definitions proposed in various papers, analyze them to identify their conceptual base of measurement in simplest form.
+
+\subsection{Context and Notations}{\label{section:quality_of_service/quality_metrics/context_and_notations}
+
+Before looking into the definitions of metrics, it will help understanding, to know related terms, assumptions and their respective notations. 
+
+\begin{itemize}[leftmargin=.5in]
+\item the business domain is realized with various processes defined as $ P = \{p_1, p_2...p_s \} $
+\item a set of services realizing the application is defined as $ S = \{s_1, s_2...s_s \} $; $s_s$ is the total number of services in the application
+\item for any service $ s \epsilon S$, the set of operations provided by s is given by $O(s) = \{o_1, o_2,...o_o\}$ and $ |O(s)| $ = O
+\item if an operation $ o \epsilon O(s) $ has a set of input and output messages given by M(o). Then the set of messages of all operations of the service is given by $ M(s) = \cup_{o \epsilon O(s)} M(o)$
+\item the consumers of the service $ s \epsilon S $ is given by $ S_{consumer}(s) = \{ S_{c1}, S_{2},...S{{n_c}\}$; $n_c$ gives the number of consumer services
+\item the producers for the service or the number of services to which the given service $ s \epsilon S $ is dependent upon is given by $ S_{producer}(s) = \{ S_{c1}, S_{2},...S{{n_p}\}$; $n_p$ gives the number of producer services
+\end{itemize}
+
+\\
 %coupling metrics
+\subsection{Coupling Metrics}{\label{section:quality_of_service/quality_metrics/coupling}
+
+\cite{Sindhgatta:2015aa} defines following metrics to determine coupling
+$$ \acrshort{SOCI}(s) = | \{ o_{i} \epsilon s_{i}: \exists_{o \epsilon s} calls(o, o_{i}) \wedge s \neq s_{i} \} | $$
+
+$$ \acrshort{ISCI}(s) = | \{ s_{i} : \exists_{o \epsilon s}, \exists_{o_{i} \epsilon s_{i}} calls(o, o_{i}) \wedge s \neq s_{i} \} | $$
+
+$$ \acrshort{SMCI}(s) = | \cup M (o_{i}) : ( o_{i} \epsilon s_{i}) \vee ( \exists_{o \epsilon s}, \exists_{o_{i} \epsilon s_{i} } calls(o, o_{i}) \wedge s \neq s_{i} ) | $$
+
+where, \\
+\begin{itemize}[leftmargin=.5in]
+\item $ call(o, o_i) $ represents the call made from service 'o' to service '$o_i$'
+\end{itemize}
+\\
+\cite{Xiao-jun:2015aa} defines 
+$$Coupling(S_i) =  p \sum_{j=1}^{n_s} (-log(P_L(j)))$$
+$$= \frac{1}{n} \sum_{j=1}^{n_s} (-log(P_L(j)))$$
+
+where, \\
+\begin{itemize}[leftmargin=.5in]
+\item $n_s$ is the total number of services connected
+\item 'n' is the total number of services in the entire application
+\item $p = \frac{1}{n}$ gives the probability of a service participating in any connection
+\end{itemize}
+\\
+\cite{Kazemi:2011aa} defines
+$$Coupling = \frac{\sum_{i \epsilon D_s} \sum_{k \epsilon O(s)}CCO(i,k)}{|O(s)|.K}$$
+where, \\
+\begin{itemize}[leftmargin=.5in]
+\item $D_s = \{ D_1, D_2,...D_k \}$ is set of dependencies the service has on other services
+\item $ k = |D_s| $
+\item CCO is Conceptual Coupling betweeen service operations and obtained from CRUD matrix table constructed with business entities and business capabilities
+\end{itemize}
+
+\cite{Bingu-Shim:2008aa} defines
+$$coupling(s) =  \frac{n_c + n_p}{n_s}$$
+
+\cite{Saad-Alahmari:2011aa} defines
+$$coupling = \frac{\sum{i=1}^{|O(s)|} (S_{i,sync} + S_{i,async})}{|S|}$$
+\\
+where,
+\\
+\begin{itemize}[leftmargin=.5in]
+\item $S_{i,sync}$ is the synchronous invocation in the operation $O_i$
+\item $S_{i,async}$ is the asynchronous invocation in the operation $O_i$
+\end{itemize}
+
+
 \begin{table}[h!]
   \centering
   \begin{adjustbox}{max width=\textwidth}
+  \normalsize
   \begin{tabular}{*{14}{|c}|}%%{|c|c|l|}
   \hline
   \# & Papers & Metrics Definition \\
@@ -51,7 +128,8 @@ The remaining part of this section consists of tabularized view of various defin
   \hline
    1 & \cite{Sindhgatta:2015aa} & 
                     \begin{tabular}{cl}
-                    \multirow{3}{*}{Defines various metrics}
+                    \multirow{3}{*}{
+                    }
                     &\acrshort{SOCI} : number of operation of other services invoked by the given service\\
                     &\acrshort{ISCI} : number of services invoked by a given service\\
                     &\acrshort{SMCI} : total number of messages from information model required by the operations
@@ -60,15 +138,17 @@ The remaining part of this section consists of tabularized view of various defin
    2 & \cite{Xiao-jun:2015aa} &
                     \begin{tabular}{cl}
                     \multirow{3}{*}{}
-                    &evaluated as information entropy of a complex service component where entropy is calculated using various \\
+                    &Coupling is evaluated as information entropy of a complex service component where entropy is calculated using various \\
                     &data such as total number of atomic components connected, total number of links to atomic \\ 
                     &components and total number of atomic components
                     \end{tabular}\\
                     \hline
-   3 & \cite{Kazemi:2011aa} & measured by the services required by the given service to complete its functionalities\\
+   3 & \cite{Kazemi:2011aa} & The coupling is measured by using the dependency of a service operations with operations of other services. Additionally, the dependency is considered to have different weight value for each kind of operation such as Create, Read, Update, Delete (CRUD) and based on the type of business entity involved. The weight is referred from the CRUD matrix constructed in the process.\\
    \hline
    4 & \cite{Bingu-Shim:2008aa} & given by the average number of directly connected services\\
   \hline
+   5 & \cite{Saad-Alahmari:2011aa} & defines coupling as the average number of synchronous and asynchronous invocations in all the operations of the service\\
+   \hline
 \end{tabular}
 \end{adjustbox}
   \caption{Coupling Metrics}
@@ -79,6 +159,47 @@ The table \ref{tab:quality_of_service/quality_attributes/coupling_metrics} shows
 
 
 %cohesion metrics
+\subsection{Cohesion Metrics}{\label{section:quality_of_service/quality_metrics/cohesion}
+
+\cite{Sindhgatta:2015aa} defines following metric for cohesion.
+$$ \acrshort{SFCI}(s) = \frac{max (\mu(m) )}{|O(s)|} $$
+\\
+where,
+\\
+\begin{itemize}[leftmargin=.5in]
+\item the number of operations using a message 'm'  is $\mu(m)$ such that $ m \epsilon M(s) $ and |O(s)| > 0
+\end{itemize}
+
+\cite{Bingu-Shim:2008aa} defines
+$$ cohesion =  \frac{n_s}{|M(s)|}$$
+
+\cite{Perepletchikov:2007aa} defines
+
+$$ \acrshort{SIDC} = \frac{ n_{op} }{n_{pt}} $$
+
+$$ \acrshort{SIUC} = \frac{n_{oc}}{n_c * |O(s)|}$$
+
+$$ \acrshort{SSUC} = \frac{n_{so}}{n_c * |O(s)|}$$
+
+\\
+where,
+\\
+\\where,
+\begin{itemize}[leftmargin=.5in]
+\item $n_{op}$ is the number of operations in the service which share the same parameter types$
+\item $n_{pt}$ is the total number of distinct parameter types in the service
+\item $n_{oc}$ is the total number of operations in the service used by consumers
+\item $n_{so}$ is the total number of sequentially accessed operations by the clients of the service
+\emd{itemize}
+\cite{Saad-Alahmari:2011aa} defines
+$$ cohesion = \frac{max(\mu(\acrshort{OFG}, \acrshort{ODG}))}{|O(s)|} $$
+
+\\where,
+\begin{itemize}[leftmargin=.5in]
+\item \acrshort{OFG} and \acrshort{ODG} are Operation Gunctionality Granularity and Operation Data Granularity respectively as calculated in section \ref{section:quality_of_service/quality_metrics/granularity}
+\item $\mu(\acrshort{OFG}, \acrshort{ODG})$ gives the number of operations with specific value of \acrshort{OFG} and \acrshort{ODG}
+\end{itemize}
+
 \begin{table}[h!]
   \centering
   \begin{adjustbox}{max width=\textwidth}
@@ -96,13 +217,15 @@ The table \ref{tab:quality_of_service/quality_attributes/coupling_metrics} shows
                     \hline
    2 & \cite{Perepletchikov:2007aa} &
                     \begin{tabular}{cl}
-                    \multirow{3}{*}{Defines various metrics}
+                    \multirow{4}{*}{}
                     &\acrshort{SIDC} : defines cohesiveness as the fraction of operations based on commonality of the messages they operate on\\
-                    &\acrshort{SIUC} : defines the degree of consumption pattern of the service operations which is based on the similarity of consumers of the operations\\ 
-                    &components and total number of atomic components
+                    &\acrshort{SIUC} : defines the degree of consumption pattern of the service operations\\                     &which is based on the similarity of consumers of the operations\\ 
+                    &\acrshort{SSUC} : defines the cohesion based on the sequential consumption behavior of more than one operations of a service by other services
                     \end{tabular}\\
                     \hline
-   3 & \cite{Bingu-Shim:2008aa} & given by the inverse of average number of consumed messages by a service\\
+   3 & \cite{Bingu-Shim:2008aa} & cohesion is given by the inverse of average number of consumed messages by a service\\
+   \hline
+   4 & \cite{Saad-Alahmari:2011aa} & cohesion is defined as the consensus among the operations of the service regarding the functionality and data granularity which represents the type of parameters and the operations importance as calculated in the section \ref{section:quality_of_service/quality_metrics/granularity}\\
   \hline
 \end{tabular}
 \end{adjustbox}
@@ -113,6 +236,36 @@ The table \ref{tab:quality_of_service/quality_attributes/coupling_metrics} shows
 The table \ref{tab:quality_of_service/quality_attributes/cohesion_metrics} gives simplified view for the cohesion metrics. In the basic way, the cohesion is defined in terms of the commonality of the messages consumed by the operations and similarity in the consumer of the operations.
 
 %granularity metrics
+\subsection{Granularity Metrics}{\label{section:quality_of_service/quality_metrics/granularity}
+
+\cite{Sindhgatta:2015aa} defines
+$$ \acrshort{SCG} = |O(s)| $$ 
+$$ \acrshort{SDG} = |M(s)| $$
+
+\cite{Bingu-Shim:2008aa} defines
+$$ granularity = \frac{|O(s)|^2}{|M(s)|^2}$$
+
+\cite{Saad-Alahmari:2011aa} defines
+
+$$ ODG = 1 - \bigg( \frac{ \sum_{i=1}^{n_io} W_{pi}}{ \sum_{i=1}^{n_is} W_{pi}} + \frac{\sum_{j=1}^{n_jo} W_{pj}}{ \sum_{j=1}^{n_js} W_{pj}} \bigg)$$
+
+$$ OFG = \frac{W_i(o)}{ \sum_{i=1}{|O(S)|}W_i(o)}$
+
+
+$$ SOG = \sum_{i=1}^{|O(S)|} ODG(i) * OFG(i) $$
+\\
+where,
+\\
+\begin{itemize}[leftmargin=.5in]
+\item $W_{pi}$ is the weight of input parameter
+\item $W_{pj}$ is the weight of output parameter
+\item $n_io$ is the number of input parameters in an operation
+\item $n_jo$ is the number of output parameters in an operation
+\item $n_is$ is the total number of input parameters in the service
+\item $n_js$ is the total number of output parameters in the service
+\item $W_i(o)$ is the weight of an operation of the service
+\item $ |O(S)| $ is the number operations in the service
+\end{itemize}
 \begin{table}[h!]
   \centering
   \begin{adjustbox}{max width=\textwidth}
@@ -122,16 +275,17 @@ The table \ref{tab:quality_of_service/quality_attributes/cohesion_metrics} gives
   \hline
   \hline
    1 & \cite{Sindhgatta:2015aa} & 
-                    given by the number of operations in a service and number of messages consumed by the operations\\
+                    the service capability granularity is given by the number of operations in a service and the data granularity by the number of messages consumed by the operations of the service\\
                     \hline
    2 & \cite{Saad-Alahmari:2011aa} &
                     \begin{tabular}{cl}
-                    \multirow{2}{*}{Defines various metrics}
-                    &\acrshort{ODC} : evaluated in terms of number of input and output parameters and their type such as simple, user-defined and complex\\
-                    &Functional Granularity : defined as the level of logic provided by the operations of the services
+                    \multirow{2}{*}{}
+                    &\acrshort{ODG} : evaluated in terms of number of input and output parameters and their type such as simple, user-defined and complex\\
+                    &\acrshort{OFG} : defined as the level of logic provided by the operations of the services
+                    &\acrshort{SOG} : defined by the sum of product of data granularity and functionality granularity for all operations in the service
                     \end{tabular}\\
                     \hline
-   3 & \cite{Bingu-Shim:2008aa} & evaluated as the ratio of squared number of operations to the squared number of messages consumed\\
+   3 & \cite{Bingu-Shim:2008aa} & evaluated as the ratio of squared number of operations of the service to the squared number of messages consumed by the service\\
   \hline
 \end{tabular}
 \end{adjustbox}
@@ -143,6 +297,32 @@ The table \ref{tab:quality_of_service/quality_attributes/granularity_metrics} pr
 
 
 %Complexity metrics
+\subsection{Complexity Metrics}{\label{section:quality_of_service/quality_metrics/complexity}
+
+\cite{Zhang:2009aa} defines
+$$ \acrshort{RCS} = \frac{CS(s_i)}{|S|}$$
+$$ \acrshort{RIS} = \frac{IS(s_i)}{|S|}$$
+\\
+where,
+\\
+\begin{itemize}[leftmargin=.5in]
+\item $CS(s_i)$ gives coupling value of a service
+\item $IS(s_i)$ gives importance weight of a service in an application
+\item |S| is the number of services to realize the application
+\end{itemize}
+
+\cite{Saad-Alahmari:2011aa} defines
+$$ Complexity(s) = \frac{\sum_{i=1}^{|O(s)|}(SOG(i))^2}{|S|}$$
+\\
+where,
+\\
+\begin{itemize}[leftmargin=.5in]
+\item |S| is the number of services to realize the application
+\item SOG(i) gives the granularity of ith service calculated as described in section \ref{section:quality_of_service/quality_metrics/granularity}
+\end{itemize}
+
+refer to the document for effect of RCS and RIS on complixity
+
 \begin{table}[h!]
   \centering
   \begin{adjustbox}{max width=\textwidth}
@@ -151,14 +331,14 @@ The table \ref{tab:quality_of_service/quality_attributes/granularity_metrics} pr
   \# & Papers & Metrics Definition \\
   \hline
   \hline
-   1 & \cite{Sindhgatta:2015aa} & 
+   1 & \cite{Zhang:2009aa} & 
                     \begin{tabular}{cl}
-                    \multirow{2}{*}{Defines various metrics}
+                    \multirow{2}{*}{}
                     &\acrshort{RCS} : complexity given by the degree of coupling for a service and evaluated as the fraction of its coupling to the total number of services\\
-                    &\acrshort{RIS} : measured as the fraction of number of consumers to the total number of services
+                    &\acrshort{RIS} : measured as the fraction of total dependency weight of consumers upon the service to the total number of services
                     \end{tabular}\\
                     \hline
-   2 & \cite{Saad-Alahmari:2011aa} & given by the total number of operations in a service including synchronous and asynchronous\\
+   2 & \cite{Saad-Alahmari:2011aa} & the complexity is calculated using the granunarity of service operations\\
   \hline
 \end{tabular}
 \end{adjustbox}
@@ -169,6 +349,31 @@ The table \ref{tab:quality_of_service/quality_attributes/granularity_metrics} pr
 \ref{tab:quality_of_service/quality_attributes/complexity_metrics} provides the way to interprete complexity metrics. The complexity is highly dependent upong coupling and functionality granularity of the service.
 
 %Autonomy metrics
+\subsection{Autonomy Metrics}{\label{section:quality_of_service/quality_metrics/autonomy}
+\cite{Rostampour:2011aa} defines
+
+$$ SLC = \frac{1}{h_2 - l_2 + 1} \sum_{i= l_2}^{h_2} \sum_{sr \epsilon SR} (BE_{i,sr} X V_{sr})$$
+
+
+$$ DEP = \frac{\sum_{j=L1_i}^{h1_i} \sum_{k=1}^{BE} V_{sr_{jk}} - \sum_{j=L1_i}^{h1_i} \sum_{k=L2_i}^{j2_i} V_{sr_{jk}} }{nc}$$
+
+$$
+\mbox{autonomy}=\left\{
+\begin{array}{rl}
+\acrshort{SLC} - \acrshort{DEP} & \mbox{if SLC > DEP} \\
+0 & \mbox{otherwise}
+\end{array} \right.
+$$
+
+\\
+where,
+\\
+\begin{itemize}[leftmargin=.5in]
+\item nc is the number of relations with other services
+\item $ V_{sr_{jk} $ is the corresponding value of the action in jkth element of CRUD matrix, it gives the weight of corresponding business capability affecting a business entity
+\item $ l1_i, h1_i, l2_i, h2_i$ are bounding indices in CRUD matrix of ith service
+\end{itemize}
+ 
 \begin{table}[h!]
   \centering
   \begin{adjustbox}{max width=\textwidth}
@@ -177,11 +382,12 @@ The table \ref{tab:quality_of_service/quality_attributes/granularity_metrics} pr
   \# & Papers & Metrics Definition \\
   \hline
   \hline
-   1 & \cite{Zhang:2009aa} & 
+   1 & \cite{Rostampour:2011aa} & 
                    \begin{tabular}{cl}
-                    \multirow{2}{*}{Defines two metrics}
+                    \multirow{2}{*}{}
                     &\acrshort{SLC} : defined as the degree of control of a service upon its operations to act on its Business entities only\\
                     &\acrshort{DEP} : given by the degree of coupling of the given service with other services
+                    &autonomy is given by the difference of \acrshort{SLC} and \acrshort{DEP} if SLC > DEP else it is taken as 0
                     \end{tabular}\\
   \hline
 \end{tabular}
@@ -193,6 +399,15 @@ The table \ref{tab:quality_of_service/quality_attributes/granularity_metrics} pr
 \ref{tab:quality_of_service/quality_attributes/autonomy_metrics} shows a way to interprete autonomy. It is calculated by the difference \acrshort{SLC}-\acrshort{DEP} when \acrshort{SLC} is greater than \acrshort{DEP}. In other cases it is taken as zero. So, autonomy increases as the operations of the services have full control upon its business entities but decreases if the service is dependent upon other services.
 
 %Reusability metrics
+\subsection{Reusability Metrics}{\label{section:quality_of_service/quality_metrics/reusability}
+\cite{Sindhgatta:2015aa} defines
+
+$$ SRI(s) = P + Q $$ where,
+$$ P = | \{ s_{i} : \exists_{o \epsilon s} , \exists_{o_{i} \epsilon s_{i}} calls(o_{i}, o) \wedge s \neq s_{i}} \}|$$ and
+$$ Q = |\{ p \epsilon P : s \epsilon p \}|$$
+
+\\ \cite{Bingu-Shim:2008aa} defines 
+$$Reusability= \frac{Cohesion - granularity + Consumability - coupling}{2}$$
 \begin{table}[h!]
   \centering
   \begin{adjustbox}{max width=\textwidth}
@@ -201,10 +416,9 @@ The table \ref{tab:quality_of_service/quality_attributes/granularity_metrics} pr
   \# & Papers & Metrics Definition \\
   \hline
   \hline
-   1 & \cite{Rostampour:2011aa} & 
-                    defines \acrshort{SRI} as the number of existing consumers of the service\\
+   1 & \cite{Sindhgatta:2015aa} & \acrshort{SRI} defines reusability as the number of existing consumers of the service\\
                     \hline
-   2 & \cite{Bingu-Shim:2008aa} & evaluated by subtracting weighted value of cohesion from weighted sum of coupling and service granularity\\
+   2 & \cite{Bingu-Shim:2008aa} & evaluated from coupling, cohesion, granularity and consumability of a service where consumability is the chance of the service being discovered and depends upon the fraction of operations in the service\\
   \hline
 \end{tabular}
 \end{adjustbox}
