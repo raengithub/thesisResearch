@@ -100,6 +100,44 @@
       \field{type}{techreport}
       \field{year}{np}
     \endentry
+    \entry{Cockburn:2001aa}{report}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c1e5acec4259bb4c17ca1a00866f32e1}{Cockburn}{C\bibinitperiod}{Alistair}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{c1e5acec4259bb4c17ca1a00866f32e1}
+      \strng{fullhash}{c1e5acec4259bb4c17ca1a00866f32e1}
+      \field{labelalpha}{Coc01}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{WRITING EFFECTIVE USE CASES}
+      \field{type}{techreport}
+      \field{year}{2001}
+    \endentry
+    \entry{Abdelkarim-Erradi:2006aa}{report}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=887624c548dff275fffddb187fe7f8a9}{Erradi}{E\bibinitperiod}{Abdelkarim}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d60295797fa416c3f698cb22a8787951}{Anand}{A\bibinitperiod}{Sriram}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c3a977e7e2c6f633d9c31c971522bab1}{Kulkarni}{K\bibinitperiod}{Naveen}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {University of New South Wales, Infosys Technologies Ltd}%
+      }
+      \strng{namehash}{6482bf8caff75acbdacaf245e8bfe67a}
+      \strng{fullhash}{6482bf8caff75acbdacaf245e8bfe67a}
+      \field{labelalpha}{EAK06}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{SOAF: An Architectural Framework for Service Definition and Realization}
+      \field{type}{techreport}
+      \field{year}{2006}
+    \endentry
     \entry{Elhag:2014aa}{report}{}
       \name{author}{2}{}{%
         {{uniquename=0,hash=a9370809af22badbad7b1913639d2488}{Elhag}{E\bibinitperiod}{Arafat\bibnamedelimb Abdulgader\bibnamedelima Mohammed}{A\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
@@ -118,6 +156,23 @@
       \field{title}{Metrics for Evaluating the Quality of Service-Oriented Design}
       \field{type}{techreport}
       \field{year}{2014}
+    \endentry
+    \entry{Erl:2005aa}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=5606702d875163ff65690170e545c0b8}{Erl}{E\bibinitperiod}{Thomas}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall Professional Technical Reference}%
+      }
+      \strng{namehash}{5606702d875163ff65690170e545c0b8}
+      \strng{fullhash}{5606702d875163ff65690170e545c0b8}
+      \field{labelalpha}{Erl05}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Service-Oriented Architecture Concepts, Technology, and Design}
+      \field{year}{2005}
     \endentry
     \entry{Feuerlicht:2013aa}{report}{}
       \name{author}{1}{}{%
@@ -157,6 +212,24 @@
       \field{type}{techreport}
       \field{year}{2007}
     \endentry
+    \entry{Foody:2005aa}{webpage}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=dedbb0a2235d5c876f7ddb1e14afef86}{Foody}{F\bibinitperiod}{Dan}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{dedbb0a2235d5c876f7ddb1e14afef86}
+      \strng{fullhash}{dedbb0a2235d5c876f7ddb1e14afef86}
+      \field{labelalpha}{Foo05}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{np}
+      \field{title}{Getting web service granularity right}
+      \field{year}{2005}
+      \verb{url}
+      \verb http://www.soa-zone.com/index.php?/archives/11-Getting-web-servicegranularity-right.html
+      \endverb
+    \endentry
     \entry{Goeb:2011aa}{report}{}
       \name{author}{2}{}{%
         {{uniquename=0,hash=6ba3712a24cd89b5c57ec1142878df28}{Goeb}{G\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
@@ -177,6 +250,45 @@
       \field{type}{techreport}
       \field{year}{2011}
     \endentry
+    \entry{Raf-Haesen:2015aa}{report}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=d2cc814d26a14cfc4a33f2b3124eeeeb}{Haesen}{H\bibinitperiod}{Raf}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c824d236cc90c6ad32581dae8ddfe6d0}{Snoeck}{S\bibinitperiod}{Monique}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=916eeb5afac924848bfc416e52a32d54}{Lemahieu}{L\bibinitperiod}{Wilfried}{W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c006874fcb871ef27ce4c44de02a85ba}{Poelmans}{P\bibinitperiod}{Stephan}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Katholieke Universiteit Leuven}%
+      }
+      \strng{namehash}{9b86438ca0166e90ee244b68879a7486}
+      \strng{fullhash}{9b86438ca0166e90ee244b68879a7486}
+      \field{labelalpha}{Hae+np}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{On the Definition of Service Granularity and Its Architectural Impact}
+      \field{type}{techreport}
+      \field{year}{np}
+    \endentry
+    \entry{Peter-Herzum:2000aa}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=f8f16e78870c1d669a0a9e5e8aa12648}{Herzum}{H\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4d8d94af30f5238eb83f81db194c50a0}{Sims}{S\bibinitperiod}{Oliver}{O\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley & Sons}%
+      }
+      \strng{namehash}{f7baf037d64eba0d42ec7a24e4950b28}
+      \strng{fullhash}{f7baf037d64eba0d42ec7a24e4950b28}
+      \field{labelalpha}{HS00}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Business Components Factory: A Comprehensive Overview of Component-Based Development for the Enterprise}
+      \field{year}{2000}
+    \endentry
     \entry{Henry:1990aa}{report}{}
       \name{author}{2}{}{%
         {{uniquename=0,hash=4797a2255167d2a98e7f1fa94e43e872}{Henry}{H\bibinitperiod}{Sallie}{S\bibinitperiod}{}{}{}{}}%
@@ -195,6 +307,45 @@
       \field{title}{Predicting Source=Code Complexity at the Design Stage}
       \field{type}{techreport}
       \field{year}{1990}
+    \endentry
+    \entry{Josuttis:2007aa}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=f7c0485aa642e40ca8ffd5b00104697d}{Josuttis}{J\bibinitperiod}{Nicolai\bibnamedelima M.}{N\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media}%
+      }
+      \strng{namehash}{f7c0485aa642e40ca8ffd5b00104697d}
+      \strng{fullhash}{f7c0485aa642e40ca8ffd5b00104697d}
+      \field{labelalpha}{Jos07}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{SOA in Practice The Art of Distributed System Design}
+      \field{year}{2007}
+    \endentry
+    \entry{Jamshidi:2008aa}{report}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=faf5e07ed840f5adf714df8ba9f0b430}{Jamshidi}{J\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3d1603f6ce1f5f7ec4e5301b6e41ec7c}{Sharifi}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2585c5c36cc8076c679ec0a6d630eacc}{Mansour}{M\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{3}{%
+        {Amirkabir University of Technology}%
+        {Iran University of Science}%
+        {Technology}%
+      }
+      \strng{namehash}{d73780a69b359b75c6caef3f119b3e52}
+      \strng{fullhash}{d73780a69b359b75c6caef3f119b3e52}
+      \field{labelalpha}{JSM08}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{To Establish Enterprise Service Model from Enterprise Business Model}
+      \field{type}{techreport}
+      \field{year}{2008}
     \endentry
     \entry{Kazemi:2011aa}{report}{}
       \name{author}{6}{}{%
@@ -218,6 +369,67 @@
       \field{title}{Measuring the Conceptual Coupling of Services Using Latent Semantic Indexing}
       \field{type}{techreport}
       \field{year}{2011}
+    \endentry
+    \entry{Keen:2015aa}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=5ae9f72ca535e1c4ec36394e1938b3e8}{Keen}{K\bibinitperiod}{Peter\bibnamedelima G.W.}{P\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Harvard Business School Press}%
+      }
+      \strng{namehash}{5ae9f72ca535e1c4ec36394e1938b3e8}
+      \strng{fullhash}{5ae9f72ca535e1c4ec36394e1938b3e8}
+      \field{labelalpha}{Kee91}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Shaping The Future of Business Design Through Information Technology}
+      \field{year}{1991}
+    \endentry
+    \entry{Lee:2001aa}{report}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,hash=21428ca08f53fe904a386a1670f4c333}{Lee}{L\bibinitperiod}{Jong\bibnamedelima Kook}{J\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f3dbacd10784f92358ecbca308ecd4ec}{Jung}{J\bibinitperiod}{Seung\bibnamedelima Jae}{S\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=196655c0feb42bdbbfe67505755dea6e}{Kim}{K\bibinitperiod}{Soo\bibnamedelima Dong}{S\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=762b4ab2027212523c2b38c4468d6753}{Jang}{J\bibinitperiod}{Woo\bibnamedelima Hyun}{W\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=51904fbe2d13662c88f92e624a9f9245}{Ham}{H\bibinitperiod}{Dong\bibnamedelima Han}{D\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{2}{%
+        {Soongsil University}%
+        {Software Quality Evaluation Center}%
+      }
+      \strng{namehash}{6398d15b65dcace172b502c629b945d2}
+      \strng{fullhash}{ed8cb88bc7e7b270145479b4a0dcd985}
+      \field{labelalpha}{Lee+01}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Component Identification Method with Coupling and Cohesion}
+      \field{type}{techreport}
+      \field{year}{2001}
+    \endentry
+    \entry{Linthicum:2015aa}{webpage}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=340ca1711b0ebe9d9fb2a11cd06818b9}{Linthicum}{L\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Microsoft}%
+      }
+      \strng{namehash}{340ca1711b0ebe9d9fb2a11cd06818b9}
+      \strng{fullhash}{340ca1711b0ebe9d9fb2a11cd06818b9}
+      \field{labelalpha}{Linnp}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{microsoft}
+      \field{title}{Service Oriented Architecture (SOA)}
+      \field{year}{np}
+      \verb{url}
+      \verb https://msdn.microsoft.com/en-us/library/bb833022.aspx
+      \endverb
     \endentry
     \entry{Ma:2009aa}{report}{}
       \name{author}{4}{}{%
@@ -263,6 +475,26 @@
       \field{type}{techreport}
       \field{year}{np}
     \endentry
+    \entry{Hafedh-Mili:2001aa}{book}{}
+      \name{author}{4}{}{%
+        {{uniquename=1,hash=913aa0a4df10d7e582738f27633fdb92}{Mili}{M\bibinitperiod}{Hafedh}{H\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=b97b87ceb3dd7d445536e8938c8a3695}{Mili}{M\bibinitperiod}{Ali}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=33949da24c9a7f829da400d9413be94a}{Yacoub}{Y\bibinitperiod}{Sherif}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=065ba3ef23cfe171db644d9b678d8ddc}{Addy}{A\bibinitperiod}{Edward}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley-Interscience New York}%
+      }
+      \strng{namehash}{ca91a9e890cee14f7e38ceb62f6801eb}
+      \strng{fullhash}{ca91a9e890cee14f7e38ceb62f6801eb}
+      \field{labelalpha}{Mil+01}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Reuse-based software engineering: techniques, organization, and controls}
+      \field{year}{2001}
+    \endentry
     \entry{Ma:2007aa}{report}{}
       \name{author}{3}{}{%
         {{uniquename=1,hash=b734f30376b91f0200f6f02ee47f9441}{Ma}{M\bibinitperiod}{Yu-Fei}{Y\bibinithyphendelim F\bibinitperiod}{}{}{}{}}%
@@ -283,6 +515,24 @@
       \field{title}{A Lightweight Agent Fabric for Service Autonomy}
       \field{type}{techreport}
       \field{year}{2007}
+    \endentry
+    \entry{Naveen-Kulkarni:2008aa}{report}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=ce228bb122eaf8f52fc0aface27351b9}{Naveen\bibnamedelima Kulkarni}{N\bibinitperiod\bibinitdelim K\bibinitperiod}{Vishal\bibnamedelima Dwivedi}{V\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {SETLabs, Infosys Technologies Ltd}%
+      }
+      \strng{namehash}{ce228bb122eaf8f52fc0aface27351b9}
+      \strng{fullhash}{ce228bb122eaf8f52fc0aface27351b9}
+      \field{labelalpha}{Nav08}
+      \field{sortinit}{N}
+      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Role of Service Granularity in A Successful SOA Realization -- A Case Study}
+      \field{type}{techreport}
+      \field{year}{2008}
     \endentry
     \entry{Nematzadeh:2014aa}{report}{}
       \name{author}{4}{}{%
@@ -305,6 +555,42 @@
       \field{title}{QoS Measurement of Workflow-Based Web Service Compositions Using Colored Petri Net}
       \field{type}{techreport}
       \field{year}{2014}
+    \endentry
+    \entry{np:2001aa}{report}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=cf3fc916339b02ad9c14aca2425ccf53}{np}{n\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {International Standards Organization}%
+      }
+      \strng{namehash}{cf3fc916339b02ad9c14aca2425ccf53}
+      \strng{fullhash}{cf3fc916339b02ad9c14aca2425ccf53}
+      \field{labelalpha}{np01}
+      \field{sortinit}{n}
+      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ISO/IEC 9126-1 Software Engineering Product Quality -- Quality Model}
+      \field{type}{techreport}
+      \field{year}{2001}
+    \endentry
+    \entry{Padmal-Vitharana:2004aa}{report}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c976ee59ed5504812f61aba3e88d8ad0}{Padmal\bibnamedelima Vitharana}{P\bibinitperiod\bibinitdelim V\bibinitperiod}{Fatemeh\bibnamedelima Zahedi}{F\bibinitperiod\bibinitdelim Z\bibinitperiod}{}{}{Hemant\bibnamedelima Jain}{H\bibinitperiod\bibinitdelim J\bibinitperiod}}%
+      }
+      \list{institution}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{c976ee59ed5504812f61aba3e88d8ad0}
+      \strng{fullhash}{c976ee59ed5504812f61aba3e88d8ad0}
+      \field{labelalpha}{Pad04}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Strategy-Based Design of Reusable Business Components}
+      \field{type}{techreport}
+      \field{year}{2004}
     \endentry
     \entry{Mikhail-Perepletchikov:2015aa}{report}{}
       \name{author}{4}{}{%
@@ -347,6 +633,26 @@
       \field{type}{techreport}
       \field{year}{2007}
     \endentry
+    \entry{Rolland:2015aa}{report}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=35e635a69b3c077054b2ada16cc67506}{Rolland}{R\bibinitperiod}{Colette}{C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ea90024e1ab810925815e931dd57ed4f}{Kaabi}{K\bibinitperiod}{Rim\bibnamedelima Samia}{R\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9a67a08bd1c6e2a3758139672caf46ba}{Kraiem}{K\bibinitperiod}{Naoufel}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Université Paris}%
+      }
+      \strng{namehash}{f43dcd2677c6af29fb7c3ea50083fb20}
+      \strng{fullhash}{f43dcd2677c6af29fb7c3ea50083fb20}
+      \field{labelalpha}{RKKnp}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{On ISOA: Intentional Services Oriented Architecture}
+      \field{type}{techreport}
+      \field{year}{np}
+    \endentry
     \entry{Rostampour:2011aa}{report}{}
       \name{author}{5}{}{%
         {{uniquename=0,hash=ec7a315da65f8c91c412973d3d4cefa9}{Rostampour}{R\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
@@ -369,11 +675,30 @@
       \field{type}{techreport}
       \field{year}{2011}
     \endentry
+    \entry{Pierre-Reldin:2007aa}{report}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=720c014eb2c9407b7a83e25ce41156a2}{Reldin}{R\bibinitperiod}{Pierre}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d664d02c97a95c3f7e2004ba414ef583}{Sundling}{S\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Linköping University}%
+      }
+      \strng{namehash}{be98f342e4c162726980bab9e99d9174}
+      \strng{fullhash}{be98f342e4c162726980bab9e99d9174}
+      \field{labelalpha}{RS07}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Explaining SOA Service Granularity-- How IT-strategy shapes services}
+      \field{type}{techreport}
+      \field{year}{2007}
+    \endentry
     \entry{Bingu-Shim:2008aa}{report}{}
       \name{author}{4}{}{%
         {{uniquename=0,hash=35e161d3924f66d7973f2d56c3a0cba9}{Shim}{S\bibinitperiod}{Bingu}{B\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=9b7769cd672fb78a417850ba3d13ee7a}{Choue}{C\bibinitperiod}{Siho}{S\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=a7d8c2566df0cb26225323a178b85064}{Kim}{K\bibinitperiod}{Suntae}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=a7d8c2566df0cb26225323a178b85064}{Kim}{K\bibinitperiod}{Suntae}{S\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=0dd36a3337e014921699f7d98f3271ef}{Park}{P\bibinitperiod}{Sooyong}{S\bibinitperiod}{}{}{}{}}%
       }
       \list{institution}{1}{%
@@ -389,6 +714,24 @@
       \field{title}{A Design Quality Model for Service-Oriented Architecture}
       \field{type}{techreport}
       \field{year}{2008}
+    \endentry
+    \entry{Sims:2005aa}{report}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=4d8d94af30f5238eb83f81db194c50a0}{Sims}{S\bibinitperiod}{Oliver}{O\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {CBDI}%
+      }
+      \strng{namehash}{4d8d94af30f5238eb83f81db194c50a0}
+      \strng{fullhash}{4d8d94af30f5238eb83f81db194c50a0}
+      \field{labelalpha}{Sim05}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Developing the architectural framework for SOA - part 2-service granularity and dependency management. CBDI Forum Journal}
+      \field{type}{techreport}
+      \field{year}{2005}
     \endentry
     \entry{Sindhgatta:2015aa}{report}{}
       \name{author}{3}{}{%
@@ -409,6 +752,101 @@
       \field{title}{Measuring the Quality of Service Oriented Design}
       \field{type}{techreport}
       \field{year}{np}
+    \endentry
+    \entry{Steghuis:2006aa}{report}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=cf0f9490721216636b14356a1c991085}{Steghuis}{S\bibinitperiod}{Claudia}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {University of Twente}%
+      }
+      \strng{namehash}{cf0f9490721216636b14356a1c991085}
+      \strng{fullhash}{cf0f9490721216636b14356a1c991085}
+      \field{labelalpha}{Ste06}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Service Granularity in SOA Projects: A Trade-off Analysis}
+      \field{type}{techreport}
+      \field{year}{2006}
+    \endentry
+    \entry{Weill:1998aa}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=4d1ea93a6731e7fd5d6f341524e46451}{Weill}{W\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=cebc7ebc5eddae6f97d9a19be07a7b3f}{Broadbent}{B\bibinitperiod}{Marianne}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Harvard Business School Press}%
+      }
+      \strng{namehash}{4b8831e03317d08f18f21328e47c3c78}
+      \strng{fullhash}{4b8831e03317d08f18f21328e47c3c78}
+      \field{labelalpha}{WB98}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Leveraging The New Infrastructure: How Market Leaders Capitalize on Information Technology}
+      \field{year}{1998}
+    \endentry
+    \entry{Lawrence-Wilkes:2004aa}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=c35aa1b2b55050d271256323af27b20d}{Wilkes}{W\bibinitperiod}{Lawrence}{L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e685fdb785b0fc0fb32f99b8f150127d}{Veryard}{V\bibinitperiod}{Richard}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6e8a422b460c6347bff9b0c57e407525}
+      \strng{fullhash}{6e8a422b460c6347bff9b0c57e407525}
+      \field{labelalpha}{WV04}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{np}
+      \field{title}{Service-Oriented Architecture: Considerations for Agile Systems}
+      \field{year}{2004}
+      \verb{url}
+      \verb https://msdn.microsoft.com/en-us/library/aa480028.aspx#aj2service_topic8
+      \endverb
+    \endentry
+    \entry{Zhongjie-Wang:2005aa}{report}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=1d5746eec5c345b744b063ce9fc829d7}{Wang}{W\bibinitperiod}{Zhongjie}{Z\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=51ce47cb9f6e5f13a9b47be9ef732dfa}{Xu}{X\bibinitperiod}{Xiaofei}{X\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2525689d0cd9c34a7818ff0b8173614e}{Zhan}{Z\bibinitperiod}{Dechen}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {International Journal of Information Technology}%
+      }
+      \strng{namehash}{ad5b583a549cd71abed91f7970841c62}
+      \strng{fullhash}{ad5b583a549cd71abed91f7970841c62}
+      \field{labelalpha}{WXZ05}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Survey of Business Component Identification Methods and Related Techniques}
+      \field{type}{techreport}
+      \field{year}{2005}
+    \endentry
+    \entry{Washizakia:2003aa}{report}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=effa9c0d1a0652c2da4cace923062d76}{Washizakia}{W\bibinitperiod}{Hironori}{H\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9ea4b40c24ba482e79193f6082256066}{Yamamoto}{Y\bibinitperiod}{Hirokazu}{H\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c869927df8045c33d6ee0c2e673dd7bf}{Fukazawa}{F\bibinitperiod}{Yoshiaki}{Y\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Waseda University}%
+      }
+      \strng{namehash}{9b8bdabd251d25f8fd4d26f1085662d8}
+      \strng{fullhash}{9b8bdabd251d25f8fd4d26f1085662d8}
+      \field{labelalpha}{WYF03}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A metrics suite for measuring reusability of software components}
+      \field{type}{techreport}
+      \field{year}{2003}
     \endentry
     \entry{Xiao-jun:2015aa}{report}{}
       \name{author}{1}{}{%

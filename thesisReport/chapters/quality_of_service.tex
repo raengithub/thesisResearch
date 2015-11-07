@@ -7,6 +7,12 @@ Relationship between the quality attributes and their tradeoffs, what happens wh
 create wiki page in the sebis page to document the literature review.
 \end{comment}
 
+\%comment from Andrea
+\begin{comment}
+mention about coupling created by calling same database directly by multiple microservice
+use the formula to calculate quality metrics for the services at hybris to give an idea about good and bad service, the process of finding out good service at first and then using the quality metrics finding out the range of quality metrics, which can then be used to identify bad services
+\end{comment}
+
 
 
 \chapter{Quality of Service}\label{chapter:quality_of_service}
@@ -107,7 +113,7 @@ where, \\
 $$coupling(s) =  \frac{n_c + n_p}{n_s}$$
 
 \cite{Saad-Alahmari:2011aa} defines
-$$coupling = \frac{\sum{i=1}^{|O(s)|} (S_{i,sync} + S_{i,async})}{|S|}$$
+$$coupling = \frac{\sum_{i=1}^{|O(s)|} (S_{i,sync} + S_{i,async})}{|S|}$$
 \\
 where,
 \\
@@ -117,7 +123,7 @@ where,
 \end{itemize}
 
 
-\begin{table}[h!]
+\begin{table}[h]
   \centering
   \begin{adjustbox}{max width=\textwidth}
   \normalsize
@@ -128,35 +134,56 @@ where,
   \hline
    1 & \cite{Sindhgatta:2015aa} & 
                     \begin{tabular}{cl}
-                    \multirow{3}{*}{
-                    }
-                    &\acrshort{SOCI} : number of operation of other services invoked by the given service\\
-                    &\acrshort{ISCI} : number of services invoked by a given service\\
-                    &\acrshort{SMCI} : total number of messages from information model required by the operations
+                    \multirow{6}{*}
+                    &\acrshort{SOCI} : number of operation of other services \\
+                    &invoked by the given service\\
+                    &\acrshort{ISCI} : number of services invoked \\
+                    &by a given service\\
+                    &\acrshort{SMCI} : total number of messages from \\
+                    &information model required by the operations\\
                     \end{tabular}\\
                     \hline
    2 & \cite{Xiao-jun:2015aa} &
                     \begin{tabular}{cl}
-                    \multirow{3}{*}{}
-                    &Coupling is evaluated as information entropy of a complex service component where entropy is calculated using various \\
-                    &data such as total number of atomic components connected, total number of links to atomic \\ 
-                    &components and total number of atomic components
+                    \multirow{6}{*}
+                    &Coupling is evaluated as information entropy \\
+                    &of a complex service\\
+                    &component where entropy is calculated using various \\
+                    &data such as total number of atomic components connected, \\
+                    &total number of links to atomic \\ 
+                    &components and total number of atomic components\\
                     \end{tabular}\\
                     \hline
-   3 & \cite{Kazemi:2011aa} & The coupling is measured by using the dependency of a service operations with operations of other services. Additionally, the dependency is considered to have different weight value for each kind of operation such as Create, Read, Update, Delete (CRUD) and based on the type of business entity involved. The weight is referred from the CRUD matrix constructed in the process.\\
-   \hline
-   4 & \cite{Bingu-Shim:2008aa} & given by the average number of directly connected services\\
+   3 & \cite{Kazemi:2011aa} & 
+                    \begin{tabular}{cl}
+                    \multirow{7}{*}
+                    &The coupling is measured by using the dependency \\
+                    &of a service operations with operations of other \\
+                    &services. Additionally, the dependency is considered \\
+                    &to have different weight value for each kind of operation \\
+                    &such as Create, Read, Update, Delete (CRUD) and based on \\
+                    &the type of business entity involved. The weight is \\
+                    &referred from the CRUD matrix constructed in the process.\\
+                    \end{tabular}\\
+                    \hline
+   4 & \cite{Bingu-Shim:2008aa} & 
+                    given by the average number of directly connected services\\
   \hline
-   5 & \cite{Saad-Alahmari:2011aa} & defines coupling as the average number of synchronous and asynchronous invocations in all the operations of the service\\
-   \hline
+   5 & \cite{Saad-Alahmari:2011aa} & 
+                    \begin{tabular}{cl}
+                    \multirow{2}{*}
+                    &defines coupling as the average number of synchronous and \\
+                    &asynchronous invocations in all the operations of the service\\
+                    \end{tabular}\\
+                    \hline
 \end{tabular}
 \end{adjustbox}
   \caption{Coupling Metrics}
   \label{tab:quality_of_service/quality_attributes/coupling_metrics}
 \end{table}
-
-The table \ref{tab:quality_of_service/quality_attributes/coupling_metrics} shows simpler form of metrics proposed for coupling. The coupling of a service is defined in terms of the number of connections it creates with other services in order to fulfill its functionalities. The connections can be due to the dependency with operations of other services or input expectency of the messages. The more dependency or connection a service has, the coupling increases as well.
-
+\\
+The table \ref{tab:quality_of_service/quality_attributes/coupling_metrics} shows simpler form of metrics proposed for coupling. Although, the table shows different way of evaluating coupling, they somehow agree to the basic metrics to calculate coupling. It can be deduced that the metrics to evaluate coupling uses basic metrics such as number of operations, number of provider services and number of messages.
+\\
 
 %cohesion metrics
 \subsection{Cohesion Metrics}{\label{section:quality_of_service/quality_metrics/cohesion}
@@ -168,6 +195,8 @@ where,
 \\
 \begin{itemize}[leftmargin=.5in]
 \item the number of operations using a message 'm'  is $\mu(m)$ such that $ m \epsilon M(s) $ and |O(s)| > 0
+%principle
+\\The service is considered highly cohesive if all the operations use one common message. This implies that a higly cohesive  service operates on a small set of key business entities as guided by the messages and are  relavant to the service and all the operations operate on the same set of key business entities. \cite{Sindhgatta:2015aa}
 \end{itemize}
 
 \cite{Bingu-Shim:2008aa} defines
@@ -181,26 +210,25 @@ $$ \acrshort{SIUC} = \frac{n_{oc}}{n_c * |O(s)|}$$
 
 $$ \acrshort{SSUC} = \frac{n_{so}}{n_c * |O(s)|}$$
 
-\\
-where,
-\\
 \\where,
 \begin{itemize}[leftmargin=.5in]
-\item $n_{op}$ is the number of operations in the service which share the same parameter types$
+\item $n_{op}$ is the number of operations in the service which share the same parameter types
 \item $n_{pt}$ is the total number of distinct parameter types in the service
 \item $n_{oc}$ is the total number of operations in the service used by consumers
 \item $n_{so}$ is the total number of sequentially accessed operations by the clients of the service
-\emd{itemize}
+\end{itemize}
 \cite{Saad-Alahmari:2011aa} defines
 $$ cohesion = \frac{max(\mu(\acrshort{OFG}, \acrshort{ODG}))}{|O(s)|} $$
 
-\\where,
+\\
+where,
+\\
 \begin{itemize}[leftmargin=.5in]
 \item \acrshort{OFG} and \acrshort{ODG} are Operation Gunctionality Granularity and Operation Data Granularity respectively as calculated in section \ref{section:quality_of_service/quality_metrics/granularity}
 \item $\mu(\acrshort{OFG}, \acrshort{ODG})$ gives the number of operations with specific value of \acrshort{OFG} and \acrshort{ODG}
 \end{itemize}
 
-\begin{table}[h!]
+\begin{table}[h]
   \centering
   \begin{adjustbox}{max width=\textwidth}
   \begin{tabular}{*{14}{|c}|}%%{|c|c|l|}
@@ -210,30 +238,51 @@ $$ cohesion = \frac{max(\mu(\acrshort{OFG}, \acrshort{ODG}))}{|O(s)|} $$
   \hline
    1 & \cite{Sindhgatta:2015aa} & 
                     \begin{tabular}{cl}
-                    \multirow{2}{*}{}
-                    &defines \acrshort{SFCI} which measures the fraction of operations using similar messages out of total\\
-                    &number of operations in the service operations of the service
+                    \multirow{3}{*}
+                    &defines \acrshort{SFCI} which measures the fraction of operations \\
+                    &using similar messages out of total  number of operations in the \\
+                    &service operations of the service\\
                     \end{tabular}\\
                     \hline
    2 & \cite{Perepletchikov:2007aa} &
                     \begin{tabular}{cl}
-                    \multirow{4}{*}{}
-                    &\acrshort{SIDC} : defines cohesiveness as the fraction of operations based on commonality of the messages they operate on\\
-                    &\acrshort{SIUC} : defines the degree of consumption pattern of the service operations\\                     &which is based on the similarity of consumers of the operations\\ 
-                    &\acrshort{SSUC} : defines the cohesion based on the sequential consumption behavior of more than one operations of a service by other services
+                    \multirow{8}{*}
+                    &\acrshort{SIDC} : defines cohesiveness as the fraction of operations \\
+                    &based on commonality of the messages they operate on\\
+                    &\acrshort{SIUC} : defines the degree of consumption pattern of \\
+                    &the service operations which is based on the similarity of consumers\\
+                    &of the operations\\ 
+                    &\acrshort{SSUC} : defines the cohesion based on the sequential\\
+                    &consumption behavior of more than one operations of a service by\\
+                    &other services\\
                     \end{tabular}\\
                     \hline
-   3 & \cite{Bingu-Shim:2008aa} & cohesion is given by the inverse of average number of consumed messages by a service\\
-   \hline
-   4 & \cite{Saad-Alahmari:2011aa} & cohesion is defined as the consensus among the operations of the service regarding the functionality and data granularity which represents the type of parameters and the operations importance as calculated in the section \ref{section:quality_of_service/quality_metrics/granularity}\\
-  \hline
+   3 & \cite{Bingu-Shim:2008aa} & 
+                    \begin{tabular}{cl}
+                    \multirow{2}{*}
+                    &cohesion is given by the inverse of average number of consumed \\
+                    &messages by a service\\
+                    \end{tabular}\\
+                    \hline
+   4 & \cite{Saad-Alahmari:2011aa} & 
+                    \begin{tabular}{cl}
+                    \multirow{4}{*}
+                    &cohesion is defined as the consensus among the operations of \\
+                    &the service regarding the functionality and data granularity \\
+                    &which represents the type of parameters and the operations \\
+                    &importance as calculated in the section
+                    \ref{section:quality_of_service/quality_metrics/granularity}\\
+                    \end{tabular}\\
+                    \hline
 \end{tabular}
 \end{adjustbox}
   \caption{Cohesion Metrics}
   \label{tab:quality_of_service/quality_attributes/cohesion_metrics}
 \end{table}
+\\
+The table \ref{tab:quality_of_service/quality_attributes/cohesion_metrics} gives simplified view for the cohesion metrics. The papers presented agree on some basic metrics such as similarity of the operation usage behavior, commanility in the messages consumed by operations and similarity in the size of operations.
+\\
 
-The table \ref{tab:quality_of_service/quality_attributes/cohesion_metrics} gives simplified view for the cohesion metrics. In the basic way, the cohesion is defined in terms of the commonality of the messages consumed by the operations and similarity in the consumer of the operations.
 
 %granularity metrics
 \subsection{Granularity Metrics}{\label{section:quality_of_service/quality_metrics/granularity}
@@ -266,6 +315,7 @@ where,
 \item $W_i(o)$ is the weight of an operation of the service
 \item $ |O(S)| $ is the number operations in the service
 \end{itemize}
+
 \begin{table}[h!]
   \centering
   \begin{adjustbox}{max width=\textwidth}
@@ -275,26 +325,42 @@ where,
   \hline
   \hline
    1 & \cite{Sindhgatta:2015aa} & 
-                    the service capability granularity is given by the number of operations in a service and the data granularity by the number of messages consumed by the operations of the service\\
+                    \begin{tabular}{cl}
+                    \multirow{3}{*}
+                    &the service capability granularity is given by the number of\\
+                    &operations in a service and the data granularity by the\\ 
+                    &number of messages consumed by the operations of the service\\
+                    \end{tabular}\\
                     \hline
    2 & \cite{Saad-Alahmari:2011aa} &
                     \begin{tabular}{cl}
-                    \multirow{2}{*}{}
-                    &\acrshort{ODG} : evaluated in terms of number of input and output parameters and their type such as simple, user-defined and complex\\
-                    &\acrshort{OFG} : defined as the level of logic provided by the operations of the services
-                    &\acrshort{SOG} : defined by the sum of product of data granularity and functionality granularity for all operations in the service
+                    \multirow{8}{*}
+                    &\acrshort{ODG} : evaluated in terms of number of input and\\
+                    &output parameters and their type such as simple,\\ 
+                    &user-defined and complex\\
+                    &\acrshort{OFG} : defined as the level of logic provided by\\
+                    &the operations of the services\\
+                    &\acrshort{SOG} : defined by the sum of product of data \\
+                    &granularity and functionality granularity for all operations\\
+                    &in the service\\
                     \end{tabular}\\
                     \hline
-   3 & \cite{Bingu-Shim:2008aa} & evaluated as the ratio of squared number of operations of the service to the squared number of messages consumed by the service\\
-  \hline
+   3 & \cite{Bingu-Shim:2008aa} & 
+                    \begin{tabular}{cl}
+                    \multirow{3}{*}
+                    &evaluated as the ratio of squared number of operations of\\
+                    &the service to the squared number of messages consumed by\\ 
+                    &the service\\
+                    \end{tabular}\\
+                    \hline
 \end{tabular}
 \end{adjustbox}
   \caption{Granularity Metrics}
   \label{tab:quality_of_service/quality_attributes/granularity_metrics}
 \end{table}
-
-The table \ref{tab:quality_of_service/quality_attributes/granularity_metrics} presents various view of granularity metrics based on different research papers. The chapter \ref{chapter:granularity} discuss in detail regarding the topic. Here, the focus is made on the metrics. The granularity is evaluated by the number and type of the parameters, number of operations and number of messages consumed.
-
+\\
+The table \ref{tab:quality_of_service/quality_attributes/granularity_metrics} presents various view of granularity metrics based on different research papers. The chapter \ref{chapter:granularity} discuss in detail regarding the topic. Based on the table \ref{tab:quality_of_service/quality_attributes/granularity_metrics}, the granularity is evaluated using some basic metrics such as the number and type of the parameters, number of operations and number of messages consumed.
+\\
 
 %Complexity metrics
 \subsection{Complexity Metrics}{\label{section:quality_of_service/quality_metrics/complexity}
@@ -311,6 +377,10 @@ where,
 \item |S| is the number of services to realize the application
 \end{itemize}
 
+The complexity is rather given by relative coupling than by coupling on its own. A low value of RCS indicates that the coupling is lower than the count of services where as RCS with value 1 indicates that the coupling is equal to the number of services. This represents high amount of complexity.
+\\
+Similarly, a high value of RIS indicates that a lot of services are dependent upon the service and the service of critical value for them. This increases complexity as any changes or problem in the service affects a large number of services to a high extent.
+\\
 \cite{Saad-Alahmari:2011aa} defines
 $$ Complexity(s) = \frac{\sum_{i=1}^{|O(s)|}(SOG(i))^2}{|S|}$$
 \\
@@ -333,21 +403,30 @@ refer to the document for effect of RCS and RIS on complixity
   \hline
    1 & \cite{Zhang:2009aa} & 
                     \begin{tabular}{cl}
-                    \multirow{2}{*}{}
-                    &\acrshort{RCS} : complexity given by the degree of coupling for a service and evaluated as the fraction of its coupling to the total number of services\\
-                    &\acrshort{RIS} : measured as the fraction of total dependency weight of consumers upon the service to the total number of services
+                    \multirow{6}{*}
+                    &\acrshort{RCS} : complexity given by the degree of coupling\\ 
+                    &for a service and evaluated as the fraction of its coupling\\
+                    &to the total number of services\\
+                    &\acrshort{RIS} : measured as the fraction of total \\
+                    &dependency weight of consumers upon the service to the total\\
+                    &number of services\\
                     \end{tabular}\\
                     \hline
-   2 & \cite{Saad-Alahmari:2011aa} & the complexity is calculated using the granunarity of service operations\\
+   2 & \cite{Saad-Alahmari:2011aa} & 
+                    \begin{tabular}{cl}
+                    \multirow{2}{*}
+                    &the complexity is calculated using the granunarity of service\\
+                    &operations\\
+                    \end{tabular}\\
   \hline
 \end{tabular}
 \end{adjustbox}
   \caption{Complexity Metrics}
   \label{tab:quality_of_service/quality_attributes/complexity_metrics}
 \end{table}
-
-\ref{tab:quality_of_service/quality_attributes/complexity_metrics} provides the way to interprete complexity metrics. The complexity is highly dependent upong coupling and functionality granularity of the service.
-
+\\
+The table \ref{tab:quality_of_service/quality_attributes/complexity_metrics} provides the way to interprete complexity metrics. The complexity is highly dependent upong coupling and functionality granularity of the service.
+\\
 %Autonomy metrics
 \subsection{Autonomy Metrics}{\label{section:quality_of_service/quality_metrics/autonomy}
 \cite{Rostampour:2011aa} defines
@@ -384,20 +463,23 @@ where,
   \hline
    1 & \cite{Rostampour:2011aa} & 
                    \begin{tabular}{cl}
-                    \multirow{2}{*}{}
-                    &\acrshort{SLC} : defined as the degree of control of a service upon its operations to act on its Business entities only\\
-                    &\acrshort{DEP} : given by the degree of coupling of the given service with other services
-                    &autonomy is given by the difference of \acrshort{SLC} and \acrshort{DEP} if SLC > DEP else it is taken as 0
+                    \multirow{6}{*}
+                    &\acrshort{SLC} : defined as the degree of control of a \\
+                    &service upon its operations to act on its Business entities only\\
+                    &\acrshort{DEP} : given by the degree of coupling of the given \\
+                    &service with other services\\
+                    &autonomy is given by the difference of \acrshort{SLC} and \acrshort{DEP}\\
+                    &if SLC > DEP else it is taken as 0\\
                     \end{tabular}\\
-  \hline
+                    \hline
 \end{tabular}
 \end{adjustbox}
   \caption{Autonomy Metrics}
   \label{tab:quality_of_service/quality_attributes/autonomy_metrics}
 \end{table}
-
-\ref{tab:quality_of_service/quality_attributes/autonomy_metrics} shows a way to interprete autonomy. It is calculated by the difference \acrshort{SLC}-\acrshort{DEP} when \acrshort{SLC} is greater than \acrshort{DEP}. In other cases it is taken as zero. So, autonomy increases as the operations of the services have full control upon its business entities but decreases if the service is dependent upon other services.
-
+\\
+The table \ref{tab:quality_of_service/quality_attributes/autonomy_metrics} shows a way to interprete autonomy. It is calculated by the difference \acrshort{SLC}-\acrshort{DEP} when \acrshort{SLC} is greater than \acrshort{DEP}. In other cases it is taken as zero. So, autonomy increases as the operations of the services have full control upon its business entities but decreases if the service is dependent upon other services.
+\\
 %Reusability metrics
 \subsection{Reusability Metrics}{\label{section:quality_of_service/quality_metrics/reusability}
 \cite{Sindhgatta:2015aa} defines
@@ -416,14 +498,281 @@ $$Reusability= \frac{Cohesion - granularity + Consumability - coupling}{2}$$
   \# & Papers & Metrics Definition \\
   \hline
   \hline
-   1 & \cite{Sindhgatta:2015aa} & \acrshort{SRI} defines reusability as the number of existing consumers of the service\\
+   1 & \cite{Sindhgatta:2015aa} & 
+                    \begin{tabular}{cl}
+                    \multirow{2}{*}
+                    &\acrshort{SRI} defines reusability as the number of existing\\ 
+                    &consumers of the service\\
+                    \end{tabular}\\
                     \hline
-   2 & \cite{Bingu-Shim:2008aa} & evaluated from coupling, cohesion, granularity and consumability of a service where consumability is the chance of the service being discovered and depends upon the fraction of operations in the service\\
-  \hline
-\end{tabular}
+   2 & \cite{Bingu-Shim:2008aa} & 
+                    \begin{tabular}{cl}
+                    \multirow{4}{*}
+                    &evaluated from coupling, cohesion, granularity and \\
+                    &consumability of a service where consumability is the chance \\
+                    &of the service being discovered and depends upon the fraction\\
+                    &of operations in the service\\
+                    \end{tabular}\\
+                    \hline
+                    \end{tabular}
 \end{adjustbox}
   \caption{Reusability Metrics}
   \label{tab:quality_of_service/quality_attributes/reusability_metrics}
 \end{table}
-
+\\
 The table \ref{tab:quality_of_service/quality_attributes/reusability_metrics} shows the reusability metrics evaluation. Reusability depends upon coupling, cohesion and granularity. It decreases as coupling and granularity increases.
+\\
+
+
+%Basic Metrics
+\section{Basic Quality Metrics}{\label{section:quality_of_service/basic_quality_metrics}
+The section \ref{section:quality_of_service/quality_metrics} presents various metrics to evaluate quality attributes based upon different papers. Additionally, the section analyzed the metrics and tried to derive them in simplest form possible. Eventually, the tables demonstrating the simplest definition of the metrics shows that the different quality attributes are measured on the basis of some basic metrics. Based on the section \ref{section:quality_of_service/quality_metrics} and based on the papers, this section will attempt to derive basic metrics.
+\\
+
+\begin{table}[h!]
+  \centering
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{*{14}{|c}|}%%{|c|l|c||c||c||c||c||c|}
+  \hline
+  \# & Metrics & \begin{sideways}Coupling\end{sideways}
+  &  \begin{sideways}Cohesion\end{sideways}
+  & \begin{sideways}Granularity\end{sideways}
+  & \begin{sideways}Complexity\end{sideways} 
+  & \begin{sideways}Autonomy\end{sideways}
+  & \begin{sideways}Reusability\end{sideways} \\
+  \hline
+  \hline
+    1 & number of service operations invoked by the service 
+     & +
+     & X
+     & X
+     & +
+     & -
+     & -\\
+                    \hline
+    2 & number of operation using similar messages
+     & X
+     & +
+     & X
+     & X
+     & X
+     & +\\
+\hline
+    3 & number of operation used by same consumer
+     & X
+     & +
+     & X
+     & X
+     & X
+     & +\\
+     \hline
+    4 & number of operation using similar parameters
+     & X
+     & +
+     & X
+     & X
+     & X
+     & +\\
+     \hline
+    5 & number of operation with similar scope or capability
+     & X
+     & +
+     & X
+     & X
+     & X
+     & +\\
+     \hline
+    6 & scope of operation
+     & X
+     & X
+     & +
+     & +
+     & X
+     & -\\
+     \hline
+     7 & number of operations
+     & X
+     & X
+     & +
+     & +
+     & X
+     & -\\
+     \hline
+     8 & number of parameters in operation
+     & X
+     & X
+     & +
+     & +
+     & X
+     & -\\
+     \hline
+    9 & type of parameters in operation
+     & X
+     & X
+     & +
+     & +
+     & X
+     & -\\
+     \hline
+     10 & number and size of messages used by operations
+     & +
+     & X
+     & +
+     & +
+     & -
+     & -\\
+     \hline
+     11 & type of messages used by operations
+     & X
+     & +
+     & X
+     & X
+     & X
+     & +\\
+     \hline
+     12 & number of consumer services
+     & +
+     & X
+     & X
+     & +
+     & -
+     & +\\
+     \hline
+     13 & number of producer services
+     & +
+     & X
+     & X
+     & +
+     & -
+     & -\\
+     \hline
+     14 & type of operation and business entity invoked by the service
+     & +
+     & X
+     & X
+     & +
+     & -
+     & -\\
+     \hline
+     15 & number of consumers accessing same operation
+     & X
+     & +
+     & X
+     & X
+     & X
+     & +\\
+     \hline
+     16 & number of consumer with similar operation usage sequence
+     & X
+     & +
+     & X
+     & X
+     & X
+     & +\\
+     \hline
+     17 & dependency degree or imporance of service operation to other service
+     & X
+     & X
+     & X
+     & +
+     & X
+     & X\\
+     \hline
+     18 & degree of control of operation to its business entities
+     & X
+     & X
+     & X
+     & X
+     & +
+     & X\\
+     \hline
+     \hline
+\end{tabular}
+\end{adjustbox}
+  \caption{Basic Quality Metrics}
+  \label{tab:quality_of_service/quality_attributes/basic_quality_metrics}
+  \\
+  Moreover, the effect of the basic metrics upon various quality attributes are also evaluated.
+  Here, the meaning of the various symbols to demonstrate the affect are as given below:
+  \\
+\begin{itemize}[leftmargin=.5in]
+\item + the basic metric affect the quality attribute proportionlly
+\item - the basic metric inversely affect the quality attribute
+\item X there is no evidence found regarding the relationship from the papers
+\end{itemize}
+\end{table}
+
+
+%principles based on quality quality attributes
+\section{Principles defined by Quality Attributes}{\label{section:quality_of_service/quality_attributes_principle}
+The section \ref{section:quality_of_service/introduction} has already mentioned that there are two distinct kind of quality attributes: external and internal. The external quality attributes cannot be evaluated during design however can be predicted using the internal quality attributes. This kind of relationship can be used to design service with good quality. Moreover, it is important to identify how each internal attributes affect the external attributes. The understanding of such relationship will be helpful to identify the combined effect of the quality attributes and eventually to identify the service with the appropriate level of quality as per the requirement.
+The remaining part of the section lists relationship existing in various quality attributes as well as the desired value of the quality attributes.
+\begin{enumerate}
+\item When a service has large number of operations, it means it has large number of consumers. It will highly affect maintainability because a small change in the operations of the service will be propagated to large number of consumers. But again, if the service is too fine granular, there will be high network coupling. \cite{Feuerlicht:2007aa, Xiao-jun:2015aa}
+
+\item Low coupling improves understandability, reusability and scalability where as high coupling decreases maintainability. \cite{Kazemi:2011aa}\cite{Erl:2005aa}\cite{Josuttis:2007aa}
+
+\item A good strategy for grouping operations to realize a service is to combine the ones those are used together.  This indicates that most of the operations are used by same client.  It highly improves maintainability by limiting the number of affected consumer in the event of any change in the service. \cite{Xiao-jun:2015aa}
+
+\item A high cohesive quality attribute defines a good service. The service is easy to understand, test, change and is more stable. These properties highly support maintainability. {enumerate}\cite{np:2001aa}
+
+\item A service with operations those are cohesive and have low coupling which make the service reusable. \cite{Washizakia:2003aa}\cite{Feuerlicht:2007aa}\cite{Ma:2009aa}
+
+\item Services must be selected in a way so that they focus on a single business functionality. This highly follows the concept of low coupling. \cite{Perepletchikov:2007aa}\cite{Sindhgatta:2015aa}
+
+\item Maintainability is divided into four distinct concepts:  analyzability, changeability, stability and testability.\cite{np:2001aa} A highly cohesive and low-coupled design should be easy to analyze and test. Moreover,  such a system will be stable and easy to change.\cite{Perepletchikov:2007aa}
+
+
+\item The complexity of a service is determined by granularity. A coarse-grained service has higher complexity. However, as the size of the service decreases, the complexity of the over system governance also increases.
+\cite{Saad-Alahmari:2011aa}
+
+\item The complexity depends upon coupling. The complexity of a service is defined in terms of the number of dependencies of a service, number of operations as well as number and size of messages used by the service operations.\cite{Saad-Alahmari:2011aa}\cite{Sindhgatta:2015aa}\cite{Lee:2001aa}
+
+\item The selection of an appropriate service has to deal with multi-objective optimization problem.  The quality attributes are not independent in all aspects. Depending upon goals of the architecture, tradeoffs have to be made for mutually exclusive attributes. For example, when choosing between coarse-grained and fine-grained service, various factors such as governance, high network roundtrip etc. also should be considered. 
+\cite{Jamshidi:2008aa}
+
+\item Business entity convergence of a service, which is the degree of control over specific business entities, is an important quality for the selection of service. For example: It is be better to create a single service to create and update an order. In that way change and control over the business entity is localized to a single service.\cite{Ma:2009aa}
+
+\item Increasing the granularity decreases cohesion but also decreases the amount of message flow across the network. This is because, as the boundary of the service increases, more communication is handled within the service boundary. However, this can be true again only if highly related operations are merged to build the service. This suggests for the optimum granularity by handling cohesion and coupling in an appropriate level.\cite{Ma:2009aa}
+
+\item As the scope of the functionality provided by the service increases, the reusability decreases.
+\cite{Feuerlicht:2007aa}
+\end{enumerate}
+
+
+%relationship between quality attributes and tradeoffs
+\section{Relationship among Quality Attributes}{\label{section:quality_of_service/quality_attributes_relationship}
+In order to determine the appropriate level of quality for a service, it is also important to know the relationship between the quality attributes. This knowledge will helpfull to decide tradeoffs among them in the situation when it is not possible to achieve best of all. Based on the section \ref{section:quality_of_service/quality_attributes} and section \ref{section:quality_of_service/quality_attributes_principle}, the identified relationship among the quality attributes are shown in the table \ref{tab:quality_of_service/quality_attributes/quality_attributes_relationship}.
+
+\begin{table}[h!]
+  \centering
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{*{14}{|c}|}%%{|c|c|c|c|c|}
+  \hline
+  \# & Quality Attributes & Coupling & Cohesion & Granularity \\
+  \hline
+  \hline
+   1 & Coupling         &   & - & + \\ \hline
+   2 & Cohesion         & - &   & X \\ \hline
+   3 & Granularity      & + & X &   \\ \hline
+   4 & Complexity       & + & X & + \\ \hline
+   5 & Reusability      & - & + & - \\ \hline
+   6 & Autonomy         & - & X & X \\ \hline
+   7 & Maintainability  & - & + & X \\ \hline
+   \hline
+   \end{tabular}
+\end{adjustbox}
+  \caption{Relationship among quality attributes}
+  \label{tab:quality_of_service/quality_attributes/quality_attributes_relationship}
+\end{table}
+
+Here, the meaning of the various symbols showing nature of relationship are as given below:
+  \\
+\begin{itemize}[leftmargin=.5in]
+\item + the quality attribute on the column affects the quality attribute on the corresponding row positively
+\item - the quality attribute on the column affects the quality attribute on the corresponding row inversely
+\item X there is no enough evidence found regarding the relationship from the papers
+\end{itemize}
+%where are we on the map ISO/IEC 9126
+%quality attrubutes priority for microservices
+
