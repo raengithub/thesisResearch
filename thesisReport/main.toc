@@ -18,56 +18,58 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}Decomposition of Application}{6}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Granularity}{8}{chapter.2}
+\contentsline {section}{\numberline {1.3}Microservice Architecture Style}{7}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Introduction}{8}{section.2.1}
+\contentsline {chapter}{\numberline {2}Granularity}{10}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Related Work}{9}{section.2.2}
+\contentsline {section}{\numberline {2.1}Introduction}{10}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Basic Principles to Service Granularity}{10}{section.2.3}
+\contentsline {section}{\numberline {2.2}Related Work}{11}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Dimensions of Granularity}{11}{section.2.4}
+\contentsline {section}{\numberline {2.3}Basic Principles to Service Granularity}{12}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Dimension by Interface}{12}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.4}Dimensions of Granularity}{13}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Dimension by Interface Realization}{13}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.1}Dimension by Interface}{14}{subsection.2.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.3}R\textsuperscript {3} Dimension}{14}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.2}Dimension by Interface Realization}{15}{subsection.2.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.4}Retrospective}{16}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.3}R\textsuperscript {3} Dimension}{16}{subsection.2.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Quality of Service}{19}{chapter.3}
+\contentsline {subsection}{\numberline {2.4.4}Retrospective}{18}{subsection.2.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Introduction}{19}{section.3.1}
+\contentsline {chapter}{\numberline {3}Quality of Service}{21}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Quality Attributes}{19}{section.3.2}
+\contentsline {section}{\numberline {3.1}Introduction}{21}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Quality Metrics}{20}{section.3.3}
+\contentsline {section}{\numberline {3.2}Quality Attributes}{21}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Context and Notations}{21}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.3}Quality Metrics}{22}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Coupling Metrics}{22}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.1}Context and Notations}{23}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Cohesion Metrics}{25}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.2}Coupling Metrics}{24}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.4}Granularity Metrics}{26}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.3}Cohesion Metrics}{27}{subsection.3.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.5}Complexity Metrics}{28}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.4}Granularity Metrics}{28}{subsection.3.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.6}Autonomy Metrics}{30}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.5}Complexity Metrics}{30}{subsection.3.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.7}Reusability Metrics}{31}{subsection.3.3.7}
+\contentsline {subsection}{\numberline {3.3.6}Autonomy Metrics}{32}{subsection.3.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Basic Quality Metrics}{32}{section.3.4}
+\contentsline {subsection}{\numberline {3.3.7}Reusability Metrics}{33}{subsection.3.3.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Principles defined by Quality Attributes}{33}{section.3.5}
+\contentsline {section}{\numberline {3.4}Basic Quality Metrics}{34}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Relationship among Quality Attributes}{35}{section.3.6}
+\contentsline {section}{\numberline {3.5}Principles defined by Quality Attributes}{35}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyms}{37}{section*.21}
+\contentsline {section}{\numberline {3.6}Relationship among Quality Attributes}{37}{section.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{39}{appendix*.23}
+\contentsline {chapter}{Acronyms}{39}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{40}{appendix*.24}
+\contentsline {chapter}{\nonumberline List of Figures}{41}{appendix*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{41}{appendix*.25}
+\contentsline {chapter}{\nonumberline List of Tables}{42}{appendix*.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{43}{appendix*.26}

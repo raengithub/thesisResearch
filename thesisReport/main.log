@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  17 NOV 2015 11:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  17 NOV 2015 16:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1697,7 +1697,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@toks=\toks64
 \enit@inbox=\box54
 \enitdp@description=\count355
-))
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 \c@r@tfl@t=\count356
@@ -1705,7 +1705,7 @@ Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 \rotFPbot=\skip93
 \rot@float@box=\box55
 \rot@mess@toks=\toks65
-)
+))
 (./settings/settings.tex
 \glswrite=\write5
 \glo@main@file=\write6
@@ -1719,8 +1719,18 @@ Package glossaries Info: Writing glossary file main.acn on input line 8.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
-))
-(./settings/commands.tex) (./glossary/terms.tex) (./glossary/acronyms.tex
+)
+
+! Package xcolor Error: Undefined color `grey'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.107 \colorlet{shadecolor}{grey!20}
+                                    
+? 
+) (./settings/commands.tex) (./glossary/terms.tex) (./glossary/acronyms.tex
 
 ! Package glossaries Error: Glossary entry `RCS' has already been defined.
 
@@ -1754,7 +1764,12 @@ Package biblatex Info: ... file 'english.lbx' found.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 ))
-(./main.aux)
+(./main.aux
+
+LaTeX Warning: Label `tab:quality_of_service/quality_attributes/quality_attribu
+tes_relationship' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -1787,11 +1802,11 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
-
-(./main.bbl)
+ (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 15.
 Package biblatex Info: Reference segment=0 on input line 15.
- (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count357
 \scratchdimen=\dimen259
@@ -1872,13 +1887,13 @@ LaTeX Info: Redefining \nameref on input line 15.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
 line 15.
  (./pages/cover.tex
-<logos/tum.png, id=171, 53.4798pt x 28.6671pt>
+<logos/tum.png, id=175, 53.4798pt x 28.6671pt>
 File: logos/tum.png Graphic file (type png)
  <use logos/tum.png>
 Package pdftex.def Info: logos/tum.png used on input line 13.
 (pdftex.def)             Requested size: 113.81102pt x 61.01012pt.
 
-<logos/faculty.png, id=172, 34.2078pt x 37.0986pt>
+<logos/faculty.png, id=176, 34.2078pt x 37.0986pt>
 File: logos/faculty.png Graphic file (type png)
  <use logos/faculty.png>
 Package pdftex.def Info: logos/faculty.png used on input line 31.
@@ -1990,7 +2005,7 @@ LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 2.
-<figures/context-monolith-example.png, id=245, 633.36626pt x 236.885pt>
+<figures/context-monolith-example.png, id=250, 633.36626pt x 236.885pt>
 File: figures/context-monolith-example.png Graphic file (type png)
 
 <use figures/context-monolith-example.png>
@@ -2004,7 +2019,7 @@ Package nag Warning: `center' environment in figure.
 
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 13.
-<figures/context-module-monolith.png, id=251, 962.59625pt x 501.875pt>
+<figures/context-module-monolith.png, id=256, 962.59625pt x 501.875pt>
 File: figures/context-module-monolith.png Graphic file (type png)
 
 <use figures/context-module-monolith.png>
@@ -2037,7 +2052,7 @@ l.25 \item
            Allocation Monolith: An Allocation Monolith is created when all c...
 
 ? 
-<figures/context-allocation-monolith.png, id=265, 958.58125pt x 421.575pt>
+<figures/context-allocation-monolith.png, id=270, 958.58125pt x 421.575pt>
 File: figures/context-allocation-monolith.png Graphic file (type png)
 
 <use figures/context-allocation-monolith.png>
@@ -2061,7 +2076,7 @@ l.34 \item
 
 ? 
 [2 <./figures/context-module-monolith.png>]
-<figures/context-runtime-monolith.png, id=276, 959.585pt x 349.305pt>
+<figures/context-runtime-monolith.png, id=281, 959.585pt x 349.305pt>
 File: figures/context-runtime-monolith.png Graphic file (type png)
 
 <use figures/context-runtime-monolith.png>
@@ -2125,7 +2140,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--65
 
  []
 
-[5] <figures/context-scale-cube.jpg, id=320, 620.3175pt x 432.11438pt>
+[5] <figures/context-scale-cube.jpg, id=325, 620.3175pt x 432.11438pt>
 File: figures/context-scale-cube.jpg Graphic file (type jpg)
 
 <use figures/context-scale-cube.jpg>
@@ -2161,12 +2176,94 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--86
 
  []
 
-) (./chapters/granularity.tex [7]
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--96
+
+ []
+
+[7]
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 96.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.100 \begin
+            {shaded}Definition 2: \cite{Wootton:2014aa}\end{shaded}
+? 
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 100.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 \begin
+            {shaded}Definition 3: \cite{Cockcroft:2015aa}\end{shaded}
+? 
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 105.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.110 \begin
+            {shaded}Definition 4: \cite{Fowler:2014aa}\cite{Radchenko:2015aa...
+
+? 
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 110.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.115 \begin
+            {shaded}Definition 5: \cite{Fowler:2014aa}\end{shaded}
+? 
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 115.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--121
+
+ []
+
+[8]) (./chapters/granularity.tex [9]
 Chapter 2.
-[8
+[10
 
 
-] [9] [10] [11]
+] [11] [12] [13]
 Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
@@ -2176,7 +2273,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--80
 
  []
 
-[12]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 86--88
 
  []
@@ -2186,7 +2283,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--90
 
  []
 
-[13]
+[15]
 LaTeX Font Info:    Font shape `T1/pplx/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/pplx/b/it' tried instead on input line 94.
 
@@ -2221,7 +2318,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `superscript' on input line 100.
 
-<figures/Granularity-R3-one.png, id=464, 614.295pt x 324.21124pt>
+<figures/Granularity-R3-one.png, id=488, 614.295pt x 324.21124pt>
 File: figures/Granularity-R3-one.png Graphic file (type png)
 
 <use figures/Granularity-R3-one.png>
@@ -2233,7 +2330,7 @@ Package pdftex.def Info: figures/Granularity-R3-one.png used on input line 105.
 Package nag Warning: `center' environment in figure.
 (nag)                Maybe you want \centering instead on input line 108.
 
-<figures/Granularity-R3-two.png, id=472, 515.9275pt x 133.49875pt>
+<figures/Granularity-R3-two.png, id=496, 515.9275pt x 133.49875pt>
 File: figures/Granularity-R3-two.png Graphic file (type png)
 
 <use figures/Granularity-R3-two.png>
@@ -2245,17 +2342,17 @@ Package pdftex.def Info: figures/Granularity-R3-two.png used on input line 116.
 Package nag Warning: `center' environment in figure.
 (nag)                Maybe you want \centering instead on input line 119.
 
-[14 <./figures/Granularity-R3-one.png>]
+[16 <./figures/Granularity-R3-one.png>]
 
-LaTeX Warning: Reference `fig: Range Example' on page 15 undefined on input lin
+LaTeX Warning: Reference `fig: Range Example' on page 17 undefined on input lin
 e 126.
 
 
-LaTeX Warning: Reference `fig:R3 volume-granularity analogy greater' on page 15
+LaTeX Warning: Reference `fig:R3 volume-granularity analogy greater' on page 17
  undefined on input line 128.
 
-[15 <./figures/Granularity-R3-two.png>]
-<figures/Granularity-R3-three.png, id=506, 615.29875pt x 253.94875pt>
+[17 <./figures/Granularity-R3-two.png>]
+<figures/Granularity-R3-three.png, id=529, 615.29875pt x 253.94875pt>
 File: figures/Granularity-R3-three.png Graphic file (type png)
 
 <use figures/Granularity-R3-three.png>
@@ -2267,7 +2364,7 @@ Package pdftex.def Info: figures/Granularity-R3-three.png used on input line 13
 Package nag Warning: `center' environment in figure.
 (nag)                Maybe you want \centering instead on input line 135.
 
-<figures/Granularity-R3-four.png, id=509, 619.31375pt x 191.71625pt>
+<figures/Granularity-R3-four.png, id=532, 619.31375pt x 191.71625pt>
 File: figures/Granularity-R3-four.png Graphic file (type png)
 
 <use figures/Granularity-R3-four.png>
@@ -2284,8 +2381,8 @@ l.153 ...is held. The study was done at KBC Bank &
                                                    Insurance Group of centra...
 
 ? 
-[16 <./figures/Granularity-R3-three.png> <./figures/Granularity-R3-four.png>]
-[17]
+[18 <./figures/Granularity-R3-three.png> <./figures/Granularity-R3-four.png>]
+[19]
 
 Package nag Warning: Command \centerline is TeX. 
 (nag)                Use \centering or center environment instead on input line
@@ -2296,7 +2393,7 @@ Package nag Warning: Command \centerline is TeX.
 (nag)                Use \centering or center environment instead on input line
  178.
 
-) (./chapters/quality_of_service.tex [18]
+) (./chapters/quality_of_service.tex [20]
 Chapter 3.
 
 ! Package glossaries Error: Glossary entry `.' has not been defined.
@@ -2312,10 +2409,10 @@ l.21 ...evelopment Life Cycle \acrshort [{SDLC}].
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19
+[21
 
 
-] [20]
+] [22]
 Overfull \hbox (6.93349pt too wide) in paragraph at lines 68--69
 []\T1/pplx/m/n/10.95 (-20) the busi-ness do-main is re-al-ized with var-i-ous p
 ro-cesses de-fined as $\OML/zplm/m/it/10.95 P \OT1/zplm/m/n/10.95 = \OMS/zplm/m
@@ -2331,7 +2428,7 @@ l.72 ...sumer}(s) = \{ S_{c1}, S_{2},...S{{n_c}\}$
                                                   ; $n_c$ gives the number o...
 
 ? 
-[21]
+[23]
 ! Missing } inserted.
 <inserted text> 
                 }
@@ -2370,7 +2467,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
-[22]
+[24]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2396,7 +2493,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--128
 
  []
 
-[23]
+[25]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2413,7 +2510,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--195
 
  []
 
-[24]
+[26]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2424,7 +2521,7 @@ Type  H <return>  for immediate help.
 l.221 \\w
          here,
 ? 
-[25]
+[27]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2459,7 +2556,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 294--296
 
  []
 
-[26]
+[28]
 ! Display math should end with $$.
 <to be read again> 
                     
@@ -2471,7 +2568,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 320--324
 
  []
 
-[27]
+[29]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2511,12 +2608,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 394--396
 
  []
 
-[28]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 407--411
 
  []
 
-[29]
+[31]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2548,7 +2645,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 471--473
 
  []
 
-[30]
+[32]
 ! Missing } inserted.
 <inserted text> 
                 }
@@ -2590,7 +2687,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 517--550
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[31]
+[33]
 Underfull \hbox (badness 10000) in paragraph at lines 554--556
 
  []
@@ -2608,7 +2705,7 @@ l.719   \\
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[32] [33] [34]
+[34] [35] [36]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2617,7 +2714,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 798--800
 
  []
 
-[35]) (./main.acr [36]
+[37]) (./main.acr [38]
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 5.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmss.fd
@@ -2627,12 +2724,12 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [37
+ [39
 
 
 
 
-]) [38]
+]) [40]
 Package tocbasic Info: character protrusion at lof deactivated on input line 49
 .
 
@@ -2640,7 +2737,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 49
 \tf@lof=\write10
 \openout10 = `main.lof'.
 
- [39
+ [41
 
 
 ]
@@ -2650,7 +2747,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 50
 \tf@lot=\write11
 \openout11 = `main.lot'.
 
- [40
+ [42
 
 
 ]
@@ -2671,7 +2768,7 @@ Package microtype Info: Loading generic settings for font family
 Package biblatex Warning: No driver for entry type 'webpage'.
 (biblatex)                Using fallback driver on input line 52.
 
-[41
+[43
 
 
 ]
@@ -2695,7 +2792,7 @@ Package biblatex Warning: No driver for entry type 'webpage'.
 l.52 \printbibliography{
                         }
 ? 
-[42]
+[44]
 
 Package biblatex Warning: No driver for entry type 'webpage'.
 (biblatex)                Using fallback driver on input line 52.
@@ -2704,7 +2801,7 @@ Package biblatex Warning: No driver for entry type 'webpage'.
 Package biblatex Warning: No driver for entry type 'webpage'.
 (biblatex)                Using fallback driver on input line 52.
 
-[43]
+[45]
 
 Package biblatex Warning: No driver for entry type 'webpage'.
 (biblatex)                Using fallback driver on input line 52.
@@ -2721,18 +2818,18 @@ Mono-lithic Ar-chi-tec-ture\T1/pplx/m/n/10.95 (-20) . 2014. \T1/pplx/m/sc/10.95
 ices .
  []
 
-[44]
+[46]
 
-Package nag Warning: 12 complaints in total.
+Package nag Warning: 17 complaints in total.
 
-[45]
+[47]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 54.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 54.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 66F7C2FB5982F036ABE710132507E8ED;2368.
+(rerunfilecheck)             Checksum: D2774F72803BBA6E3BAD21092CF6DCCE;2446.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2741,7 +2838,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
@@ -2761,10 +2858,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 ### simple group (level 1) entered at line 63 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 46234 strings out of 493089
- 979972 string characters out of 6134843
- 1670129 words of memory out of 5000000
- 48178 multiletter control sequences out of 15000+600000
+ 46242 strings out of 493089
+ 980104 string characters out of 6134843
+ 1670257 words of memory out of 5000000
+ 48182 multiletter control sequences out of 15000+600000
  82002 words of font info for 360 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,19n,95p,2011b,3733s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2782,10 +2879,10 @@ e/2015/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/
 xmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/font
 s/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (52 pages, 765293 bytes).
+Output written on main.pdf (54 pages, 769848 bytes).
 PDF statistics:
- 1040 PDF objects out of 1200 (max. 8388607)
- 918 compressed objects within 10 object streams
- 235 named destinations out of 1000 (max. 500000)
- 44476 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1063 PDF objects out of 1200 (max. 8388607)
+ 939 compressed objects within 10 object streams
+ 239 named destinations out of 1000 (max. 500000)
+ 44484 words of extra memory for PDF output out of 51595 (max. 10000000)
 
