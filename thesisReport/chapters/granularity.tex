@@ -44,15 +44,27 @@ In addition to quantitative perspective on granularity, it can be helpful to app
 
 \begin{enumerate}
 \item The correct granularity of a component or a service is dependent upon the time. The various supporting technologies that evolve during time can also be an important factor to define the level of vertical decomposition. For eg: with the improvement in virtualization, containerization as well as platform as a service technologies, it is fast and easy for deployment automation which supports multiple fine-grained services creation.\cite{Peter-Herzum:2000aa}
+
 \item A good candidate for a service should be independent upon the implementation but should depend upon the understandability of domain experts.
+
 \cite{Raf-Haesen:2015aa, Peter-Herzum:2000aa}
 \item A service should be an autonomous reusable component and should support various cohesion such as functional (group similar functions), temporal(change in the service should not affect other services), run-time(allocate similar runtime environment for similar jobs; eg. provide same address space for jobs of similar computing intensity) and actor (a component should provide service to similar users).
 \cite{Raf-Haesen:2015aa}, \cite{Peter-Herzum:2000aa}
+
 \item A service should not support huge number of operations. If it happens, it will affect high number of customers on any change and there will be no unified view on the functionality. Furthermore, if the interface of the service is small, it will be easy to maintain and understand.\cite{Raf-Haesen:2015aa}, \cite{Pierre-Reldin:2007aa}
-\item A service should provide transaction integrity and compensation. The activities supported by a service should be within the scope of one transaction. Additionally, the compensation should be provided when the transaction fails. \cite{Raf-Haesen:2015aa}, \cite{Foody:2005aa}
+
+\item A service should provide transaction integrity and compensation. The activities supported by a service should be within the scope of one transaction. Additionally, the compensation should be provided when the transaction fails. If each operation provided by the service map to one transaction, then it will improve availability and fault-recovery. \cite{Raf-Haesen:2015aa}, \cite{Foody:2005aa} \cite{Bianco:2007aa}
+
 \item The notion of right granularity is more important than that of fine or coarse. It depends upon the usage condition and moreover is about balancing various qualities such as reusability, network usage, completeness of context etc. \cite{Raf-Haesen:2015aa}, \cite{Lawrence-Wilkes:2004aa}
+
 \item The level of abstraction of the services should reflect the real world business activities. Doing so will help to map business requirements and technical capabilities. \cite{Pierre-Reldin:2007aa}
+
+\item If there are ordering dependencies between the operations, it will be easy to implement and test if the dependent operations are all combined into a single service. \cite{Bianco:2007aa}
+
 \item There can be two better approaches for breaking down an abstraction. One way is to separate redundant data or data with different semanting meaning. The other approach is to divide services with limited control and scope. For example: A Customer Enrollment service which deals with registration of new customers and assignment of unique customer ID can be divided into two independent fine-grained services: Customer Registration and ID Generation, each service will have limited scope and separate context of Customer.\cite{Pierre-Reldin:2007aa}
+
+\item If there are functionalities provided by a service which are more likely to change than other functionalities. It is better to separate the functionality into a fine-grained service so that any further change on the functionality will affect only limited number of consumers. \cite{Bianco:2007aa}
+ 
 \end{enumerate}
 
 \section{Dimensions of Granularity}\label{section:granularity/dimensions}

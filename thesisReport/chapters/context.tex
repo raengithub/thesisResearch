@@ -1,0 +1,108 @@
+\chapter{Context}\label{chapter:context}
+\section{Monolith Architecture Style}\label{section:context/monolith}
+A Mononlith Architecture Style is the one in which an application is deployed as a single artifact. The architecture inside the application can be modular and clean. In order to clarify, the figure \ref{fig:context/monolith-example} shows architecture of an Online-Store application. The application has clear separation of components such as Catalog, Order and Service as well as respective models such as Product, Order etc. Despite of that, all the units of the application are deployed in tomcat as a single war file.\cite{Richardson:2014aa}\cite{Richardson:2014ab}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{figures/context-monolith-example}
+\caption{Monolith Example from \cite{Richardson:2014aa}}
+\label{fig:context/monolith-example}
+\end{center}
+\end{figure}
+
+\subsection{Types of Monolith Architecture Style}\label{subsection:context/monolith-types}
+According to \cite{Annett:2014aa}, a monolith can be of several types depending upon the viewpoint, as shown below:
+\begin{enumerate}
+\item Module Monolith: If all the code to realize an application share the same codebase and need to be compiled together to create a single artifact for the whole application then the architecture is Module Monolith Architecture. An example is show in figure \ref {fig:context/module-monolith-example}. The application on the left has all the code in the same codebase in the form of packages and classes without clear definition of modules and get compiled to a single artifact. However, the application on the right is developed by a number of modular codebase, each has separate codebase and can be compiled to different artifact. The modules uses the produced artifacts which is different than the earlier case where the code referenced each other directly.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{figures/context-module-monolith}
+\caption{Module Monolith Example from \cite{Annett:2014aa}}
+\label{fig:context/module-monolith-example}
+\end{center}
+\end{figure}
+\\
+\item Allocation Monolith: An Allocation Monolith is created when all code is deployed to all the servers as a single version. This means that all the components running on the servers have the same versions at any time. The figure \ref{fig:context/allocation-monolith-example} gives an example of allocation monolith. The system on the left have same version of artifact for all the components on all the servers. It does not make any differenct whether or not the system has single codebase and artifact. However, the system on the right as shown in the figure is realized with multiple version of the artifacts in different servers at any time.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{figures/context-allocation-monolith}
+\caption{Allocation Monolith Example from \cite{Annett:2014aa}}
+\label{fig:context/allocation-monolith-example}
+\end{center}
+\end{figure}
+\\
+\item Runtime Monolith: In Runtime Monolith, the whole application is run under a single process. The left system in the figure \ref{fig:context/runtime-monolith-example} shows an example of runtime monolith where a single server process is responsible for whole application. Whereas the system on the left has allocated multiple server process to run distinct set of component artifacts of the application.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{figures/context-runtime-monolith}
+\caption{Runtime Monolith Example from \cite{Annett:2014aa}}
+\label{fig:context/runtime-monolith-example}
+\end{center}
+\end{figure}
+\end{enumerate}
+
+\\
+\subsection{Advantages of Monolith Architecture Style}\label{subsection:context/monolith-advantages}
+The Monolith architecture is appropriate for small application and has following benifits:\cite{Richardson:2014ab}\cite{Fowler:2014aa}\cite{Gupta:2015aa}\cite{Abram:2014aa}
+\begin{itemize}[leftmargin=.5in]
+\item It is easy to develop a monolith application since various development tools including \acrshort{IDE}s are created around the single application concept. Nevertheless, it is also easy to test the application by creating appropriate environment on the developer's machine.
+\item The deployment can be simply achieved by moving the single artifact for the application to an appropriate directory in the server.
+\item The scaling can be clearly and easily done by replicating the application horizontally across multiple servers behind a load balancer as shown in figure \ref{fig:context/monolith-example}
+\item The different teams are working on the same codebase so sharing the functionality can be easier.
+\end{itemize}
+\\
+\subsection{Disadvantages of Monolith Architecture Style}\label{subsection:context/monolith-disadvantages}
+As the requirement grows with time, alongside as application becomes huge and the size of team increases, the monolith architecture faces many problems. Most of the advantages of monolith architecture for small application will not be valid anymore. The challenges of monolith architecture for such agile and huge context are as given below:\cite{Namiot:2014aa}\cite{Newman:2015aa}\cite{Abram:2014aa}\cite{Richardson:2014aa}\cite{Richardson:2014ab}\cite{Gupta:2015aa}
+\begin{itemize}[leftmargin=.5in]
+\item Limited Agility: As the whole application has single codebase, even changing a small feature to release it in production takes time. Firstly, the small change can also trigger changes to other dependent code because in huge monolith application it is very difficult to manage modularity especially when all the team members are working on the same codebase. Secondly, to deploy a small change in production, the whole application has to be deployed. Thus continuous delivery gets slower in case of monolith application. This will be more problematic when multiple changes have to be released on a daily basis. The slow pace and frequency of release will highly affect agility.
+\\
+\item Decrease in Productivity: It is difficult to understand the application especially for a new developer because of the size. Although it also depends upon the structure of the codebase, it will still be difficult to grasp the significance of the code when there is no hard modular boundary.Additionally, the developer can be intimidated due to need to see the whole application at once from outwards to inwards direction. Secondly, the development environment can be slow to load the whole application and at the same time the deployment will also be slow. So, in overal it will slow down the speed of understandability, execution and testing.
+\\
+\item Difficult Team Structure: The division of team as well as assigning tasks to the team can be tricky. Most common ways to partition teams in monolith are by technology and by geography. However, each one cannot be used in all the situations. In any case, the communication among the teams can be difficult and slow. Additionally, it is not easy to assign vertical ownership to a team from particular feature from development to relase. If something goes wrong in the deployment, there is always a confusion who should find the problem, either operations team or the last person to commit. The approprate team structure and ownership are very important for agility.
+\\
+\item Longterm Commitment to Technology stack: The technology to use is chosen before the development phase by analysing the requirements and the maturity of current technology at that time. All the teams in the architecture need to follow the same techonology stack. However, if the requirement changes then there can be situation when the features can be best soloved by different sets of technology. Additionally, not all the features in the application are same so cannot be treated accordingly in terms of technology as well. Nevertheless, the technology advances rapidly. So, the solution thought at the time of planning can be outdated and there can be a better solution available. In monolith application, it is very difficult to migrate to new technology stack and it can be rather painfull process.
+\\
+\item Limited Scalability: The scalability of monolith application can be done in either of two ways. The first way is to replicate the application along many servers and dividing the incoming request using a load balancer in front of the servers. Another approach is using the identical copies of the application in multiple servers as in previous case but partitioning the database access instead of user request. Both of these scaling approaches improves the capacity and availability of the application. However, the individual requirement regarding scaling for each component can be different but cannot be fulfilled with this approach. Also, the complexity of the monolith application remains the because we are replicating the whole application. Additionally, if there is a problem in a component the same problem can affect all the servers running the copies of the application and does not improve resilency.\cite{MacVittie:2014aa}\cite{Namiot:2014aa}
+\end{itemize}
+
+\section{Decomposition of Application}\label{section:context/decompostion-of-application}
+The section \ref{subsection:context/monolith-disadvantages} specified various disadvantages related to monolith architecture style. The book \cite{Fisher:2015aa} provides a way to solve most of the discussed problems such as agility, scalability, productivity etc. It provides three dimensions of scalability as shown in figure \ref{fig:context/scale-cube} which can be applied alone or simultaneously depending upon the situation and desired goals.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{figures/context-scale-cube}
+\caption{Scale Cube from \cite{Fisher:2015aa}}}
+\label{fig:context/scale-cube}
+\end{center}
+\end{figure}
+
+\\
+The scaling along each dimensions are described below. \cite{Fisher:2015aa}\cite{MacVittie:2014aa}\cite{Richardson:2014aa}
+\begin{enumerate}
+\item X-axis Scaling: It is done by cloning the application and data along multiple servers. A pool of requests are applied into a load balancer and the requests are deligated to any of the servers. Each of the server has the full capability of the application and full access to all the data required so in this respect it does not make any difference which server fulfills the request. Rather, it is about how many requests are fulfilled at any time. It is easy to scale along X-axis as the number of requests increases. The solution is as simple as to add additional clones. However, with this type of scaling, it is not scale with the increase in data. Moreover, it also does not scale when there are large variation in the frequency of any type of requests or there dominant requests types because all the requests are handled in an unbiased way and allocated to servers in the same way.
+\\
+\item Z-axis Scaling: The scaling is done by spliting the request based on certain critera or information regarding the requestor or customer affected by the request. It is different than X-axis scaling in the way that the servers are responsible for different kinds of requests. Normally, the servers have same copy of the application but some can have additional functionalies depending upon the requests expected. The Z-axis scaling helps in fault isolation and transaction scalability. Using this scaling, certain group of customers can be given added functionality or a new functionality can be tested to a small group and thus minimizing the risk.
+\\
+\item Y-axis Scaling: The scaling along this dimension means the spliting of the application responsibility. The separation can be done either by data, by the actions performed on the data or by combination of both. The respective ways can be referred to as resoure-oriented or service-oriented splits. While the x-axis or z-axis split were rather duplication of work along servers, the y-axis is more about specialization of work along servers. The major advantage of this scaling is that each request is scaled and handled differently according to its necessity. As the logic along with the data to be worked on are separated, developers can focus and work on small section at a time. This will increase productivity as well as agility. Additionally, a fault on a component is isolated and can be handled gracefully without affecting rest of the application. However, scaling along Y-axis can be costly compared to scaling along other dimensions.
+\end{enumerate}
+
+Microservices pattern \cite{Richardson:2014ac}
+Microservices Not a free lunch \cite{Wootton:2014aa}
+state of art in microservices \cite{Cockcroft:2015aa}
+
+
+//Links need to be filtered
+\\
+Guidelines for performing Systematic literature Riview \cite{np:2007aa}
+\\
+Microservices validation: Mjolnirr platform case study \cite{Radchenko:2015aa}
+\\
+Microservices is SOA, for those who know what SOA is \cite{Jones:2014aa}
+\\
+Are Microservices ‘SOA Done Right’? \cite{Bloomberg:2015aa}
+\\
+Microservices 'SOA Done Right'\cite{Romanski:2015aa}
+\\
+state of art in microservices \cite{Cockcroft:2015aa}
+\\
+Agile coding in enterprise IT: Code small and local\cite{Curran:2014aa}

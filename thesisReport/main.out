@@ -1,29 +1,35 @@
 \BOOKMARK [0][-]{Doc-Start}{Acknowledgments}{}% 1
 \BOOKMARK [0][-]{chapter*.1}{Abstract}{}% 2
-\BOOKMARK [0][-]{chapter.1}{Quality of Service}{}% 3
-\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.2}{Quality Attributes}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.3}{Quality Metrics}{chapter.1}% 6
-\BOOKMARK [2][-]{subsection.1.3.1}{Context and Notations}{section.1.3}% 7
-\BOOKMARK [2][-]{subsection.1.3.2}{Coupling Metrics}{section.1.3}% 8
-\BOOKMARK [2][-]{subsection.1.3.3}{Cohesion Metrics}{section.1.3}% 9
-\BOOKMARK [2][-]{subsection.1.3.4}{Granularity Metrics}{section.1.3}% 10
-\BOOKMARK [2][-]{subsection.1.3.5}{Complexity Metrics}{section.1.3}% 11
-\BOOKMARK [2][-]{subsection.1.3.6}{Autonomy Metrics}{section.1.3}% 12
-\BOOKMARK [2][-]{subsection.1.3.7}{Reusability Metrics}{section.1.3}% 13
-\BOOKMARK [1][-]{section.1.4}{Basic Quality Metrics}{chapter.1}% 14
-\BOOKMARK [1][-]{section.1.5}{Principles defined by Quality Attributes}{chapter.1}% 15
-\BOOKMARK [1][-]{section.1.6}{Relationship among Quality Attributes}{chapter.1}% 16
-\BOOKMARK [0][-]{chapter.2}{Granularity}{}% 17
-\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.2}{Related Work}{chapter.2}% 19
-\BOOKMARK [1][-]{section.2.3}{Basic Principles to Service Granularity}{chapter.2}% 20
-\BOOKMARK [1][-]{section.2.4}{Dimensions of Granularity}{chapter.2}% 21
-\BOOKMARK [2][-]{subsection.2.4.1}{Dimension by Interface}{section.2.4}% 22
-\BOOKMARK [2][-]{subsection.2.4.2}{Dimension by Interface Realization}{section.2.4}% 23
-\BOOKMARK [2][-]{subsection.2.4.3}{R3 Dimension}{section.2.4}% 24
-\BOOKMARK [2][-]{subsection.2.4.4}{Retrospective}{section.2.4}% 25
-\BOOKMARK [0][-]{section*.16}{Acronyms}{}% 26
-\BOOKMARK [0][-]{appendix*.18}{List of Figures}{}% 27
-\BOOKMARK [0][-]{appendix*.19}{List of Tables}{}% 28
-\BOOKMARK [0][-]{appendix*.20}{Bibliography}{}% 29
+\BOOKMARK [0][-]{chapter.1}{Context}{}% 3
+\BOOKMARK [1][-]{section.1.1}{Monolith Architecture Style}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.1}{Types of Monolith Architecture Style}{section.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.2}{Advantages of Monolith Architecture Style}{section.1.1}% 6
+\BOOKMARK [2][-]{subsection.1.1.3}{Disadvantages of Monolith Architecture Style}{section.1.1}% 7
+\BOOKMARK [1][-]{section.1.2}{Decomposition of Application}{chapter.1}% 8
+\BOOKMARK [0][-]{chapter.2}{Granularity}{}% 9
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.2}{Related Work}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.3}{Basic Principles to Service Granularity}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.4}{Dimensions of Granularity}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.4.1}{Dimension by Interface}{section.2.4}% 14
+\BOOKMARK [2][-]{subsection.2.4.2}{Dimension by Interface Realization}{section.2.4}% 15
+\BOOKMARK [2][-]{subsection.2.4.3}{R3 Dimension}{section.2.4}% 16
+\BOOKMARK [2][-]{subsection.2.4.4}{Retrospective}{section.2.4}% 17
+\BOOKMARK [0][-]{chapter.3}{Quality of Service}{}% 18
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.2}{Quality Attributes}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.3}{Quality Metrics}{chapter.3}% 21
+\BOOKMARK [2][-]{subsection.3.3.1}{Context and Notations}{section.3.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.2}{Coupling Metrics}{section.3.3}% 23
+\BOOKMARK [2][-]{subsection.3.3.3}{Cohesion Metrics}{section.3.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.4}{Granularity Metrics}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.5}{Complexity Metrics}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.6}{Autonomy Metrics}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.7}{Reusability Metrics}{section.3.3}% 28
+\BOOKMARK [1][-]{section.3.4}{Basic Quality Metrics}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.5}{Principles defined by Quality Attributes}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.6}{Relationship among Quality Attributes}{chapter.3}% 31
+\BOOKMARK [0][-]{section*.21}{Acronyms}{}% 32
+\BOOKMARK [0][-]{appendix*.23}{List of Figures}{}% 33
+\BOOKMARK [0][-]{appendix*.24}{List of Tables}{}% 34
+\BOOKMARK [0][-]{appendix*.25}{Bibliography}{}% 35

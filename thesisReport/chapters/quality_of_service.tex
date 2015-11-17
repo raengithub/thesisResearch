@@ -78,14 +78,17 @@ Before looking into the definitions of metrics, it will help understanding, to k
 \subsection{Coupling Metrics}{\label{section:quality_of_service/quality_metrics/coupling}
 
 \cite{Sindhgatta:2015aa} defines following metrics to determine coupling
-$$ \acrshort{SOCI}(s) = | \{ o_{i} \epsilon s_{i}: \exists_{o \epsilon s} calls(o, o_{i}) \wedge s \neq s_{i} \} | $$
+$$ \acrshort{SOCI}(s) = number\_of\_operations\_invoked $$ $$ = | \{ o_{i} \epsilon s_{i}: \exists_{o \epsilon s} calls(o, o_{i}) \wedge s \neq s_{i} \} | $$
 
-$$ \acrshort{ISCI}(s) = | \{ s_{i} : \exists_{o \epsilon s}, \exists_{o_{i} \epsilon s_{i}} calls(o, o_{i}) \wedge s \neq s_{i} \} | $$
+$$ \acrshort{ISCI}(s) = number\_of\_services\_invoked $$ $$ = | \{ s_{i} : \exists_{o \epsilon s}, \exists_{o_{i} \epsilon s_{i}} calls(o, o_{i}) \wedge s \neq s_{i} \} | $$
 
-$$ \acrshort{SMCI}(s) = | \cup M (o_{i}) : ( o_{i} \epsilon s_{i}) \vee ( \exists_{o \epsilon s}, \exists_{o_{i} \epsilon s_{i} } calls(o, o_{i}) \wedge s \neq s_{i} ) | $$
+$$ \acrshort{SMCI}(s) = size\_of\_message\_required\_from\_other\_services $$ $$ = | \cup M (o_{i}) : ( o_{i} \epsilon s_{i}) \vee ( \exists_{o \epsilon s}, \exists_{o_{i} \epsilon s_{i} } calls(o, o_{i}) \wedge s \neq s_{i} ) | $$
 
 where, \\
 \begin{itemize}[leftmargin=.5in]
+\item SOCI is Service Operation Coupling Index
+\item ISCI is Inter Service Coupling Index
+\item SMCI is Service Message Coupling Index
 \item $ call(o, o_i) $ represents the call made from service 'o' to service '$o_i$'
 \end{itemize}
 \\
@@ -101,19 +104,24 @@ where, \\
 \end{itemize}
 \\
 \cite{Kazemi:2011aa} defines
-$$Coupling = \frac{\sum_{i \epsilon D_s} \sum_{k \epsilon O(s)}CCO(i,k)}{|O(s)|.K}$$
+$$Coupling = \frac{dependency\_on\_business\_entities\_of\_other\_services}{number\_of\_operations\_and\_ dependencies}$$ $$=\frac{\sum_{i \epsilon D_s} \sum_{k \epsilon O(s)}CCO(i,k)}{|O(s)|.K}$$
 where, \\
 \begin{itemize}[leftmargin=.5in]
 \item $D_s = \{ D_1, D_2,...D_k \}$ is set of dependencies the service has on other services
-\item $ k = |D_s| $
-\item CCO is Conceptual Coupling betweeen service operations and obtained from CRUD matrix table constructed with business entities and business capabilities
+\item $ K = |D_s| $
+\item CCO is Conceptual Coupling betweeen service operations and obtained from BE X EBP (CRUD) matrix table constructed with business entities and business operations, where BE is business entity and EBP any logical process defined in an operation.
 \end{itemize}
 
 \cite{Bingu-Shim:2008aa} defines
-$$coupling(s) =  \frac{n_c + n_p}{n_s}$$
-
+$$coupling(s) =  \frac{number\_of\_services\_connected}{number\_of\_services} $$ $$ =\frac{n_c + n_p}{n_s}$$
+where, \\
+\begin{itemize}[leftmargin=.5in]
+\item $n_c$ is number of consumer services
+\item $n_p$ number of dependent services
+\item $n_s$ total number of services
+\end{itemize}
 \cite{Saad-Alahmari:2011aa} defines
-$$coupling = \frac{\sum_{i=1}^{|O(s)|} (S_{i,sync} + S_{i,async})}{|S|}$$
+$$coupling = \frac{number\_of\_invocation}{number\_of\_services}$$ $$=\frac{\sum_{i=1}^{|O(s)|} (S_{i,sync} + S_{i,async})}{|S|}$$
 \\
 where,
 \\
@@ -189,11 +197,11 @@ The table \ref{tab:quality_of_service/quality_attributes/coupling_metrics} shows
 \subsection{Cohesion Metrics}{\label{section:quality_of_service/quality_metrics/cohesion}
 
 \cite{Sindhgatta:2015aa} defines following metric for cohesion.
-$$ \acrshort{SFCI}(s) = \frac{max (\mu(m) )}{|O(s)|} $$
+$$ \acrshort{SFCI}(s) = \frac{number\_of\_operations\_using\_same\_message}{number\_of\_operations} $$ $$ = \frac{max (\mu(m) )}{|O(s)|} $$
 \\
 where,
-\\
 \begin{itemize}[leftmargin=.5in]
+\item SFCI is Service Functional Cohesion Index
 \item the number of operations using a message 'm'  is $\mu(m)$ such that $ m \epsilon M(s) $ and |O(s)| > 0
 %principle
 \\The service is considered highly cohesive if all the operations use one common message. This implies that a higly cohesive  service operates on a small set of key business entities as guided by the messages and are  relavant to the service and all the operations operate on the same set of key business entities. \cite{Sindhgatta:2015aa}
@@ -204,14 +212,17 @@ $$ cohesion =  \frac{n_s}{|M(s)|}$$
 
 \cite{Perepletchikov:2007aa} defines
 
-$$ \acrshort{SIDC} = \frac{ n_{op} }{n_{pt}} $$
+$$ \acrshort{SIDC} = \frac{number\_of\_operations\_sharing\_same\_parameter}{total\_number\_of\_parameters\_in\_service} $$ $$ = \frac{ n_{op} }{n_{pt}} $$
 
-$$ \acrshort{SIUC} = \frac{n_{oc}}{n_c * |O(s)|}$$
+$$ \acrshort{SIUC} = \frac{sum\_of\_number\_of\_operations\_used\_by\_each\_consumer}{product\_of\_total\_no\_of\_consumers\_and\_operations} $$ $$= \frac{n_{oc}}{n_c * |O(s)|}$$
 
-$$ \acrshort{SSUC} = \frac{n_{so}}{n_c * |O(s)|}$$
+$$ SSUC = \frac{sum\_of\_number\_of\_sequentials\_operations\_accessed\_by\_each\_consumer}{product\_of\_total\_no\_of\_consumers\_and\_operations} $$ $$=\frac{n_{so}}{n_c * |O(s)|}$$
 
 \\where,
 \begin{itemize}[leftmargin=.5in]
+\item SIDC is Service Interface Data Cohesion
+\item SIUC is Service Interface Usage Cohesion
+\item SSUC is Service Sequential Usage Cohesion
 \item $n_{op}$ is the number of operations in the service which share the same parameter types
 \item $n_{pt}$ is the total number of distinct parameter types in the service
 \item $n_{oc}$ is the total number of operations in the service used by consumers
@@ -288,24 +299,31 @@ The table \ref{tab:quality_of_service/quality_attributes/cohesion_metrics} gives
 \subsection{Granularity Metrics}{\label{section:quality_of_service/quality_metrics/granularity}
 
 \cite{Sindhgatta:2015aa} defines
-$$ \acrshort{SCG} = |O(s)| $$ 
-$$ \acrshort{SDG} = |M(s)| $$
+$$ \acrshort{SCG} = number\_of\_operations = |O(s)| $$ 
+$$ \acrshort{SDG} = size\_of\_messages =|M(s)| $$
+where,
+\begin{itemize}[leftmargin=.5in]
+\item SCG is Service Capability Granularity
+\item SDG is Service Data Granularity
+\end{itemize}
 
 \cite{Bingu-Shim:2008aa} defines
-$$ granularity = \frac{|O(s)|^2}{|M(s)|^2}$$
+$$ granularity = \frac{number\_of\_operations}{size\_of\_messages} = \frac{|O(s)|^2}{|M(s)|^2}$$
 
 \cite{Saad-Alahmari:2011aa} defines
 
-$$ ODG = 1 - \bigg( \frac{ \sum_{i=1}^{n_io} W_{pi}}{ \sum_{i=1}^{n_is} W_{pi}} + \frac{\sum_{j=1}^{n_jo} W_{pj}}{ \sum_{j=1}^{n_js} W_{pj}} \bigg)$$
+$$ ODG = fraction\_of\_total\_weight\_of\_input\_and\_output\_parameters $$ $$ = \bigg( \frac{ \sum_{i=1}^{n_io} W_{pi}}{ \sum_{i=1}^{n_is} W_{pi}} + \frac{\sum_{j=1}^{n_jo} W_{pj}}{ \sum_{j=1}^{n_js} W_{pj}} \bigg)$$
 
-$$ OFG = \frac{W_i(o)}{ \sum_{i=1}{|O(S)|}W_i(o)}$
+$$ OFG = complexity\_weightage\_of\_operation = \frac{W_i(o)}{ \sum_{i=1}^{|O(S)|}W_i(o)}$
 
 
-$$ SOG = \sum_{i=1}^{|O(S)|} ODG(i) * OFG(i) $$
+$$ granularity = sum\_of\_product\_of\_data\_and\_functionality\_granularity $$ $$= \sum_{i=1}^{|O(S)|} ODG(i) * OFG(i) $$
 \\
 where,
 \\
 \begin{itemize}[leftmargin=.5in]
+\item ODG is Operation Data Granularity
+\item OFG is Operation Functionality Granularity
 \item $W_{pi}$ is the weight of input parameter
 \item $W_{pj}$ is the weight of output parameter
 \item $n_io$ is the number of input parameters in an operation
@@ -366,15 +384,19 @@ The table \ref{tab:quality_of_service/quality_attributes/granularity_metrics} pr
 \subsection{Complexity Metrics}{\label{section:quality_of_service/quality_metrics/complexity}
 
 \cite{Zhang:2009aa} defines
-$$ \acrshort{RCS} = \frac{CS(s_i)}{|S|}$$
 $$ \acrshort{RIS} = \frac{IS(s_i)}{|S|}$$
+\acrshort{RCS}
+\\
+
+$$  complexity = \frac{coupling\_of\_service}{number\_of\_services} = \frac{CS(s_i)}{|S|}$$
+
 \\
 where,
 \\
 \begin{itemize}[leftmargin=.5in]
 \item $CS(s_i)$ gives coupling value of a service
-\item $IS(s_i)$ gives importance weight of a service in an application
 \item |S| is the number of services to realize the application
+\item $IS(s_i)$ gives importance weight of a service in an application
 \end{itemize}
 
 The complexity is rather given by relative coupling than by coupling on its own. A low value of RCS indicates that the coupling is lower than the count of services where as RCS with value 1 indicates that the coupling is equal to the number of services. This represents high amount of complexity.
@@ -382,13 +404,14 @@ The complexity is rather given by relative coupling than by coupling on its own.
 Similarly, a high value of RIS indicates that a lot of services are dependent upon the service and the service of critical value for them. This increases complexity as any changes or problem in the service affects a large number of services to a high extent.
 \\
 \cite{Saad-Alahmari:2011aa} defines
-$$ Complexity(s) = \frac{\sum_{i=1}^{|O(s)|}(SOG(i))^2}{|S|}$$
+$$ Complexity(s) = \frac{Service\_Granularity}{number\_of\_services} $$ $$ =\frac{\sum_{i=1}^{|O(s)|}(SG(i))^2}{|S|}$$
 \\
 where,
 \\
 \begin{itemize}[leftmargin=.5in]
 \item |S| is the number of services to realize the application
-\item SOG(i) gives the granularity of ith service calculated as described in section \ref{section:quality_of_service/quality_metrics/granularity}
+\item SG(i) gives the granularity of ith service 
+\\calculated as described in section \ref{section:quality_of_service/quality_metrics/granularity}
 \end{itemize}
 
 refer to the document for effect of RCS and RIS on complixity
@@ -431,10 +454,10 @@ The table \ref{tab:quality_of_service/quality_attributes/complexity_metrics} pro
 \subsection{Autonomy Metrics}{\label{section:quality_of_service/quality_metrics/autonomy}
 \cite{Rostampour:2011aa} defines
 
-$$ SLC = \frac{1}{h_2 - l_2 + 1} \sum_{i= l_2}^{h_2} \sum_{sr \epsilon SR} (BE_{i,sr} X V_{sr})$$
+$$ Self-Containment (SLC) = sum\_of\_CRUD\_coefficients\_for\_each\_Business\_entity $$ $$ =\frac{1}{h_2 - l_2 + 1} \sum_{i= l_2}^{h_2} \sum_{sr \epsilon SR} (BE_{i,sr} X V_{sr})$$
 
 
-$$ DEP = \frac{\sum_{j=L1_i}^{h1_i} \sum_{k=1}^{BE} V_{sr_{jk}} - \sum_{j=L1_i}^{h1_i} \sum_{k=L2_i}^{j2_i} V_{sr_{jk}} }{nc}$$
+$$ Dependency (DEP) = dependency\_of\_service\_on\_other\_service\_business\_entities $$ $$ =\frac{\sum_{j=L1_i}^{h1_i} \sum_{k=1}^{BE} V_{sr_{jk}} - \sum_{j=L1_i}^{h1_i} \sum_{k=L2_i}^{j2_i} V_{sr_{jk}} }{nc}$$
 
 $$
 \mbox{autonomy}=\left\{
@@ -449,6 +472,7 @@ where,
 \\
 \begin{itemize}[leftmargin=.5in]
 \item nc is the number of relations with other services
+\item $BE_{i,sr} = 1$ if the service performs action sr on the ith BE and sr represents any CRUD operation and $V_{sr}$ is the coefficient depending upon the type of action
 \item $ V_{sr_{jk} $ is the corresponding value of the action in jkth element of CRUD matrix, it gives the weight of corresponding business capability affecting a business entity
 \item $ l1_i, h1_i, l2_i, h2_i$ are bounding indices in CRUD matrix of ith service
 \end{itemize}
@@ -484,9 +508,10 @@ The table \ref{tab:quality_of_service/quality_attributes/autonomy_metrics} shows
 \subsection{Reusability Metrics}{\label{section:quality_of_service/quality_metrics/reusability}
 \cite{Sindhgatta:2015aa} defines
 
-$$ SRI(s) = P + Q $$ where,
-$$ P = | \{ s_{i} : \exists_{o \epsilon s} , \exists_{o_{i} \epsilon s_{i}} calls(o_{i}, o) \wedge s \neq s_{i}} \}|$$ and
-$$ Q = |\{ p \epsilon P : s \epsilon p \}|$$
+$$ Reusability = number\_of\_existing\_consumers $$ $$ =|S_{consumers}| $$
+%P + Q $$ where,
+%$$ P = | \{ s_{i} : \exists_{o \epsilon s} , \exists_{o_{i} \epsilon s_{i}} calls(o_{i}, o) \wedge s \neq %s_{i}} \}|$$ and
+%$$ Q = |\{ p \epsilon P : s \epsilon p \}|$$
 
 \\ \cite{Bingu-Shim:2008aa} defines 
 $$Reusability= \frac{Cohesion - granularity + Consumability - coupling}{2}$$
@@ -544,147 +569,147 @@ The section \ref{section:quality_of_service/quality_metrics} presents various me
   \hline
     1 & number of service operations invoked by the service 
      & +
-     & X
-     & X
+     & 
+     & 
      & +
      & -
      & -\\
                     \hline
     2 & number of operation using similar messages
-     & X
+     & 
      & +
-     & X
-     & X
-     & X
+     & 
+     & 
+     & 
      & +\\
 \hline
     3 & number of operation used by same consumer
-     & X
+     & 
      & +
-     & X
-     & X
-     & X
+     & 
+     & 
+     & 
      & +\\
      \hline
     4 & number of operation using similar parameters
-     & X
+     & 
      & +
-     & X
-     & X
-     & X
+     & 
+     & 
+     & 
      & +\\
      \hline
     5 & number of operation with similar scope or capability
-     & X
+     & 
      & +
-     & X
-     & X
-     & X
+     & 
+     & 
+     & 
      & +\\
      \hline
     6 & scope of operation
-     & X
-     & X
+     & 
+     & 
      & +
      & +
-     & X
+     & 
      & -\\
      \hline
      7 & number of operations
-     & X
-     & X
+     & 
+     & 
      & +
      & +
-     & X
+     & 
      & -\\
      \hline
      8 & number of parameters in operation
-     & X
-     & X
+     & 
+     & 
      & +
      & +
-     & X
+     & 
      & -\\
      \hline
     9 & type of parameters in operation
-     & X
-     & X
+     & 
+     & 
      & +
      & +
-     & X
+     & 
      & -\\
      \hline
      10 & number and size of messages used by operations
      & +
-     & X
+     & 
      & +
      & +
      & -
      & -\\
      \hline
      11 & type of messages used by operations
-     & X
+     & 
      & +
-     & X
-     & X
-     & X
+     & 
+     & 
+     & 
      & +\\
      \hline
      12 & number of consumer services
      & +
-     & X
-     & X
+     & 
+     & 
      & +
      & -
      & +\\
      \hline
      13 & number of producer services
      & +
-     & X
-     & X
+     & 
+     & 
      & +
      & -
      & -\\
      \hline
      14 & type of operation and business entity invoked by the service
      & +
-     & X
-     & X
+     & 
+     & 
      & +
      & -
      & -\\
      \hline
      15 & number of consumers accessing same operation
-     & X
+     & 
      & +
-     & X
-     & X
-     & X
+     & 
+     & 
+     & 
      & +\\
      \hline
      16 & number of consumer with similar operation usage sequence
-     & X
+     & 
      & +
-     & X
-     & X
-     & X
+     & 
+     & 
+     & 
      & +\\
      \hline
      17 & dependency degree or imporance of service operation to other service
-     & X
-     & X
-     & X
+     & 
+     & 
+     & 
      & +
-     & X
-     & X\\
+     & 
+     & \\
      \hline
      18 & degree of control of operation to its business entities
-     & X
-     & X
-     & X
-     & X
+     & 
+     & 
+     & 
+     & 
      & +
-     & X\\
+     & \\
      \hline
      \hline
 \end{tabular}
@@ -698,7 +723,7 @@ The section \ref{section:quality_of_service/quality_metrics} presents various me
 \begin{itemize}[leftmargin=.5in]
 \item + the basic metric affect the quality attribute proportionlly
 \item - the basic metric inversely affect the quality attribute
-\item X there is no evidence found regarding the relationship from the papers
+\item   there is no evidence found regarding the relationship from the papers
 \end{itemize}
 \end{table}
 
@@ -708,7 +733,7 @@ The section \ref{section:quality_of_service/quality_metrics} presents various me
 The section \ref{section:quality_of_service/introduction} has already mentioned that there are two distinct kind of quality attributes: external and internal. The external quality attributes cannot be evaluated during design however can be predicted using the internal quality attributes. This kind of relationship can be used to design service with good quality. Moreover, it is important to identify how each internal attributes affect the external attributes. The understanding of such relationship will be helpful to identify the combined effect of the quality attributes and eventually to identify the service with the appropriate level of quality as per the requirement.
 The remaining part of the section lists relationship existing in various quality attributes as well as the desired value of the quality attributes.
 \begin{enumerate}
-\item When a service has large number of operations, it means it has large number of consumers. It will highly affect maintainability because a small change in the operations of the service will be propagated to large number of consumers. But again, if the service is too fine granular, there will be high network coupling. \cite{Feuerlicht:2007aa, Xiao-jun:2015aa}
+\item When a service has large number of operations, it means it has large number of consumers. It will highly affect maintainability because a small change in the operations of the service will be propagated to large number of consumers. But again, if the service is too fine granular, there will be high network coupling. \cite{Feuerlicht:2007aa, Xiao-jun:2015aa}\cite{Bianco:2007aa}
 
 \item Low coupling improves understandability, reusability and scalability where as high coupling decreases maintainability. \cite{Kazemi:2011aa}\cite{Erl:2005aa}\cite{Josuttis:2007aa}
 
@@ -733,10 +758,14 @@ The remaining part of the section lists relationship existing in various quality
 
 \item Business entity convergence of a service, which is the degree of control over specific business entities, is an important quality for the selection of service. For example: It is be better to create a single service to create and update an order. In that way change and control over the business entity is localized to a single service.\cite{Ma:2009aa}
 
-\item Increasing the granularity decreases cohesion but also decreases the amount of message flow across the network. This is because, as the boundary of the service increases, more communication is handled within the service boundary. However, this can be true again only if highly related operations are merged to build the service. This suggests for the optimum granularity by handling cohesion and coupling in an appropriate level.\cite{Ma:2009aa}
+\item Increasing the granularity decreases cohesion but also decreases the amount of message flow across the network. This is because, as the boundary of the service increases, more communication is handled within the service boundary. However, this can be true again only if highly related operations are merged to build the service. This suggests for the optimum granularity by handling cohesion and coupling in an appropriate level.\cite{Ma:2009aa}\cite{Bianco:2007aa}
 
 \item As the scope of the functionality provided by the service increases, the reusability decreases.
 \cite{Feuerlicht:2007aa}
+
+\item If the service has high interface granularity, the operations operates on coarse-grained messages. This can affect the service performance. On the other hand, if the service has too fine-grained interface, then there will be a lot of messages required for the same task, which then can again affect the overall performance. \cite{Bianco:2007aa}
+
+
 \end{enumerate}
 
 
@@ -753,12 +782,12 @@ In order to determine the appropriate level of quality for a service, it is also
   \hline
   \hline
    1 & Coupling         &   & - & + \\ \hline
-   2 & Cohesion         & - &   & X \\ \hline
-   3 & Granularity      & + & X &   \\ \hline
-   4 & Complexity       & + & X & + \\ \hline
+   2 & Cohesion         & - &   &   \\ \hline
+   3 & Granularity      & + &   &   \\ \hline
+   4 & Complexity       & + &   & + \\ \hline
    5 & Reusability      & - & + & - \\ \hline
-   6 & Autonomy         & - & X & X \\ \hline
-   7 & Maintainability  & - & + & X \\ \hline
+   6 & Autonomy         & - &   &   \\ \hline
+   7 & Maintainability  & - & + & - \\ \hline
    \hline
    \end{tabular}
 \end{adjustbox}
@@ -771,7 +800,7 @@ Here, the meaning of the various symbols showing nature of relationship are as g
 \begin{itemize}[leftmargin=.5in]
 \item + the quality attribute on the column affects the quality attribute on the corresponding row positively
 \item - the quality attribute on the column affects the quality attribute on the corresponding row inversely
-\item X there is no enough evidence found regarding the relationship from the papers
+\item   there is no enough evidence found regarding the relationship from the papers or these are same attributes
 \end{itemize}
 %where are we on the map ISO/IEC 9126
 %quality attrubutes priority for microservices

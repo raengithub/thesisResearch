@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  7 NOV 2015 18:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  17 NOV 2015 11:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1872,13 +1872,13 @@ LaTeX Info: Redefining \nameref on input line 15.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
 line 15.
  (./pages/cover.tex
-<logos/tum.png, id=147, 53.4798pt x 28.6671pt>
+<logos/tum.png, id=171, 53.4798pt x 28.6671pt>
 File: logos/tum.png Graphic file (type png)
  <use logos/tum.png>
 Package pdftex.def Info: logos/tum.png used on input line 13.
 (pdftex.def)             Requested size: 113.81102pt x 61.01012pt.
 
-<logos/faculty.png, id=148, 34.2078pt x 37.0986pt>
+<logos/faculty.png, id=172, 34.2078pt x 37.0986pt>
 File: logos/faculty.png Graphic file (type png)
  <use logos/faculty.png>
 Package pdftex.def Info: logos/faculty.png used on input line 31.
@@ -1986,17 +1986,318 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 26
 
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
 (Font)              Font shape `T1/pplx/m/it' tried instead on input line 29.
- [6] (./chapters/quality_of_service.texpdfTeX warning (ext4): destination with 
-the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.18 \chapter
-             {Quality of Service}\label{chapter:quality_of_service} [1
-
-]
+ [6] (./chapters/context.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 20.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 2.
+<figures/context-monolith-example.png, id=245, 633.36626pt x 236.885pt>
+File: figures/context-monolith-example.png Graphic file (type png)
+
+<use figures/context-monolith-example.png>
+Package pdftex.def Info: figures/context-monolith-example.png used on input lin
+e 7.
+(pdftex.def)             Requested size: 334.60571pt x 125.14723pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 10.
+
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 13.
+<figures/context-module-monolith.png, id=251, 962.59625pt x 501.875pt>
+File: figures/context-module-monolith.png Graphic file (type png)
+
+<use figures/context-module-monolith.png>
+Package pdftex.def Info: figures/context-module-monolith.png used on input line
+ 19.
+(pdftex.def)             Requested size: 334.60571pt x 174.44891pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 22.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.23 \end{figure}
+                  [1
+
+
+
+ <./figures/context-monolith-example.png>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \item
+           Allocation Monolith: An Allocation Monolith is created when all c...
+
+? 
+<figures/context-allocation-monolith.png, id=265, 958.58125pt x 421.575pt>
+File: figures/context-allocation-monolith.png Graphic file (type png)
+
+<use figures/context-allocation-monolith.png>
+Package pdftex.def Info: figures/context-allocation-monolith.png used on input 
+line 28.
+(pdftex.def)             Requested size: 334.60571pt x 147.15462pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 31.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 \item
+           Runtime Monolith: In Runtime Monolith, the whole application is r...
+
+? 
+[2 <./figures/context-module-monolith.png>]
+<figures/context-runtime-monolith.png, id=276, 959.585pt x 349.305pt>
+File: figures/context-runtime-monolith.png Graphic file (type png)
+
+<use figures/context-runtime-monolith.png>
+Package pdftex.def Info: figures/context-runtime-monolith.png used on input lin
+e 37.
+(pdftex.def)             Requested size: 334.60571pt x 121.8002pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 40.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 \subsection
+                {Advantages of Monolith Architecture Style}\label{subsection...
+
+? 
+LaTeX Font Info:    Try loading font information for OMS+pplx on input line 48.
+
+LaTeX Font Info:    No file OMSpplx.fd. on input line 48.
+
+LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 48.
+
+[3 <./figures/context-allocation-monolith.png> <./figures/context-runtime-monol
+ith.png>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 \subsection
+                {Disadvantages of Monolith Architecture Style}\label{subsect...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 63--65
+
+ []
+
+[5] <figures/context-scale-cube.jpg, id=320, 620.3175pt x 432.11438pt>
+File: figures/context-scale-cube.jpg Graphic file (type jpg)
+
+<use figures/context-scale-cube.jpg>
+Package pdftex.def Info: figures/context-scale-cube.jpg used on input line 73.
+(pdftex.def)             Requested size: 334.60571pt x 233.08772pt.
+
+! Extra }, or forgotten \endgroup.
+l.74 ...ion{Scale Cube from \cite{Fisher:2015aa}}}
+                                                  
+? 
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 76.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80 T
+      he scaling along each dimensions are described below. \cite{Fisher:201...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+
+ []
+
+[6 <./figures/context-scale-cube.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 84--86
+
+ []
+
+) (./chapters/granularity.tex [7]
+Chapter 2.
+[8
+
+
+] [9] [10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
+
+ []
+
+[13]
+LaTeX Font Info:    Font shape `T1/pplx/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/pplx/b/it' tried instead on input line 94.
+
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 97.
+
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 100.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 100.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 100.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 100.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 100.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 100.
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <9> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 100.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathsurround' on input line 100.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\z@' on input line 100.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 100.
+
+<figures/Granularity-R3-one.png, id=464, 614.295pt x 324.21124pt>
+File: figures/Granularity-R3-one.png Graphic file (type png)
+
+<use figures/Granularity-R3-one.png>
+Package pdftex.def Info: figures/Granularity-R3-one.png used on input line 105.
+
+(pdftex.def)             Requested size: 334.60571pt x 176.6001pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 108.
+
+<figures/Granularity-R3-two.png, id=472, 515.9275pt x 133.49875pt>
+File: figures/Granularity-R3-two.png Graphic file (type png)
+
+<use figures/Granularity-R3-two.png>
+Package pdftex.def Info: figures/Granularity-R3-two.png used on input line 116.
+
+(pdftex.def)             Requested size: 334.60571pt x 86.5837pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 119.
+
+[14 <./figures/Granularity-R3-one.png>]
+
+LaTeX Warning: Reference `fig: Range Example' on page 15 undefined on input lin
+e 126.
+
+
+LaTeX Warning: Reference `fig:R3 volume-granularity analogy greater' on page 15
+ undefined on input line 128.
+
+[15 <./figures/Granularity-R3-two.png>]
+<figures/Granularity-R3-three.png, id=506, 615.29875pt x 253.94875pt>
+File: figures/Granularity-R3-three.png Graphic file (type png)
+
+<use figures/Granularity-R3-three.png>
+Package pdftex.def Info: figures/Granularity-R3-three.png used on input line 13
+2.
+(pdftex.def)             Requested size: 334.60571pt x 138.10289pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 135.
+
+<figures/Granularity-R3-four.png, id=509, 619.31375pt x 191.71625pt>
+File: figures/Granularity-R3-four.png Graphic file (type png)
+
+<use figures/Granularity-R3-four.png>
+Package pdftex.def Info: figures/Granularity-R3-four.png used on input line 140
+.
+(pdftex.def)             Requested size: 334.60571pt x 103.58372pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 143.
+
+! Misplaced alignment tab character &.
+l.153 ...is held. The study was done at KBC Bank &
+                                                   Insurance Group of centra...
+
+? 
+[16 <./figures/Granularity-R3-three.png> <./figures/Granularity-R3-four.png>]
+[17]
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 170.
+
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 178.
+
+) (./chapters/quality_of_service.tex [18]
+Chapter 3.
 
 ! Package glossaries Error: Glossary entry `.' has not been defined.
 
@@ -2011,22 +2312,10 @@ l.21 ...evelopment Life Cycle \acrshort [{SDLC}].
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2
+[19
 
 
-] [3]
-LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 63.
-LaTeX Font Info:    Try loading font information for OMS+pplx on input line 68.
-
-LaTeX Font Info:    No file OMSpplx.fd. on input line 68.
-
-
-LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 68.
-
-
+] [20]
 Overfull \hbox (6.93349pt too wide) in paragraph at lines 68--69
 []\T1/pplx/m/n/10.95 (-20) the busi-ness do-main is re-al-ized with var-i-ous p
 ro-cesses de-fined as $\OML/zplm/m/it/10.95 P \OT1/zplm/m/n/10.95 = \OMS/zplm/m
@@ -2042,7 +2331,7 @@ l.72 ...sumer}(s) = \{ S_{c1}, S_{2},...S{{n_c}\}$
                                                   ; $n_c$ gives the number o...
 
 ? 
-[4]
+[21]
 ! Missing } inserted.
 <inserted text> 
                 }
@@ -2073,14 +2362,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.92 \cite
+l.95 \cite
           {Xiao-jun:2015aa} defines
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
+[22]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2088,22 +2378,25 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 \cite
+l.106 \cite
            {Kazemi:2011aa} defines
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--106
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 116--120
+Underfull \hbox (badness 10000) in paragraph at lines 107--109
 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--128
+
+ []
+
+[23]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2111,21 +2404,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.185 T
+l.193 T
        he table \ref{tab:quality_of_service/quality_attributes/coupling_metr...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--187
+Underfull \hbox (badness 10000) in paragraph at lines 193--195
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 192--196
-
- []
-
-[6]
+[24]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2133,10 +2421,10 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.213 \\w
+l.221 \\w
          here,
 ? 
-[7]
+[25]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2144,11 +2432,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.224 w
+l.235 w
        here,
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--226
+Underfull \hbox (badness 10000) in paragraph at lines 235--237
 
  []
 
@@ -2162,27 +2450,31 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.283 T
+l.294 T
        he table \ref{tab:quality_of_service/quality_attributes/cohesion_metr...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--285
+Underfull \hbox (badness 10000) in paragraph at lines 294--296
 
  []
 
+[26]
 ! Display math should end with $$.
 <to be read again> 
                     
-l.301 ...\frac{W_i(o)}{ \sum_{i=1}{|O(S)|}W_i(o)}$
+l.317 ...frac{W_i(o)}{ \sum_{i=1}^{|O(S)|}W_i(o)}$
                                                   
 ? 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 304--308
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--324
 
  []
 
-[9]
+[27]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2190,22 +2482,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.362 T
+l.380 T
        he table \ref{tab:quality_of_service/quality_attributes/granularity_m...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--364
+Underfull \hbox (badness 10000) in paragraph at lines 380--382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 370--374
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 385--389
+Underfull \hbox (badness 10000) in paragraph at lines 387--390
 
  []
 
@@ -2216,16 +2503,36 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.428 T
+l.394 w
+       here,
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 394--396
+
+ []
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 407--411
+
+ []
+
+[29]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.451 T
        he table \ref{tab:quality_of_service/quality_attributes/complexity_me...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 428--431
+Underfull \hbox (badness 10000) in paragraph at lines 451--454
 
  []
 
-[11]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2233,18 +2540,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.448 w
+l.471 w
        here,
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 448--450
+Underfull \hbox (badness 10000) in paragraph at lines 471--473
 
  []
 
+[30]
 ! Missing } inserted.
 <inserted text> 
                 }
-l.452 \item $ V_{sr_{jk} $
+l.476 \item $ V_{sr_{jk} $
                            is the corresponding value of the action in jkth ...
 
 ? 
@@ -2255,20 +2563,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.481 T
+l.505 T
        he table \ref{tab:quality_of_service/quality_attributes/autonomy_metr...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 481--484
+Underfull \hbox (badness 10000) in paragraph at lines 505--508
 
  []
 
-[12]
-! Extra }, or forgotten $.
-l.488 ...{i}} calls(o_{i}, o) \wedge s \neq s_{i}}
-                                                   \}|$$ and
-? 
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2276,16 +2579,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.491 \\ \cite
+l.516 \\ \cite
               {Bingu-Shim:2008aa} defines
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 492--525
+Underfull \hbox (badness 10000) in paragraph at lines 517--550
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--531
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 554--556
 
  []
 
@@ -2296,224 +2602,137 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.694   \\
+l.719   \\
           
 ? 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13] [14] [15]
+[32] [33] [34]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 769--771
+Underfull \hbox (badness 10000) in paragraph at lines 798--800
 
  []
 
-) (./chapters/granularity.tex [16] [17]
-Chapter 2.
-[18
-
-
-] [19] [20] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 64--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--68
-
- []
-
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 74--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
-
- []
-
-LaTeX Font Info:    Font shape `T1/pplx/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/pplx/b/it' tried instead on input line 82.
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 85.
-
-[23]
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 85.
-
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 88.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 88.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 88.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 88.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 88.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 88.
-LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <9> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 88.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 88.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 88.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 88.
-
-<figures/Granularity-R3-one.png, id=608, 614.295pt x 324.21124pt>
-File: figures/Granularity-R3-one.png Graphic file (type png)
-
-<use figures/Granularity-R3-one.png>
-Package pdftex.def Info: figures/Granularity-R3-one.png used on input line 93.
-(pdftex.def)             Requested size: 334.60571pt x 176.6001pt.
-
-
-Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 96.
-
-<figures/Granularity-R3-two.png, id=617, 515.9275pt x 133.49875pt>
-File: figures/Granularity-R3-two.png Graphic file (type png)
-
-<use figures/Granularity-R3-two.png>
-Package pdftex.def Info: figures/Granularity-R3-two.png used on input line 104.
-
-(pdftex.def)             Requested size: 334.60571pt x 86.5837pt.
-
-
-Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 107.
-
-[24 <./figures/Granularity-R3-one.png>]
-
-LaTeX Warning: Reference `fig: Range Example' on page 25 undefined on input lin
-e 114.
-
-
-LaTeX Warning: Reference `fig:R3 volume-granularity analogy greater' on page 25
- undefined on input line 116.
-
-<figures/Granularity-R3-three.png, id=644, 615.29875pt x 253.94875pt>
-File: figures/Granularity-R3-three.png Graphic file (type png)
-
-<use figures/Granularity-R3-three.png>
-Package pdftex.def Info: figures/Granularity-R3-three.png used on input line 12
-0.
-(pdftex.def)             Requested size: 334.60571pt x 138.10289pt.
-
-
-Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 123.
-
-[25 <./figures/Granularity-R3-two.png>]
-<figures/Granularity-R3-four.png, id=654, 619.31375pt x 191.71625pt>
-File: figures/Granularity-R3-four.png Graphic file (type png)
-
-<use figures/Granularity-R3-four.png>
-Package pdftex.def Info: figures/Granularity-R3-four.png used on input line 128
-.
-(pdftex.def)             Requested size: 334.60571pt x 103.58372pt.
-
-
-Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 131.
-
-! Misplaced alignment tab character &.
-l.141 ...is held. The study was done at KBC Bank &
-                                                   Insurance Group of centra...
-
-? 
-[26 <./figures/Granularity-R3-three.png> <./figures/Granularity-R3-four.png>]
-[27]
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 158.
-
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 166.
-
-) (./main.acr [28]
+[35]) (./main.acr [36]
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 5.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmss.fd
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) [29
+ [37
 
 
 
 
-]
-Package tocbasic Info: character protrusion at lof deactivated on input line 48
+]) [38]
+Package tocbasic Info: character protrusion at lof deactivated on input line 49
 .
- (./main.lof)
+
+(./main.lof)
 \tf@lof=\write10
 \openout10 = `main.lof'.
 
- [30
+ [39
 
 
 ]
-Package tocbasic Info: character protrusion at lot deactivated on input line 49
+Package tocbasic Info: character protrusion at lot deactivated on input line 50
 .
  (./main.lot)
 \tf@lot=\write11
 \openout11 = `main.lot'.
 
- [31
+ [40
 
 
 ]
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplx/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 52.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
 
 Package biblatex Warning: No driver for entry type 'webpage'.
-(biblatex)                Using fallback driver on input line 51.
+(biblatex)                Using fallback driver on input line 52.
 
-[32
+[41
 
 
 ]
+Overfull \hbox (2.73845pt too wide) in paragraph at lines 52--52
+[]\T1/pplx/m/n/10.95 (-20) M. Fowler and J. Lewis. \T1/pplx/m/it/10.95 (-20) Mi
+-croser-vices\T1/pplx/m/n/10.95 (-20) . Mar. 2014. \T1/pplx/m/sc/10.95 (-20) ur
+l\T1/pplx/m/n/10.95 (-20) : []$\T1/cmtt/m/n/10.95 http : / / martinfowler .
+ []
+
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 52.
+
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 52.
+
 ! Misplaced alignment tab character &.
 <argument> John Wiley &
                         Sons
-l.51 \printbibliography{
+l.52 \printbibliography{
                         }
 ? 
+[42]
 
 Package biblatex Warning: No driver for entry type 'webpage'.
-(biblatex)                Using fallback driver on input line 51.
+(biblatex)                Using fallback driver on input line 52.
 
-[33] [34]
 
-Package nag Warning: 8 complaints in total.
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 52.
 
-[35]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
+[43]
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 52.
+
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 52.
+
+
+Overfull \hbox (25.32265pt too wide) in paragraph at lines 52--52
+[]\T1/pplx/m/n/10.95 (-20) C. Richard-son. \T1/pplx/m/it/10.95 (-20) Pat-tern: 
+Mono-lithic Ar-chi-tec-ture\T1/pplx/m/n/10.95 (-20) . 2014. \T1/pplx/m/sc/10.95
+ (-20) url\T1/pplx/m/n/10.95 (-20) : []$\T1/cmtt/m/n/10.95 http : / / microserv
+ices .
+ []
+
+[44]
+
+Package nag Warning: 12 complaints in total.
+
+[45]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 54.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 54.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6DD9BBCF8BBA4AE19D67FCA877DA831B;1893.
+(rerunfilecheck)             Checksum: 66F7C2FB5982F036ABE710132507E8ED;2368.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2530,58 +2749,43 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  )
 (\end occurred inside a group at level 10)
 
-### simple group (level 10) entered at line 744 ({)
-### simple group (level 9) entered at line 707 ({)
-### simple group (level 8) entered at line 528 ({)
-### simple group (level 7) entered at line 484 ({)
-### simple group (level 6) entered at line 431 ({)
-### simple group (level 5) entered at line 366 ({)
-### simple group (level 4) entered at line 288 ({)
-### simple group (level 3) entered at line 189 ({)
+### simple group (level 10) entered at line 773 ({)
+### simple group (level 9) entered at line 732 ({)
+### simple group (level 8) entered at line 553 ({)
+### simple group (level 7) entered at line 508 ({)
+### simple group (level 6) entered at line 454 ({)
+### simple group (level 5) entered at line 384 ({)
+### simple group (level 4) entered at line 299 ({)
+### simple group (level 3) entered at line 197 ({)
 ### simple group (level 2) entered at line 78 ({)
 ### simple group (level 1) entered at line 63 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 46005 strings out of 493089
- 975422 string characters out of 6134843
- 1669678 words of memory out of 5000000
- 48061 multiletter control sequences out of 15000+600000
- 73347 words of font info for 323 fonts, out of 8000000 for 9000
+ 46234 strings out of 493089
+ 979972 string characters out of 6134843
+ 1670129 words of memory out of 5000000
+ 48178 multiletter control sequences out of 15000+600000
+ 82002 words of font info for 360 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,19n,95p,2011b,3731s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{glo:SOG} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{glo:SDG} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{glo:SCG} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{glo:ODG} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{glo:OFG} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{glo:SSUC} has been referenced but does not exist, r
-eplaced by a fixed one
-
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2015/texmf-dist/f
-onts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (42 pages, 392502 bytes).
+ 75i,19n,95p,2011b,3733s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm
+-super-t1.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}<
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (52 pages, 765293 bytes).
 PDF statistics:
- 819 PDF objects out of 1000 (max. 8388607)
- 725 compressed objects within 8 object streams
- 184 named destinations out of 1000 (max. 500000)
- 37235 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1040 PDF objects out of 1200 (max. 8388607)
+ 918 compressed objects within 10 object streams
+ 235 named destinations out of 1000 (max. 500000)
+ 44476 words of extra memory for PDF output out of 51595 (max. 10000000)
 
