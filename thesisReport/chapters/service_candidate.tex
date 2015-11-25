@@ -1,1 +1,17 @@
-%The extent of a service (SOA granularity p55)
+\chapter{Service Candidate}\label{chapter:service_candidate}
+
+\section{Introduction}\label{section:service_candidate/introduction}
+In the previous chapters, granularity and quality of a microservice was focussed. The qualitative as well as quantitative aspects of granularity was described. Additionally, various quality metrics were defined to measure different quality attributes of a microservce. Moreover, a set of principle guidelines and basic metrics to qualify the microservices were also listed.\\
+In addition to that, it is also equally important to agree on the process to identify the service candidates. In this chapter and following chapters, the ways to recognize microservices will be discussed.
+There are three basic approaches to identify service candidates: Top-down, bottom-up and meet-in-the-middle. \\
+The top-down approach defines the process on the basis of the business model. At first, various models are designed to capture the overall system and architecture. Using the overall design, services are identified upfront in the analysis phase.\\
+The next approach is bottom-up, which base its process on the existing architecture and existing application. The existing application is studied to identify the cohesion and consistency of the features provided by various components of the system. This information is used to aggregate the features and identify services in order to overcome the problems in the existing system.\\
+Finally, the meet-in-the-middle approach is a hybrid approach of both top-down and bottom-up approaches. In this approach, the complete analysis of system as a whole is not performed upfront as the case of top-down approach. Where as, a set of priority areas are identified and used to analyse their business model resulting in a set of services. The services thus achieved are further analysed critically using bottom-up approach to identify problems. The problems are handled in next iterations where the same process as before is followed. The approach is continued for other areas of the system in the order of their priority.\cite{Pierre-Reldin:2007aa}\cite{Arsanjani:2004aa}
+
+\section{Related Work}\label{section:service_candidate/related_work}
+There are various efforts made regarding the identification of service candidates. Among them, most follows top-down approach. Service Oriented Development Architecture (SODA) uses service driven modeling approach to design and implement services.\cite{Nigam:2005aa} Service Oriented Analysis and Design (SOAD) on the other hand uses existing modeling process and notation to desing services. \cite{Arsanjani:2005aa} Service Oriented Unified Process(SOUP) is highly influenced by Rational Unified Process and extreme programming techniques.\cite{Mittal:2005aa}\\
+A bottom-up approach Feature Oriented Domain Analysis is also proposed to analysis the existing system features for identifying services.\cite{Kang:1990aa}\\
+Among the few meet-in-the-middle approaches is Feature Analysis for Service-Oriented Reengineering which uses business modeling and FODA. \cite{Chen:2005aa} Similarly, Service Oriented Modeling Architecture (SOMA) emphasise on using goal-oriented meet-in-the-middle approach.\cite{Arsanjani:2004aa}\\
+Again, there are a majority of papers using use case modeling to identify services. The papers \cite{Millard:2007aa} \cite{Howard:2009aa} defines Service Responsibility and Interaction Design Method (SRI-DM) to utilize use case to identify the service with cohesive set of functionalities. Similarly, the paper \cite{Fareghzadeh:2008aa} identifies various levels of services based on the abstraction level of the use cases.
+
+

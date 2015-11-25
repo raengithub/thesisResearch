@@ -2,3 +2,4 @@ latex main
 biber main
 pdflatex main
 makeglossaries main
+biber —cache
