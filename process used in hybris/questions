@@ -1,0 +1,14 @@
+How do you come up with a microservice?
+Are there any steps to come up with microservice?
+When do you create a separate microservice instead of adding the feature to an existing microservice?
+How do you decide about size of a microservice?
+Do you consider any specific quality attributes when you come up with a microservice?
+Do you consider the number of operations or size of payload?
+When you decide to create a new microservice, do you brainstorm with others or decide yourself?
+Where does the requirement for the new service come from?
+Do you consider domain model at any step?
+How and when do you decide the data contained by the microservice?
+
+record the answers and compare the answers?
+
+provide a definition sheet for the technical terms.
