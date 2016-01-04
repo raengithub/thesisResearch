@@ -1,2 +1,18 @@
-[0] 05015a72.pm:324> INFO - This is Biber 2.1
-[0] 05015a72.pm:327> INFO - Logfile is 'main.blg'
+[0] Config.pm:324> INFO - This is Biber 2.1
+[1] Config.pm:327> INFO - Logfile is 'main.blg'
+[58] biber-darwin:276> INFO - === Mon Jan  4, 2016, 11:52:19
+[58] Biber.pm:333> INFO - Reading 'main.bcf'
+[200] Biber.pm:645> INFO - Found 95 citekeys in bib section 0
+[226] Biber.pm:2977> INFO - Processing section 0
+[248] Biber.pm:3115> INFO - Looking for bibtex format file 'bibliography/literature.bib' for section 0
+[261] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[275] bibtex.pm:895> INFO - Found BibTeX data source 'bibliography/literature.bib'
+[400] Utils.pm:146> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[400] Utils.pm:146> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
+[1973] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1973] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1973] Biber.pm:2854> INFO - Sorting list 'anyt' of type 'entry' with scheme 'anyt' and locale 'en-US'
+[1973] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-US'
+[2228] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[2241] bbl.pm:596> INFO - Output to main.bbl
+[2248] Biber.pm:106> INFO - WARNINGS: 2

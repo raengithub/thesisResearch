@@ -1,10 +1,57 @@
 \BOOKMARK [0][-]{Doc-Start}{Acknowledgments}{}% 1
 \BOOKMARK [0][-]{chapter*.1}{Abstract}{}% 2
-\BOOKMARK [0][-]{chapter.1}{Domain Driven Design}{}% 3
-\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.2}{Ubiquitous Language}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.3}{Strategical Design}{chapter.1}% 6
-\BOOKMARK [0][-]{section*.4}{Acronyms}{}% 7
-\BOOKMARK [0][-]{appendix*.6}{List of Figures}{}% 8
-\BOOKMARK [0][-]{appendix*.7}{List of Tables}{}% 9
-\BOOKMARK [0][-]{appendix*.8}{Bibliography}{}% 10
+\BOOKMARK [0][-]{chapter.1}{Context}{}% 3
+\BOOKMARK [1][-]{section.1.1}{Monolith Architecture Style}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.1}{Types of Monolith Architecture Style}{section.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.2}{Advantages of Monolith Architecture Style}{section.1.1}% 6
+\BOOKMARK [2][-]{subsection.1.1.3}{Disadvantages of Monolith Architecture Style}{section.1.1}% 7
+\BOOKMARK [1][-]{section.1.2}{Decomposition of Application}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.3}{Microservice Architecture Style}{chapter.1}% 9
+\BOOKMARK [0][-]{chapter.2}{Granularity}{}% 10
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.2}{Related Work}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.3}{Basic Principles to Service Granularity}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.4}{Dimensions of Granularity}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.4.1}{Dimension by Interface}{section.2.4}% 15
+\BOOKMARK [2][-]{subsection.2.4.2}{Dimension by Interface Realization}{section.2.4}% 16
+\BOOKMARK [2][-]{subsection.2.4.3}{R3 Dimension}{section.2.4}% 17
+\BOOKMARK [2][-]{subsection.2.4.4}{Retrospective}{section.2.4}% 18
+\BOOKMARK [0][-]{chapter.3}{Quality of Service}{}% 19
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.2}{Quality Attributes}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.3}{Quality Metrics}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.1}{Context and Notations}{section.3.3}% 23
+\BOOKMARK [2][-]{subsection.3.3.2}{Coupling Metrics}{section.3.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.3}{Cohesion Metrics}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.4}{Granularity Metrics}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.5}{Complexity Metrics}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.6}{Autonomy Metrics}{section.3.3}% 28
+\BOOKMARK [2][-]{subsection.3.3.7}{Reusability Metrics}{section.3.3}% 29
+\BOOKMARK [1][-]{section.3.4}{Basic Quality Metrics}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.5}{Principles defined by Quality Attributes}{chapter.3}% 31
+\BOOKMARK [1][-]{section.3.6}{Relationship among Quality Attributes}{chapter.3}% 32
+\BOOKMARK [0][-]{chapter.4}{Service Candidate}{}% 33
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.2}{Related Work}{chapter.4}% 35
+\BOOKMARK [0][-]{chapter.5}{Selection By Use Case}{}% 36
+\BOOKMARK [1][-]{section.5.1}{Use case}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.2}{Use case Refactoring}{chapter.5}% 38
+\BOOKMARK [1][-]{section.5.3}{Process for Use Case Refactoring}{chapter.5}% 39
+\BOOKMARK [1][-]{section.5.4}{Rules for Use Case Refactoring}{chapter.5}% 40
+\BOOKMARK [2][-]{subsection.5.4.1}{Decomposition Refactoring}{section.5.4}% 41
+\BOOKMARK [2][-]{subsection.5.4.2}{Equivalence Refactoring}{section.5.4}% 42
+\BOOKMARK [2][-]{subsection.5.4.3}{Composition Refactoring}{section.5.4}% 43
+\BOOKMARK [2][-]{subsection.5.4.4}{Generalization Refactoring}{section.5.4}% 44
+\BOOKMARK [2][-]{subsection.5.4.5}{Merge Refactoring}{section.5.4}% 45
+\BOOKMARK [2][-]{subsection.5.4.6}{Deletion Refactoring}{section.5.4}% 46
+\BOOKMARK [1][-]{section.5.5}{Example Scenario}{chapter.5}% 47
+\BOOKMARK [0][-]{chapter.6}{Domain Driven Design}{}% 48
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 49
+\BOOKMARK [1][-]{section.6.2}{Process to Domain Driven Design}{chapter.6}% 50
+\BOOKMARK [2][-]{subsection.6.2.1}{Ubiquitous Language}{section.6.2}% 51
+\BOOKMARK [2][-]{subsection.6.2.2}{Strategical Design}{section.6.2}% 52
+\BOOKMARK [1][-]{section.6.3}{Microservices and Bounded Context}{chapter.6}% 53
+\BOOKMARK [0][-]{section*.38}{Acronyms}{}% 54
+\BOOKMARK [0][-]{appendix*.40}{List of Figures}{}% 55
+\BOOKMARK [0][-]{appendix*.41}{List of Tables}{}% 56
+\BOOKMARK [0][-]{appendix*.42}{Bibliography}{}% 57
