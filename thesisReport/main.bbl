@@ -55,6 +55,39 @@
       \verb http://www.codingthearchitecture.com/2014/11/19/what_is_a_monolith.html
       \endverb
     \endentry
+    \entry{Beck:2011aa}{webpage}{}
+      \name{author}{17}{}{%
+        {{uniquename=0,hash=c5dcbe71f60a8d55caa11fe1493614d0}{Beck}{B\bibinitperiod}{Kent}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b081a82bcbc247aeb2a2ca9ae72f9566}{Beedle}{B\bibinitperiod}{Mike}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a3d49db7c8b6de036095a80d96ee1461}{Bennekum}{B\bibinitperiod}{Arie}{A\bibinitperiod}{van}{v\bibinitperiod}{}{}}%
+        {{uniquename=0,hash=c1e5acec4259bb4c17ca1a00866f32e1}{Cockburn}{C\bibinitperiod}{Alistair}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=dc98036d5d01f88b9fdd0b5ff2bc8a2d}{Cunningham}{C\bibinitperiod}{Ward}{W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=312ac886938a9b2be4f8eb607567fe4c}{Fowler}{F\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=61bdeb09cfbfab0465639014ab3b69be}{Grenning}{G\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bae406ad0a87e2f65be045fff38c80ad}{Highsmith}{H\bibinitperiod}{Jim}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=10383d05f32f2a21518b493a3c546e5c}{Hunt}{H\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3673ee61a410ba25401f2aeaf593748a}{Jeffries}{J\bibinitperiod}{Ron}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0dd621758d63b6f0b80fb66db4c3f61e}{Kern}{K\bibinitperiod}{Jon}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f520225da3039cab062eedb1e4ddc8d0}{Marick}{M\bibinitperiod}{Brian}{B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4931846e75da8be6bca9cac98c006a70}{Martin}{M\bibinitperiod}{Robert\bibnamedelima C.}{R\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=6ec958c6516fd90847b3266799d82f77}{Mellor}{M\bibinitperiod}{Steve}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ee6f08fcba839e09471a0bc69152b6a5}{Schwaber}{S\bibinitperiod}{Ken}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=6e3f26f6f816a26c6ab36bc7a899bcde}{Sutherland}{S\bibinitperiod}{Jeff}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=eb92fc3e1bc50392c9349cc38124af4c}{Thomas}{T\bibinitperiod}{Dave}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{313c39d432f5bfc7cc4b41bada35a724}
+      \strng{fullhash}{ab39492fb023a4dad76886120f619d55}
+      \field{labelalpha}{Bec+11}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Manifesto for Agile Software Development}
+      \field{year}{2011}
+      \verb{url}
+      \verb http://agilemanifesto.org/
+      \endverb
+    \endentry
     \entry{Cockcroft:2015aa}{online}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=2fbd77dc0350f394e869102ddb66c9e5}{Cockcroft}{C\bibinitperiod}{Adrian}{A\bibinitperiod}{}{}{}{}}%
@@ -291,6 +324,24 @@
       \field{year}{2015}
       \verb{url}
       \verb http://www.infoq.com/presentations/hybris
+      \endverb
+    \endentry
+    \entry{Wiggins:2012aa}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=78c94d63299ff16130ed37a90dc97dcd}{Wiggins}{W\bibinitperiod}{Adam}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{78c94d63299ff16130ed37a90dc97dcd}
+      \strng{fullhash}{78c94d63299ff16130ed37a90dc97dcd}
+      \field{labelalpha}{Wig12}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{THE TWELVE-FACTOR APP}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://12factor.net/
       \endverb
     \endentry
     \entry{Wootton:2014aa}{online}{}
