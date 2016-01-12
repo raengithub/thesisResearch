@@ -1,7 +1,7 @@
 \chapter{Architecture at Hybris}\label{chapter:hybris_architecture}
 \section{overview}\label{section:hybris_architecture/overview}
 SAP \acrshort{YaaS} provides a variety of business services to support as well as enhance the products offered as SAP hybris front office such as hybris Commerce, hybris Marketing, hybris Billing etc. Using these offered services, developers can create their own business services focussed on their customer requirements.\\
-The figure \ref{fig:hybris_architecture/overview/yaas_overview} provides the overview of \acrshort{YaaS}. \acrshort{YaaS} provides various business services (bPaaS) essential to develop applications and services thus filling up the gap between SaaS and HCP. For that purpose, it consumes the application services (aPaaS) provided by \acrshort{HCP}.
+The figure \ref{fig:hybris_architecture/overview/yaas_overview} provides the overview of \acrshort{YaaS}. \acrshort{YaaS} provides various business processes as a service (bPaaS) essential to develop applications and services thus filling up the gap between SaaS and HCP. For that purpose, it consumes the application services (aPaaS) provided by \acrshort{HCP}.
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{figures/hybris-architecture-one}
@@ -9,3 +9,22 @@ The figure \ref{fig:hybris_architecture/overview/yaas_overview} provides the ove
 \label{fig:hybris_architecture/overview/yaas_overview}
 \end{center}
 \end{figure}
+\\
+\section{Vision}\label{section:hybris_architecture/vision}
+The vision of \acrshort{YaaS} can be clarified with the following statement.
+\begin{shaded}
+"A cloud platform that allows everyone to easily develop, extend and sell services and applications." \\
+\cite{Stubbe:2015aa}
+\end{shaded}
+The vision can be broadly categorized into following objectives.\\
+\begin{enumerate}
+\item \textbf{Cloud First}\\
+The different part of the application need to be scaled independently.
+\item \textbf{Autonomy}\\
+The development teams should be able to develop their modules independent of other teams and able to freely choose the technology that fits the job.
+\item \textbf{Retain Speed}\\
+The new features should be able to be released as fast as possible.
+\item \textbf{Community}\\
+It should be possible for the components to be shared across internal and external developers.
+\end{enumerate}
+The definition of microservices \ref{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice} as well as the characteristics of microservices [ref] signifies clearly that microservices architecture can be a good fit for \acrshort{YaaS} architecture.

@@ -6,12 +6,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\nonumberline Abstract}{iv}{chapter*.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Architecture at Hybris}{1}{chapter.1}
+\contentsline {chapter}{\numberline {1}Context}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}overview}{1}{section.1.1}
+\contentsline {section}{\numberline {1.1}Monolith Architecture Style}{1}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyms}{2}{section*.4}
+\contentsline {subsection}{\numberline {1.1.1}Types of Monolith Architecture Style}{1}{subsection.1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{4}{appendix*.6}
+\contentsline {subsection}{\numberline {1.1.2}Advantages of Monolith Architecture Style}{3}{subsection.1.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{5}{appendix*.7}
+\contentsline {subsection}{\numberline {1.1.3}Disadvantages of Monolith Architecture Style}{4}{subsection.1.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Decomposition of Application}{6}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Microservice Architecture Style}{7}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Architecture at Hybris}{10}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}overview}{10}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Vision}{10}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acronyms}{12}{section*.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Figures}{14}{appendix*.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Tables}{15}{appendix*.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{16}{appendix*.14}

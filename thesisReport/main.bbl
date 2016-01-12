@@ -16,5 +16,302 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \sortlist{anyt}{anyt}
+    \entry{Abram:2014aa}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=7524a983f10f08da729d060e588acc83}{Abram}{A\bibinitperiod}{Shaun}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7524a983f10f08da729d060e588acc83}
+      \strng{fullhash}{7524a983f10f08da729d060e588acc83}
+      \field{labelalpha}{Abr14}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{Microservices}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.javacodegeeks.com/2014/10/microservices.html
+      \endverb
+    \endentry
+    \entry{Annett:2014aa}{webpage}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c1176c0632a5122cba5207a93031d1a9}{Annett}{A\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c1176c0632a5122cba5207a93031d1a9}
+      \strng{fullhash}{c1176c0632a5122cba5207a93031d1a9}
+      \field{labelalpha}{Ann14}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{What is a Monolith?}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.codingthearchitecture.com/2014/11/19/what_is_a_monolith.html
+      \endverb
+    \endentry
+    \entry{Cockcroft:2015aa}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=2fbd77dc0350f394e869102ddb66c9e5}{Cockcroft}{C\bibinitperiod}{Adrian}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2fbd77dc0350f394e869102ddb66c9e5}
+      \strng{fullhash}{2fbd77dc0350f394e869102ddb66c9e5}
+      \field{labelalpha}{Coc15}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{02}
+      \field{title}{State of the Art in Mircroservices}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.slideshare.net/adriancockcroft/microxchg-microservices
+      \endverb
+    \endentry
+    \entry{Fisher:2015aa}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=5c422794d36312b4c7a69ad83702aebb}{Fisher}{F\bibinitperiod}{Michael\bibnamedelima T.}{M\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=530029a6f1438d53bc02e3234db56b58}{Abbott}{A\bibinitperiod}{Martin\bibnamedelima L.}{M\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Professional}%
+      }
+      \strng{namehash}{1382e275534a159d3a1b51365c3dadb6}
+      \strng{fullhash}{1382e275534a159d3a1b51365c3dadb6}
+      \field{labelalpha}{FA15}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Art of Scalability: Scalable Web Architecture, Processes, and Organizations for the Modern Enterprise, Second Edition}
+      \field{year}{2015}
+    \endentry
+    \entry{Fowler:2014aa}{online}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=312ac886938a9b2be4f8eb607567fe4c}{Fowler}{F\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bc0d2dbdc2f0a7a80ec11019d6142dbb}{Lewis}{L\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{416876065d6eb7d05b219dfec144635d}
+      \strng{fullhash}{416876065d6eb7d05b219dfec144635d}
+      \field{labelalpha}{FL14}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{03}
+      \field{title}{Microservices}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://martinfowler.com/articles/microservices.html
+      \endverb
+    \endentry
+    \entry{Gupta:2015aa}{webpage}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=31dd6a11186fdd68b83212c4b141a35f}{Gupta}{G\bibinitperiod}{Arun}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{31dd6a11186fdd68b83212c4b141a35f}
+      \strng{fullhash}{31dd6a11186fdd68b83212c4b141a35f}
+      \field{labelalpha}{Gup15}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{03}
+      \field{title}{Microservices, Monoliths, and NoOps}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://blog.arungupta.me/microservices-monoliths-noops/
+      \endverb
+    \endentry
+    \entry{Hirsch:2015aa}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=a395bcdf9205588435d6bcea1800e227}{Hirsch}{H\bibinitperiod}{Richard}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a395bcdf9205588435d6bcea1800e227}
+      \strng{fullhash}{a395bcdf9205588435d6bcea1800e227}
+      \field{labelalpha}{Hir15}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{03}
+      \field{title}{YaaS: Hybris' next generation cloud architecture surfaces at SAP's internal developer conferences}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://scn.sap.com/community/cloud/blog/2015/03/03/yaas-hybris-next-generation-cloud-architecture-surfaces-at-sap-s-internal-developer-conferences
+      \endverb
+    \endentry
+    \entry{MacVittie:2014aa}{webpage}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=396fdd52f2d78a635693aa9f0ab424f4}{MacVittie}{M\bibinitperiod}{Lori}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{396fdd52f2d78a635693aa9f0ab424f4}
+      \strng{fullhash}{396fdd52f2d78a635693aa9f0ab424f4}
+      \field{labelalpha}{Mac14}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{The Art of Scale: Microservices, The Scale Cube and Load Balancing}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://devcentral.f5.com/articles/the-art-of-scale-microservices-the-scale-cube-and-load-balancing
+      \endverb
+    \endentry
+    \entry{Newman:2015aa}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=b6be43602c2787d279f8522a7d9713db}{Newman}{N\bibinitperiod}{Sam}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media}%
+      }
+      \strng{namehash}{b6be43602c2787d279f8522a7d9713db}
+      \strng{fullhash}{b6be43602c2787d279f8522a7d9713db}
+      \field{labelalpha}{New15}
+      \field{sortinit}{N}
+      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Building Microservices}
+      \field{year}{2015}
+    \endentry
+    \entry{Namiot:2014aa}{report}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=c9927f01aa951aa5a70de69f114f95de}{Namiot}{N\bibinitperiod}{Dmitry}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8da73fc88d21b8603b21a11e7a855fd0}{Sneps-Sneppe}{S\bibinithyphendelim S\bibinitperiod}{Manfred}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Open Information Technologies Lab, Lomonosov Moscow State University}%
+      }
+      \strng{namehash}{a149f0fb58bfa2626a360ae34dc8af08}
+      \strng{fullhash}{a149f0fb58bfa2626a360ae34dc8af08}
+      \field{labelalpha}{NS14}
+      \field{sortinit}{N}
+      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{On Micro-services Architecture}
+      \field{type}{techreport}
+      \field{year}{2014}
+    \endentry
+    \entry{Richardson:2014aa}{webpage}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=d0740bcf48754b8fa2cd3549a1d73461}{Richardson}{R\bibinitperiod}{Chris}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \strng{fullhash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \field{labelalpha}{Ric14}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{05}
+      \field{title}{Microservices: Decomposing Applications for Deployability and Scalability}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.infoq.com/articles/microservices-intro
+      \endverb
+    \endentry
+    \entry{Richardson:2014ac}{webpage}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=d0740bcf48754b8fa2cd3549a1d73461}{Richardson}{R\bibinitperiod}{Chris}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \strng{fullhash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \field{labelalpha}{Ric14}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Pattern: Microservices Architecture}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://microservices.io/patterns/microservices.html
+      \endverb
+    \endentry
+    \entry{Richardson:2014ab}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=d0740bcf48754b8fa2cd3549a1d73461}{Richardson}{R\bibinitperiod}{Chris}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \strng{fullhash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \field{labelalpha}{Ric14}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{extraalpha}{3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Pattern: Monolithic Architecture}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://microservices.io/patterns/monolithic.html
+      \endverb
+    \endentry
+    \entry{Radchenko:2015aa}{report}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=b9a8e7bb228f4ff3d37ea5c3e166f7a7}{Radchenko}{R\bibinitperiod}{Gleb}{G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=940d023d99477dae0ca5b63651101b20}{Taipale}{T\bibinitperiod}{Ossi}{O\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=25d67e645c892e545c808f736bc8757c}{Savchenko}{S\bibinitperiod}{D.I.}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Lappeenranta University of Technology}%
+      }
+      \strng{namehash}{019d0347d7b64278475544ef369975f5}
+      \strng{fullhash}{019d0347d7b64278475544ef369975f5}
+      \field{labelalpha}{RTS15}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Microservices validation: Mjolnirr platformcase study}
+      \field{type}{techreport}
+      \field{year}{2015}
+    \endentry
+    \entry{Stubbe:2015aa}{url}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=4cbc55a540a95a88244a04d0720e57c4}{Stubbe}{S\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4cbc55a540a95a88244a04d0720e57c4}
+      \strng{fullhash}{4cbc55a540a95a88244a04d0720e57c4}
+      \field{labelalpha}{Stu15}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{05}
+      \field{title}{Hybris-as-a-Service: A Microservices Architecture in Action}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.infoq.com/presentations/hybris
+      \endverb
+    \endentry
+    \entry{Wootton:2014aa}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=61c2152be8aa99a8e5b43efe1421ef50}{Wootton}{W\bibinitperiod}{Benjamin}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{61c2152be8aa99a8e5b43efe1421ef50}
+      \strng{fullhash}{61c2152be8aa99a8e5b43efe1421ef50}
+      \field{labelalpha}{Woo14}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{04}
+      \field{title}{Microservices - Not A Free Lunch!}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://highscalability.com/blog/2014/4/8/microservices-not-a-free-lunch.html
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
 \endinput
 
