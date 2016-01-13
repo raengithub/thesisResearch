@@ -2276,8 +2276,21 @@
     <bcf:citekey order="37">Hirsch:2015aa</bcf:citekey>
     <bcf:citekey order="38">Stubbe:2015aa</bcf:citekey>
     <bcf:citekey order="39">Beck:2011aa</bcf:citekey>
-    <bcf:citekey order="40">Wiggins:2012aa</bcf:citekey>
-    <bcf:citekey order="41">Newman:2015aa</bcf:citekey>
+    <bcf:citekey order="40">Boner:2014aa</bcf:citekey>
+    <bcf:citekey order="41">Wiggins:2012aa</bcf:citekey>
+    <bcf:citekey order="42">Newman:2015aa</bcf:citekey>
+    <bcf:citekey order="43">Bloch:2016aa</bcf:citekey>
+    <bcf:citekey order="44">Bloch:2016aa</bcf:citekey>
+    <bcf:citekey order="45">Blanchette:2008aa</bcf:citekey>
+    <bcf:citekey order="46">Sollenberger:2012aa</bcf:citekey>
+    <bcf:citekey order="47">Martin:2013aa</bcf:citekey>
+    <bcf:citekey order="48">Porter:2016aa</bcf:citekey>
+    <bcf:citekey order="49">Martin:2016aa</bcf:citekey>
+    <bcf:citekey order="50">Newman:2015aa</bcf:citekey>
+    <bcf:citekey order="51">Boner:2014aa</bcf:citekey>
+    <bcf:citekey order="52">Boner:2014aa</bcf:citekey>
+    <bcf:citekey order="53">Newman:2015aa</bcf:citekey>
+    <bcf:citekey order="54">Newman:2015aa</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="anyt" type="entry" sortscheme="anyt">
   <bcf:sorting>

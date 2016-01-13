@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  12 JAN 2016 15:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  13 JAN 2016 15:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2291,30 +2291,215 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--21
 
  []
 
-[11]) (./main.acr [12]
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 5.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmss.fd
+! LaTeX Error: Environment enumerated undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \begin{enumerated}
+                       
+? 
+[11]
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 \item \textbf
+                  {Self-Sufficient Teams}\\
+? 
+
+Underfull \hbox (badness 10000) detected at line 38
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 \item \textbf
+                  {Open Technology landscape}\\
+? 
+
+Underfull \hbox (badness 10000) detected at line 40
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 \item \textbf
+                  {Release early, release often}\\
+? 
+
+Underfull \hbox (badness 10000) detected at line 42
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 \item \textbf
+                  {Responsibility}\\
+? 
+
+Underfull \hbox (badness 10000) detected at line 44
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \item \textbf
+                  {\acrshort{API}s first}\\
+? 
+
+Underfull \hbox (badness 10000) detected at line 46
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 \item \textbf
+                  {Predictable and easy-to-use UI}\\
+? 
+
+Underfull \hbox (badness 10000) detected at line 48
+[][]
+ []
+
+[12]
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \item \textbf
+                  {Small and Simple Services}
+? 
+
+Underfull \hbox (badness 10000) detected at line 50
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \item \textbf
+                  {Scalability of technology}
+? 
+
+Underfull \hbox (badness 10000) detected at line 52
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 \item \textbf
+                  {Design for failure}
+? 
+
+Underfull \hbox (badness 10000) detected at line 54
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 \item \textbf
+                  {Independent Services}
+? 
+
+Underfull \hbox (badness 10000) detected at line 56
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \item \textbf
+                  {Understand Your System}
+? 
+
+Underfull \hbox (badness 10000) detected at line 58
+[][]
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{enumerated}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 \end{enumerated}
+                     
+? 
+) (./main.acr [13]
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 5.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [13
+ [14
 
 
 
 
-]) [14]
+]) [15]
 Package tocbasic Info: character protrusion at lof deactivated on input line 53
 .
-
-(./main.lof)
+ (./main.lof)
 \tf@lof=\write10
 \openout10 = `main.lof'.
 
- [15
+ [16
 
 
 ]
@@ -2324,7 +2509,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 54
 \tf@lot=\write11
 \openout11 = `main.lot'.
 
- [16
+ [17
 
 
 ]
@@ -2354,7 +2539,19 @@ Package biblatex Warning: No driver for entry type 'webpage'.
 (biblatex)                Using fallback driver on input line 56.
 
 
-Overfull \hbox (24.96852pt too wide) in paragraph at lines 56--56
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 56.
+
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 56.
+
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 56.
+
+
+Overfull \hbox (27.21326pt too wide) in paragraph at lines 56--56
 \T1/cmtt/m/n/10.95 cloud / blog / 2015 / 03 / 03 / yaas -[] hybris -[] next -[]
  generation -[] cloud -[] architecture -[]
  []
@@ -2367,22 +2564,30 @@ Package biblatex Warning: No driver for entry type 'webpage'.
 Package biblatex Warning: No driver for entry type 'webpage'.
 (biblatex)                Using fallback driver on input line 56.
 
+[18
+
+
+]
 
 Package biblatex Warning: No driver for entry type 'webpage'.
 (biblatex)                Using fallback driver on input line 56.
 
 
-Overfull \hbox (17.90952pt too wide) in paragraph at lines 56--56
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 56.
+
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 56.
+
+
+Overfull \hbox (20.15425pt too wide) in paragraph at lines 56--56
 []\T1/pplx/m/n/10.95 (-20) C. Richard-son. \T1/pplx/m/it/10.95 (-20) Pat-tern: 
 Mono-lithic Ar-chi-tec-ture\T1/pplx/m/n/10.95 (-20) . 2014. \T1/pplx/m/sc/10.95
  (-20) url\T1/pplx/m/n/10.95 (-20) : []$\T1/cmtt/m/n/10.95 http : / / microserv
 ices .
  []
 
-[17
-
-
-]
 
 Package biblatex Warning: No driver for entry type 'url'.
 (biblatex)                Using fallback driver on input line 56.
@@ -2390,7 +2595,7 @@ Package biblatex Warning: No driver for entry type 'url'.
 
 Package nag Warning: 12 complaints in total.
 
-[18]
+[19]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
  (./main.aux)
@@ -2410,32 +2615,26 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45894 strings out of 493089
- 973607 string characters out of 6134843
- 1646368 words of memory out of 5000000
- 48108 multiletter control sequences out of 15000+600000
- 54347 words of font info for 231 fonts, out of 8000000 for 9000
+ 45955 strings out of 493089
+ 974541 string characters out of 6134843
+ 1646941 words of memory out of 5000000
+ 48147 multiletter control sequences out of 15000+600000
+ 55078 words of font info for 241 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,95p,1814b,2483s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{glo:HCP} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{glo:YaaS} has been referenced but does not exist, r
-eplaced by a fixed one
-
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
-usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (24 pages, 491797 bytes).
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (25 pages, 501968 bytes).
 PDF statistics:
- 446 PDF objects out of 1000 (max. 8388607)
- 373 compressed objects within 4 object streams
- 104 named destinations out of 1000 (max. 500000)
+ 486 PDF objects out of 1000 (max. 8388607)
+ 411 compressed objects within 5 object streams
+ 113 named destinations out of 1000 (max. 500000)
  36125 words of extra memory for PDF output out of 42996 (max. 10000000)
 

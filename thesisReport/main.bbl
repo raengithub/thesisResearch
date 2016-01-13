@@ -88,6 +88,66 @@
       \verb http://agilemanifesto.org/
       \endverb
     \endentry
+    \entry{Blanchette:2008aa}{webpage}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=84b7b35db74b1eeaf3673f2f8ae34928}{Blanchette}{B\bibinitperiod}{Jasmin}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{84b7b35db74b1eeaf3673f2f8ae34928}
+      \strng{fullhash}{84b7b35db74b1eeaf3673f2f8ae34928}
+      \field{labelalpha}{Bla08}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{06}
+      \field{title}{The Little Manual of API Design}
+      \field{year}{2008}
+      \verb{url}
+      \verb http://www4.in.tum.de/~blanchet/api-design.pdf
+      \endverb
+    \endentry
+    \entry{Bloch:2016aa}{webpage}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=577c9b87d02f133dc6423f84705048f8}{Bloch}{B\bibinitperiod}{Joshua}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{577c9b87d02f133dc6423f84705048f8}
+      \strng{fullhash}{577c9b87d02f133dc6423f84705048f8}
+      \field{labelalpha}{Blo16}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{How to Design a Good API and Why it Matters}
+      \field{urlday}{13}
+      \field{urlmonth}{01}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://lcsd05.cs.tamu.edu/slides/keynote.pdf
+      \endverb
+    \endentry
+    \entry{Boner:2014aa}{webpage}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=17202869a2e7a20e35fc75944c1f2067}{Bonér}{B\bibinitperiod}{Jonas}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c85da4dce09baf3bc145adb33b20ebf9}{Farley}{F\bibinitperiod}{Dave}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5874c3ac25a57d1817298f76e9f8e880}{Kuhn}{K\bibinitperiod}{Roland}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=cbda8221269684b8322c40a50842c859}{Thompson}{T\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{cc9707a2189f4d32cb6b55d6865547c9}
+      \strng{fullhash}{cc9707a2189f4d32cb6b55d6865547c9}
+      \field{labelalpha}{Bon+14}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{09}
+      \field{title}{The Reactive Manifesto}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.reactivemanifesto.org/
+      \endverb
+    \endentry
     \entry{Cockcroft:2015aa}{online}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=2fbd77dc0350f394e869102ddb66c9e5}{Cockcroft}{C\bibinitperiod}{Adrian}{A\bibinitperiod}{}{}{}{}}%
@@ -197,6 +257,45 @@
       \verb https://devcentral.f5.com/articles/the-art-of-scale-microservices-the-scale-cube-and-load-balancing
       \endverb
     \endentry
+    \entry{Martin:2013aa}{webpage}{}
+      \name{author}{1}{}{%
+        {{uniquename=1,hash=b8ecf3790a925f479b5179a64bd88227}{Martin}{M\bibinitperiod}{Suzanne}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b8ecf3790a925f479b5179a64bd88227}
+      \strng{fullhash}{b8ecf3790a925f479b5179a64bd88227}
+      \field{labelalpha}{Mar13}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Effective Visual Communication for Graphical User Interfaces}
+      \field{urlday}{13}
+      \field{urlmonth}{01}
+      \field{urlyear}{2016}
+      \field{year}{2013}
+      \verb{url}
+      \verb http://web.cs.wpi.edu/~matt/courses/cs563/talks/smartin/int_design.html
+      \endverb
+    \endentry
+    \entry{Martin:2016aa}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=1,hash=4b8949c6443f8223e7eb8536ccdf3810}{Martin}{M\bibinitperiod}{Robert\bibnamedelima Cecil}{R\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4b8949c6443f8223e7eb8536ccdf3810}
+      \strng{fullhash}{4b8949c6443f8223e7eb8536ccdf3810}
+      \field{labelalpha}{Mar16}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{The Single Responsibility Principle}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://programmer.97things.oreilly.com/wiki/index.php/The_Single_Responsibility_Principle
+      \endverb
+    \endentry
     \entry{Newman:2015aa}{book}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=b6be43602c2787d279f8522a7d9713db}{Newman}{N\bibinitperiod}{Sam}{S\bibinitperiod}{}{}{}{}}%
@@ -232,6 +331,24 @@
       \field{title}{On Micro-services Architecture}
       \field{type}{techreport}
       \field{year}{2014}
+    \endentry
+    \entry{Porter:2016aa}{webpage}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=48d2d7ed17135bfc41d5f0f9cd38f112}{Porter}{P\bibinitperiod}{Joshua}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{48d2d7ed17135bfc41d5f0f9cd38f112}
+      \strng{fullhash}{48d2d7ed17135bfc41d5f0f9cd38f112}
+      \field{labelalpha}{Por16}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Principles of User Interface Design}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://bokardo.com/principles-of-user-interface-design/
+      \endverb
     \endentry
     \entry{Richardson:2014aa}{webpage}{}
       \name{author}{1}{}{%
@@ -307,6 +424,24 @@
       \field{title}{Microservices validation: Mjolnirr platformcase study}
       \field{type}{techreport}
       \field{year}{2015}
+    \endentry
+    \entry{Sollenberger:2012aa}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=fcc43d12733dc577ee065e4be559cbb0}{Sollenberger}{S\bibinitperiod}{Kyle}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{fcc43d12733dc577ee065e4be559cbb0}
+      \strng{fullhash}{fcc43d12733dc577ee065e4be559cbb0}
+      \field{labelalpha}{Sol12}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{08}
+      \field{title}{10 User Interface Design Fundamentals}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://blog.teamtreehouse.com/10-user-interface-design-fundamentals
+      \endverb
     \endentry
     \entry{Stubbe:2015aa}{url}{}
       \name{author}{1}{}{%
