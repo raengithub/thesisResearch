@@ -23,17 +23,20 @@ The different parts of the application need to be scaled independently.
 \item \textbf{Autonomy}\\
 The development teams should be able to develop their modules independent of other teams and able to freely choose the technology that fits the job.
 \item \textbf{Retain Speed}\\
-The new features should be able to be released as fast as possible.
+The new features will be of value to customers if could be able to be released as fast as possible.
 \item \textbf{Community}\\
 It should be possible for the components to be shared across internal and external developers.
 \end{enumerate}
 The definition of microservices \ref{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice} as well as the characteristics of microservices [ref] signifies clearly that microservices architecture can be a good fit for \acrshort{YaaS} architecture.
 \section{YaaS Architecture Principles}\label{section:hybris_architecture/YaaS_architecture_principles}
 The Agile Manifesto \cite{Beck:2011aa} provides various principles to develop a software in a better way. It focus on fast response to the requirement changes with frequent continous delivery of software artifacts with close collaboration of customer and self-organizing teams.\\
-The Reactive Manifesto \cite{Boner:2014aa} lists various qualities of a reactive system which includes responsiveness, resilience, elasticity and asynchronous message passing. Loose coupling is highly focused.\\
-Furthermore, the twelve factors from Heroku \cite{Wiggins:2012aa} provides methodology for minimizing time and cost to develop software applications as services. It emphasizes on scalability of applications, explicit declaration as well as isolation of dependencies among components, multiple continuous deployments from a single version controlled codebase with separate pipelines for build, release and run.\\
-Finally, the microservices architecture provides techiques of developing an application as a collection of autonomous small sized services focused on single responsibility. [section \ref{section:context/microservices_architecture_style}] It focus on independent deployment capability of individual microservices and suggest to use lightweight mechanisms such as http for communication among services. Following the architecture offers various advantages not limited to individual independent scalability of each microservice, resilience by isolating failure in a component and technology heterogeneity among various development teams.\cite{Newman:2015aa}
-Following the principles mentioned above, a list of principles are compiled to be used as a guidelines for creating microservices. \cite{Stubbe:2015aa} The list of principles are listed below.
+The Reactive Manifesto \cite{Boner:2014aa} lists various qualities of a reactive system which includes responsiveness (acceptable consistent response time, quick detection and solution of problem), resilience (responsive during the event of failure) , elasticity (responsive during varying amount of workload) and asynchronous message passing. Loose coupling is highly focused.\\
+Furthermore, the twelve factors from Heroku \cite{Wiggins:2012aa} provides a methodology for minimizing time and cost to develop software applications as services. It emphasizes on scalability of applications, explicit declaration as well as isolation of dependencies among components, multiple continuous deployments from a single version controlled codebase with separate pipelines for build, release and run.\\
+Finally, the microservices architecture provides techiques of developing an application as a collection of autonomous small sized services focused on single responsibility. [section \ref{section:context/microservices_architecture_style}] It focus on independent deployment capability of individual microservices and suggest to use lightweight mechanisms such as http for communication among services. The architecture offers various advantages, few of them being individual independent scalability of each microservice, resilience achieved by isolating failure in a component and technology heterogeneity among various development teams.\cite{Newman:2015aa}
+\\
+Following the principles mentioned above, a list of principles are compiled to be used as guidelines for creating microservices. \cite{Stubbe:2015aa} The list of principles are listed below.
+\textbf{\underline{the y-Factors}}
+\\
 \begin{enumerate}
 \item \textbf{Self-Sufficient Teams}\\
 The teams have independence and freedom for any decision related to the design and development of their components. This freedom is balanced by the responsibility for the team to handle the complete lifecycle of their components including smooth running as well as performance in production and troubleshooting in case of any problems.
@@ -100,17 +103,17 @@ Also, the principle listed in \ref{principle:granularity/IT_infrastructure} indi
 \begin{shaded}
 Hypothesis 2:
 \end{shaded} \label{section:hybris_architecture/interview/hypothesis_2}
-\textbf{The domain driven design is the optimum approach to design microservices.}
+\textbf{Domain driven design is the optimum approach to design microservices.}
 \\
 \\
 The concept of domain driven design to design microservices is promoted by S. Newman and M. Fowler. \cite{Newman:2015aa} \cite{Fowler:2014aa} Similary, there can be found evendence of domain driven design being used in various projects to design microservices. The list of projects is shown in the table \ref{tab:domain_driven_design/microservices_and_bounded_context/Microservices_following_Bounded_Context}.
 \\
 \subsection{Interview Compilation}\label{section:hybris_architecture/interview/interview_compilation}
-For each topic listed in section \ref{section:hybris_architecture/interview/hypothesis}, a list of questionaires is prepared. The questions were then asked to the interviewees. In the remaining part of this section, an attempt is made to compile the response from the interviews on the questionaires for each topic.
+For each topic listed above in section \ref{section:hybris_architecture/interview/hypothesis}, a list of questionaires is prepared. The questions were then asked to the interviewees. In the remaining part of this section, an attempt is made to compile the response from the interviews on the questionaires for each topic.
 \\
 \textbf{\underline{1. Granularity}}\\  
 \begin{shaded} Question 1.1 \end{shaded} \label{question:hybris_architecture/interview/question_1.1}
-"Do you consider size of microservices when desigining microservice architecture?"\\
+"Do you consider the size of microservices when desigining microservice architecture?"\\
 \begin{table}[H]
 \centering
 \begin{adjustbox}{max width=\textwidth}
@@ -129,6 +132,25 @@ Not Important           & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{0} \\
 \end{adjustbox}
 \label{tab:hybris_architecture/interview/question_1.1}
 \end{table}
+\\
+\\
+\begin{comment}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{figures/hybris_architecture_question_1_1}
+\label{fig:hybris_architecture/interview/hybris-architecture-question-1-1}
+\end{center}
+\end{figure}
+\\
+\end{comment}
+
+\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{figures/question1_1}
+\label{fig:hybris_architecture/interview/question1-1}
+\end{center}
+\end{figure}
 \\
 
 \begin{shaded} Question 1.2 \end{shaded} \label{question:hybris_architecture/interview/question_1.2}
@@ -156,6 +178,26 @@ b.& Business value           & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & \textbf{8} \\
 \label{tab:hybris_architecture/interview/question_1.2}
 \end{table}
 \\
+\begin{comment}
+\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{figures/hybris_architecture_question_1_2}
+\label{fig:hybris_architecture/interview/hybris-architecture-question-1-2}
+\end{center}
+\end{figure}
+\\
+\end{comment}
+
+\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{figures/question1_2}
+\label{fig:hybris_architecture/interview/question1-2}
+\end{center}
+\end{figure}
+\\
+
 \begin{shaded} Question 1.3 \end{shaded} \label{question:hybris_architecture/interview/question_1.3}
 "What kind of size do you try to achieve for a microservice?"\\
 
@@ -194,13 +236,28 @@ h.& Scalability                     & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & \textbf{6}
 i.& Network Complexity              & 1 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & \textbf{3} \\ 
  \hline
  \hline
- \multicolumn{2}{|c|}{\textit{Quantitatively}}               & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{0}    \\ 
- \hline
- \hline
 \end{tabular}
 \end{adjustbox}
 \label{tab:hybris_architecture/interview/question_1.3}
 \end{table}
+\\
+\begin{comment}
+\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{figures/hybris_architecture_question_1_3}
+\label{fig:hybris_architecture/interview/hybris-architecture-question-1-3}
+\end{center}
+\end{figure}
+\\
+\end{comment}
+\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{figures/question1_3}
+\label{fig:hybris_architecture/interview/question1-3}
+\end{center}
+\end{figure}
 \\
 \begin{shaded} Question 1.4 \end{shaded} \label{question:hybris_architecture/interview/question_1.4}
 "Suppose that you do not have the agile culture like continuous integration and delivery automation and also cloud infrastructure. How will it affect your decision regarding microservices and their size?"\\
@@ -224,7 +281,7 @@ i.& Network Complexity              & 1 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & \textbf{3}
                     & Start with bigger sized microservices with\\
                     & high business value, low coupling and single Responsibility\\
                     \end{tabular}  
-                                & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 1 & \textbf{3} \\ 
+                                & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & \textbf{3} \\ 
  \hline
  \hline
 \end{tabular}
@@ -232,6 +289,25 @@ i.& Network Complexity              & 1 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & \textbf{3}
 \label{tab:hybris_architecture/interview/question_1.4}
 \end{table}
 \\
+\begin{comment}
+\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{figures/hybris_architecture_question_1_4}
+\label{fig:hybris_architecture/interview/hybris-architecture-question-1-4}
+\end{center}
+\end{figure}
+\\
+\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{figures/question1_4}
+\label{fig:hybris_architecture/interview/question1-4}
+\end{center}
+\end{figure}
+\\
+\end{comment
+}
 \begin{shaded} Question 1.5 \end{shaded} \label{question:hybris_architecture/interview/question_1.5}
 "Are you facing any complexities because of microservices architecture and the size you have chosen?"\\
 \begin{table}[H]
@@ -308,7 +384,24 @@ Yes                & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{0}    \\
 \label{tab:hybris_architecture/interview/question_2.2}
 \end{table}
 \\
-
+\begin{comment}
+\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{figures/hybris_architecture_question_2_2}
+\label{fig:hybris_architecture/interview/hybris-architecture-question-2-2}
+\end{center}
+\end{figure}
+\\
+\end{comment}
+\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{figures/question2_2}
+\label{fig:hybris_architecture/interview/question2-2}
+\end{center}
+\end{figure}
+\\
 \begin{shaded} Question 2.3 \end{shaded} \label{question:hybris_architecture/interview/question_2.3}
 "Do you think the table of basic metrics can be helpful?"\\
 \begin{table}[H]
@@ -316,18 +409,38 @@ Yes                & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{0}    \\
 \begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{*{14}{|c}|}%%{|c|l|l|l|l|l|l|l|l|l|}
 \hline
-\textbf{Response 2.2}   & John & Ivan & Jane & Mario & Nanashi & Hans & Otto & Jan & \textbf{Score}\\
+\textbf{Response 2.3}   & John & Ivan & Jane & Mario & Nanashi & Hans & Otto & Jan & \textbf{Score}\\
  \hline
 No          & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{0}    \\ 
  \hline
 Yes                & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & \textbf{4}    \\ 
+ \hline
+Maybe                & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & \textbf{4}    \\ 
+ \hline
  \hline
 \end{tabular}
 \end{adjustbox}
 \label{tab:hybris_architecture/interview/question_2.3}
 \end{table}
 \\
-
+\begin{comment}
+\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{figures/hybris_architecture_question_2_3}
+\label{fig:hybris_architecture/interview/hybris-architecture-question-2-3}
+\end{center}
+\end{figure}
+\\
+\end{comment}
+\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{figures/question2_3}
+\label{fig:hybris_architecture/interview/question2-3}
+\end{center}
+\end{figure}
+\\
 \textbf{\underline{3. Process to design microservices}}\\
 \begin{shaded} Question 3.1 \end{shaded} \label{question:hybris_architecture/interview/question_3.1}
 "Do you follow specific set of consistent procedures across the teams to discover microservices?"\\
@@ -347,7 +460,24 @@ Yes                & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{0}    \\
 \label{tab:hybris_architecture/interview/question_2.3}
 \end{table}
 \\
-
+\begin{comment}
+\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{figures/hybris_architecture_question_3_1}
+\label{fig:hybris_architecture/interview/hybris-architecture-question-3-1}
+\end{center}
+\end{figure}
+\\
+\end{comment}
+\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{figures/question3_1}
+\label{fig:hybris_architecture/interview/question3-1}
+\end{center}
+\end{figure}
+\\
 \begin{shaded} Question 3.2 \end{shaded} \label{question:hybris_architecture/interview/question_3.2}
 "Can you define the process you follow to come up with microservices?"\\
 \begin{table}[H]
@@ -355,7 +485,7 @@ Yes                & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{0}    \\
 \begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{*{14}{|c}|}%%{|c|l|l|l|l|l|l|l|l|l|l|}
 \hline
-\multicolumn{3}{|c|}{\textbf{Response 3.1}}   & John & Ivan & Jane & Mario & Nanashi & Hans & Otto & Jan & \textbf{Score}\\
+\multicolumn{3}{|c|}{\textbf{Response 3.2}}   & John & Ivan & Jane & Mario & Nanashi & Hans & Otto & Jan & \textbf{Score}\\
 \hline
 \hline
 \multicolumn{3}{|c|}{
@@ -368,10 +498,15 @@ Yes                & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{0}    \\
 \end{tabular}}
                                             & 1 & 0 & 1 & 1 & 0 & 0 & 1 & 1 & \textbf{5}    \\ 
  \hline
-& \multicolumn{2}{|c|}{\textit{Do you consider bounded context as well?}}               
+& \multicolumn{2}{|c|}{\textit{Have you heard of Domain driven design and bounded context?}}               
                                             &   &   &   &   &   &   &   &   &      \\ 
  \hline
- & & Yes                                    & 1 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & \textbf{3}    \\ 
+ & & Yes                                    & 0 &   & 0 & 0 &   &   & 1 & 0 & \textbf{1}    \\ 
+ \hline
+ & \multicolumn{2}{|c|}{\textit{Is the concept provided by bounded context being used?}}               
+                                            &   &   &   &   &   &   &   &   &      \\ 
+ \hline
+ & & Yes                                    & 1 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & \textbf{3}    \\
  \hline
  \hline
 \multicolumn{3}{|c|}{
@@ -382,7 +517,7 @@ Yes                & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{0}    \\
 & domain experts and studying the interaction among\\
 & domain models and flow of data.
 \end{tabular}}
-                                            & 0 & 1 & 0 & 0 & 1 & 1 & 0 & 0 & \textbf{3}    \\ 
+                                            & 0 & 1 & 0 & 0 & 1 & 1 & 1 & 0 & \textbf{4}    \\ 
 \hline
 \hline
 \end{tabular}
@@ -390,11 +525,30 @@ Yes                & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{0}    \\
 \label{tab:hybris_architecture/interview/question_3.2}
 \end{table}
 \\
-
+\begin{comment}
+\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{figures/hybris_architecture_question_3_2}
+\label{fig:hybris_architecture/interview/hybris-architecture-question-3-2}
+\end{center}
+\end{figure}
+\\
+\end{comment}
+\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{figures/question3_2}
+\label{fig:hybris_architecture/interview/question3-2}
+\end{center}
+\end{figure}
+\\
 \subsection{Interview Reflection on Hypothesis}\label{section:hybris_architecture/interview/interview_reflection_on_hypothesis}
 The data gathered from the interviews which are compiled in the section \ref{section:hybris_architecture/interview/interview_compilation} can be a good source to analyse the hypothesis listed on the section \ref{section:hybris_architecture/interview/hypothesis}.
 \\
 \begin{shaded} Hypothesis 1 \end{shaded}
+\textbf{The correct size of microservices is determined by: \begin{enumerate}\item Single Responsibility Principle \item Autonomy, and \item Infrastructure Capability \end{enumerate}}
+\\
 The response from question \ref{question:hybris_architecture/interview/question_1.3} has helped to point out some important constraints which play significant role in industry while choosing appropriate size of microservice. It is also interesting to notice how the terms in answer closely relate to the hypothesis \ref{section:hybris_architecture/interview/hypothesis_1}. The figure attempts to clarify the relationship among the terms with the hypothesis.
 \\
 
@@ -419,8 +573,10 @@ This highly moves in the direction to support the hypothesis.\\
 Finally, there appears one additional constraint to affect the size of microservices, not covered by hypothesis but mentioned by all interviewees, which is the business value provided by the microservices.
 \\
 \begin{shaded} Hypothesis 2 \end{shaded}
+\textbf{Domain driven design is the optimum approach to design microservices.}
+\\
 From the response to question \ref{question:hybris_architecture/interview/question_3.1}, it can be implied that the organization has no consistent set of specific guidelines which are agreed and pratised across all teams. However,  
-the various reactions to the question \ref{question:hybris_architecture/interview/question_3.2} appear to fall with two class of process. The response from \ref{question:hybris_architecture/interview/question_3.2} can be represented as in figure \ref{fig:hybris_architecture/interview/process_variations_to_design_microservices} to make it easy to perceive.\\
+the various reactions to the question \ref{question:hybris_architecture/interview/question_3.2} appear to fall with two class of process. The response from \ref{question:hybris_architecture/interview/question_3.2} is repeated here again for convenience \ref{fig:hybris_architecture/interview/process_variations_to_design_microservices}.\\
 \\
 \begin{figure}[H]
 \begin{center}
@@ -430,7 +586,10 @@ the various reactions to the question \ref{question:hybris_architecture/intervie
 \end{center}
 \end{figure}
 \\
-There is one group of reactions which follow a process to functionally divide a usecase into small functions based upon various factors such as single responsiblity and the requirements of performance. This strongly resemble to the usecase modeling technique as described in the chapter \ref{chapter:selection_by_use_case}. Moreever, within the same group, a partition are also using the concept of bounded context to ensure autonomy, which also suggests towards the direction of domain driven design as mentioned in the chapter \ref{chapter:domain_driven_design}. Finally, the rest of the interviewees agree on domain driven design to be the process to design microservices. So, the  response is of mixed nature, both usecase modeling and domain driven design are used in desigining microservices. However, it should also be stated that domain driven design are used on its own or along with usecase modeling to design autonomous microservices.
+There is one group of reactions which follow a process to functionally divide a usecase into small functions based upon various factors such as single responsiblity and the requirements of performance. This strongly resemble to the usecase modeling technique as described in the chapter \ref{chapter:selection_by_use_case}. 
+\\Moreever, within the same group, a partition are also using the concept of bounded context to ensure autonomy, which also suggests towards the direction of domain driven design as mentioned in the chapter \ref{chapter:domain_driven_design}. It is interesting to find out that some of the teams are using the concept of bounded context implicitly even without its knowledge. The rest of the teams who were not using bounded context, have no idea about the concept. It may be assumed that they will have different view once they get familiar with the concept.
+\\
+Finally, the rest of the interviewees agree on domain driven design to be the process to design microservices. So, the  response is of mixed nature, both usecase modeling and domain driven design are used in desigining microservices. However, it should also be stated that domain driven design are used on its own or along with usecase modeling to design autonomous microservices.
 
  \section{Interview Summary}\label{section:hybris_architecture/interview_summary}
 Granularity of a microservice is considered as an important aspect when designing microservices architecture. The first impression in major cases is to make the size of microservice as small as possible however there are also various attributes and concepts which affects the decision regarding the size of microservices. The major aspects are single responsibility principle, autonomy and infrastructure capability.
@@ -449,20 +608,124 @@ There is no single consistent process followed across all the teams. Each team h
 \\
 The domain driven design can be considerd as the most suitable approach to design microservices. Following this approach, not only the problem domain is functionally divided into cohesive group of functionalities but also leads to a natural boundary around the cohesive functionalities with respect the real world, where concept as well as differences are well understood and the ownership of business resources and core logic are well preserved.
 
+ \section{Example Scenario}\label{section:hybris_architecture/example_scenario}
+ \acrshort{YaaS} provides a cloud platform where customers can buy and sell applications and services. In order to accomplish this, \acrshort{YaaS} offers various basic business and core functionalities as microservices. The customers can either use or extend these services to create new services and applications focusing on their individual requirements and goals.
+ \\
+The following part of this section discuss the steps used to identify the basic microservices in \acrshort{YaaS}.
+\\
+\textbf{\underline{Step 1:}}
+\\
+The problem domain is studied thoroughly to identify core domains, supporting domains and generic domains.
+\begin{table}[H]
+  \centering
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{*{14}{|c}|}%%{|c|c|c|}
+  \hline
+  \# & \textbf{Sub-domain}  & \textbf{Type} & \textbf{Description}\\
+  \hline
+  \hline
+   1 & Checkout         & Core          & handles overall process from cart creation to selling of cart items.\\ \hline \hline
+   2 & Product          & Supporting    & deals with product inventory\\ \hline
+   3 & Customer         & Supporting    & deals with customer inventory\\ \hline
+   4 & Coupon           & Supporting    & deals with coupon management \\ \hline
+   5 & Order            & Supporting    & handles orders management\\ \hline \hline
+   6 & Email            & Generic       & provides REST api for sending emails\\ \hline
+   7 & Event            & Generic       & provides asynchronous event based notification service\\ \hline
+   8 & Account          & Generic       & handles users and roles management\\ \hline
+   9 & OAuth2           & Generic       & provides authentication for clients to access resource of resource-owner \\ \hline 
+   \hline
+   \end{tabular}
+\end{adjustbox}
+  \caption{Sub-domains in \acrshort{YaaS}}
+  \label{tab:hybris_architecture/example_scenario/sub-domains-in-YaaS}
+\end{table}
+\\
+\textbf{\underline{Step 2:}}
+\\
+The major functionality of the commerce platform is to sell products, which makes 'Checkout' the core sub-domain. The sub-domain is responsible for a bunch of independent responsibilities. The individual independent functionalities can be rightfully represented by respective bounded contexts. The bounded contexts are realized using microservices. The other major reason for them to be made microservices, in addition to single independent responsibility, is different scalability requirements for each functionality.
+\begin{table}[H]
+  \centering
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{*{14}{|c}|}%%{|c|c|}
+  \hline
+  \# & \textbf{Bounded Context}  & \textbf{Description}\\
+  \hline
+  \hline
+   1 & Checkout             & handles the orchestration logic for checkout \\ \hline
+   2 & Cart                 & handles cart inventory \\ \hline
+   3 & Cart Calculation     & calculates net value of cart considering various constraints such as tax, discount etc. 
+   \\ \hline
+   \hline
+   \end{tabular}
+\end{adjustbox}
+  \caption{Bounded Contexts in Checkout}
+  \label{tab:hybris_architecture/example_scenario/bounded-context-in-Checkout}
+\end{table}
+\\
+\textbf{\underline{Step 3:}}
+\\
+The supporting sub-domain Product deals with various functionalities related to "Product".
+\begin{table}[H]
+  \centering
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{*{14}{|c}|}%%{|c|c|}
+  \hline
+  \# & \textbf{Bounded Context}  & \textbf{Description}\\
+  \hline
+  \hline
+   1 & Category     & manage category of products \\ \hline
+   2 & Product      & manage product inventory\\ \hline
+   3 & Price        & manage price for products \\ \hline
+   \hline
+   \end{tabular}
+\end{adjustbox}
+  \caption{Functional Bounded Contexts in Product}
+  \label{tab:hybris_architecture/example_scenario/functional-bounded-contexts-in-Product}
+\end{table}
+\\
+The bounded contexts listed in table \ref{tab:hybris_architecture/example_scenario/functional-bounded-contexts-in-Product} are based upon the independent responsibility and different performance requirement. Additionally, each functionality deals with business entity "Product". However, the conceptual meaning and scope of "Product" is different in each bounded context. "Product" is a polyseme.
+\\
+Again, there are two more functionalities identified. The first one is a technical functionality to provide indexing of products so that searching of products can be can be efficient. The functionality is generic, technical and independent. It has a different bounded context and can be realized using different microservice. Furthermore, there is a requirement of mashing up information from product, price and category in order to limit the network data from client to each individual service and improve performance. This is realized using a separate mashup service. Also, these functionalities have different performance requirement.
+\begin{table}[H]
+  \centering
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{*{14}{|c}|}%%{|c|c|}
+  \hline
+  \# & \textbf{Bounded Context}  & \textbf{Description}\\
+  \hline
+  \hline
+   1 & Algolia Search   & product indexing to improve search performance     \\ \hline
+   2 & Product Detail   & provide mashup of product, price and category         \\ \hline
+   \hline
+   \end{tabular}
+\end{adjustbox}
+  \caption{Supporting and Generic Bounded Contexts in Product}
+  \label{tab:hybris_architecture/example_scenario/supporting-bounded-contexts-in-Product}
+\end{table}
+\\
+The same process is applied for other subdomains to identify bounded contexts within.It is important to notice that the decision to realize the functionalities as microservices not only considered various technical aspects as performance, autonomy etc but also completely different aspect as "business value". The individual microservices such as Product, Category, Checkout have high business value to \acrshort{YaaS} for the reason that they can be sold within a package.
+\\
+The various microservices designed following the process as mentioned forms a layer of services based on their level of abstraction and reusability. The layers are shown in figure \ref{fig:hybris_architecture/interview/microservices-layers}. The core services are technical generic services used by business services and form the bottom layer. On the top of that are the domain specific business services focused on domain specific business capability. The individual business functionalites provided by business services are then used by Mashup layer to create high level services by orchestrating them.
+\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{figures/hybris-architecture-four}
+\caption{Microservices Layers}
+\label{fig:hybris_architecture/interview/microservices-layers}
+\end{center}
+\end{figure}
+\\
+The figure \ref{fig:hybris_architecture/interview/microservices-layers} uncovers only microservices at the backend related to two separate subdomains. The complete architecture covering other domains such as Marketing etc and all layers including User- Interface, \acrshort{PaaS} is shown by figure \ref{fig:hybris_architecture/interview/hybris-architecture}.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{figures/hybris-architecture-five}
+\caption{Hybris Architecture}
+\label{fig:hybris_architecture/interview/hybris-architecture}
+\end{center}
+\end{figure}
+\\
 
 
 
