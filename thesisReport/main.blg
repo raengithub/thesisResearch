@@ -1,15 +1,18 @@
-[1] Config.pm:324> INFO - This is Biber 2.1
-[1] Config.pm:327> INFO - Logfile is 'main.blg'
-[61] biber-darwin:276> INFO - === Thu Jan 21, 2016, 15:35:56
-[62] Biber.pm:333> INFO - Reading 'main.bcf'
-[193] Biber.pm:645> INFO - Found 15 citekeys in bib section 0
-[227] Biber.pm:2977> INFO - Processing section 0
-[257] Biber.pm:3115> INFO - Looking for bibtex format file 'bibliography/literature.bib' for section 0
-[272] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[285] bibtex.pm:895> INFO - Found BibTeX data source 'bibliography/literature.bib'
-[612] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[612] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[612] Biber.pm:2854> INFO - Sorting list 'anyt' of type 'entry' with scheme 'anyt' and locale 'en-US'
-[612] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-US'
-[647] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[651] bbl.pm:596> INFO - Output to main.bbl
+[0] Config.pm:324> INFO - This is Biber 2.1
+[0] Config.pm:327> INFO - Logfile is 'main.blg'
+[69] biber-darwin:276> INFO - === Fri Jan 22, 2016, 11:58:27
+[69] Biber.pm:333> INFO - Reading 'main.bcf'
+[211] Biber.pm:645> INFO - Found 107 citekeys in bib section 0
+[241] Biber.pm:2977> INFO - Processing section 0
+[259] Biber.pm:3115> INFO - Looking for bibtex format file 'bibliography/literature.bib' for section 0
+[276] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[291] bibtex.pm:895> INFO - Found BibTeX data source 'bibliography/literature.bib'
+[442] Utils.pm:146> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[442] Utils.pm:146> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
+[2225] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2225] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2225] Biber.pm:2854> INFO - Sorting list 'anyt' of type 'entry' with scheme 'anyt' and locale 'en-US'
+[2225] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-US'
+[2520] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[2531] bbl.pm:596> INFO - Output to main.bbl
+[2538] Biber.pm:106> INFO - WARNINGS: 2

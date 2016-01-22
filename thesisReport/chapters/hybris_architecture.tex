@@ -306,8 +306,7 @@ i.& Network Complexity              & 1 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & \textbf{3}
 \end{center}
 \end{figure}
 \\
-\end{comment
-}
+\end{comment}
 \begin{shaded} Question 1.5 \end{shaded} \label{question:hybris_architecture/interview/question_1.5}
 "Are you facing any complexities because of microservices architecture and the size you have chosen?"\\
 \begin{table}[H]
@@ -592,19 +591,36 @@ There is one group of reactions which follow a process to functionally divide a 
 Finally, the rest of the interviewees agree on domain driven design to be the process to design microservices. So, the  response is of mixed nature, both usecase modeling and domain driven design are used in desigining microservices. However, it should also be stated that domain driven design are used on its own or along with usecase modeling to design autonomous microservices.
 
  \section{Interview Summary}\label{section:hybris_architecture/interview_summary}
+ The response from the interviews as compiled in section \ref{section:hybris_architecture/interview/interview_compilation} is analyzed for each topic listed in \ref{section:hybris_architecture/interview/hypothesis} separately.
+ \\
+ \\
+ \textbf{Granularity}
+ \\
+ \\
 Granularity of a microservice is considered as an important aspect when designing microservices architecture. The first impression in major cases is to make the size of microservice as small as possible however there are also various attributes and concepts which affects the decision regarding the size of microservices. The major aspects are single responsibility principle, autonomy and infrastructure capability.
 \\
 The single responsibility gives impression to assume the size of a microservice as small as possible so that the service has minimum cohesive functionality and less number of consumers affected. Whereas, in order to make the microservice autonomous, the service should have full control over its resources and less dependencies upon other services for accomplishing its core logic. This suggests that the size of the service should be big enough to cover the transactional boundary upon its core logic and have full control on its business resources. 
 \\
 Moreover, the small the size of the service is, the number of required microservices increases to accomplish the functionalities of the application. This increases network complexity. Additionally, the logical complexity as well as maintainability will increase. Undoubtedly, the independent scalability of individual service will also increase. However, this increases the operational complexity for maintaining and deploying the microservices, due to the number of services and number of environment to be maintained for each services.
 \\
+As shown in \ref{fig:hybris_architecture/interview/attributes_grouping}, various factors affect the size of microservices.
 The research findings as well as interview response leads to the idea that the question regarding "size" of a microservices has no straight answer. The answer itself is a multiple objective optimization problem whose answer depend upon the level of abstraction of the problem domain achieved, self-governance requirement, self-containment requirement and the honest capability of the organization to handle the operational complexity.
 \\
 Finally, there is an additional deciding factor called "Business Value". The chosen size of the microservice should give business and competitive advantage to the organization and closely lean towards the organizational goals. A decision for a group of cohesive functionalities to be assigned as a single microservice means that a dedicated resources in terms of development, scaling, maintainance, deployment and cloud resources have to be assigned. A rational decision would be to relate the expected business value of the microservice against the expected cost value required by it.
 \\
-The teams do not follow any quantitative metrics for measuring various quality attributes such as granularity, coupling and cohesion. According to the reactions from interviews, the basic metrics to evaluate the quality attributes visualized in the table \ref{tab:quality_of_service/quality_attributes/basic_quality_metrics} can be helpful to approach the design of microservices architecture in an efficient way.
 \\
-There is no single consistent process followed across all the teams. Each team has its own steps to come up with microservices. However, the steps and decision are highly influenced by a set of \abrshort{YaaS} standard principles \ref{section:hybris_architecture/YaaS_architecture_principles}. The reactions from the interviewees are already visualized in \ref{fig:hybris_architecture/interview/process_variations_to_design_microservices}. The process followed by a portion of teams closely relate to usecase modeling approach, where a usecase is divided into several smaller abstractions guided by cohesion, reusability and single responsibility principle. Within this group, a major number of teams also use the concept of bounded concept in order to realize autonomous boundary around the service. Finally, the remaining portion of the teams closely follow domain driven design, where a problem domain is divided into sub-domains and in each sub-domain, various bounded contexts are discovered, which is then mapped into microservices. 
+\textbf{Quality Attributes}
+\\
+\\
+The teams do not follow any quantitative metrics for measuring various quality attributes. However, they agree on a common list of quality attributes to be considered as shown in the table \ref{tab:hybris_architecture/interview/question_2.1}. According to the reactions from interviews, the basic metrics to evaluate the quality attributes visualized in the table  \ref{tab:quality_of_service/quality_attributes/basic_quality_metrics} can be helpful to approach the design of microservices architecture in an efficient way.
+\\
+\\
+\textbf{Process to design microservices}
+\\
+\\
+There is no single consistent process followed across all the teams. Each team has its own steps to come up with microservices. However, the steps and decision are highly influenced by a set of \abrshort{YaaS} standard principles \ref{section:hybris_architecture/YaaS_architecture_principles}. The reactions from the interviewees are already visualized in \ref{fig:hybris_architecture/interview/process_variations_to_design_microservices}. 
+\\
+The process followed by a portion of teams closely relate to usecase modeling approach, where a usecase is divided into several smaller abstractions guided by cohesion, reusability and single responsibility principle. Within this group, a major number of teams also use the concept of bounded concept in order to realize autonomous boundary around the service. Finally, the remaining portion of the teams closely follow domain driven design, where a problem domain is divided into sub-domains and in each sub-domain, various bounded contexts are discovered, which is then mapped into microservices. 
 \\
 The domain driven design can be considerd as the most suitable approach to design microservices. Following this approach, not only the problem domain is functionally divided into cohesive group of functionalities but also leads to a natural boundary around the cohesive functionalities with respect the real world, where concept as well as differences are well understood and the ownership of business resources and core logic are well preserved.
 
