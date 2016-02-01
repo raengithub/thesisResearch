@@ -30,4 +30,36 @@ The section \ref{subsection:context/monolith-disadvantages} lists some drawbacks
    \end{multicols}
 
 \section{Integration}\label{section:challanges_of_microservices_architecture/integration}
+The collaboration among various microservices whilst maintaining deployment autonomy is challenging. In this section, various challanges associated with integration and their potential remedies are discussed.
 \subsection{Shared Database}\label{section:challanges_of_microservices_architecture/integration/shared_database}
+An easiest way to collaborate, is to allow services to access and update a common data source. However, using this kind of integration creates various problems.\cite{Newman:2015aa}
+\begin{enumerate}
+\item The shared database acts as a point of coupling among the collaborating microservices. If a microservice make any changes to its data schema, there is high probability that other services need to be changed as well. Loose Coupling is compromised.
+\item The business logic related to the shared data may be spread across multiple services. Changing the business logic is difficult. Cohesion is compromised.
+\item Multiple services are tied to a single database technology. Migrating to a different technology at any point is hard.
+\end{enumerate}
+\\
+\\
+\textbf{Alternatives}\label{section:challanges_of_microservices_architecture/integration/alternatives}
+There are three distinct alternatives.\cite{Richardson:2015aa}
+\begin{enumerate}
+\item \textbf{private tables per service} - multiple services share same database underneath but each service owns a set of tables.
+\item \textbf{schema per service} - multiple services share same database however each service owns its own database schema.
+\item \textbf{database server per service} - each service has a dedicated database server underneath.
+\end{enumerate}
+\\
+\textbf{Consequences}\label{section:challanges_of_microservices_architecture/integration/consequences}
+The logical separation of data among services increases autonomy but also present some downsides.\cite{Richardson:2016aa} \cite{Richardson:2015aa}
+\begin{enumerate}
+\item The implementation of business transaction which spans multiple services is difficult and not recommended because of \acrshort{CAP} theorem \ref{section:appendices/CAP_theorem}. The solution is to apply eventual consistency \ref{section:appendices/eventual_consistency} focussing more on availability.
+\item The implementation of queries to join data from multiple databases can be complicated. There are two alternatives to achieve this.
+    \begin{enumerate}
+        \item A separate mashup service can be used to handle the logic to join data from multiple services by accessing respective \acrshort{API}s.
+        \item \acrshort{CQRS} pattern \ref{section:appendices/CQRS} can be used by maintaining separate views as well as logic for updating and querying data.
+    \end{enumerate}
+\item The need for sharing data among various autonomous services cannot be avoided completely. It can be achieved by one of the following approaches.
+    \begin{enumerate}
+        \item The data can be directly accessed by using the resource owner's \acrshort{API}.
+        \item The required data can be duplicated into another service and made consistent with the owner's data using event driven approach.
+    \end{enumerate}
+\end{enumerate}
