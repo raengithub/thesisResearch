@@ -130,10 +130,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.6}Example Scenario}{81}{section.7.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyms}{85}{section*.71}
+\contentsline {chapter}{\numberline {8}Challanges of Microservices Architecture}{85}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{87}{appendix*.73}
+\contentsline {section}{\numberline {8.1}Introduction}{85}{section.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{88}{appendix*.74}
+\contentsline {section}{\numberline {8.2}Integration}{86}{section.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{89}{appendix*.75}
+\contentsline {chapter}{Acronyms}{87}{section*.71}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Figures}{89}{appendix*.73}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Tables}{90}{appendix*.74}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{91}{appendix*.75}

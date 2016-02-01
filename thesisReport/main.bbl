@@ -572,6 +572,24 @@
       \field{title}{The Art of Scalability: Scalable Web Architecture, Processes, and Organizations for the Modern Enterprise, Second Edition}
       \field{year}{2015}
     \endentry
+    \entry{Factor:2014aa}{webpage}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=d8f9cbd07bd127e79efa371add6620c9}{Factor}{F\bibinitperiod}{Phil}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d8f9cbd07bd127e79efa371add6620c9}
+      \strng{fullhash}{d8f9cbd07bd127e79efa371add6620c9}
+      \field{labelalpha}{Fac14}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{The Eight Fallacies of Distributed Computing}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://www.simple-talk.com/blogs/2014/12/30/the-eight-fallacies-of-distributed-computing/
+      \endverb
+    \endentry
     \entry{Fareghzadeh:2008aa}{report}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=62875f3b0fef9e5ca3ae98f33cf15aee}{Fareghzadeh}{F\bibinitperiod}{Nafise}{N\bibinitperiod}{}{}{}{}}%
@@ -718,6 +736,24 @@
       \field{year}{2014}
       \verb{url}
       \verb http://martinfowler.com/bliki/BoundedContext.html
+      \endverb
+    \endentry
+    \entry{Fowler:2015aa}{webpage}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=312ac886938a9b2be4f8eb607567fe4c}{Fowler}{F\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{fullhash}{312ac886938a9b2be4f8eb607567fe4c}
+      \field{labelalpha}{Fow15}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{07}
+      \field{title}{Microservice Trade-Offs}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://martinfowler.com/articles/microservice-trade-offs.html
       \endverb
     \endentry
     \entry{Goeb:2011aa}{report}{}

@@ -1,0 +1,33 @@
+\chapter{Challanges of Microservices Architecture}\label{chapter:challanges_of_microservices_architecture}
+\section{Introduction}\label{section:challanges_of_microservices_architecture/introduction}
+The section \ref{subsection:context/monolith-disadvantages} lists some drawbacks of monolithic architecture and these have become the motivation for adopting microservices architecture. Microservices offer opportunities in various aspects however it can also be tricky to utilize them properly. It do come with few challanges. The response from interview \ref{question:hybris_architecture/interview/question_1.5} also highlights some prominent challanges. In this chapter, the challanges of microservices alongside its advantages will be discussed. \cite{Fowler:2015aa}
+
+  \begin{multicols}{2}
+  \textbf{\underline{Advantages}} 
+  \vfill
+  \columnbreak
+  \textbf{\underline{Challanges}}
+  \end{multicols}
+  \begin{multicols}{2}
+  \textbf{Strong Modular Boundaries} \\It is not totally true that monolith have weaker modular structure than microservices but it is also not false to say that as the system gets bigger, it is very easy for monolith to turn in to a big ball of mud. However, it is very difficult to do the same with microservices. Each microservice is a cohesive unit with full control upon its business entities. The only way to access its data is through its \acrshort{API}.
+  \vfill
+  \columnbreak
+  \textbf{Distributed System} \\The infrastructure of microservices is distributed, which brings many complications alongside, as listed by 8 fallacies.\cite{Factor:2014aa} The calls are remote which are imminent to accomplish business goals. The remote calls are slower than local and affect performance in a great deal. Additionally, network is not reliable which makes it challanging to accept and handle the failures.
+  \end{multicols}
+
+\begin{multicols}{2}
+  \textbf{Independent Deployment} \\Due the nature of microservices being autonomous components, each microservice can be deployed independently. Deployment of microservices is thus easy compared to monolith application where a small change needs the whole system to be deployed.\cite{Newman:2015aa}
+  \vfill
+  \columnbreak
+  \textbf{Integration} \\It is challanging to prevent breaking other microservices when deploying a service. Similarly, as each microservice has its own data, the collaboration among microservices and sharing of data can be complex.
+   \end{multicols}
+   
+  \begin{multicols}{2}
+  \textbf{Agile}\\ Each microservice is focused to single responsibility, changes are easy to implement. At the same time, as the microservices are autonomous, they can be deployed independently, making the release cycle time short.
+  \vfill
+  \columnbreak
+  \textbf{Operational Complexity} \\ As the number of microservices increases, it becomes difficult to deploy in an acceptable speed and becomes more complicated as the frequency of changes increase. Similary, as the granularity of microservices decreases, the number of microservices increases which shifts the complexity towards the interconnections. Ultimately, it becomes complex to monitor and debug microservices.
+   \end{multicols}
+
+\section{Integration}\label{section:challanges_of_microservices_architecture/integration}
+\subsection{Shared Database}\label{section:challanges_of_microservices_architecture/integration/shared_database}

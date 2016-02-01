@@ -2520,6 +2520,9 @@
     <bcf:citekey order="255">Pierre-Reldin:2007aa</bcf:citekey>
     <bcf:citekey order="256">Newman:2015aa</bcf:citekey>
     <bcf:citekey order="257">Fowler:2014aa</bcf:citekey>
+    <bcf:citekey order="258">Fowler:2015aa</bcf:citekey>
+    <bcf:citekey order="259">Factor:2014aa</bcf:citekey>
+    <bcf:citekey order="260">Newman:2015aa</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="anyt" type="entry" sortscheme="anyt">
   <bcf:sorting>
