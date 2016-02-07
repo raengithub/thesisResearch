@@ -133,11 +133,11 @@ With semantic versioning, the consumers can clearly know if the provider's curre
 \item Coexist concurrent service versions \\ Another approach is to support both version of service at once. The requests from old consumers need to be routed to old versioned service and requests from new consumers to the new versioned service. It is mostly used when the cost of updated old consumer is high. However, this also means that two different versions have to be maintained and operated smoothly.
 \end{enumerate}
 \\
-\subsection{Handling Failures}\label{section:challanges_of_microservices_architecture/integration/handling_failures}
+\section{Handling Failures}\label{section:challanges_of_microservices_architecture/handling_failures}
 With a large number of microservices where communication is happening along not so reliable network, failures are inevitable. At the same time, it becomes challenging as well as highly necessary to handle the failures. Many strategies can be employed for the purpose. \cite{Newman:2015aa}\cite{Richardson:2015ab}\cite{Nygard:2007aa}
 \begin{enumerate}
 \item Timeouts \\ A service can get blocked indefinitely waiting for response from provider. To prevent this, a threshold value can be set for waiting. However, care should be taken not to choose very low or high value for waiting. 
-\item Circuit Breaker \\ If request to a service keep failing, there is less sense to keep sending request to the same server. It can be a better approach to track the request failures and stop sending further request to the service assuming that there is problem with the connection. By failing fast in such a way will not only save the waiting time for the client but also reduces unnecessary network load. Circuit Breaker pattern helps to accomplish the same. A circuit breaker has three states as shown in the figure. In normal cases when the connection to the provider is working fine, it is in 'closed' state and all the connections to the provider goes through it. Once the connection starts failing and meets the threshold (can be number of failures or frequency of failures), the circuit breaker switch to 'open' state. At this state, any more connections fail straight away. After certain time interval, the state changes to 'half open' to check the state of provider again. Any connection request at this point passes through. If the connection is succesful, the state switches back to 'closed' state, else to 'open' state.\cite{Fowler:2014ac} \cite{Newman:2015aa} \cite{Nygard:2007aa}
+\item Circuit Breaker \\ If request to a service keep failing, there is less sense to keep sending request to the same server. It can be a better approach to track the request failures and stop sending further request to the service assuming that there is problem with the connection. By failing fast in such a way will not only save the waiting time for the client but also reduces unnecessary network load. Circuit Breaker pattern helps to accomplish the same. A circuit breaker has three states as shown in the figure \ref{fig:challanges_of_microservices_architecture/integration/inter_service_communication/states_of_circuit_breaker}. In normal cases when the connection to the provider is working fine, it is in 'closed' state and all the connections to the provider goes through it. Once the connection starts failing and meets the threshold (can be number of failures or frequency of failures), the circuit breaker switch to 'open' state. At this state, any more connections fail straight away. After certain time interval, the state changes to 'half open' to check the state of provider again. Any connection request at this point passes through. If the connection is succesful, the state switches back to 'closed' state, else to 'open' state.\cite{Fowler:2014ac} \cite{Newman:2015aa} \cite{Nygard:2007aa}
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{figures/challanges_three_circuit_breaker}
@@ -149,11 +149,37 @@ With a large number of microservices where communication is happening along not 
 \item Bulk Head \\ Bulk Head is the approach of segregating various resources as per requirement and assigning them to respective purposes. Maintaining such threshold in available resources will save any resource from being constrained whenever there is problem in any section. One example of such bulkhead is the assignment of separate connection pool for each downstream resources. In this way, if problem in the request from one connection pool will not affect another connection pool. \cite{Newman:2015aa} \cite{Nygard:2007aa}
 \item Provide fallbacks \\ Various fallback logic can be applied along with timeout or circuit breaker to provide alternative mechanism to respond. For example, cached data or default value can be returned. 
 \end{enumerate}
-
-
-
-
-
+\\
+\section{Monitoring}\label{section:challanges_of_microservices_architecture/monitoring}
+With monolithic deployment, monitoring can be achieved by sifting through few logs on the server and various server metrices. The complexity can get added to some extent if the application is scaled along multiple server, in which case, monitoring can be done by accumulating various server metrices and going through each log file on each host.
+The complexity goes to whole new level when monitoring microservice deployment because of large number of individual log files produced by microservices. As difficult it is to go through each log files, it is even more challenging to trace any request contextually along all the log files.
+\\
+There are various ways to work around these complexities.
+\begin{enumerate}
+\item Log Aggregation and Visualition \\
+A large number of logs in different locations can be intimidating. The tracing of logs can be easier if the logs could be aggregated in a centralized location and then visualized in a better way such as graphs. One of such variations can be achieved using ELK stack as shown in the figure \ref{fig:challanges_of_microservices_architecture/elk_stack}. \cite{Anicas:2014aa} \cite{Newman:2015aa}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{figures/challenges_four_elk_stack}
+\caption{ELK stack}
+\label{fig:challanges_of_microservices_architecture/elk_stack}
+\end{center}
+\end{figure}
+\\
+The ELK stack consists of following major components.
+\begin{enumerate}
+\item Logstash Forward \\ It is the component installed in each node which forwards the selected log files to the central Logstash server.
+\item Logstash Indexer \\ It is the central logstash component which gathers all the log files and process them.
+\item Elastic Search \\ The Logstash Indexer forwards the log data and stores into Elastic Search.
+\item Kibana \\ It provides web interface to search and visualize the log data.\\
+The stack makes it easy to trace log and visualize graphs along various metrices.
+\end{enumerate}
+\item Synthetic Monitoring \\ Another aspect of monitoring which can be helpful, is to collect various health status such as availability, response time etc. There are many tools to make it easier. One such tool is 'uptime', which is a remote monitoring application and provides email notification as well as features such as webhook to notify a url using http POST.
+\\
+Rather than waiting for something to get wrong, a selected sets of important business logic can be tested in regular interval. The result can be fed into notification subsystem, which will trigger notification to responsible parties. This will ensure confidence that any problem will be detected as soon as possible and can be worked on sooner.
+\item Correlation ID \\
+A request from a client is fulfilled by a number of microservices, each microservice being responsible for certain part of the whole functionality. The request passes through various microservices until it succeeds. For this reason, it is difficult to track the request as well as visualize the complete logical path. Correlation ID is an unique identification code given to the request by the microservices at the user end and passes it towards the downstream microservice. Each downstream microservice does the same and pass along the ID. It makes it easier to capture a complete picture of any request in that way
+\end{enumerate}
 
 
 

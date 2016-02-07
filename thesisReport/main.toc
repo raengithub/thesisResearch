@@ -146,20 +146,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.2.3}Breaking Change}{90}{subsection.8.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.4}Handling Failures}{91}{subsection.8.2.4}
+\contentsline {section}{\numberline {8.3}Handling Failures}{91}{section.8.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Appendices}{94}{chapter.9}
+\contentsline {section}{\numberline {8.4}Monitoring}{93}{section.8.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}CAP Theorem}{94}{section.9.1}
+\contentsline {chapter}{\numberline {9}Appendices}{96}{chapter.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.2}Eventual Consistency}{94}{section.9.2}
+\contentsline {section}{\numberline {9.1}CAP Theorem}{96}{section.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.3}Command Query Responsibility Segregation(CQRS)}{94}{section.9.3}
+\contentsline {section}{\numberline {9.2}Eventual Consistency}{96}{section.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyms}{95}{section*.74}
+\contentsline {section}{\numberline {9.3}Command Query Responsibility Segregation(CQRS)}{96}{section.9.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{97}{appendix*.76}
+\contentsline {chapter}{Acronyms}{97}{section*.75}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{99}{appendix*.77}
+\contentsline {chapter}{\nonumberline List of Figures}{99}{appendix*.77}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{100}{appendix*.78}
+\contentsline {chapter}{\nonumberline List of Tables}{101}{appendix*.78}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{102}{appendix*.79}

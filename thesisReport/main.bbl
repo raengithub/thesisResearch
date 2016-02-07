@@ -56,6 +56,24 @@
       \field{type}{techreport}
       \field{year}{2003}
     \endentry
+    \entry{Anicas:2014aa}{url}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=8ae85f3bfb878cf6986699340d266924}{Anicas}{A\bibinitperiod}{Mitchell}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8ae85f3bfb878cf6986699340d266924}
+      \strng{fullhash}{8ae85f3bfb878cf6986699340d266924}
+      \field{labelalpha}{Ani14}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{06}
+      \field{title}{How To Use Logstash and kibana To Centralize Logs On Ubuntu 14.04}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://www.digitalocean.com/community/tutorials/how-to-use-logstash-and-kibana-to-centralize-and-visualize-logs-on-ubuntu-14-04
+      \endverb
+    \endentry
     \entry{Annett:2014aa}{webpage}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=c1176c0632a5122cba5207a93031d1a9}{Annett}{A\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%

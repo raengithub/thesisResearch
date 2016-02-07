@@ -68,12 +68,13 @@
 \BOOKMARK [2][-]{subsection.8.2.1}{Shared Database}{section.8.2}% 68
 \BOOKMARK [2][-]{subsection.8.2.2}{Inter-Service Communication}{section.8.2}% 69
 \BOOKMARK [2][-]{subsection.8.2.3}{Breaking Change}{section.8.2}% 70
-\BOOKMARK [2][-]{subsection.8.2.4}{Handling Failures}{section.8.2}% 71
-\BOOKMARK [0][-]{chapter.9}{Appendices}{}% 72
-\BOOKMARK [1][-]{section.9.1}{CAP Theorem}{chapter.9}% 73
-\BOOKMARK [1][-]{section.9.2}{Eventual Consistency}{chapter.9}% 74
-\BOOKMARK [1][-]{section.9.3}{Command Query Responsibility Segregation\(CQRS\)}{chapter.9}% 75
-\BOOKMARK [0][-]{section*.74}{Acronyms}{}% 76
-\BOOKMARK [0][-]{appendix*.76}{List of Figures}{}% 77
-\BOOKMARK [0][-]{appendix*.77}{List of Tables}{}% 78
-\BOOKMARK [0][-]{appendix*.78}{Bibliography}{}% 79
+\BOOKMARK [1][-]{section.8.3}{Handling Failures}{chapter.8}% 71
+\BOOKMARK [1][-]{section.8.4}{Monitoring}{chapter.8}% 72
+\BOOKMARK [0][-]{chapter.9}{Appendices}{}% 73
+\BOOKMARK [1][-]{section.9.1}{CAP Theorem}{chapter.9}% 74
+\BOOKMARK [1][-]{section.9.2}{Eventual Consistency}{chapter.9}% 75
+\BOOKMARK [1][-]{section.9.3}{Command Query Responsibility Segregation\(CQRS\)}{chapter.9}% 76
+\BOOKMARK [0][-]{section*.75}{Acronyms}{}% 77
+\BOOKMARK [0][-]{appendix*.77}{List of Figures}{}% 78
+\BOOKMARK [0][-]{appendix*.78}{List of Tables}{}% 79
+\BOOKMARK [0][-]{appendix*.79}{Bibliography}{}% 80
