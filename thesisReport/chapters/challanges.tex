@@ -154,7 +154,7 @@ With a large number of microservices where communication is happening along not 
 With monolithic deployment, monitoring can be achieved by sifting through few logs on the server and various server metrices. The complexity can get added to some extent if the application is scaled along multiple server, in which case, monitoring can be done by accumulating various server metrices and going through each log file on each host.
 The complexity goes to whole new level when monitoring microservice deployment because of large number of individual log files produced by microservices. As difficult it is to go through each log files, it is even more challenging to trace any request contextually along all the log files.
 \\
-There are various ways to work around these complexities.
+There are various ways to work around these complexities. \cite{Newman:2015aa} \cite{Simone:2014aa}
 \begin{enumerate}
 \item Log Aggregation and Visualition \\
 A large number of logs in different locations can be intimidating. The tracing of logs can be easier if the logs could be aggregated in a centralized location and then visualized in a better way such as graphs. One of such variations can be achieved using ELK stack as shown in the figure \ref{fig:challanges_of_microservices_architecture/elk_stack}. \cite{Anicas:2014aa} \cite{Newman:2015aa}
@@ -176,11 +176,43 @@ The stack makes it easy to trace log and visualize graphs along various metrices
 \end{enumerate}
 \item Synthetic Monitoring \\ Another aspect of monitoring which can be helpful, is to collect various health status such as availability, response time etc. There are many tools to make it easier. One such tool is 'uptime', which is a remote monitoring application and provides email notification as well as features such as webhook to notify a url using http POST.
 \\
-Rather than waiting for something to get wrong, a selected sets of important business logic can be tested in regular interval. The result can be fed into notification subsystem, which will trigger notification to responsible parties. This will ensure confidence that any problem will be detected as soon as possible and can be worked on sooner.
+Rather than waiting for something to get wrong, a selected sets of important business logic can be tested in regular interval. The result can be fed into notification subsystem, which will trigger notification to responsible parties. This will ensure confidence that any problem will be detected as soon as possible and can be worked on sooner. \cite{Simone:2014aa} \cite{Newman:2015aa}
 \item Correlation ID \\
-A request from a client is fulfilled by a number of microservices, each microservice being responsible for certain part of the whole functionality. The request passes through various microservices until it succeeds. For this reason, it is difficult to track the request as well as visualize the complete logical path. Correlation ID is an unique identification code given to the request by the microservices at the user end and passes it towards the downstream microservice. Each downstream microservice does the same and pass along the ID. It makes it easier to capture a complete picture of any request in that way
+A request from a client is fulfilled by a number of microservices, each microservice being responsible for certain part of the whole functionality. The request passes through various microservices until it succeeds. For this reason, it is difficult to track the request as well as visualize the complete logical path. Correlation ID is an unique identification code given to the request by the microservices at the user end and passes it towards the downstream microservice. Each downstream microservice does the same and pass along the ID. It gets easier to capture a complete picture of any request in that way.
 \end{enumerate}
 
+\section{Deployment}\label{section:challanges_of_microservices_architecture/deployment}
+A major advantage of microservices is that the features can updated and delivered quickly due to the autonomity and independent deployability of each microservices. However, with the increase in the number of microservices and the rate of changes that can happen in each microservice, fast deployment is not straight forward. The culture of doing deployment for monolithic application will not work perfectly on microservices. This section discusses how it can be achieved.
+\\
+There are two major parts in deployment. In order to speed up deployment in microservices, approach to accomplish each part has to be changed slightly.
+\begin{enumerate}
+\item Continuous Integration \\
+It is a software development practice in which newly checked in code are followed by automated build and verification to ensure that the integration was successful. Following continuous integration does not only automate the artifact creation process but also reduces the feedback cycle of the code providing opportunity to improving quality.
+\\
+To ensure autonomy and agility in microservices, a better approach is to assign separate source code repository and separate build for each microservice as shown in figure \ref{fig:challanges_of_microservices_architecture/deployment/continuous_integration}. Each repository is mapped to separate build in Continuous Integration server. Any changes in a microservice triggers corresponding build in Continuous Integration server and creates a single artifact for that microservice. An additional advantage of this approach is clear assignment of ownership of the repository and build responsibility to the teams, owning the microservices.  \cite{Newman:2015aa} \cite{Fowler:2006ab}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{figures/challenges_five_continuous_integration}
+\caption{Continuous Integration \cite{Newman:2015aa}}
+\label{fig:challanges_of_microservices_architecture/deployment/continuous_integration}
+\end{center}
+\end{figure}
+\\
+\item Continuous Delivery
+\\
+It is a discipline in which every small change is verified immediately to check deployability of the application. There are two major concepts associated with continuous delivery. First one is continuous integration of source code and creation of artifact. The artifact is then fed into a build pipeline. A build pipeline is a series of stages, each stage responsible for the verification of certain aspects of the artifact. A successful verification at each stage ensures the readiness of the artifact further close to release.
+\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{figures/challenges_six_continuous_delivery}
+\caption{Continuous Delivery \cite{Newman:2015aa}}
+\label{fig:challanges_of_microservices_architecture/deployment/continuous_delivery}
+\end{center}
+\end{figure}
+\\
+A version of build pipeline is shown in figure \ref{fig:challanges_of_microservices_architecture/deployment/continuous_delivery}. Here, faster tests are performed ahead and slow tests, manual testing are performed down the line. This kind of successive verifications make it faster to identify problems, clear visibility of problems and improve the quality as well as confidence in the quality of the application.\\
+Each microservice has an independent build pipeline. The artifact build during continuous integration triggered by any change in the microservices is fed into corresponding build pipeline for the microservice. \cite{Newman:2015aa} \cite{Fowler:2013aa}
+\end{enumerate}
 
 
 
