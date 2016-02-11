@@ -37,6 +37,41 @@
       \verb https://www.digitalocean.com/community/tutorials/how-to-use-logstash-and-kibana-to-centralize-and-visualize-logs-on-ubuntu-14-04
       \endverb
     \endentry
+    \entry{Peter-Bailis:2013aa}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=751ac45f5dfde0130a2b00c11f848287}{Bailis}{B\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=dfd14c69d2338ce9cf556c819a32d286}{Ghodsi}{G\bibinitperiod}{Ali}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d1869e9b1c216d3848cd09927922b18a}
+      \strng{fullhash}{d1869e9b1c216d3848cd09927922b18a}
+      \field{labelalpha}{BG13}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{04}
+      \field{title}{Eventual Consistency Today: Limitations, Extensions, and Beyond How can applications be built on eventually consistent infrastructure given no guarantee of safety?}
+      \field{volume}{11}
+      \field{year}{2013}
+    \endentry
+    \entry{Julian:2009aa}{webpage}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=47951ad299fd35c7b1a77cf25d1ef1ce}{Browne}{B\bibinitperiod}{Julian}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{47951ad299fd35c7b1a77cf25d1ef1ce}
+      \strng{fullhash}{47951ad299fd35c7b1a77cf25d1ef1ce}
+      \field{labelalpha}{Bro09}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Brewer's CAP Theorem}
+      \field{year}{2009}
+      \verb{url}
+      \verb http://www.julianbrowne.com/article/viewer/brewers-cap-theorem
+      \endverb
+    \endentry
     \entry{Factor:2014aa}{webpage}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=d8f9cbd07bd127e79efa371add6620c9}{Factor}{F\bibinitperiod}{Phil}{P\bibinitperiod}{}{}{}{}}%
@@ -73,6 +108,25 @@
       \verb http://www.martinfowler.com/articles/continuousIntegration.html
       \endverb
     \endentry
+    \entry{Fowler:2011ab}{webpage}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=312ac886938a9b2be4f8eb607567fe4c}{Fowler}{F\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{fullhash}{312ac886938a9b2be4f8eb607567fe4c}
+      \field{labelalpha}{Fow11}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{07}
+      \field{title}{CQRS}
+      \field{year}{2011}
+      \verb{url}
+      \verb http://martinfowler.com/bliki/CQRS.html
+      \endverb
+    \endentry
     \entry{Fowler:2011aa}{webpage}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=312ac886938a9b2be4f8eb607567fe4c}{Fowler}{F\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
@@ -82,6 +136,7 @@
       \field{labelalpha}{Fow11}
       \field{sortinit}{F}
       \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{extraalpha}{2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{05}

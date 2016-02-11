@@ -168,7 +168,7 @@ A large number of logs in different locations can be intimidating. The tracing o
 \\
 The ELK stack consists of following major components.
 \begin{enumerate}
-\item Logstash Forward \\ It is the component installed in each node which forwards the selected log files to the central Logstash server.
+\item Logstash Forwarder \\ It is the component installed in each node which forwards the selected log files to the central Logstash server.
 \item Logstash Indexer \\ It is the central logstash component which gathers all the log files and process them.
 \item Elastic Search \\ The Logstash Indexer forwards the log data and stores into Elastic Search.
 \item Kibana \\ It provides web interface to search and visualize the log data.\\
@@ -205,7 +205,7 @@ It is a discipline in which every small change is verified immediately to check 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{figures/challenges_six_continuous_delivery}
-\caption{Continuous Delivery \cite{Newman:2015aa}}
+\caption{Continuous Delivery Pipeline \cite{Newman:2015aa}}
 \label{fig:challanges_of_microservices_architecture/deployment/continuous_delivery}
 \end{center}
 \end{figure}
