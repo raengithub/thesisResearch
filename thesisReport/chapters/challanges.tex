@@ -1,7 +1,8 @@
 \chapter{Challanges of Microservices Architecture}\label{chapter:challanges_of_microservices_architecture}
 \section{Introduction}\label{section:challanges_of_microservices_architecture/introduction}
-The section \ref{subsection:context/monolith-disadvantages} lists some drawbacks of monolithic architecture and these have become the motivation for adopting microservices architecture. Microservices offer opportunities in various aspects however it can also be tricky to utilize them properly. It do come with few challanges. The response from interview \ref{question:hybris_architecture/interview/question_1.5} also highlights some prominent challanges. In this chapter, the challanges of microservices alongside its advantages will be discussed. \cite{Fowler:2015aa}
+The section \ref{subsection:context/monolith-disadvantages} lists some drawbacks of monolithic architecture and these have become the motivation for adopting microservices architecture. Microservices offer opportunities in various aspects however it can also be tricky to utilize them properly. It does come with few challanges. The response from interview \ref{question:hybris_architecture/interview/question_1.5} also highlights some prominent challanges. In this chapter, the challanges of microservices alongside its advantages will be discussed. \cite{Fowler:2015aa}
 
+\label{section:challanges_of_microservices_architecture/introduction/challenges}
   \begin{multicols}{2}
   \textbf{\underline{Advantages}} 
   \vfill
@@ -28,7 +29,8 @@ The section \ref{subsection:context/monolith-disadvantages} lists some drawbacks
   \columnbreak
   \textbf{Operational Complexity} \\ As the number of microservices increases, it becomes difficult to deploy in an acceptable speed and becomes more complicated as the frequency of changes increase. Similary, as the granularity of microservices decreases, the number of microservices increases which shifts the complexity towards the interconnections. Ultimately, it becomes complex to monitor and debug microservices.
    \end{multicols}
-
+\\
+In the following sections of this chapter, various ways to tackle the challenges mentioned in \ref{section:challanges_of_microservices_architecture/introduction/challenges} are discussed in detail.
 \section{Integration}\label{section:challanges_of_microservices_architecture/integration}
 The collaboration among various microservices whilst maintaining deployment autonomy is challenging. In this section, various challanges associated with integration and their potential remedies are discussed.
 
@@ -125,7 +127,7 @@ Although microservices are autonomous components, they still need to communicate
 
 \begin{enumerate}
 \item Avoid as much as possible \\ A good approach to reduce impact of incompatible changes to the consumers is to defer it as long as it is possible. One way is by choosing the correct integration technology such that loose coupling is maintained. For example, using \acrshort{REST} as an integration technology is better approach than using shared database because it encaptulates the underlying implementation and consumers are only tied to the interfaces.\\
-Another approach is to apply TolerantReader pattern while accessing provider's \acrshort{API}. \cite{Fowler:2011aa} Consumer can get liberal while reading data from provider. Without blindly accepting everything from server, it can only filter the required data without carrying about the payload datastructure and order. So, if the reader is tolerant, the consumer service can still work if the provider adds new fields or change the structure of the response.
+Another approach is to apply TolerantReader pattern while accessing provider's \acrshort{API}. \cite{Fowler:2011aa} Consumer can get liberal while reading data from provider. Without blindly accepting everything from server, it can only filter the required data without carrying about the payload structure and order. So, if the reader is tolerant, the consumer service can still work if the provider adds new fields or change the structure of the response.
 \item Catch breaking changes early \\ It is also crucial to identify breaking change, if it happens, as soon as  possible. It can be achieved by using consumer-driven contracts. Consumers will write the contract to define the expectations from the producer's \acrshort{API} in the form of various integration tests. These integration tests can become a part of build process of the producer so the breaking change can be detected in the build process before the \acrshort{API} is accessed by the real consumers.
 \item Use Semantic Versioning \\ Semantic Versioning is a way to identify the state of current artifact using compact information. It has the form MAJOR.MINOR.PATCH. MAJOR number is increased when backward incompatible changes are made. Similarly, MINOR number is increased when backward compatible functionalities are added. Finally, PATCH number represents that bug fixes are made which are backward compatible.\\
 With semantic versioning, the consumers can clearly know if the provider's current update will break their \arshort{API} or not. For example, if consumer is using 1.1.3 version of provider's \arshort{API} and the new updated version is 2.1.3, then the consumer should expect some breaking changes and react accordingly.
