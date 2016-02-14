@@ -74,13 +74,15 @@
 \BOOKMARK [0][-]{chapter.9}{Guidelines}{}% 74
 \BOOKMARK [1][-]{section.9.1}{Context}{chapter.9}% 75
 \BOOKMARK [1][-]{section.9.2}{Process to Microservices}{chapter.9}% 76
-\BOOKMARK [1][-]{section.9.3}{Principles}{chapter.9}% 77
+\BOOKMARK [1][-]{section.9.3}{Principles And Guidelines}{chapter.9}% 77
 \BOOKMARK [0][-]{chapter.10}{Appendices}{}% 78
 \BOOKMARK [1][-]{section.10.1}{CAP Theorem}{chapter.10}% 79
 \BOOKMARK [1][-]{section.10.2}{Eventual Consistency}{chapter.10}% 80
 \BOOKMARK [1][-]{section.10.3}{Command Query Responsibility Segregation\(CQRS\)}{chapter.10}% 81
 \BOOKMARK [1][-]{section.10.4}{Single Responsibility Principle}{chapter.10}% 82
-\BOOKMARK [0][-]{section*.79}{Acronyms}{}% 83
-\BOOKMARK [0][-]{appendix*.81}{List of Figures}{}% 84
-\BOOKMARK [0][-]{appendix*.82}{List of Tables}{}% 85
-\BOOKMARK [0][-]{appendix*.83}{Bibliography}{}% 86
+\BOOKMARK [1][-]{section.10.5}{BlueGreen Deployment}{chapter.10}% 83
+\BOOKMARK [1][-]{section.10.6}{Canary Release}{chapter.10}% 84
+\BOOKMARK [0][-]{section*.79}{Acronyms}{}% 85
+\BOOKMARK [0][-]{appendix*.81}{List of Figures}{}% 86
+\BOOKMARK [0][-]{appendix*.82}{List of Tables}{}% 87
+\BOOKMARK [0][-]{appendix*.83}{Bibliography}{}% 88

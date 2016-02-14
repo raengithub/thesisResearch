@@ -158,22 +158,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9.2}Process to Microservices}{98}{section.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.3}Principles}{99}{section.9.3}
+\contentsline {section}{\numberline {9.3}Principles And Guidelines}{99}{section.9.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Appendices}{103}{chapter.10}
+\contentsline {chapter}{\numberline {10}Appendices}{105}{chapter.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.1}CAP Theorem}{103}{section.10.1}
+\contentsline {section}{\numberline {10.1}CAP Theorem}{105}{section.10.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.2}Eventual Consistency}{103}{section.10.2}
+\contentsline {section}{\numberline {10.2}Eventual Consistency}{105}{section.10.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.3}Command Query Responsibility Segregation(CQRS)}{104}{section.10.3}
+\contentsline {section}{\numberline {10.3}Command Query Responsibility Segregation(CQRS)}{106}{section.10.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.4}Single Responsibility Principle}{104}{section.10.4}
+\contentsline {section}{\numberline {10.4}Single Responsibility Principle}{106}{section.10.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyms}{105}{section*.79}
+\contentsline {section}{\numberline {10.5}BlueGreen Deployment}{106}{section.10.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{107}{appendix*.81}
+\contentsline {section}{\numberline {10.6}Canary Release}{107}{section.10.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{109}{appendix*.82}
+\contentsline {chapter}{Acronyms}{108}{section*.79}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{110}{appendix*.83}
+\contentsline {chapter}{\nonumberline List of Figures}{110}{appendix*.81}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Tables}{112}{appendix*.82}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{113}{appendix*.83}

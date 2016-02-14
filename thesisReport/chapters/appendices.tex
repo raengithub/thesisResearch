@@ -27,3 +27,9 @@ In this pattern as shown in the figure \ref{fig:appendices/cqrs}, the conceptual
 
 \section{Single Responsibility Principle}\label{section:appendices/single_responsibility_principle}
 Responsibility is inferred as a reason to change. According to the principle, a service should have a single reson to change. In order to achieve that, a service should perform functionalities which change for the same reason. \cite{Martin:2009aa} \cite{Stine:2014aa}
+
+\section{BlueGreen Deployment}\label{section:appendices/blue_green_deployment}
+Continuous Delivery focus on rolling out the changes as fast as possible from development to production. However, during the process of releasing there can be subtle amount of downtime or possibility of errors. With the intention to tackle that, bluegreen deployment introduces an approach to create two identical production environments "blue" and "green" with one active at a time "blue". At this time a routing mechanism points all traffic towards "blue" environment. Whenever any change has to be rolled out, it is done in "green" environment. As soon as the environment is fully tested, the routing mechanism points all traffic towards "green" environment. In this way, there is negligible amount of downtime and in the event of any problem, the traffic can be routed back to old "blue" environment.
+
+\section{Canary Release}\label{section:appendices/canary_release}
+Canary Relase is an approach to minimize the risk of releasing faulty application to all users. Similar to BlueGreen deployment, there are two identical production environments. As one environment is serving live requests, another environment is used to deploy new changes. After the changes are tested properly, the routing mechanism exposes few selected users to the new environment to minimize the risk. As the new system gains confidence, it is rolled out to large group of users and ultimately to all users.

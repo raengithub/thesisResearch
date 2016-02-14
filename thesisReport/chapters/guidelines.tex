@@ -30,8 +30,8 @@ The way microservices are designed to satisfy various external quality attribute
 \\
 The microservices architecture follows a process which guides from understanding the problem domain, identifying modular components considering various attributes to implementing and operating the components to satisfy various external quality attributes. It is interesting find how process, principles and guidelines are related. A process is based upon some basic principles whereas principles helps to define guidelines based upon some specific requiement and environment. So, in order to understand the process of implementing microservices, it can be helpful to look into some broad basic principles.
 
-\section{Principles}\label{section:guidelines/principles}
-In this section, based upon the research findings as discussed in previous chapters, various principles are presented in order to tackle modeling microservices as well as operating them in release environment. \cite{Newman:2015aa}
+\section{Principles And Guidelines}\label{section:guidelines/principles_and_guidelines}
+In this section, based upon the research findings as discussed in previous chapters, various principles are presented in order to tackle modeling microservices as well as operating them in release environment. It is highly recommended to follow these principles when considering microservices.\cite{Newman:2015aa}
 \begin{enumerate}
 \item \textbf{Correct Granularity} \\
 The dimension of granularity for microservice is given by functionality it performs, data it handles and business value it provides. \ref{section:granularity/dimensions} These dimensions make it pretty obvious how to make the size of a service as low as possible. However, the notion of correct granularity is rather important and should be only focus instead of attempting to make the size lowest possible.\ref{section:granularity/principles} There are various factors which act together and tailor the size of microservice.
@@ -39,7 +39,8 @@ The dimension of granularity for microservice is given by functionality it perfo
 \item One of the factors is \textbf{\acrshort{SRP}}, which influence the functionalities and data handled by microservices to make it as small as possible. \acrshort{SRP} encourages to focus on small set of cohesive tasks which change for same reason. \cite{Stine:2014aa} \cite{Newman:2015aa} The influence of \acrshort{SRP} on is also verified by the result of interview which is compiled in section \ref{section:hybris_architecture/interview/interview_compilation}.
 \item Another important factor is \textbf{autonomy}. According to S. Newman, a microservice should be able to be deployed and updated independently. \cite{Newman:2015aa} Without any surprise, autonomy is an important quality attribute of microservice and is evaluated as the degree of control upon operations to act on its business entities only. \ref{section:quality_of_service/quality_metrics/autonomy} As discussed in section \ref{section:granularity/principles}, a microservice should provide transaction integrity such that it is big enough to support activities which fall under one transaction. So, autonomy tends to limit the scope of functionality and data such that the service is self-contained, self-controlling and can be self-governed.\cite{Ma:2007aa}
 \item The act of realizing the size of microservices as small as possible comes with a price. As the functionality of microservice is squeezed, the number of microservices needed for any application increases. The task of deploying, provisioning and governing these microservices can be challenging. So, as stated in the principles defined in section  \ref{principle:granularity/IT_infrastructure},  the decision regarding the size of service should be rational based upon the current \textbf{infrastructure and operational capability} to handle such large number of small microservices. It is further supported by the response of interview compilation \ref{section:hybris_architecture/interview/interview_compilation}
-\item Finally, the size of microservices according to functionality and data should also relate to ultimate \textbf{business value} and should be coincide with the business goal. It is evident from the response of interview compiled in \ref{section:hybris_architecture/interview/interview_compilation}. Also, business value being an important dimension of granularity of microservice according to section \ref{section:granularity/dimensions}, should be examined before choosing the functionality being performed by a service.\\
+\item Finally, the size of microservices according to functionality and data should also relate to ultimate \textbf{business value} and should be coincide with the business goal. It is evident from the response of interview compiled in \ref{section:hybris_architecture/interview/interview_compilation}. Also, business value being an important dimension of granularity of microservice according to section \ref{section:granularity/dimensions}, should be examined before choosing the functionality being performed by a service.
+\end{enumerate}
 So, while deciding about the size of microservice the mentioned factors should be well considered.
 
 \item \textbf{Consider quality attributes as early as possible} \\
@@ -68,9 +69,36 @@ Collaboration among microservices is essential however high coupling by over exp
 \item In microservices, database also an integral part of internal implementation. Already mentioned in section \ref{section:challanges_of_microservices_architecture/integration/shared_database}, sharing database will tightly couple microservices as it exposes internal data structure details. In order to mitigate that each microservice should atleast have its own private tables or schema per each service or at most separate database server.
 \item Additionally, in order to maintain loose coupling, the integration technology should be well thought. As already discussed in section \ref{section:challanges_of_microservices_architecture/integration/inter_service_communication}, if business requirement allows, asynchronous communication styles such as publish/subscribe, notification, request/async response should be chosen over synchronous request/response.
 \end{enumerate}
-\item decentralize
-\item deploy independently
-\item consumer first
-\item isolate failures
-\item highly observable
+\item \textbf{decentralize} \\
+Autonomy should not be limited to deployment and updates only. It should be applied in team organization as well. A team should be autonomous enough to own services completely from devloping the microservices, releasing them and maintaining in the production environment all by themselves. In order to achieve that, teams should be trained to become domain-experts in the business areas which are focussed by their services.
+Additionaly, the architecture of microservices should follow decentralization as well. The business logic should be divided among microservices and should not be concentrated towards any specific god services and integration mechanism. With that point, the microservices should be smart enough to handle collaboration among themselves and the communication mechanism should be dumb as possible such as \acrshort{REST} and messaging. Also, choreography should be highly applied whenever possible and orchestration should only be used if the business requirement dictates so.
+\item \textbf{deploy independently}\\
+Microservices should be able to be deployed independently. The section \ref{section:challanges_of_microservices_architecture/integration/breaking_change} already discusses the challenges for that as well as solutions.
+\begin{enumerate}
+\item In order to avoid breaking changes, an integration technology such as \acrshort{REST} should be used to decouple microservices and tollerant reader pattern should be used to implement consumers.
+\item To find the breaking changes early during development, consumer-driven contracts should be implemented as automated test in the delivery pipeline of services. Additionally, semantic versioning can be used to clearly indicate the level of new changes.
+\item When breaking changes cannot be avoided, maintaining co-existing endpoints of different versions or co-existing service versions can provide enough time and opportunity to consumers to be updated gracefully without breaking \acrshort{API}s.
+\item Finally, the release and deployment can be decoupled using techniques such as bluegreen deployment \ref{section:appendices/blue_green_deployment} and canary release \ref{section:appendices/canary_release}, so that new changes can be tested in production for confidence and can be released later to reduce the risk.
+\end{enumerate}
+\item \textbf{consumer first}\\
+Microservices are made in order to serve its consumers, so consumers should be the priority when designing them.
+\begin{enumerate}
+\item \acrshort{API}s should be designed considering its consumers. It should be easy to understand, use and extend. The name as well as link should be self intuitive. Additionally, documentation should be provided which should be helpful to follow and use \acrshort{API}. In order help with these, there are various tools available such as swagger, RAML etc. The tools not only make it easy to design and document \acrshort{API}s but also enable to try them.\cite{Bloch:2016aa} \cite{Blanchette:2008aa}
+\item Another important concept is to make it easy for consumers to find the microservice itself. There are various service discovery tools such as zookeeper, etcd, consul etc which can be used.
+\end{enumerate}
+\item \textbf{isolate failures}\\
+Microservices are build on the top of distributed system and it is not false to say they are not reliable.\cite{Factor:2014aa} With the consent regarding amount of microservices and collaboration among them, the system should not be affected until all the microservices fail. The solutions are discussed in section \ref{section:challanges_of_microservices_architecture/handling_failures}.
+\begin{enumerate}
+\item Timeout should be implemented realizing the fact that remote calls are different than local calls and they can be slow. A realistic value of timeout should be chosen based on the use case scenario.
+\item In order to avoid leaking failures and affecting the whole system as a result, bulkhead should be used to segregate the resources and a thereshold value should be maintained for each group of resources.
+\item For reducing latency, circuit breaker should be implemented which detaches a failed node after certain attempts and reattemts automatically. In this way, it not only removes unnecessary roundtrip time or waiting time but also saves network resource.
+\item Finally, fallback mechanism can be used in conjunction with timeouts and circuit breaker to provide alternative mechanism such as serving from cache. It not only isolates failure but also serves the reques.
+\end{enumerate}
+\item \textbf{highly observable} \\
+It can be difficult to observice the status of each microservice on each provisioned hosts given the number of microservices. The section \ref{section:challanges_of_microservices_architecture/monitoring} points out some ideas which can be used to make it easier.
+\begin{enumerate}
+\item Use semantic monitoring to check the current behaviour of services such as availability, response time etc. An example of tools to accomplish that is uptime. Additionally, trigger certain tests to verify important logic of microservice in regular basis. One way to achieve that is to trigger smoke tests automatically.
+\item In order to get the overal picture of the whole application at one place, use logs aggregation and visualization tools such as logstash and kibana.
+\item Finally, use correlation ids to get a semantic picture of related requests branched out along many downstream microservices.
+\end{enumerate}
 \end{enumerate}
