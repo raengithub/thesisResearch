@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  14 FEB 2016 20:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  15 FEB 2016 11:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2372,120 +2372,120 @@ Chapter 2.
 
 
 ] [11] [12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 80--82
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--84
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 90--92
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--94
+Underfull \hbox (badness 10000) in paragraph at lines 87--89
 
  []
 
 [15]
 LaTeX Font Info:    Font shape `T1/pplx/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/pplx/b/it' tried instead on input line 98.
+(Font)              Font shape `T1/pplx/b/it' tried instead on input line 93.
 
 
 Package nag Warning: Command \centerline is TeX. 
 (nag)                Use \centering or center environment instead on input line
- 101.
+ 96.
 
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 104.
+(Font)              scaled to size 12.50409pt on input line 99.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 104.
+(Font)              scaled to size 9.37807pt on input line 99.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 104.
+(Font)              scaled to size 7.29405pt on input line 99.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 104.
+(Font)              scaled to size 12.50409pt on input line 99.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 104.
+(Font)              scaled to size 9.37807pt on input line 99.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 104.
+(Font)              scaled to size 7.29405pt on input line 99.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <9> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 104.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 99.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 104.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 104.
+(hyperref)                removing `\mathsurround' on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 104.
+(hyperref)                removing `\z@' on input line 99.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 99.
 
 <figures/Granularity-R3-one.png, id=738, 614.295pt x 324.21124pt>
 File: figures/Granularity-R3-one.png Graphic file (type png)
 
 <use figures/Granularity-R3-one.png>
-Package pdftex.def Info: figures/Granularity-R3-one.png used on input line 109.
+Package pdftex.def Info: figures/Granularity-R3-one.png used on input line 104.
 
 (pdftex.def)             Requested size: 334.60571pt x 176.6001pt.
 
 
 Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 112.
+(nag)                Maybe you want \centering instead on input line 107.
 
 <figures/Granularity-R3-two.png, id=746, 515.9275pt x 133.49875pt>
 File: figures/Granularity-R3-two.png Graphic file (type png)
 
 <use figures/Granularity-R3-two.png>
-Package pdftex.def Info: figures/Granularity-R3-two.png used on input line 120.
+Package pdftex.def Info: figures/Granularity-R3-two.png used on input line 115.
 
 (pdftex.def)             Requested size: 334.60571pt x 86.5837pt.
 
 
 Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 123.
+(nag)                Maybe you want \centering instead on input line 118.
 
 [16 <./figures/Granularity-R3-one.png>]
 
 LaTeX Warning: Reference `fig: Range Example' on page 17 undefined on input lin
-e 130.
+e 125.
 
 
 LaTeX Warning: Reference `fig:R3 volume-granularity analogy greater' on page 17
- undefined on input line 132.
+ undefined on input line 127.
 
 <figures/Granularity-R3-three.png, id=772, 615.29875pt x 253.94875pt>
 File: figures/Granularity-R3-three.png Graphic file (type png)
 
 <use figures/Granularity-R3-three.png>
 Package pdftex.def Info: figures/Granularity-R3-three.png used on input line 13
-6.
+1.
 (pdftex.def)             Requested size: 334.60571pt x 138.10289pt.
 
 
 Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 139.
+(nag)                Maybe you want \centering instead on input line 134.
 
 [17 <./figures/Granularity-R3-two.png>]
 <figures/Granularity-R3-four.png, id=784, 619.31375pt x 191.71625pt>
 File: figures/Granularity-R3-four.png Graphic file (type png)
 
 <use figures/Granularity-R3-four.png>
-Package pdftex.def Info: figures/Granularity-R3-four.png used on input line 144
+Package pdftex.def Info: figures/Granularity-R3-four.png used on input line 139
 .
 (pdftex.def)             Requested size: 334.60571pt x 103.58372pt.
 
 
 Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 147.
+(nag)                Maybe you want \centering instead on input line 142.
 
 ! Misplaced alignment tab character &.
-l.157 ...is held. The study was done at KBC Bank &
+l.152 ...is held. The study was done at KBC Bank &
                                                    Insurance Group of centra...
 
 ? 
@@ -2494,12 +2494,12 @@ l.157 ...is held. The study was done at KBC Bank &
 
 Package nag Warning: Command \centerline is TeX. 
 (nag)                Use \centering or center environment instead on input line
- 174.
+ 169.
 
 
 Package nag Warning: Command \centerline is TeX. 
 (nag)                Use \centering or center environment instead on input line
- 182.
+ 177.
 
 ) (./chapters/quality_of_service.tex [20]
 Chapter 3.
@@ -2510,7 +2510,7 @@ See the glossaries package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.21 ...evelopment Life Cycle \acrshort [{SDLC}]. 
+l.20 ...evelopment Life Cycle \acrshort [{SDLC}]. 
                                                   Some of them are reusabili...
 
 ? 
@@ -2521,7 +2521,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ] [22]
-Overfull \hbox (6.93349pt too wide) in paragraph at lines 68--69
+Overfull \hbox (6.93349pt too wide) in paragraph at lines 67--68
 []\T1/pplx/m/n/10.95 (-20) the busi-ness do-main is re-al-ized with var-i-ous p
 ro-cesses de-fined as $\OML/zplm/m/it/10.95 P \OT1/zplm/m/n/10.95 = \OMS/zplm/m
 /n/10.95 f\OML/zplm/m/it/10.95 p[]\OT1/pplx/m/n/10.95 (-20) , \OML/zplm/m/it/10
@@ -2532,7 +2532,7 @@ ro-cesses de-fined as $\OML/zplm/m/it/10.95 P \OT1/zplm/m/n/10.95 = \OMS/zplm/m
 ! Missing } inserted.
 <inserted text> 
                 }
-l.72 ...sumer}(s) = \{ S_{c1}, S_{2},...S{{n_c}\}$
+l.71 ...sumer}(s) = \{ S_{c1}, S_{2},...S{{n_c}\}$
                                                   ; $n_c$ gives the number o...
 
 ? 
@@ -2540,7 +2540,7 @@ l.72 ...sumer}(s) = \{ S_{c1}, S_{2},...S{{n_c}\}$
 ! Missing } inserted.
 <inserted text> 
                 }
-l.73 ...ducer}(s) = \{ S_{c1}, S_{2},...S{{n_p}\}$
+l.72 ...ducer}(s) = \{ S_{c1}, S_{2},...S{{n_p}\}$
                                                   ; $n_p$ gives the number o...
 
 ? 
@@ -2551,12 +2551,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.78 \subsection
+l.77 \subsection
                 {Coupling Metrics}{\label{section:quality_of_service/quality...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
@@ -2567,11 +2567,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.95 \cite
+l.94 \cite
           {Xiao-jun:2015aa} defines
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
@@ -2583,21 +2583,21 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.106 \cite
+l.105 \cite
            {Kazemi:2011aa} defines
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--109
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--118
+Underfull \hbox (badness 10000) in paragraph at lines 115--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--128
+Underfull \hbox (badness 10000) in paragraph at lines 123--127
 
  []
 
@@ -2609,12 +2609,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.193 T
+l.192 T
        he table \ref{tab:quality_of_service/quality_attributes/coupling_metr...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--195
+Underfull \hbox (badness 10000) in paragraph at lines 192--194
 
  []
 
@@ -2626,7 +2626,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.221 \\w
+l.220 \\w
          here,
 ? 
 [27]
@@ -2637,11 +2637,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.235 w
+l.234 w
        here,
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--237
+Underfull \hbox (badness 10000) in paragraph at lines 234--236
 
  []
 
@@ -2655,12 +2655,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.294 T
+l.293 T
        he table \ref{tab:quality_of_service/quality_attributes/cohesion_metr...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--296
+Underfull \hbox (badness 10000) in paragraph at lines 293--295
 
  []
 
@@ -2668,11 +2668,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 294--296
 ! Display math should end with $$.
 <to be read again> 
                     
-l.317 ...frac{W_i(o)}{ \sum_{i=1}^{|O(S)|}W_i(o)}$
+l.316 ...frac{W_i(o)}{ \sum_{i=1}^{|O(S)|}W_i(o)}$
                                                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--324
+Underfull \hbox (badness 10000) in paragraph at lines 319--323
 
  []
 
@@ -2687,17 +2687,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.380 T
+l.379 T
        he table \ref{tab:quality_of_service/quality_attributes/granularity_m...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 380--382
+Underfull \hbox (badness 10000) in paragraph at lines 379--381
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--390
+Underfull \hbox (badness 10000) in paragraph at lines 386--389
 
  []
 
@@ -2708,16 +2708,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.394 w
+l.393 w
        here,
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 394--396
+Underfull \hbox (badness 10000) in paragraph at lines 393--395
 
  []
 
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 407--411
+Underfull \hbox (badness 10000) in paragraph at lines 406--410
 
  []
 
@@ -2729,12 +2729,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.451 T
+l.450 T
        he table \ref{tab:quality_of_service/quality_attributes/complexity_me...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 451--454
+Underfull \hbox (badness 10000) in paragraph at lines 450--453
 
  []
 
@@ -2745,11 +2745,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.471 w
+l.470 w
        here,
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 471--473
+Underfull \hbox (badness 10000) in paragraph at lines 470--472
 
  []
 
@@ -2757,7 +2757,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 471--473
 ! Missing } inserted.
 <inserted text> 
                 }
-l.476 \item $ V_{sr_{jk} $
+l.475 \item $ V_{sr_{jk} $
                            is the corresponding value of the action in jkth ...
 
 ? 
@@ -2768,12 +2768,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.505 T
+l.504 T
        he table \ref{tab:quality_of_service/quality_attributes/autonomy_metr...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 505--508
+Underfull \hbox (badness 10000) in paragraph at lines 504--507
 
  []
 
@@ -2784,11 +2784,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.516 \\ \cite
+l.515 \\ \cite
               {Bingu-Shim:2008aa} defines
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 517--550
+Underfull \hbox (badness 10000) in paragraph at lines 516--549
 
  []
 
@@ -2796,7 +2796,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 517--550
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 554--556
+Underfull \hbox (badness 10000) in paragraph at lines 553--555
 
  []
 
@@ -2807,7 +2807,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.719   \\
+l.718   \\
           
 ? 
 
@@ -2818,7 +2818,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 798--800
+Underfull \hbox (badness 10000) in paragraph at lines 797--799
 
  []
 
@@ -5149,16 +5149,16 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  )
 (\end occurred inside a group at level 10)
 
-### simple group (level 10) entered at line 773 ({)
-### simple group (level 9) entered at line 732 ({)
-### simple group (level 8) entered at line 553 ({)
-### simple group (level 7) entered at line 508 ({)
-### simple group (level 6) entered at line 454 ({)
-### simple group (level 5) entered at line 384 ({)
-### simple group (level 4) entered at line 299 ({)
-### simple group (level 3) entered at line 197 ({)
-### simple group (level 2) entered at line 78 ({)
-### simple group (level 1) entered at line 63 ({)
+### simple group (level 10) entered at line 772 ({)
+### simple group (level 9) entered at line 731 ({)
+### simple group (level 8) entered at line 552 ({)
+### simple group (level 7) entered at line 507 ({)
+### simple group (level 6) entered at line 453 ({)
+### simple group (level 5) entered at line 383 ({)
+### simple group (level 4) entered at line 298 ({)
+### simple group (level 3) entered at line 196 ({)
+### simple group (level 2) entered at line 77 ({)
+### simple group (level 1) entered at line 62 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
  47731 strings out of 493089
@@ -5182,7 +5182,7 @@ e/2015/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/
 xmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/font
 s/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (129 pages, 1527732 bytes).
+Output written on main.pdf (129 pages, 1527528 bytes).
 PDF statistics:
  2355 PDF objects out of 2487 (max. 8388607)
  2101 compressed objects within 22 object streams
