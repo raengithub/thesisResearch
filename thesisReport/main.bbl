@@ -70,6 +70,23 @@
       \field{title}{Software Architecture for Developers}
       \field{year}{2015}
     \endentry
+    \entry{Bruggemann:2013aa}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=e562e8c0b840df16d001e063bc87d9af}{Brüggemann}{B\bibinitperiod}{Martin\bibnamedelima E.}{M\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7254cafa29bee3449bc9b42e16b8d45e}{Vallon}{V\bibinitperiod}{Raoul}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=cdd3bb7c9c10be3ce6f2a0ad7bf9806b}{Parlak}{P\bibinitperiod}{Aykut}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2d7200fd846b07a5c7c2c0c2b05e5e37}{Grechenig}{G\bibinitperiod}{Thomas}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{62bf2090826354766c33d3c4a84930b8}
+      \strng{fullhash}{62bf2090826354766c33d3c4a84930b8}
+      \field{labelalpha}{Brü+13}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Modelling Microservices in Email-marketing Concepts, Implementation and Experiences}
+      \field{year}{2013}
+    \endentry
     \entry{Cockcroft:2015aa}{online}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=2fbd77dc0350f394e869102ddb66c9e5}{Cockcroft}{C\bibinitperiod}{Adrian}{A\bibinitperiod}{}{}{}{}}%
@@ -162,6 +179,67 @@
       \verb{url}
       \verb http://blog.arungupta.me/microservices-monoliths-noops/
       \endverb
+    \endentry
+    \entry{Lee:2001aa}{report}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,hash=21428ca08f53fe904a386a1670f4c333}{Lee}{L\bibinitperiod}{Jong\bibnamedelima Kook}{J\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f3dbacd10784f92358ecbca308ecd4ec}{Jung}{J\bibinitperiod}{Seung\bibnamedelima Jae}{S\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=196655c0feb42bdbbfe67505755dea6e}{Kim}{K\bibinitperiod}{Soo\bibnamedelima Dong}{S\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=762b4ab2027212523c2b38c4468d6753}{Jang}{J\bibinitperiod}{Woo\bibnamedelima Hyun}{W\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=51904fbe2d13662c88f92e624a9f9245}{Ham}{H\bibinitperiod}{Dong\bibnamedelima Han}{D\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{2}{%
+        {Soongsil University}%
+        {Software Quality Evaluation Center}%
+      }
+      \strng{namehash}{6398d15b65dcace172b502c629b945d2}
+      \strng{fullhash}{ed8cb88bc7e7b270145479b4a0dcd985}
+      \field{labelalpha}{Lee+01}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Component Identification Method with Coupling and Cohesion}
+      \field{type}{techreport}
+      \field{year}{2001}
+    \endentry
+    \entry{Levcovitz:2014aa}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=7a797524591294074b5f53214661b416}{Levcovitz}{L\bibinitperiod}{Alessandra}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ff1de5869662a07aee9ce8d35a66a1e6}{Terra}{T\bibinitperiod}{Ricardo}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=278622c7777f32a4c0d6440d004e5e33}{Valente}{V\bibinitperiod}{Marco\bibnamedelima Tulio}{M\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{02df57869d43d793cd7b124b8cdc0a4d}
+      \strng{fullhash}{02df57869d43d793cd7b124b8cdc0a4d}
+      \field{labelalpha}{LTV14}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Towards a Technique for Extracting Microservices from Monolithic Enterprise Systems}
+      \field{year}{2014}
+    \endentry
+    \entry{Ma:2009aa}{report}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=beb327f6d227200a9e027ca2b839e2a7}{Ma}{M\bibinitperiod}{Qian}{Q\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=06cd0969c5fedbff7237b19af962eee1}{Zhou}{Z\bibinitperiod}{Nianjun}{N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7af6eeed1670c410ce737ca5c6e7dada}{Zhu}{Z\bibinitperiod}{Yanfeng}{Y\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0cd05ae400ab54ba5a8ed7d6e83bafba}{Wang1}{W\bibinitperiod}{Hao}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{2}{%
+        {IBM China Research Laboratory}%
+        {IBM T.J. Watson Research Center}%
+      }
+      \strng{namehash}{c7692cec29238ca7ea0a4ee602a2efa8}
+      \strng{fullhash}{c7692cec29238ca7ea0a4ee602a2efa8}
+      \field{labelalpha}{Ma+09}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Evaluating Service Identification with Design Metrics on Business Process Decomposition}
+      \field{type}{techreport}
+      \field{year}{2009}
     \endentry
     \entry{MacVittie:2014aa}{webpage}{}
       \name{author}{1}{}{%

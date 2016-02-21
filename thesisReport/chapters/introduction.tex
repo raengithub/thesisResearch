@@ -73,6 +73,8 @@ With monolith, it is easy to start development. But as the system gets bigger an
 Microservices architecture uses the approach of decomposing an application into various dimensions as proposed by scale-cube. The detailed process of scale-cube is discussed in section \ref{section:context/microservices_architecture_style/decompostion_of_an_application}.
 
 \subsection{Decomposition of an Application}\label{section:context/microservices_architecture_style/decompostion_of_an_application}
+There are various ways to decompose an application. This section discuss two different ways of breaking down an application.
+\subsubsection{Scale Cube}\label{section:context/microservices_architecture_style/decompostion_of_an_application/scale_cube}
 The section \ref{subsection:context/monolith-disadvantages} specified various disadvantages related to monolith architecture style. The book \cite{Fisher:2015aa} provides a way to solve most of the discussed problems such as agility, scalability, productivity etc. It provides three dimensions of scalability as shown in figure \ref{fig:context/scale-cube} which can be applied alone or simultaneously depending upon the situation and desired goals.
 
 \begin{figure}[H]
@@ -92,7 +94,10 @@ The scaling along each dimensions are described below. \cite{Fisher:2015aa}\cite
 \\
 \item Y-axis Scaling: The scaling along this dimension means the spliting of the application responsibility. The separation can be done either by data, by the actions performed on the data or by combination of both. The respective ways can be referred to as resoure-oriented or service-oriented splits. While the x-axis or z-axis split were rather duplication of work along servers, the y-axis is more about specialization of work along servers. The major advantage of this scaling is that each request is scaled and handled differently according to its necessity. As the logic along with the data to be worked on are separated, developers can focus and work on small section at a time. This will increase productivity as well as agility. Additionally, a fault on a component is isolated and can be handled gracefully without affecting rest of the application. However, scaling along Y-axis can be costly compared to scaling along other dimensions.
 \end{enumerate}
-Decomposing an application in terms of composition of individual features where each feature can be scaled and deployed independently, gives various advantages along agility, performance and team organization as well. A detail advantages are discussed further in section \ref{section:challanges_of_microservices_architecture/introduction/challenges}.
+\subsubsection{Shared Libraries}\label{section:context/microservices_architecture_style/decompostion_of_an_application/shared_libraries}
+Libraries is a standard way of sharing functionalities among various services and teams. The capability is provided by the feature of programming language. However there are various downsides to this approach. Firstly, it does not provide technology heteroginity. Next, unless the library is dynamically linked, independent scaling, deployment and maintainance cannot be achieved. So, in other cases, any small change in the library leads the redeployment of whole system. Sharing code is a form of coupling which should be avoided.
+
+Decomposing an application in terms of composition of individual features where each feature can be scaled and deployed independently, gives various advantages along agility, performance and team organization as well. Thus, microservices uses the decomposition technique given by scale cube. A detail advantages of microservices are discussed further in section \ref{section:challanges_of_microservices_architecture/introduction/challenges}.
 \subsection{Definitions}\label{section:context/microservices_architecture_style/definitions}
 There are several definitions given by several pioneers and early adapters of the style.
 \\
@@ -203,9 +208,9 @@ The various principles provides a consistent approaches to tackle various limita
 So, in order to define the process of modeling microservices, the key aspects related to \textbf{quality attributes}, \textbf{constraints} and \textbf{principles} will be studied thoroughly.
 \\
 \\
-Considering both the table \ref{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice} and list \ref{list:introduction/drivers}, the approach which will be used to define the guidelines will be to look deep into various quality attributes influencing microservices architecture. Then, the process of identifying or modeling individual microservices from problem domain will be defined. At first, the research is performed based on various research papers. Then, the approach used by industry adopting microservices architecture will be studied in order to answer the research questions. The study will be performed on SAP Hybris.
+Considering both the table \ref{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice} and list \ref{list:introduction/drivers}, the approach to be used to define the guidelines will be to look deep into various quality attributes influencing microservices architecture. Then, the process of identifying or modeling individual microservices from problem domain will be defined. At first, the research is performed based on various research papers. Then, the approach used by industry adopting microservices architecture will be studied in order to answer the research questions. The study will be performed on SAP Hybris.
 Finally, the various constraints or challenges which affects microservices will be identified. 
-The result of previous result will be mapped into a form of various principles and these principles will ultimately provide sufficient ground to create guidelines to create microservices architecture.
+The results of previous research will be mapped into a form of various principles and these principles will ultimately provide sufficient ground to create guidelines to create microservices architecture.
 
 
 
