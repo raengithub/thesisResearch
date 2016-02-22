@@ -30,12 +30,64 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.4}Approach}{11}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Related Work}{13}{chapter.2}
+\contentsline {section}{\numberline {1.5}Problem Statement}{12}{section.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyms}{14}{section*.10}
+\contentsline {chapter}{\numberline {2}Granularity}{13}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{16}{appendix*.12}
+\contentsline {section}{\numberline {2.1}Introduction}{13}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{17}{appendix*.13}
+\contentsline {section}{\numberline {2.2}Basic Principles to Service Granularity}{14}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{18}{appendix*.14}
+\contentsline {section}{\numberline {2.3}Dimensions of Granularity}{15}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}Dimension by Interface}{16}{subsection.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}Dimension by Interface Realization}{17}{subsection.2.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.3}R\textsuperscript {3} Dimension}{18}{subsection.2.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.4}Retrospective}{20}{subsection.2.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Problem Statement}{22}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Quality Attributes of Microservices}{23}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Introduction}{23}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Quality Attributes}{24}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Quality Metrics}{25}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}Context and Notations}{25}{subsection.3.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.2}Coupling Metrics}{26}{subsection.3.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.3}Cohesion Metrics}{28}{subsection.3.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.4}Granularity Metrics}{31}{subsection.3.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.5}Complexity Metrics}{33}{subsection.3.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.6}Autonomy Metrics}{34}{subsection.3.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.7}Reusability Metrics}{36}{subsection.3.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Basic Quality Metrics}{36}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Principles defined by Quality Attributes}{37}{section.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}Relationship among Quality Attributes}{39}{section.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.7}Conclusion}{40}{section.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.8}Problem Statement}{41}{section.3.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Related Work}{42}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acronyms}{44}{section*.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Figures}{46}{appendix*.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Tables}{47}{appendix*.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{48}{appendix*.27}
