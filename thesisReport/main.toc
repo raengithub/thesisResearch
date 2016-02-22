@@ -132,24 +132,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.3}YaaS Architecture Principles}{70}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Interviews}{73}{section.5.4}
+\contentsline {section}{\numberline {5.4}Modeling Microservices at Hybris}{73}{section.5.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.4.1}Hypothesis}{73}{subsection.5.4.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.4.2}Interview Compilation}{74}{subsection.5.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.3}Interview Reflection on Hypothesis}{80}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.3}Interview Reflection on Hypothesis}{79}{subsection.5.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Interview Summary}{83}{section.5.5}
+\contentsline {section}{\numberline {5.5}Derivation of Modeling Approach at Hybris by interview compilation}{82}{section.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}Example Scenario}{84}{section.5.6}
+\contentsline {section}{\numberline {5.6}Example Scenario}{83}{section.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Related Work}{88}{chapter.6}
+\contentsline {chapter}{\numberline {6}Related Work}{87}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyms}{90}{section*.72}
+\contentsline {chapter}{Acronyms}{89}{section*.65}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{92}{appendix*.74}
+\contentsline {chapter}{\nonumberline List of Figures}{91}{appendix*.67}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{93}{appendix*.75}
+\contentsline {chapter}{\nonumberline List of Tables}{92}{appendix*.68}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{94}{appendix*.76}
+\contentsline {chapter}{\nonumberline Bibliography}{93}{appendix*.69}
