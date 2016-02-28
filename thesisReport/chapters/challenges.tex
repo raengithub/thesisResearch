@@ -1,4 +1,5 @@
 \chapter{Challanges of Microservices Architecture}\label{chapter:challanges_of_microservices_architecture}
+This chapter focus on various challenges faced while implementing microservices. In section \ref{section:challanges_of_microservices_architecture/introduction}, various advantages of microservices along with its challenges are listed. Then each challenge is broken down along several sub-challenges and discussed further after section \ref{section:challanges_of_microservices_architecture/integration}. For each challenges, various techniques which can be used in order to handled them are also presented. Again, in order to provide benefit from industry experience, the techniques used by SAP Hybris are also presented.
 \section{Introduction}\label{section:challanges_of_microservices_architecture/introduction}
 The section \ref{subsection:context/monolith-disadvantages} lists some drawbacks of monolithic architecture and these have become the motivation for adopting microservices architecture. Microservices offer opportunities in various aspects however it can also be tricky to utilize them properly. It does come with few challanges. The response from interview \ref{question:hybris_architecture/interview/question_1.5} also highlights some prominent challanges. In this chapter, the challanges of microservices alongside its advantages will be discussed. \cite{Fowler:2015aa}
 
@@ -31,10 +32,12 @@ The section \ref{subsection:context/monolith-disadvantages} lists some drawbacks
    \end{multicols}
 \\
 In the following sections of this chapter, various ways to tackle the challenges mentioned in \ref{section:challanges_of_microservices_architecture/introduction/challenges} are discussed in detail.
-\section{Integration}\label{section:challanges_of_microservices_architecture/integration}
+
+\begin{shaded}Challenges and Techniques to Tackle Them\end{shaded}\label{section:challanges_of_microservices_architecture/challenges_and_techniques_to_tackle_them}
+\section{Group: Integration}\label{section:challanges_of_microservices_architecture/integration}
 The collaboration among various microservices whilst maintaining deployment autonomy is challenging. In this section, various challanges associated with integration and their potential remedies are discussed.
 
-\subsection{Shared Database}\label{section:challanges_of_microservices_architecture/integration/shared_database}
+\subsection{Challenge: Sharing Data}\label{section:challanges_of_microservices_architecture/integration/sharing_data}
 An easiest way to collaborate, is to allow services to access and update a common data source. However, using this kind of integration creates various problems.\cite{Newman:2015aa}
 \begin{enumerate}
 \item The shared database acts as a point of coupling among the collaborating microservices. If a microservice make any changes to its data schema, there is high probability that other services need to be changed as well. Loose Coupling is compromised.
@@ -52,9 +55,9 @@ There are three distinct alternatives.\cite{Richardson:2015aa}
 \item \textbf{database server per service} - each service has a dedicated database server underneath.
 \end{enumerate}
 \\
-\textbf{Consequences}\label{section:challanges_of_microservices_architecture/integration/consequences}
+\begin{shaded}Techniques\end{shaded}\label{section:challanges_of_microservices_architecture/integration/sharing_data/techniques}
 \\
-The logical separation of data among services increases autonomy but also present some downsides.\cite{Richardson:2016aa} \cite{Richardson:2015aa}
+The logical separation of data among services increases autonomy but also make it difficult to access and create consistent view of data. However these can be compensated using following approaches.\cite{Richardson:2016aa} \cite{Richardson:2015aa}
 \begin{enumerate}
 \item The implementation of business transaction which spans multiple services is difficult and not recommended because of \acrshort{CAP} theorem \ref{section:appendices/CAP_theorem}. The solution is to apply eventual consistency \ref{section:appendices/eventual_consistency} focussing more on availability.
 \item The implementation of queries to join data from multiple databases can be complicated. There are two alternatives to achieve this.
@@ -68,8 +71,11 @@ The logical separation of data among services increases autonomy but also presen
         \item The required data can be duplicated into another service and made consistent with the owner's data using event driven approach.
     \end{enumerate}
 \end{enumerate}
+\begin{shaded}
+SAP Hybris uses the technique of maintaining private schema per microservice as listed in the section \ref{section:challanges_of_microservices_architecture/integration/alternatives} in order to share data. For this purpose, there is a generic microservice called "Document" which handles the task of managing data for all microservices per each tenant and application.
+\end{shaded}
 
-\subsection{Inter-Service Communication}\label{section:challanges_of_microservices_architecture/integration/inter_service_communication}
+\subsection{Challenge: Inter-Service Communication}\label{section:challanges_of_microservices_architecture/integration/inter_service_communication}
 As much as it is correct to say that a microservice is an autonomous component, for the same reason it is also reasonable to accecpt the necessity of interaction among microservices. The various possible interactions among microservices is shown in figure \ref{fig:challanges_of_microservices_architecture/integration/inter_service_communication/interaction_styles_among_microservices}.\cite{Richardson:2015ab}
 \begin{figure}[H]
 \begin{center}
@@ -98,7 +104,7 @@ As much as it is correct to say that a microservice is an autonomous component, 
 \\
 \\
 
-
+\begin{shaded}Techniques\end{shaded}
 \subsubsection{Synchronous and Asynchronous}\label{section:challanges_of_microservices_architecture/integration/synchronous_and_asynchronous}
 Each of the interactions listed in section \ref{section:challanges_of_microservices_architecture/integration/inter_service_communication} has its own place in an application. An application can contained a mixture of these interactions. However, a clear idea about the requirement as well as drawbacks associated with the interaction is necessary.\cite{Newman:2015aa}\cite{Richardson:2014aa}\cite{Morris:2015aa}\\
 \textbf{Synchronous Interaction}
@@ -111,6 +117,9 @@ It is simple to understand to flow and natural easy way of implenting an interac
 The asynchronous interaction decouples services. It also improves latency as the client is not blocked waiting for the response. However, there is one additional component which is message broker to be managed. Additionally, the conceptual understanding of the flow is not natural, so it is not easy to reason about.
 
 \\
+\begin{shaded}
+SAP Hybris uses both asynchronous as well as synchronous communication where appropriate. For, synchronous, it uses \acrshort{REST} calls where as for asynchronous messaging it uses a genering service called "PubSub", which again uses Apache Kafka for managing publication and subscription of messages. An instance of the various communication is shown in the example \ref{section:challanges_of_microservices_architecture/integration/example}. 
+\end{shaded}
 \subsubsection{Example}\label{section:challanges_of_microservices_architecture/integration/example}
 The figure shows various interactions during creation of order. At first, the client, 'checkout service' in this case sends Restful Post order request to 'Order service'. Next, the 'order service' publishes 'Order Created' event and then sends response to the client. The 'OrderDetails service', which is subscribed to the event 'Order Created' reponds by first fetching necessary prodcut details from 'Product service' using Restful Get request. Finally, the 'OrderDetails service' sends request to 'Email service' for sending email to customer regarding order details but does not wait for response. The 'Email service' sends response to 'OrderDetails service' when email is sent successfully.
 \begin{figure}[H]
@@ -121,10 +130,12 @@ The figure shows various interactions during creation of order. At first, the cl
 \end{center}
 \end{figure}
 \\
-\subsection{Breaking Change}\label{section:challanges_of_microservices_architecture/integration/breaking_change}
+
+\section{Group: Distributed System}\label{section:challanges_of_microservices_architecture/distributed_system}
+\subsection{Challenge: Breaking Change}\label{section:challanges_of_microservices_architecture/integration/breaking_change}
 \\
 Although microservices are autonomous components, they still need to communicate. Also, it is obvious that they undergo changes frequently. However, some changes can be backward incompatible and break their consumers. The breaking changes are inevitable but however the impact of the breaking changes can be somehow reduced by applying various techniques. \cite{Newman:2015aa}
-
+\begin{shaded}Techniques\end{shaded}
 \begin{enumerate}
 \item Avoid as much as possible \\ A good approach to reduce impact of incompatible changes to the consumers is to defer it as long as it is possible. One way is by choosing the correct integration technology such that loose coupling is maintained. For example, using \acrshort{REST} as an integration technology is better approach than using shared database because it encaptulates the underlying implementation and consumers are only tied to the interfaces.\\
 Another approach is to apply TolerantReader pattern while accessing provider's \acrshort{API}. \cite{Fowler:2011aa} Consumer can get liberal while reading data from provider. Without blindly accepting everything from server, it can only filter the required data without carrying about the payload structure and order. So, if the reader is tolerant, the consumer service can still work if the provider adds new fields or change the structure of the response.
@@ -135,8 +146,12 @@ With semantic versioning, the consumers can clearly know if the provider's curre
 \item Coexist concurrent service versions \\ Another approach is to support both version of service at once. The requests from old consumers need to be routed to old versioned service and requests from new consumers to the new versioned service. It is mostly used when the cost of updated old consumer is high. However, this also means that two different versions have to be maintained and operated smoothly.
 \end{enumerate}
 \\
-\section{Handling Failures}\label{section:challanges_of_microservices_architecture/handling_failures}
+\begin{shaded}
+At SAP Hybris, breaking change is avoided as much as possible using \acrshort{REST} and also Tolerant Reader pattern. When data is read from another microservice, the data is first handled by internal mapper library which maps the input data into the internal representation to be used by microservice. Also, for providing detailed information regarding state of current microservice version, semantic versioning is used. If there is breaking change in few endpoints, then multiple version of them is also maintained for short period of time give the consumer fair time to migrate. Similarly, if there are breaking changes in most of the endpoints then the entire microservice is maintained with different versions.
+\end{shaded}
+\subsection{Challenge: Handling Failures}\label{section:challanges_of_microservices_architecture/handling_failures}
 With a large number of microservices where communication is happening along not so reliable network, failures are inevitable. At the same time, it becomes challenging as well as highly necessary to handle the failures. Many strategies can be employed for the purpose. \cite{Newman:2015aa}\cite{Richardson:2015ab}\cite{Nygard:2007aa}
+\begin{shaded}Techniques\end{shaded}
 \begin{enumerate}
 \item Timeouts \\ A service can get blocked indefinitely waiting for response from provider. To prevent this, a threshold value can be set for waiting. However, care should be taken not to choose very low or high value for waiting. 
 \item Circuit Breaker \\ If request to a service keep failing, there is less sense to keep sending request to the same server. It can be a better approach to track the request failures and stop sending further request to the service assuming that there is problem with the connection. By failing fast in such a way will not only save the waiting time for the client but also reduces unnecessary network load. Circuit Breaker pattern helps to accomplish the same. A circuit breaker has three states as shown in the figure \ref{fig:challanges_of_microservices_architecture/integration/inter_service_communication/states_of_circuit_breaker}. In normal cases when the connection to the provider is working fine, it is in 'closed' state and all the connections to the provider goes through it. Once the connection starts failing and meets the threshold (can be number of failures or frequency of failures), the circuit breaker switch to 'open' state. At this state, any more connections fail straight away. After certain time interval, the state changes to 'half open' to check the state of provider again. Any connection request at this point passes through. If the connection is succesful, the state switches back to 'closed' state, else to 'open' state.\cite{Fowler:2014ac} \cite{Newman:2015aa} \cite{Nygard:2007aa}
@@ -152,10 +167,15 @@ With a large number of microservices where communication is happening along not 
 \item Provide fallbacks \\ Various fallback logic can be applied along with timeout or circuit breaker to provide alternative mechanism to respond. For example, cached data or default value can be returned. 
 \end{enumerate}
 \\
-\section{Monitoring}\label{section:challanges_of_microservices_architecture/monitoring}
+\begin{shaded}
+At SAP Hybris, synchronous requests are attempted recursively for certain number of times, each attempt waits for the response only for certain fixed amount of time depending upon usecase. In order to save network resources and provide fault tolerance, circuit breaker pattern is used.
+\end{shaded}
+\section{Group: Operational Complexity}\label{section:challanges_of_microservices_architecture/operational_complexity}
+\subsection{Challenge: Monitoring}\label{section:challanges_of_microservices_architecture/monitoring}
 With monolithic deployment, monitoring can be achieved by sifting through few logs on the server and various server metrices. The complexity can get added to some extent if the application is scaled along multiple server, in which case, monitoring can be done by accumulating various server metrices and going through each log file on each host.
 The complexity goes to whole new level when monitoring microservice deployment because of large number of individual log files produced by microservices. As difficult it is to go through each log files, it is even more challenging to trace any request contextually along all the log files.
 \\
+\begin{shaded}Techniques\end{shaded}
 There are various ways to work around these complexities. \cite{Newman:2015aa} \cite{Simone:2014aa}
 \begin{enumerate}
 \item Log Aggregation and Visualition \\
@@ -182,11 +202,15 @@ Rather than waiting for something to get wrong, a selected sets of important bus
 \item Correlation ID \\
 A request from a client is fulfilled by a number of microservices, each microservice being responsible for certain part of the whole functionality. The request passes through various microservices until it succeeds. For this reason, it is difficult to track the request as well as visualize the complete logical path. Correlation ID is an unique identification code given to the request by the microservices at the user end and passes it towards the downstream microservice. Each downstream microservice does the same and pass along the ID. It gets easier to capture a complete picture of any request in that way.
 \end{enumerate}
+\begin{shaded}
+SAP Hybris uses ELK stack for monitoring and log visualization. In order to check the health status of microservices, 'uptime' tool is used. The webhook from the tool updates the central status page showing the current status of all the existing microservices. Any problem triggered by 'uptime' is also reflected in this page. Similary, a set of smoke tests are triggered from continuous integration tool such as TeamCity at regular interval. In order to track the requests at each microservices, a unique code is given to each request. The code is assigned by API-Proxy server which is the central gateway for any incoming request into \acrshort{YaaS}.
+\end{shaded}
 
-\section{Deployment}\label{section:challanges_of_microservices_architecture/deployment}
+\subsection{Challenge: Deployment}\label{section:challanges_of_microservices_architecture/deployment}
 A major advantage of microservices is that the features can updated and delivered quickly due to the autonomity and independent deployability of each microservices. However, with the increase in the number of microservices and the rate of changes that can happen in each microservice, fast deployment is not straight forward. The culture of doing deployment for monolithic application will not work perfectly on microservices. This section discusses how it can be achieved.
 \\
 There are two major parts in deployment. In order to speed up deployment in microservices, approach to accomplish each part has to be changed slightly.
+\begin{shaded}Techiniques\end{shaded}
 \begin{enumerate}
 \item Continuous Integration \\
 It is a software development practice in which newly checked in code are followed by automated build and verification to ensure that the integration was successful. Following continuous integration does not only automate the artifact creation process but also reduces the feedback cycle of the code providing opportunity to improving quality.
@@ -215,6 +239,13 @@ It is a discipline in which every small change is verified immediately to check 
 A version of build pipeline is shown in figure \ref{fig:challanges_of_microservices_architecture/deployment/continuous_delivery}. Here, faster tests are performed ahead and slow tests, manual testing are performed down the line. This kind of successive verifications make it faster to identify problems, clear visibility of problems and improve the quality as well as confidence in the quality of the application.\\
 Each microservice has an independent build pipeline. The artifact build during continuous integration triggered by any change in the microservices is fed into corresponding build pipeline for the microservice. \cite{Newman:2015aa} \cite{Fowler:2013aa}
 \end{enumerate}
+
+\begin{shaded}
+The variation of continuous integration and deployment used at SAP Hybris is already discussed in section \ref{section:hybris_architecture/deployment_workflow}.
+\end{shaded}
+
+\section{Conclusion}\label{section:challanges_of_microservices_architecture/conclusion}
+In this chapter, various challenges needed to handle for assuring benefits from using microservices are listed. Each challenge is further broken down into fine constraints. Then, various ways of handling those constraints are discussed. Finally, the solution in the perspective of SAP Hybris is also presented. Microservices architecture provides efficient way to develop agile software however without a good grasp in the techniques to handle the challenges cannot be a good idea to start with microservice in the first place.
 
 
 

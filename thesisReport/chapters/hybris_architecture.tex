@@ -1,4 +1,5 @@
 \chapter{Architecture at Hybris}\label{chapter:hybris_architecture}
+In this chapter, a detail overview of the architecture at SAP Hybris will be studied. The section \ref{section:hybris_architecture/vision} first clarifies the vision of \acrshort{YaaS}. Then, the basic principles followed when modeling and developing microservices are listed in section \ref{section:hybris_architecture/YaaS_architecture_principles}. In order to have a clear picture of the modeling and deployment process at SAP Hybris, section \ref{section:hybris_architecture/interview} presents the detailed interview conducted with various key personnels. The modeling process deduces is further exmplained with an example in section \ref{section:hybris_architecture/example_scenario}. Finally, the process of continuous deployment followed at hybris, which is considered as one of the major process when using microservices, is then discussed in section \ref{section:hybris_architecture/deployment_workflow}.
 \section{Overview}\label{section:hybris_architecture/overview}
 SAP \acrshort{YaaS} provides a variety of business services to support as well as enhance the products offered as SAP hybris front office such as hybris Commerce, hybris Marketing, hybris Billing etc. Using these offered services, developers can create their own business services focussed on their customer requirements.\\
 The figure \ref{fig:hybris_architecture/overview/yaas_overview} provides the overview of \acrshort{YaaS}. \acrshort{YaaS} provides various business processes as a service (bPaaS) essential to develop applications and services thus filling up the gap between SaaS and HCP. For that purpose, it consumes the application services (aPaaS) provided by \acrshort{HCP}.
@@ -36,7 +37,7 @@ Finally, the microservices architecture provides techiques of developing an appl
 \\
 Following the principles mentioned above, a list of principles are compiled to be used as guidelines for creating microservices. \cite{Stubbe:2015aa} The list of principles are listed below.
 \\
-\textbf{\underline{the y-Factors}}
+\begin{shaded}\textbf{The y-Factors}\end{shaded}
 \\
 \begin{enumerate}
 \item \textbf{Self-Sufficient Teams}\\
@@ -59,7 +60,7 @@ The choice of technologies should be cloud friendly such that the products can s
 The service should be responsive in the time of failure. It can be possible by containment and isolation of failure within each component. Similarly, the recovery should be handled gracefully without affecting the overal availability of the entire system. \cite{Boner:2014aa}
 \item \textbf{Independent Services}\\
 The services should be autonomous. Each service should be able to be deployed independently. The services should be loosely coupled, they could be changed independently of eachother. The concept is highly enforced by exposing functionalities via \acrshort{API}s and using lightweight network calls as only way of communication among services. \cite{Newman:2015aa}
-\item \textbf{Understand Your System}
+\item \textbf{Understand Your System}\\
 It is crucial to have a good understanding of problem domain in order to create a good design. The concept of domain driven design strongly motivates this approach to indentify individual autonomous components, their boundaries and the communication patterns among them. \cite{Newman:2015aa} Furthermore, it is also important to understand the expectations of consumers regarding performance and then to realize them accordingly. It is possible only by installing necessary operational capabilities such as continuous delivery, monitoring, scaling and resilience.
 \end{enumerate}
  \section{Modeling Microservices at Hybris}\label{section:hybris_architecture/interview}
@@ -655,15 +656,21 @@ The problem domain is studied thoroughly to identify core domains, supporting do
   \# & \textbf{Sub-domain}  & \textbf{Type} & \textbf{Description}\\
   \hline
   \hline
-   1 & Checkout         & Core          & handles overall process from cart creation to selling of cart items.\\ \hline \hline
-   2 & Product          & Supporting    & deals with product inventory\\ \hline
-   3 & Customer         & Supporting    & deals with customer inventory\\ \hline
-   4 & Coupon           & Supporting    & deals with coupon management \\ \hline
-   5 & Order            & Supporting    & handles orders management\\ \hline \hline
-   6 & Email            & Generic       & provides REST api for sending emails\\ \hline
-   7 & Event            & Generic       & provides asynchronous event based notification service\\ \hline
-   8 & Account          & Generic       & handles users and roles management\\ \hline
-   9 & OAuth2           & Generic       & provides authentication for clients to access resource of resource-owner \\ \hline 
+   1 & Checkout             & Core          & handles overall process from cart creation to selling of cart items.\\ \hline \hline
+   2 & Product              & Supporting    & deals with product inventory\\ \hline
+   3 & Customer             & Supporting    & deals with customer inventory\\ \hline
+   4 & Coupon               & Supporting    & deals with coupon management \\ \hline
+   5 & Order                & Supporting    & handles orders management\\ \hline
+   6 & Site                 & Supporting    & handles site configuration\\ \hline
+   7 & Tax                  & Supporting    & handles tax configuration and tax calculation\\ \hline
+   8 & Payment              & Supporting    & handles payment for orders\\ \hline \hline
+   9 & Email                & Generic       & provides REST api for sending emails\\ \hline
+   10 & Pubsub              & Generic       & provides asynchronous event based notification service\\ \hline
+   11 & Account             & Generic       & handles users and roles management\\ \hline
+   12 & OAuth2              & Generic       & provides authentication for clients to access resource of resource-owner \\
+   13 & Schema              & Generic       & storing schema of documents \\
+   14 & Document            & Generic       & provides storage apis for storing and accessing documents \\
+   \hline 
    \hline
    \end{tabular}
 \end{adjustbox}
@@ -673,7 +680,7 @@ The problem domain is studied thoroughly to identify core domains, supporting do
 \\
 \textbf{\underline{Step 2:}}
 \\
-The major functionality of the commerce platform is to sell products, which makes 'Checkout' the core sub-domain. The sub-domain is responsible for a bunch of independent responsibilities. The individual independent functionalities can be rightfully represented by respective bounded contexts. The bounded contexts are realized using microservices. The other major reason for them to be made microservices, in addition to single independent responsibility, is different scalability requirements for each functionality.
+The major functionality of the commerce platform is to sell products, which makes 'Checkout' the core sub-domain. The sub-domain is responsible for a bunch of independent functionalities. The individual independent functionalities can be rightfully represented by respective bounded contexts. The bounded contexts are realized using microservices. The other major reason for them to be made microservices, in addition to single independent responsibility, is different scalability requirements for each functionality.
 \begin{table}[H]
   \centering
   \begin{adjustbox}{max width=\textwidth}
@@ -734,20 +741,98 @@ Again, there are two more functionalities identified. The first one is a technic
   \label{tab:hybris_architecture/example_scenario/supporting-bounded-contexts-in-Product}
 \end{table}
 \\
-The same process is applied for other subdomains to identify bounded contexts within.It is important to notice that the decision to realize the functionalities as microservices not only considered various technical aspects as performance, autonomy etc but also completely different aspect as "business value". The individual microservices such as Product, Category, Checkout have high business value to \acrshort{YaaS} for the reason that they can be sold within a package.
+It is important to notice that the decision to realize the functionalities as microservices considered various technical aspects as performance, autonomy etc and also business value. The individual microservices such as Product, Category, Checkout have high business value to \acrshort{YaaS} because they are good candidate services required by their partners and customers.
 \\
-The various microservices designed following the process as mentioned forms a layer of services based on their level of abstraction and reusability. The layers are shown in figure \ref{fig:hybris_architecture/interview/microservices-layers}. The core services are technical generic services used by business services and form the bottom layer. On the top of that are the domain specific business services focused on domain specific business capability. The individual business functionalites provided by business services are then used by Mashup layer to create high level services by orchestrating them.
+The various microservices for the sub-domains checkout and product,identified following the steps listed above, forms layers of services based on their level of abstraction and reusability. The layers are shown in figure \ref{fig:hybris_architecture/interview/microservices-layers}. The core services are technical generic services used by business services and form the bottom layer. On the top of that are the domain specific business services focused on domain specific business capability. The individual business functionalites provided by business services are then used by Mashup layer to create high level services by orchestrating them.
 \\
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.8\textwidth]{figures/hybris-architecture-four}
+\includegraphics[width=0.8\textwidth]{figures/hybris_architecture_four}
 \caption{Microservices Layers}
 \label{fig:hybris_architecture/interview/microservices-layers}
 \end{center}
 \end{figure}
 \\
-The figure \ref{fig:hybris_architecture/interview/microservices-layers} uncovers only microservices at the backend related to two separate subdomains. The complete architecture covering other domains such as Marketing etc and all layers including User- Interface, \acrshort{PaaS} is shown by figure \ref{fig:hybris_architecture/interview/hybris-architecture}.
+\textbf{\underline{Step 4:}}
+\\
+The same process from steps 1-3 are applied to remaining sub-domains listed in table \ref{tab:hybris_architecture/example_scenario/sub-domains-in-YaaS}. The table \ref{tab:hybris_architecture/example_scenario/service_list_in_sub_domains} shows a list of services discovered in each sub-domains within commerce domain.
+\begin{table}[H]
+  \centering
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{*{14}{|c}|}%%{|c|c|}
+  \hline
+  \textbf{Sub-domain}  & \textbf{Microservice} & \textbf{Description}\\
+  \hline
+  \hline
+    \multirow{3}{*}{Checkout}         & checkout          & handles the orchestration logic for checkout\\ 
+   & cart          & handles cart inventory\\ 
+   & Cart Calculation          & calculates net value of cart considering various constraints such as tax, discount etc.\\
+   \hline \hline
+   \multirow{4}{*}{Product}         & Product          & manages product inventory\\ 
+   & Product Details          & provides mashup of product, price and category\\ 
+   & Category          & manages category of products\\
+   & Price         & manage price for products\\
+   \hline
+   \hline
+   \multirow{2}{*}{Order}         & Order          & handles order management\\ 
+   & Order Details          & provide mashup of orders and products\\ 
+   \hline \hline
+   \multirow{2}{*}{Site}         & Site          & handles site configuration\\ 
+   & Shipping          & handles shipping configuration for site\\ 
+   \hline \hline
+   \multirow{2}{*}{Tax}         & Tax          & handles tax configuration\\ 
+   & Tax Avalara          & handles tax calculation using Avalara\\ 
+   \hline \hline
+   Customer         & Customer    & deals with customer inventory\\ \hline \hline
+   Coupon           & Coupon    & deals with coupon management \\ \hline \hline
+   Payment  & Payment Stripe          & handles payment for oders using Stripe\\ \hline
+   \hline
+   \end{tabular}
+\end{adjustbox}
+  \caption{Services in \acrshort{YaaS} Commerce domain}
+  \label{tab:hybris_architecture/example_scenario/service_list_in_sub_domains}
+\end{table}
+Including all the microservices in core, supporting and generic sub-domains considering only commerce domain, the resulting architecture is as shown in figure \ref{fig:hybris_architecture/interview/microservices_layers_commerce_domain}.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{figures/hybris_architecture_six}
+\caption{Microservices Layers For Commerce Domain}
+\label{fig:hybris_architecture/interview/microservices_layers_commerce_domain}
+\end{center}
+\end{figure}
 
+\section{Deployment Workflow}\label{section:hybris_architecture/deployment_workflow}
+Another major aspect apart from modeling microservices is continuous deployment. One of the major goals of implementing microservices architecture is agility. And agility can only be maintained when any small change in each microservice can be deployed into production smoothly without affecting other microservices.\\
+
+\subsection{SourceCode Management}\label{section:hybris_architecture/deployment_workflow/sourcecode_management}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{figures/hybris_architecture_sourcecode_magement}
+\caption{Sourcecode Management at Hybris}
+\label{fig:hybris_architecture/interview/sourcecode_management_at_hybris}
+\end{center}
+\end{figure}
+
+The sourcecode files for each microservices are maintained in BitBucket version control. The files are managed using Git. In order to support continuous deployment and efficient collaboration among various developers working in the same microservice, various branches are maintained within each repository. The major branch is called "Master" branch, which is used only for continuous deployment of production code. Another branch is "Develop" branch and is used by developers to add changes continuously. It is used to create development version of service and undergoes various level of tests. When sufficient features are ready and verified in "Develop" branch, they are merged into "Master" branch and realeased from "Master" branch. In this way, "Master" branch has always unbroken sourcecode.
+\\
+For adding any major changes or features in microservices, a new "Feature" branch is created from "Develop" branch and undergoes various levels of testing before it is merged with develop branch. In this way, development and verification of any change can happen independently.
+
+\subsection{Continuous Deployment}\label{section:hybris_architecture/deployment_workflow/continuous_Deployment}
+In section \ref{section:hybris_architecture/deployment_workflow/sourcecode_management}, the concept of maintaining feature branches were discussed. In this section, the process of deploying the changes of feature branch to production will be presented.\\
+The figure \ref{fig:hybris_architecture/interview/continuous_deployment_flow} shows the complete deployment flow for a microservice. Firstly, a developer "A" pushes his/her local changes to the remote "Feature" branch at BitBucket. The changes triggers Teamcity "Build" phase where the changes are first compiled and then a series of unit tests are run against the newly built application which is again followed by a series of integration tests.\\
+If the tests are successful, the developer will create a pull request in BitBucket, reprensenting a request to merge his/her changes to "Develop" branch. Developer "B" from the same team will then review his/her changes and provides comments on BitBucket interface. After the changes are made and developer "B" is satisfied, he/she approves the pull request.\\
+Then, the developer "A" or "B" will merge the feature branch into develop branch. This will again trigger "Build" phase in Teamcity. Again, the develop branch is compiled, followed by unit tests and integration tests. If the tests are successful, then it will trigger "Deployment" phase, code is deployed to "Stage" environment and a group of smoke tests are run to verify the deployment. Now, project owner or quality assurance team can access the service and perform user acceptance tests. If there is any feedback or changes to be made, it will follow the same process from the beginning.\\
+Now, when there are sufficient features and it is time for release, the "Develop" branch is merged to "Master" branch. The merge will again trigger "Build" phase in Teamcity. After successful tests, the "Master" branch is first deployed into "Stage" environment, where a series of smoke tests runs. After the deployment is successful without any error, the "Master" branch is deployed into "Production" environment, where again various smoke tests are run to re-assure the deployment.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{figures/hybris_architecture_continuous_deployment_flow}
+\caption{Continuous Deployment at Hybris}
+\label{fig:hybris_architecture/interview/continuous_deployment_flow}
+\end{center}
+\end{figure}
+
+The deployment is done using cloud foundry which consists of \acrshort{AWS} cloud underneath.
+The figure \ref{fig:hybris_architecture/interview/microservices_layers_commerce_domain} uncovers only microservices at the backend related to commerce domain. The complete architecture covering other domains such as Marketing etc and all layers including User- Interface, \acrshort{PaaS} is shown by figure \ref{fig:hybris_architecture/interview/hybris-architecture}.
 \\
 \begin{figure}[H]
 \begin{center}
@@ -756,9 +841,9 @@ The figure \ref{fig:hybris_architecture/interview/microservices-layers} uncovers
 \label{fig:hybris_architecture/interview/hybris-architecture}
 \end{center}
 \end{figure}
-\\
 
-
+\section{Problem Statement}\label{section: hybris_architecture/problem_statement}
+In this chapter, the modeling approach used in SAP Hybris was discussed. Again, the continuous deployment process for each microservice was presented. This will add value to the findings made regarding modeling process from literature. Now, as stated in section \ref{section:context/approach}, the constraints or challenges are driving points for defining guidelines. So, the next step is to rearch about various challenges when incorporating microservices along with the techniques to tackle them. While looking into that, it would also be interesting to find out how these challenges are being handled at SAP Hybris.
 
 
 
