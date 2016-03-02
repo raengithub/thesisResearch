@@ -1,5 +1,5 @@
 \chapter{Introduction}\label{chapter:introduction}
-Architecture is the set of principles assisting system or application design. \cite{Dashofy:2009aa} It defines the process to decompose a system into modules, components and their interactions. \cite{Brown:2015aa} In this chapter, two different approaches will be taken. Firstly, a conceptual understanding of monolithic architecture style will be presented, which will then be followed by its various advantages and disadvantages. Then, an overview of microservices architecture will be given. The purpose of this chapter is to provide a basic background context for the following chapters.
+Architecture is the set of principles assisting system or application design. \cite{Dashofy:2009aa} It defines the process to decompose a system into modules, components and their interactions. \cite{Brown:2015aa} In this chapter, two different approaches will be taken. Firstly, a conceptual understanding of monolithic architecture style will be presented, which will then be followed by its various advantages and disadvantages. Then, an overview of microservices architecture will be given. In Section \ref{section:context/motivation}, the motivation for the current research is explained which is then followed by  list of various reseach questions \ref{list:introduction/research_questions} being focused. Finally, in Section \ref{section:context/approach} the approach which will be used to conduct the research is presented. The purpose of this chapter is to provide a basic background context for the following chapters.
 
 \section{Monolith Architecture Style}\label{section:context/monolith}
 A Mononlith Architecture Style is the one in which an application is deployed as a single artifact. The architecture inside the application can be modular and clean. In order to clarify, the figure \ref{fig:context/monolith-example} shows architecture of an Online-Store application. The application has clear separation of components such as Catalog, Order and Service as well as respective models such as Product, Order etc. Despite of that, all the units of the application are deployed in tomcat as a single war file.\cite{Richardson:2014aa}\cite{Richardson:2014ab}
@@ -69,13 +69,13 @@ As the requirement grows with time, alongside as application becomes huge and th
 \\
 
 \section{Microservice Architecture Style}\label{section:context/microservices_architecture_style}
-With monolith, it is easy to start development. But as the system gets bigger and complicated along time, it becomes very difficult to be agile and productive. The disadvantages listed in section \ref{subsection:context/monolith-disadvantages} outweighs its advantages as the system gets old. The various qualities such as scalability, agility need to be maintained for the whole lifetime of the application and it becomes complicated by the fact that the system needs to be updated side by side because the requirements keeps coming always. In order to tackle the disadvantages, microservices architecture style is followed.\\
+With monolith, it is easy to start development. But as the system gets bigger and complicated along time, it becomes very difficult to be agile and productive. The disadvantages listed in Section \ref{subsection:context/monolith-disadvantages} outweighs its advantages as the system gets old. The various qualities such as scalability, agility need to be maintained for the whole lifetime of the application and it becomes complicated by the fact that the system needs to be updated side by side because the requirements keeps coming always. In order to tackle the disadvantages, microservices architecture style is followed.\\
 Microservices architecture uses the approach of decomposing an application into various dimensions as proposed by scale-cube. The detailed process of scale-cube is discussed in section \ref{section:context/microservices_architecture_style/decompostion_of_an_application}.
 
 \subsection{Decomposition of an Application}\label{section:context/microservices_architecture_style/decompostion_of_an_application}
 There are various ways to decompose an application. This section discuss two different ways of breaking down an application.
 \subsubsection{Scale Cube}\label{section:context/microservices_architecture_style/decompostion_of_an_application/scale_cube}
-The section \ref{subsection:context/monolith-disadvantages} specified various disadvantages related to monolith architecture style. The book \cite{Fisher:2015aa} provides a way to solve most of the discussed problems such as agility, scalability, productivity etc. It provides three dimensions of scalability as shown in figure \ref{fig:context/scale-cube} which can be applied alone or simultaneously depending upon the situation and desired goals.
+The Section \ref{subsection:context/monolith-disadvantages} specified various disadvantages related to monolith architecture style. The book \cite{Fisher:2015aa} provides a way to solve most of the discussed problems such as agility, scalability, productivity etc. It provides three dimensions of scalability as shown in figure \ref{fig:context/scale-cube} which can be applied alone or simultaneously depending upon the situation and desired goals.
 
 \begin{figure}[H]
 \begin{center}
@@ -95,9 +95,9 @@ The scaling along each dimensions are described below. \cite{Fisher:2015aa}\cite
 \item Y-axis Scaling: The scaling along this dimension means the spliting of the application responsibility. The separation can be done either by data, by the actions performed on the data or by combination of both. The respective ways can be referred to as resoure-oriented or service-oriented splits. While the x-axis or z-axis split were rather duplication of work along servers, the y-axis is more about specialization of work along servers. The major advantage of this scaling is that each request is scaled and handled differently according to its necessity. As the logic along with the data to be worked on are separated, developers can focus and work on small section at a time. This will increase productivity as well as agility. Additionally, a fault on a component is isolated and can be handled gracefully without affecting rest of the application. However, scaling along Y-axis can be costly compared to scaling along other dimensions.
 \end{enumerate}
 \subsubsection{Shared Libraries}\label{section:context/microservices_architecture_style/decompostion_of_an_application/shared_libraries}
-Libraries is a standard way of sharing functionalities among various services and teams. The capability is provided by the feature of programming language. However there are various downsides to this approach. Firstly, it does not provide technology heteroginity. Next, unless the library is dynamically linked, independent scaling, deployment and maintainance cannot be achieved. So, in other cases, any small change in the library leads the redeployment of whole system. Sharing code is a form of coupling which should be avoided.
+Libraries is a standard way of sharing functionalities among various services and teams. The capability is provided by the feature of programming language. However there are various downsides to this approach. Firstly, it does not provide technology heterogeneity. Next, unless the library is dynamically linked, independent scaling, deployment and maintainance cannot be achieved. So, in other cases, any small change in the library leads the redeployment of whole system. Sharing code is a form of coupling which should be avoided.
 
-Decomposing an application in terms of composition of individual features where each feature can be scaled and deployed independently, gives various advantages along agility, performance and team organization as well. Thus, microservices uses the decomposition technique given by scale cube. A detail advantages of microservices are discussed further in section \ref{section:challanges_of_microservices_architecture/introduction/challenges}.
+Decomposing an application in terms of composition of individual features where each feature can be scaled and deployed independently, gives various advantages along agility, performance and team organization as well. Thus, microservices uses the decomposition technique given by scale cube. A detail advantages of microservices are discussed further in Section \ref{section:challanges_of_microservices_architecture/introduction/challenges}.
 \subsection{Definitions}\label{section:context/microservices_architecture_style/definitions}
 There are several definitions given by several pioneers and early adapters of the style.
 \\
@@ -134,7 +134,7 @@ The various definitions presented in section highlights different key terms such
 \item small, granular services
 \end{enumerate}
 These concepts are very important to be understood in order to approach microservices correctly and effectively. The first two terms relate to runtime operational qualities of microservices whereas the next two address modeling qualities. With that consideration, it indicates that the definitions given are complete which focus on both aspects of any software applications. \\
-However, if attempt is made to have clear indepth understanding of each of the key terms then various questions can be raised without appropriate answers. The various questions related to modeling and operations are listed in the table \ref{tab:context/microservices_architecture_style/various_questions_related_to_microservices}.
+However, if attempt is made to have clear indepth understanding of each of the key terms then various questions can be raised without appropriate answers. The various questions (given in column 'Questions') related to modeling and operations (given in column 'Type') are listed in the Table \ref{tab:context/microservices_architecture_style/various_questions_related_to_microservices}.
 \begin{table}[H]
   \centering
   \begin{adjustbox}{max width=\textwidth}
@@ -168,7 +168,74 @@ Without clear answer to these questions, it is difficult to say that the definit
     \end{enumerate}
 \end{enumerate}
 \section{Research Approach}\label{section:context/approach}
-The various definitions in section \ref{section:context/microservices_architecture_style/definitions} show that the authors have their own way of interpretation of microservices but at the same time agree upon some basic concepts regarding the architecture. However, each definition can be used to understand different aspect of the microservices. A distinct set of keywords can be identified which represents different aspects pointed by the authors and various concepts they agree. Moreover, the table lists important keywords.
+A research is an iterative procedure with a goal of collecting as many relevant documents as possible so that the research questions could be answered rationally. So, it becomes very important to follow a consistent research procedure. For the current research, the approach is chosen by refering to \cite{np:2007aa}. It consists of two major phases.
+\begin{enumerate}
+\item {Data Collection Phase}
+\item {Data Synthesis Phase}
+\end{enumerate}
+The following sections explains each phase in detail.
+\subsection{Data Collection Phase}\label{section:context/approach/data_collection_phase}
+In this phase, papers related to the reseach questions are collected. The Figure \ref{fig:context/data_collection_phase} shows basic steps in this phase.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{figures/introduction_data_collection_phase}
+\caption{Data Collection Phase}
+\label{fig:context/data_collection_phase}
+\end{center}
+\end{figure}
+
+\begin{enumerate}
+\item \textbf{Select Search Terms}\\
+At first, various search terms which defines the research topics and questions well, are selected using following strategies.
+\begin{enumerate}
+\item keywords from research questions and various definitions
+\item synonyms of keywords
+\item accepted and popular terms from academics and industries
+\item references discovered from selected papers
+\end{enumerate}
+A consise list of initial keywords which are selected from various definitions of microservices are given in Table \ref{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice}.
+\item \textbf{Search and Gather Papers}\\
+The search terms selected in previous step are utilized to discover various papers. In order to achieve that, the search terms are used against various resources listed below.
+\begin{enumerate}
+\item google scholar
+\item IEEExplore
+\item ACM Digital Library
+\item Researchgate
+\item Books
+\item Technical Articles
+\end{enumerate}
+\item \textbf{Filter the Papers}
+Finally, the various papers collected from various resources are filtered first to check if the papers have profound and thorough base to back up their result. Using only authentic papers is important to provide rational base to current research. The various criteria used to filther the papers are listed below.
+\begin{enumerate}
+\item Is the paper relevant to answer the research question?
+\item Does the paper have good base in terms of sources as well as provide references of the past studies? 
+\item Are there any case studies or examples provided to verify the result of the reseach?
+\end{enumerate}
+\end{enumerate}
+
+\subsection{Data Synthesis Phase}\label{section:context/approach/data_synthesis_phase}
+The next phase is to gather data from the selected papers to create meaningful output and provide direction to the research. The Figure \ref{fig:context/data_synthesis_phase} shows various steps within this phase.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{figures/introduction_data_synthesis_phase}
+\caption{Data Synthesis Phase}
+\label{fig:context/data_synthesis_phase}
+\end{center}
+\end{figure}
+
+\begin{enumerate}
+\item \textbf{Extract Data from selected papers individually}\\
+Firstly, each papers are scanned and important data relevant to research are collected.
+\item \textbf{Synthesize Data}\\
+The data collected from each paper are revised and compared for their similarities in concepts as well as differences in opinion. These individual contents from all papers are then synthesized.
+\item \textbf{Create Draft}\\
+Finally, draft for the observations are created for future reference to be used later for creating final report.
+\end{enumerate}
+
+
+\section{Research Strategy}\label{section:context/research_strategy}
+The Section \ref{section:context/approach} emphasize the importance of having consistent research procedure. Additionally, it is important to define a good strategy for achieving goals of the research. A good strategy is to narrow down the areas for conducting research. In this section, a list of areas will be identified.\\
+The various definitions in Section \ref{section:context/microservices_architecture_style/definitions} show that the authors have their own interpretation of microservices but at the same time agree upon some basic concepts regarding the architecture. However, each definition can be used to understand different aspect of the microservices. A distinct set of keywords can be identified which represents different aspects pointed by the authors and various concepts they agree. The Table \ref{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice} shows various keywords to focus. Additionally, there are other columns in the table which represents various aspects of microservices architecture. These columns are checked or unchecked to represent the relevancy of each keyword. 
 
 \begin{table}[H]
   \centering
@@ -194,9 +261,10 @@ The various definitions in section \ref{section:context/microservices_architectu
   \caption{Keywords extracted from various definitions of Microservice}
   \label{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice}
 \end{table}
-These keywords provide us some hint regarding various topics of discussion related to microservices, which are listed in columns. Finally, answering various questions around these keywords can be the \textbf{first approach} to understand the topics shown in columns such as size, quality of microservices etc.
+These keywords provide us some hint regarding various topics of discussion related to microservices, which are represented by columns. Finally, answering various questions around these keywords can be the \textbf{first approach} to understand the topics shown in columns such as size, quality of microservices etc.
 \\
-The \textbf{next approach} to look around the architecture process is to understand various drivers. According to , the important drivers which clarify the architecture are: \cite{Brown:2015aa} \label{list:introduction/drivers}
+The \textbf{next approach} to look around the architecture process is to understand various drivers. According to \cite{Brown:2015aa}, the important drivers which clarify the architecture are: 
+\label{list:introduction/drivers}
 \begin{enumerate}
 \item \textbf{Quality Attributes}\\
 The non-functional requirements have high impact on the resulting architecture. It is important to consider various quality attributes to define the process of architecture.
@@ -208,9 +276,9 @@ The various principles provides a consistent approaches to tackle various limita
 So, in order to define the process of modeling microservices, the key aspects related to \textbf{quality attributes}, \textbf{constraints} and \textbf{principles} will be studied thoroughly.
 \\
 \\
-Considering both the table \ref{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice} and list \ref{list:introduction/drivers}, the approach to be used to define the guidelines will be to first look deep into various quality attributes influencing microservices architecture. Then, the process of identifying or modeling individual microservices from problem domain will be defined. At first, the research is performed based on various research papers. Then, the approach used by industry adopting microservices architecture will be studied in order to answer the research questions. The study will be performed on SAP Hybris.
+Considering both the Table \ref{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice} and List \ref{list:introduction/drivers}, the approach to be used to define the guidelines will be to first look deep into various quality attributes influencing microservices architecture. Then, the process of identifying or modeling individual microservices from problem domain will be defined. At first, the research is performed based on various research papers. Then, the approach used by industry adopting microservices architecture will be studied in order to answer the research questions. The study will be performed on SAP Hybris.
 Finally, the various constraints or challenges which affects microservices will be identified. 
-The results of previous research will be mapped into a form of various principles and these principles will ultimately provide sufficient ground to create guidelines to create microservices architecture.
+The results of previous research will be mapped into a form of various principles and these principles will ultimately provide sufficient ground to create guidelines for microservices architecture.
 
 \section{Problem Statement}\label{section:context/problem_statement}
 Considering the case that the size of microservice is an important concept and is discussed a lot, but no concrete answer regarding this topic exists. Moreover, the idea of size has a lot of interpretations and no definite answer regarding how small a microservice should be. So, the first step should be to understand the concept of granularity in the context of microservices. Additionally, it would be great if some answers regarding the appropriate size of microservices could be given.

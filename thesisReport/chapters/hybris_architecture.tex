@@ -1,5 +1,5 @@
-\chapter{Architecture at Hybris}\label{chapter:hybris_architecture}
-In this chapter, a detail overview of the architecture at SAP Hybris will be studied. The section \ref{section:hybris_architecture/vision} first clarifies the vision of \acrshort{YaaS}. Then, the basic principles followed when modeling and developing microservices are listed in section \ref{section:hybris_architecture/YaaS_architecture_principles}. In order to have a clear picture of the modeling and deployment process at SAP Hybris, section \ref{section:hybris_architecture/interview} presents the detailed interview conducted with various key personnels. The modeling process deduces is further exmplained with an example in section \ref{section:hybris_architecture/example_scenario}. Finally, the process of continuous deployment followed at hybris, which is considered as one of the major process when using microservices, is then discussed in section \ref{section:hybris_architecture/deployment_workflow}.
+\chapter{Architecture at SAP Hybris}\label{chapter:hybris_architecture}
+In this chapter, a detail overview of the architecture at SAP Hybris will be studied. The Section \ref{section:hybris_architecture/vision} first clarifies the vision of \acrshort{YaaS}. Then, the basic principles followed when modeling and developing microservices are listed in Section \ref{section:hybris_architecture/YaaS_architecture_principles}. In order to have a clear picture of the modeling and deployment process at SAP Hybris, Section \ref{section:hybris_architecture/interview} presents the detailed interview conducted with various key personnels. The modeling process deduces is further exmplained with an example in Section \ref{section:hybris_architecture/example_scenario}. Finally, the process of continuous deployment followed at hybris, which is considered as one of the major process when using microservices, is then discussed in Section \ref{section:hybris_architecture/deployment_workflow}.
 \section{Overview}\label{section:hybris_architecture/overview}
 SAP \acrshort{YaaS} provides a variety of business services to support as well as enhance the products offered as SAP hybris front office such as hybris Commerce, hybris Marketing, hybris Billing etc. Using these offered services, developers can create their own business services focussed on their customer requirements.\\
 The figure \ref{fig:hybris_architecture/overview/yaas_overview} provides the overview of \acrshort{YaaS}. \acrshort{YaaS} provides various business processes as a service (bPaaS) essential to develop applications and services thus filling up the gap between SaaS and HCP. For that purpose, it consumes the application services (aPaaS) provided by \acrshort{HCP}.
@@ -33,7 +33,7 @@ The definition of microservices \ref{tab:context/microservices_architecture_styl
 The Agile Manifesto \cite{Beck:2011aa} provides various principles to develop a software in a better way. It focus on fast response to the requirement changes with frequent continous delivery of software artifacts with close collaboration of customer and self-organizing teams.\\
 The Reactive Manifesto \cite{Boner:2014aa} lists various qualities of a reactive system which includes responsiveness (acceptable consistent response time, quick detection and solution of problem), resilience (responsive during the event of failure) , elasticity (responsive during varying amount of workload) and asynchronous message passing. Loose coupling is highly focused.\\
 Furthermore, the twelve factors from Heroku \cite{Wiggins:2012aa} provides a methodology for minimizing time and cost to develop software applications as services. It emphasizes on scalability of applications, explicit declaration as well as isolation of dependencies among components, multiple continuous deployments from a single version controlled codebase with separate pipelines for build, release and run.\\
-Finally, the microservices architecture provides techiques of developing an application as a collection of autonomous small sized services focused on single responsibility. [section \ref{section:context/microservices_architecture_style}] It focus on independent deployment capability of individual microservices and suggest to use lightweight mechanisms such as http for communication among services. The architecture offers various advantages, few of them being individual independent scalability of each microservice, resilience achieved by isolating failure in a component and technology heterogeneity among various development teams.\cite{Newman:2015aa}
+Finally, the microservices architecture provides techiques of developing an application as a collection of autonomous small sized services focused on single responsibility. [Section \ref{section:context/microservices_architecture_style}] It focus on independent deployment capability of individual microservices and suggest to use lightweight mechanisms such as http for communication among services. The architecture offers various advantages, few of them being individual independent scalability of each microservice, resilience achieved by isolating failure in a component and technology heterogeneity among various development teams.\cite{Newman:2015aa}
 \\
 Following the principles mentioned above, a list of principles are compiled to be used as guidelines for creating microservices. \cite{Stubbe:2015aa} The list of principles are listed below.
 \\
@@ -64,7 +64,7 @@ The services should be autonomous. Each service should be able to be deployed in
 It is crucial to have a good understanding of problem domain in order to create a good design. The concept of domain driven design strongly motivates this approach to indentify individual autonomous components, their boundaries and the communication patterns among them. \cite{Newman:2015aa} Furthermore, it is also important to understand the expectations of consumers regarding performance and then to realize them accordingly. It is possible only by installing necessary operational capabilities such as continuous delivery, monitoring, scaling and resilience.
 \end{enumerate}
  \section{Modeling Microservices at Hybris}\label{section:hybris_architecture/interview}
- With the intension to anticipate the overall belief, culture and practice followed by hybris to develop \acrshort{YaaS}, a number of interviews were conducted with a subset of key personnels who are directly involved in \acrshort{YaaS}. The list of interviewees with their corresponsing roles is shown in the table \ref{tab:hybris_architecture/interview/interviewee_list}. In order to preserve anonymity, the real names are replaced with forged ones.
+ With the intension to anticipate the overall belief, culture and practice followed by hybris to develop \acrshort{YaaS}, a number of interviews were conducted with a subset of key personnels who are directly involved in \acrshort{YaaS} at different roles. The list of interviewees with their corresponsing roles is shown in the Table \ref{tab:hybris_architecture/interview/interviewee_list}. In order to preserve anonymity, the real names are replaced with forged ones.
 \begin{table}[H]
   \centering
   \begin{adjustbox}{max width=\textwidth}
@@ -101,17 +101,17 @@ Hypothesis 1:
 \textbf{The correct size of microservices is determined by: \begin{enumerate}\item Single Responsibility Principle \item Autonomy, and \item Infrastructure Capability \end{enumerate}}
 \\
 According S.Newman, a good microservices should be small and focus on accomplishing one thing well. Additionally, it could be independently deployed and updated. This strongly suggests the requirement of \acrshort{SRP} and autonomy respectively. \cite{Newman:2015aa} Futhermore, M. Stine also agree that the size of a microservices should be determined by single responsibility principle. \cite{Stine:2014aa}
-Also, the principle listed in \ref{principle:granularity/IT_infrastructure} indicate that the advancement in the current technology and culture of the organization also defines size of microservices. \cite{Pierre-Reldin:2007aa}
+Also, the principle mentioned in \ref{principle:granularity/IT_infrastructure} indicate that the advancement in the current technology and culture of the organization also defines size of microservices. \cite{Pierre-Reldin:2007aa}
 \begin{shaded}
 Hypothesis 2:
 \end{shaded} \label{section:hybris_architecture/interview/hypothesis_2}
 \textbf{Domain driven design is the optimum approach to design microservices.}
 \\
 \\
-The concept of domain driven design to design microservices is promoted by S. Newman and M. Fowler. \cite{Newman:2015aa} \cite{Fowler:2014aa} Similary, there can be found evendence of domain driven design being used in various projects to design microservices. The list of projects is shown in the table \ref{tab:domain_driven_design/microservices_and_bounded_context/Microservices_following_Bounded_Context}.
+The concept of domain driven design to design microservices is promoted by S. Newman and M. Fowler. \cite{Newman:2015aa} \cite{Fowler:2014aa} Similary, there can be found evendence of domain driven design being used in various projects to design microservices. The list of projects is shown in the Table \ref{tab:domain_driven_design/microservices_and_bounded_context/Microservices_following_Bounded_Context}.
 \\
 \subsection{Interview Compilation}\label{section:hybris_architecture/interview/interview_compilation}
-For each topic listed above in section \ref{section:hybris_architecture/interview/hypothesis}, a list of questionaires is prepared. The questions were then asked to the interviewees. In the remaining part of this section, an attempt is made to compile the response from the interviews on the questionaires for each topic.
+For each topic listed above in Section \ref{section:hybris_architecture/interview/hypothesis}, a list of questionaires is prepared. The questions were then asked to the interviewees. In the remaining part of this section, an attempt is made to compile the response from the interviews on the questionaires for each topic.
 \\
 \textbf{\underline{1. Granularity}}\\  
 \begin{shaded} Question 1.1 \end{shaded} \label{question:hybris_architecture/interview/question_1.1}
@@ -559,12 +559,12 @@ Yes                & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{0}    \\
 \end{figure}
 \\
 \subsection{Interview Reflection on Hypothesis}\label{section:hybris_architecture/interview/interview_reflection_on_hypothesis}
-The data gathered from the interviews which are compiled in the section \ref{section:hybris_architecture/interview/interview_compilation} can be a good source to analyse the hypothesis listed on the section \ref{section:hybris_architecture/interview/hypothesis}.
+The data gathered from the interviews which are compiled in the Section \ref{section:hybris_architecture/interview/interview_compilation} can be a good source to analyse the hypothesis listed on the Section \ref{section:hybris_architecture/interview/hypothesis}.
 \\
 \begin{shaded} Hypothesis 1 \end{shaded}
 \textbf{The correct size of microservices is determined by: \begin{enumerate}\item Single Responsibility Principle \item Autonomy, and \item Infrastructure Capability \end{enumerate}}
 \\
-The response from question \ref{question:hybris_architecture/interview/question_1.3} has helped to point out some important constraints which play significant role in industry while choosing appropriate size of microservice. It is also interesting to notice how the terms in answer closely relate to the hypothesis \ref{section:hybris_architecture/interview/hypothesis_1}. The figure attempts to clarify the relationship among the terms with the hypothesis.
+The response from Question \ref{question:hybris_architecture/interview/question_1.3} has helped to point out some important constraints which play significant role in industry while choosing appropriate size of microservice. It is also interesting to notice how the terms in answer closely relate to the Hypothesis \ref{section:hybris_architecture/interview/hypothesis_1}. The figure attempts to clarify the relationship among the terms with the hypothesis.
 \\
 
 \\
@@ -590,8 +590,8 @@ Finally, there appears one additional constraint to affect the size of microserv
 \begin{shaded} Hypothesis 2 \end{shaded}
 \textbf{Domain driven design is the optimum approach to design microservices.}
 \\
-From the response to question \ref{question:hybris_architecture/interview/question_3.1}, it can be implied that the organization has no consistent set of specific guidelines which are agreed and pratised across all teams. However,  
-the various reactions to the question \ref{question:hybris_architecture/interview/question_3.2} appear to fall with two class of process. The response from \ref{question:hybris_architecture/interview/question_3.2} is repeated here again for convenience \ref{fig:hybris_architecture/interview/process_variations_to_design_microservices}.\\
+From the response to Question \ref{question:hybris_architecture/interview/question_3.1}, it can be implied that the organization has no consistent set of specific guidelines which are agreed and pratised across all teams. However,  
+the various reactions to the Question \ref{question:hybris_architecture/interview/question_3.2} appear to fall with two class of process. The response from \ref{question:hybris_architecture/interview/question_3.2} is repeated here again for convenience \ref{fig:hybris_architecture/interview/process_variations_to_design_microservices}.\\
 \\
 \begin{figure}[H]
 \begin{center}
@@ -601,13 +601,13 @@ the various reactions to the question \ref{question:hybris_architecture/intervie
 \end{center}
 \end{figure}
 \\
-There is one group of reactions which follow a process to functionally divide a usecase into small functions based upon various factors such as single responsiblity and the requirements of performance. This strongly resemble to the usecase modeling technique as described in the chapter \ref{chapter:selection_by_use_case}. 
-\\Moreover, within the same group, a partition are also using the concept of bounded context to ensure autonomy, which also suggests towards the direction of domain driven design as mentioned in the chapter \ref{chapter:domain_driven_design}. It is interesting to find out that some of the teams are using the concept of bounded context implicitly even without its knowledge. The rest of the teams who were not using bounded context, have no idea about the concept. It may be assumed that they will have different view once they get familiar with the concept.
+There is one group of reactions which follow a process to functionally divide a usecase into small functions based upon various factors such as single responsiblity and the requirements of performance. This strongly resemble to the usecase modeling technique as described in the Chapter \ref{chapter:selection_by_use_case}. 
+\\Moreover, within the same group, a partition are also using the concept of bounded context to ensure autonomy, which also suggests towards the direction of domain driven design as mentioned in the Chapter \ref{chapter:domain_driven_design}. It is interesting to find out that some of the teams are using the concept of bounded context implicitly even without its knowledge. The rest of the teams who were not using bounded context, have no idea about the concept. It may be assumed that they will have different view once they get familiar with the concept.
 \\
 Finally, the rest of the interviewees agree on domain driven design to be the process to design microservices. So, the  response is of mixed nature, both usecase modeling and domain driven design are used in desigining microservices. However, it should also be stated that domain driven design are used on its own or along with usecase modeling to design autonomous microservices.
 
  \section{Derivation of Modeling Approach at Hybris by interview compilation}\label{section:hybris_architecture/interview_summary}
- The response from the interviews as compiled in section \ref{section:hybris_architecture/interview/interview_compilation} is analyzed for each topic listed in \ref{section:hybris_architecture/interview/hypothesis} separately.
+ The response from the interviews as compiled in Section \ref{section:hybris_architecture/interview/interview_compilation} is analyzed for each topic listed in \ref{section:hybris_architecture/interview/hypothesis} separately.
  \\
  \\
  \textbf{Granularity}
@@ -628,7 +628,7 @@ Finally, there is an additional deciding factor called "Business Value". The cho
 \textbf{Quality Attributes}
 \\
 \\
-The teams do not follow any quantitative metrics for measuring various quality attributes. However, they agree on a common list of quality attributes to be considered as shown in the table \ref{tab:hybris_architecture/interview/question_2.1}. According to the reactions from interviews, the basic metrics to evaluate the quality attributes visualized in the table  \ref{tab:quality_of_service/quality_attributes/basic_quality_metrics} can be helpful to approach the design of microservices architecture in an efficient way.
+The teams do not follow any quantitative metrics for measuring various quality attributes. However, they agree on a common list of quality attributes to be considered as shown in the Table \ref{tab:hybris_architecture/interview/question_2.1}. According to the reactions from interviews, the basic metrics to evaluate the quality attributes visualized in the Table  \ref{tab:quality_of_service/quality_attributes/basic_quality_metrics} can be helpful to approach the design of microservices architecture in an efficient way.
 \\
 \\
 \textbf{Process to design microservices}
@@ -640,10 +640,10 @@ The process followed by a portion of teams closely relate to usecase modeling ap
 \\
 The domain driven design can be considerd as the most suitable approach to design microservices. Following this approach, not only the problem domain is functionally divided into cohesive group of functionalities but also leads to a natural boundary around the cohesive functionalities with respect the real world, where concept as well as differences are well understood and the ownership of business resources and core logic are well preserved.
 
- \section{Example Scenario}\label{section:hybris_architecture/example_scenario}
- \acrshort{YaaS} provides a cloud platform where customers can buy and sell applications and services. In order to accomplish this, \acrshort{YaaS} offers various basic business and core functionalities as microservices. The customers can either use or extend these services to create new services and applications focusing on their individual requirements and goals.
+ \section{Case Study}\label{section:hybris_architecture/example_scenario}
+ \acrshort{YaaS} provides a cloud platform where customers can buy and sell applications and services related to commerce domain. In order to accomplish this, \acrshort{YaaS} offers various basic business and core functionalities as microservices. The customers can either use or extend these services to create new services and applications focusing on their individual requirements and goals.
  \\
-The following part of this section discuss the steps used to identify the basic microservices in \acrshort{YaaS}.
+The following part of this section discuss the steps used to identify microservices under commerce domain in \acrshort{YaaS}.
 \\
 \textbf{\underline{Step 1:}}
 \\
@@ -721,7 +721,7 @@ The supporting sub-domain Product deals with various functionalities related to 
   \label{tab:hybris_architecture/example_scenario/functional-bounded-contexts-in-Product}
 \end{table}
 \\
-The bounded contexts listed in table \ref{tab:hybris_architecture/example_scenario/functional-bounded-contexts-in-Product} are based upon the independent responsibility and different performance requirement. Additionally, each functionality deals with business entity "Product". However, the conceptual meaning and scope of "Product" is different in each bounded context. "Product" is a polyseme.
+The bounded contexts listed in Table \ref{tab:hybris_architecture/example_scenario/functional-bounded-contexts-in-Product} are based upon the independent responsibility and different performance requirement. Additionally, each functionality deals with business entity "Product". However, the conceptual meaning and scope of "Product" is different in each bounded context. "Product" is a polyseme.
 \\
 Again, there are two more functionalities identified. The first one is a technical functionality to provide indexing of products so that searching of products can be can be efficient. The functionality is generic, technical and independent. It has a different bounded context and can be realized using different microservice. Furthermore, there is a requirement of mashing up information from product, price and category in order to limit the network data from client to each individual service and improve performance. This is realized using a separate mashup service. Also, these functionalities have different performance requirement.
 \begin{table}[H]
@@ -743,7 +743,7 @@ Again, there are two more functionalities identified. The first one is a technic
 \\
 It is important to notice that the decision to realize the functionalities as microservices considered various technical aspects as performance, autonomy etc and also business value. The individual microservices such as Product, Category, Checkout have high business value to \acrshort{YaaS} because they are good candidate services required by their partners and customers.
 \\
-The various microservices for the sub-domains checkout and product,identified following the steps listed above, forms layers of services based on their level of abstraction and reusability. The layers are shown in figure \ref{fig:hybris_architecture/interview/microservices-layers}. The core services are technical generic services used by business services and form the bottom layer. On the top of that are the domain specific business services focused on domain specific business capability. The individual business functionalites provided by business services are then used by Mashup layer to create high level services by orchestrating them.
+The various microservices for the sub-domains checkout and product,identified following the steps listed above, forms layers of services based on their level of abstraction and reusability. The layers are shown in Figure \ref{fig:hybris_architecture/interview/microservices-layers}. The core services are technical generic services used by business services and form the bottom layer. On the top of that are the domain specific business services focused on domain specific business capability. The individual business functionalites provided by business services are then used by Mashup layer to create high level services by orchestrating them.
 \\
 \begin{figure}[H]
 \begin{center}
@@ -755,7 +755,7 @@ The various microservices for the sub-domains checkout and product,identified fo
 \\
 \textbf{\underline{Step 4:}}
 \\
-The same process from steps 1-3 are applied to remaining sub-domains listed in table \ref{tab:hybris_architecture/example_scenario/sub-domains-in-YaaS}. The table \ref{tab:hybris_architecture/example_scenario/service_list_in_sub_domains} shows a list of services discovered in each sub-domains within commerce domain.
+The same process from steps 1-3 are applied to remaining sub-domains listed in Table \ref{tab:hybris_architecture/example_scenario/sub-domains-in-YaaS}. The Table \ref{tab:hybris_architecture/example_scenario/service_list_in_sub_domains} shows a list of services discovered in each sub-domains within commerce domain. For example, 'Tax' and 'Tax Avalara' are microservices under 'Tax' sub-domain. Similarly, 'Order' and 'Order Details' are microservices related to 'Order' subdomain.
 \begin{table}[H]
   \centering
   \begin{adjustbox}{max width=\textwidth}
@@ -792,7 +792,7 @@ The same process from steps 1-3 are applied to remaining sub-domains listed in t
   \caption{Services in \acrshort{YaaS} Commerce domain}
   \label{tab:hybris_architecture/example_scenario/service_list_in_sub_domains}
 \end{table}
-Including all the microservices in core, supporting and generic sub-domains considering only commerce domain, the resulting architecture is as shown in figure \ref{fig:hybris_architecture/interview/microservices_layers_commerce_domain}.
+Including all the microservices in core, supporting and generic sub-domains considering only commerce domain, the resulting architecture is as shown in Figure \ref{fig:hybris_architecture/interview/microservices_layers_commerce_domain}. At the bottom are various generic microservices such as Pubsub, Document etc. They are utilized by various business services such as Customer, Coupon etc. On the top are various mashup services such as Checkout, Order-Details and they utilize various business services and core services underneath.
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.9\textwidth]{figures/hybris_architecture_six}
@@ -818,8 +818,8 @@ The sourcecode files for each microservices are maintained in BitBucket version 
 For adding any major changes or features in microservices, a new "Feature" branch is created from "Develop" branch and undergoes various levels of testing before it is merged with develop branch. In this way, development and verification of any change can happen independently.
 
 \subsection{Continuous Deployment}\label{section:hybris_architecture/deployment_workflow/continuous_Deployment}
-In section \ref{section:hybris_architecture/deployment_workflow/sourcecode_management}, the concept of maintaining feature branches were discussed. In this section, the process of deploying the changes of feature branch to production will be presented.\\
-The figure \ref{fig:hybris_architecture/interview/continuous_deployment_flow} shows the complete deployment flow for a microservice. Firstly, a developer "A" pushes his/her local changes to the remote "Feature" branch at BitBucket. The changes triggers Teamcity "Build" phase where the changes are first compiled and then a series of unit tests are run against the newly built application which is again followed by a series of integration tests.\\
+In Section \ref{section:hybris_architecture/deployment_workflow/sourcecode_management}, the concept of maintaining feature branches were discussed. In this section, the process of deploying the changes of feature branch to production will be presented.\\
+The Figure \ref{fig:hybris_architecture/interview/continuous_deployment_flow} shows the complete deployment flow for a microservice. Firstly, a developer "A" pushes his/her local changes to the remote "Feature" branch at BitBucket. The changes triggers Teamcity "Build" phase where the changes are first compiled and then a series of unit tests are run against the newly built application which is again followed by a series of integration tests.\\
 If the tests are successful, the developer will create a pull request in BitBucket, reprensenting a request to merge his/her changes to "Develop" branch. Developer "B" from the same team will then review his/her changes and provides comments on BitBucket interface. After the changes are made and developer "B" is satisfied, he/she approves the pull request.\\
 Then, the developer "A" or "B" will merge the feature branch into develop branch. This will again trigger "Build" phase in Teamcity. Again, the develop branch is compiled, followed by unit tests and integration tests. If the tests are successful, then it will trigger "Deployment" phase, code is deployed to "Stage" environment and a group of smoke tests are run to verify the deployment. Now, project owner or quality assurance team can access the service and perform user acceptance tests. If there is any feedback or changes to be made, it will follow the same process from the beginning.\\
 Now, when there are sufficient features and it is time for release, the "Develop" branch is merged to "Master" branch. The merge will again trigger "Build" phase in Teamcity. After successful tests, the "Master" branch is first deployed into "Stage" environment, where a series of smoke tests runs. After the deployment is successful without any error, the "Master" branch is deployed into "Production" environment, where again various smoke tests are run to re-assure the deployment.
@@ -832,7 +832,7 @@ Now, when there are sufficient features and it is time for release, the "Develop
 \end{figure}
 
 The deployment is done using cloud foundry which consists of \acrshort{AWS} cloud underneath.
-The figure \ref{fig:hybris_architecture/interview/microservices_layers_commerce_domain} uncovers only microservices at the backend related to commerce domain. The complete architecture covering other domains such as Marketing etc and all layers including User- Interface, \acrshort{PaaS} is shown by figure \ref{fig:hybris_architecture/interview/hybris-architecture}.
+The Figure \ref{fig:hybris_architecture/interview/microservices_layers_commerce_domain} uncovers only microservices at the backend related to commerce domain. The complete architecture covering other domains such as Marketing etc and all layers including User- Interface, \acrshort{PaaS} is shown by Figure \ref{fig:hybris_architecture/interview/hybris-architecture}. Apart from Commerce domain, there are various other domains such as Marketing, Sales etc. On each domain, same process as explained in \ref{section:hybris_architecture/example_scenario} is followed to identify various microservices. For example, in 'Marketing' domain, there are microservices such as 'Loyalty', Loyalty Mashup' services.
 \\
 \begin{figure}[H]
 \begin{center}
@@ -843,7 +843,7 @@ The figure \ref{fig:hybris_architecture/interview/microservices_layers_commerce_
 \end{figure}
 
 \section{Problem Statement}\label{section: hybris_architecture/problem_statement}
-In this chapter, the modeling approach used in SAP Hybris was discussed. Again, the continuous deployment process for each microservice was presented. This will add value to the findings made regarding modeling process from literature. Now, as stated in section \ref{section:context/approach}, the constraints or challenges are driving points for defining guidelines. So, the next step is to rearch about various challenges when incorporating microservices along with the techniques to tackle them. While looking into that, it would also be interesting to find out how these challenges are being handled at SAP Hybris.
+In this chapter, the modeling approach used in SAP Hybris was discussed. Again, the continuous deployment process for each microservice was presented. This will add value to the findings made regarding modeling process from literature. Now, as stated in Section \ref{section:context/approach}, the constraints or challenges are driving points for defining guidelines. So, the next step is to rearch about various challenges when incorporating microservices along with the techniques to tackle them. While looking into that, it would also be interesting to find out how these challenges are being handled at SAP Hybris.
 
 
 

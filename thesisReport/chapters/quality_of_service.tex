@@ -15,13 +15,13 @@ use the formula to calculate quality metrics for the services at hybris to give 
 
 
 \chapter{Quality Attributes of Microservices}\label{chapter:quality_of_service}
-This chapter will attempt to find out various factors defining quality of microservices. Also, it will provide quantitative approach to evaluate the overal quality of microservice. At first, the section \ref{section:quality_of_service/quality_attributes} presents a list of quality attributes compiled from various research papers, which are considered important when defining quality of service. Next, in section \ref{section:quality_of_service/quality_metrics}, various metrices to evaluate these attributes are given. Furthermore, in section \ref{section:quality_of_service/basic_quality_metrics}, a list of basic metrices being derived from complex metrices introduced in section are created. Again, the section \ref{section:quality_of_service/quality_attributes_principle} lists various principles which shows impact of various attributes on the quality of microservices. Finally, based on the previous result on metrics and principles, relationship of granularity with other quality attributes is tabulated in section \ref{section:quality_of_service/quality_attributes_relationship}.
+This chapter will attempt to find out various factors defining quality of microservices. Also, it will provide quantitative approach to evaluate the overal quality of microservice. At first, the Section \ref{section:quality_of_service/quality_attributes} presents a list of quality attributes compiled from various research papers, which are considered important when defining quality of service. Next, in Section \ref{section:quality_of_service/quality_metrics}, various metrices to evaluate these attributes are given. Furthermore, in Section \ref{section:quality_of_service/basic_quality_metrics}, a list of basic metrices being derived from complex metrices introduced in section are created. Again, the Section \ref{section:quality_of_service/quality_attributes_principle} lists various principles which shows impact of various attributes on the quality of microservices. Finally, based on the previous result on metrics and principles, relationship of granularity with other quality attributes is tabulated in Section \ref{section:quality_of_service/quality_attributes_relationship}.
 
 \section{Introduction}\label{section:quality_of_service/introduction}
 In addition to allign with the business requirements, an important goal of software engineering is to provide high quality. The quality assessment in the context of service oriented product becomes more crucial as the complexity of the system is getting higher by time. \cite{Zhang:2009aa, Goeb:2011aa, Nematzadeh:2014aa} Quality models have been devised over time to evaluate quality of a software. A quality model is defined by quality attributes and quality metrics. Quality attributes are the expected properties of software artifacts defined by the chosen quality model. And, quality metrics give the techniques to measure the quality attributes. \cite{Mancioppi:2015aa} The software quality attributes can again be categorized into two types: internal and external attributes. \cite{Mancioppi:2015aa, Briand:1996aa} The internal quality attributes are the design time attributes which should be fulfilled during the design of the software. Some of the external quality attributes are loose coupling, cohesion, granularity, autonomy etc.\cite{Rostampour:2011aa, Sindhgatta:2015aa, Elhag:2014aa} On the other hand, the external quality attributes are the traits of the software artifacts produced at the end of Software Development Life Cycle \acrshort [{SDLC}]. Some of them are reusability, maintainability etc. \cite{Elhag:2014aa, Mancioppi:2015aa, Feuerlicht:2007aa, Feuerlicht:2013aa} For that reason, the external quality attributes can only be measure after the end of development. However, it has been evident that internal quality attributes have huge impact upon the value of external quality attributes and thus can be used to predict them. \cite{Henry:1990aa, Briand:2015aa, Alshayeb:2003aa, Bingu-Shim:2008aa}The evaluation of both internal and external quality attributes are valuable in order to produce high quality software.\cite{Mancioppi:2015aa, Perepletchikov:2007aa, Mikhail-Perepletchikov:2015aa}
 
 \section{Quality Attributes}\label{section:quality_of_service/quality_attributes}
-As already mentioned in section \ref{section:quality_of_service/introduction}, the internal and external qualities determine the overall value of the service composed. There are different researches and studies which have been performed to find the features affecting the service qualities. Based on the published research papers, a comprehensive table \ref{tab:quality_of_service/quality_attributes} has been created. The table provides a minimum list of quality attributes which have been considerd in various research papers. 
+As already mentioned in Section \ref{section:quality_of_service/introduction}, the internal and external qualities determine the overall value of the service composed. There are different researches and studies which have been performed to find the features affecting the service qualities. Based on the published research papers, a comprehensive table \ref{tab:quality_of_service/quality_attributes} has been created. The table provides a minimum list of quality attributes which have been considerd in various research papers. 
 
   \begin{table}[h!]
   \centering
@@ -45,13 +45,13 @@ As already mentioned in section \ref{section:quality_of_service/introduction}, t
   \label{tab:quality_of_service/quality_attributes}
 \end{table}
 
-The table \ref{tab:quality_of_service/quality_attributes} gives a picture of the studies done so far around service quality attributes. It can be deduced that most of the papers focus on coupling and granularity of the service and only few of them focus on other attributes such as complexity and autonomy.
+The Table \ref{tab:quality_of_service/quality_attributes} gives a picture of the studies done so far around service quality attributes. It can be deduced that most of the papers focus on coupling and granularity of the service and only few of them focus on other attributes such as complexity and autonomy.
 
 Coupling refers to the dependency and interaction among services. The interaction becomes inevitable when a service requires a functionality provided by another service in order to accomplish its own goals. Similarly, Cohesion of any system is the extent of appropriate arrangement of elements to perform the functionalities. It affects the degree of understandability and sensibility of its interface for its consumers. Whereas, the complexity attribute provides the way to evaluate the difficulty in understanding and reasoning the context of the service or component.\cite{Elhag:2014aa}
 \\
 The reusability attribute for a service measures the degree to which it can be used by multiple consumer services and can undergo multiple composition to accoplish various high order functionalities. \cite{Feuerlicht:2007aa}
 \\
-Autonomy is a broad term which refers to the ability of a service for self-containment, self-controlling, self-governance. Autonomy defines the boundary and context of the service. \cite{Ma:2007aa} Finally, granularity is described in chapter \ref{chapter:granularity} in detail. The basic signifance of granularity is the diversity and size of the functionalities offered by the service. \cite{Elhag:2014aa}
+Autonomy is a broad term which refers to the ability of a service for self-containment, self-controlling, self-governance. Autonomy defines the boundary and context of the service. \cite{Ma:2007aa} Finally, granularity is described in Chapter \ref{chapter:granularity} in detail. The basic signifance of granularity is the diversity and size of the functionalities offered by the service. \cite{Elhag:2014aa}
 
 \section{Quality Metrics}\label{section:quality_of_service/quality_metrics}
 There have been many studies made to define metrics for quality components.A major portion of the research have been done for object oriented and component based development. These metrics are refined to be used in service oriented systems.\cite{Xiao-jun:2015aa, Sindhgatta:2015aa} Firslty, various papers related to quality metrics of service oriented systems are collected. The papers which conducted their findings or proposition based on quality amount of scientific studies and have produced convincing result are only selected.  Additionally, the evaluation presented in the research papers were only done using the case studies of their own and not real life scenarios. Furthermore, they have used diversity of equations to define the quality metrics. On the basis of case studies made in the papers only, a fair comparision and choice of only one way to evaluate the quality metrics cannot be made. This is further added by the fact that the few papers cover most of the quality metrics, most of them focus on only few quality metrics such as coupling but not all of them focus on all the quality metrics. Nevertheless, they do not discuss about the relationship between all quality metrics. \cite{Elhag:2014aa} This creates difficulty to map all the quality metrics into a common calculation family. 
@@ -190,7 +190,7 @@ where,
   \label{tab:quality_of_service/quality_attributes/coupling_metrics}
 \end{table}
 \\
-The table \ref{tab:quality_of_service/quality_attributes/coupling_metrics} shows simpler form of metrics proposed for coupling. Although, the table shows different way of evaluating coupling, they somehow agree to the basic metrics to calculate coupling. It can be deduced that the metrics to evaluate coupling uses basic metrics such as number of operations, number of provider services and number of messages.
+The Table \ref{tab:quality_of_service/quality_attributes/coupling_metrics} shows simpler form of metrics proposed for coupling. Although, the table shows different way of evaluating coupling, they somehow agree to the basic metrics to calculate coupling. It can be deduced that the metrics to evaluate coupling uses basic metrics such as number of operations, number of provider services and number of messages.
 \\
 
 %cohesion metrics
@@ -235,7 +235,7 @@ $$ cohesion = \frac{max(\mu(\acrshort{OFG}, \acrshort{ODG}))}{|O(s)|} $$
 where,
 \\
 \begin{itemize}[leftmargin=.5in]
-\item \acrshort{OFG} and \acrshort{ODG} are Operation Gunctionality Granularity and Operation Data Granularity respectively as calculated in section \ref{section:quality_of_service/quality_metrics/granularity}
+\item \acrshort{OFG} and \acrshort{ODG} are Operation Gunctionality Granularity and Operation Data Granularity respectively as calculated in Section \ref{section:quality_of_service/quality_metrics/granularity}
 \item $\mu(\acrshort{OFG}, \acrshort{ODG})$ gives the number of operations with specific value of \acrshort{OFG} and \acrshort{ODG}
 \end{itemize}
 
@@ -281,7 +281,7 @@ where,
                     &cohesion is defined as the consensus among the operations of \\
                     &the service regarding the functionality and data granularity \\
                     &which represents the type of parameters and the operations \\
-                    &importance as calculated in the section
+                    &importance as calculated in the Section
                     \ref{section:quality_of_service/quality_metrics/granularity}\\
                     \end{tabular}\\
                     \hline
@@ -291,7 +291,7 @@ where,
   \label{tab:quality_of_service/quality_attributes/cohesion_metrics}
 \end{table}
 \\
-The table \ref{tab:quality_of_service/quality_attributes/cohesion_metrics} gives simplified view for the cohesion metrics. The papers presented agree on some basic metrics such as similarity of the operation usage behavior, commanility in the messages consumed by operations and similarity in the size of operations.
+The Table \ref{tab:quality_of_service/quality_attributes/cohesion_metrics} gives simplified view for the cohesion metrics. The papers presented agree on some basic metrics such as similarity of the operation usage behavior, commanility in the messages consumed by operations and similarity in the size of operations.
 \\
 
 
@@ -377,7 +377,7 @@ where,
   \label{tab:quality_of_service/quality_attributes/granularity_metrics}
 \end{table}
 \\
-The table \ref{tab:quality_of_service/quality_attributes/granularity_metrics} presents various view of granularity metrics based on different research papers. The chapter \ref{chapter:granularity} discuss in detail regarding the topic. Based on the table \ref{tab:quality_of_service/quality_attributes/granularity_metrics}, the granularity is evaluated using some basic metrics such as the number and type of the parameters, number of operations and number of messages consumed.
+The Table \ref{tab:quality_of_service/quality_attributes/granularity_metrics} presents various view of granularity metrics based on different research papers. The Chapter \ref{chapter:granularity} discuss in detail regarding the topic. Based on the Table \ref{tab:quality_of_service/quality_attributes/granularity_metrics}, the granularity is evaluated using some basic metrics such as the number and type of the parameters, number of operations and number of messages consumed.
 \\
 
 %Complexity metrics
@@ -411,10 +411,9 @@ where,
 \begin{itemize}[leftmargin=.5in]
 \item |S| is the number of services to realize the application
 \item SG(i) gives the granularity of ith service 
-\\calculated as described in section \ref{section:quality_of_service/quality_metrics/granularity}
+\\calculated as described in Section \ref{section:quality_of_service/quality_metrics/granularity}
 \end{itemize}
 
-refer to the document for effect of RCS and RIS on complixity
 
 \begin{table}[h!]
   \centering
@@ -448,7 +447,7 @@ refer to the document for effect of RCS and RIS on complixity
   \label{tab:quality_of_service/quality_attributes/complexity_metrics}
 \end{table}
 \\
-The table \ref{tab:quality_of_service/quality_attributes/complexity_metrics} provides the way to interprete complexity metrics. The complexity is highly dependent upong coupling and functionality granularity of the service.
+The Table \ref{tab:quality_of_service/quality_attributes/complexity_metrics} provides the way to interprete complexity metrics. The complexity is highly dependent upong coupling and functionality granularity of the service.
 \\
 %Autonomy metrics
 \subsection{Autonomy Metrics}{\label{section:quality_of_service/quality_metrics/autonomy}
@@ -502,7 +501,7 @@ where,
   \label{tab:quality_of_service/quality_attributes/autonomy_metrics}
 \end{table}
 \\
-The table \ref{tab:quality_of_service/quality_attributes/autonomy_metrics} shows a way to interprete autonomy. It is calculated by the difference \acrshort{SLC}-\acrshort{DEP} when \acrshort{SLC} is greater than \acrshort{DEP}. In other cases it is taken as zero. So, autonomy increases as the operations of the services have full control upon its business entities but decreases if the service is dependent upon other services.
+The Table \ref{tab:quality_of_service/quality_attributes/autonomy_metrics} shows a way to interprete autonomy. It is calculated by the difference \acrshort{SLC}-\acrshort{DEP} when \acrshort{SLC} is greater than \acrshort{DEP}. In other cases it is taken as zero. So, autonomy increases as the operations of the services have full control upon its business entities but decreases if the service is dependent upon other services.
 \\
 %Reusability metrics
 \subsection{Reusability Metrics}{\label{section:quality_of_service/quality_metrics/reusability}
@@ -551,7 +550,7 @@ The table \ref{tab:quality_of_service/quality_attributes/reusability_metrics} sh
 
 %Basic Metrics
 \section{Basic Quality Metrics}{\label{section:quality_of_service/basic_quality_metrics}
-The section \ref{section:quality_of_service/quality_metrics} presents various metrics to evaluate quality attributes based upon different papers. Additionally, the section analyzed the metrics and tried to derive them in simplest form possible. Eventually, the tables demonstrating the simplest definition of the metrics shows that the different quality attributes are measured on the basis of some basic metrics. Based on the section \ref{section:quality_of_service/quality_metrics} and based on the papers, this section will attempt to derive basic metrics.
+The Section \ref{section:quality_of_service/quality_metrics} presents various metrics to evaluate quality attributes based upon different papers. Additionally, the section analyzed the metrics and tried to derive them in simplest form possible. Eventually, the tables demonstrating the simplest definition of the metrics shows that the different quality attributes are measured on the basis of some basic metrics. Based on the Section \ref{section:quality_of_service/quality_metrics} and based on the papers, this section will attempt to derive basic metrics. The Table \ref{tab:quality_of_service/quality_attributes/basic_quality_metrics} provides a list of basic metrices.
 \\
 
 \begin{table}[h!]
@@ -717,7 +716,7 @@ The section \ref{section:quality_of_service/quality_metrics} presents various me
   \caption{Basic Quality Metrics}
   \label{tab:quality_of_service/quality_attributes/basic_quality_metrics}
   \\
-  Moreover, the effect of the basic metrics upon various quality attributes are also evaluated.
+  Moreover, the effect of the basic metrics upon various quality attributes are also evaluated and stated under each column such as 'coupling', 'cohesion' etc.
   Here, the meaning of the various symbols to demonstrate the affect are as given below:
   \\
 \begin{itemize}[leftmargin=.5in]
@@ -730,7 +729,7 @@ The section \ref{section:quality_of_service/quality_metrics} presents various me
 
 %principles based on quality quality attributes
 \section{Principles defined by Quality Attributes}{\label{section:quality_of_service/quality_attributes_principle}
-The section \ref{section:quality_of_service/introduction} has already mentioned that there are two distinct kind of quality attributes: external and internal. The external quality attributes cannot be evaluated during design however can be predicted using the internal quality attributes. This kind of relationship can be used to design service with good quality. Moreover, it is important to identify how each internal attributes affect the external attributes. The understanding of such relationship will be helpful to identify the combined effect of the quality attributes and eventually to identify the service with the appropriate level of quality as per the requirement.
+The Section \ref{section:quality_of_service/introduction} has already mentioned that there are two distinct kind of quality attributes: external and internal. The external quality attributes cannot be evaluated during design however can be predicted using the internal quality attributes. This kind of relationship can be used to design service with good quality. Moreover, it is important to identify how each internal attributes affect the external attributes. The understanding of such relationship will be helpful to identify the combined effect of the quality attributes and eventually to identify the service with the appropriate level of quality as per the requirement.
 The remaining part of the section lists relationship existing in various quality attributes as well as the desired value of the quality attributes.
 \begin{enumerate}
 \item When a service has large number of operations, it means it has large number of consumers. It will highly affect maintainability because a small change in the operations of the service will be propagated to large number of consumers. But again, if the service is too fine granular, there will be high network coupling. \cite{Feuerlicht:2007aa, Xiao-jun:2015aa}\cite{Bianco:2007aa}
@@ -771,7 +770,7 @@ The remaining part of the section lists relationship existing in various quality
 
 %relationship between quality attributes and tradeoffs
 \section{Relationship among Quality Attributes}{\label{section:quality_of_service/quality_attributes_relationship}
-In order to determine the appropriate level of quality for a service, it is also important to know the relationship between the quality attributes. This knowledge will helpfull to decide tradeoffs among them in the situation when it is not possible to achieve best of all. Based on the section \ref{section:quality_of_service/quality_attributes} and section \ref{section:quality_of_service/quality_attributes_principle}, the identified relationship among the quality attributes are shown in the table \ref{tab:quality_of_service/quality_attributes/quality_attributes_relationship}.
+In order to determine the appropriate level of quality for a service, it is also important to know the relationship between the quality attributes. This knowledge will helpfull to decide tradeoffs among them in the situation when it is not possible to achieve best of all. Based on the Section \ref{section:quality_of_service/quality_attributes} and Section \ref{section:quality_of_service/quality_attributes_principle}, the identified relationship among the quality attributes are shown in the Table \ref{tab:quality_of_service/quality_attributes/quality_attributes_relationship}.
 
 \begin{table}[h!]
   \centering
@@ -802,11 +801,13 @@ Here, the meaning of the various symbols showing nature of relationship are as g
 \item - the quality attribute on the column affects the quality attribute on the corresponding row inversely
 \item   there is no enough evidence found regarding the relationship from the papers or these are same attributes
 \end{itemize}
+Based on the Table \ref{tab:quality_of_service/quality_attributes/quality_attributes_relationship}, if granularit of a microservice increases then coupling of other microservices on this will also increase and again if coupling increases then autonomy of the microservice will decrease. Similarly, relationship among other quality attributes can also be derived using the table.
+The idea regarding impact of various quality attributes amongst each other can be helpful to make decision regarding trade offs.
 
 \section{Conclusion}\label{section:quality_of_service/conclusion}
-There is no doubt that granularity is an important aspect of a microservice however there are other different factors which affect granularity as well as the overall quality of the service. Again, knowing the way to evaluate these qualities in terms of a quantitative figure can be helpful for easy decision regarding quality. However, most of the metrices are quite complex so the section \ref{section:quality_of_service/basic_quality_metrics} compiled these complex mectrics in terms of simple metrices. The factors used to define these basic metrices are the kind which are accessible to normal developers. So, these basic metrices can be an efficient and easy way to determine quality of microservices. \\
+There is no doubt that granularity is an important aspect of a microservice however there are other different factors which affect granularity as well as the overall quality of the service. Again, knowing the way to evaluate these qualities in terms of a quantitative figure can be helpful for easy decision regarding quality. However, most of the metrices are quite complex so the Section \ref{section:quality_of_service/basic_quality_metrics} compiled these complex mectrics in terms of simple metrices. The factors used to define these basic metrices are the kind which are accessible to normal developers. So, these basic metrices can be an efficient and easy way to determine quality of microservices. \\
 Moreover, the external quality attributes such as reusability, scalability etc can be controlled by fixing internal quality attributes such as coupling, cohesion, autonomy etc. So, finding an easy way to evaluate and fix internal quality attributes will eventually make it easier to achieve microservices with satisfactory value of external quality attributes.\\
-Nevertheless, the quality attributes are not mutually exclusive but are dependent on each other. The table \ref{tab:quality_of_service/quality_attributes/quality_attributes_relationship} provides basic relationship among them. This kind of table can be helpful when needed to perform trade-offs among various attributes depending upon goals.
+Nevertheless, the quality attributes are not mutually exclusive but are dependent on each other. The Table \ref{tab:quality_of_service/quality_attributes/quality_attributes_relationship} provides basic relationship among them. This kind of table can be helpful when needed to perform trade-offs among various attributes depending upon goals.
 \section{Problem Statement}\label{section:quality_of_service/problem_statement}
-Having collected important concepts regarding various quality attributes, which is one of the major drivers for defining architecture as mentioned in section \ref{section:context/approach}, the next important concept is to find the process of modeling microservices as stated in the table \ref{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice}. The quality attributes will be a major input for deciding the process of identifying microservices from a problem domain.
+Having collected important concepts regarding various quality attributes, which is one of the major drivers for defining architecture as mentioned in Section \ref{section:context/approach}, the next important concept is to find the process of modeling microservices as stated in the Table \ref{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice}. The quality attributes will be a major input for deciding the process of identifying microservices from a problem domain.
 

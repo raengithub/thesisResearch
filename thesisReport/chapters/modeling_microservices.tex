@@ -21,7 +21,7 @@ It can be valueable to see the ways it has been defined.
 "A use case is a description of a set of sequences of actions, including variants, that a system performs that yield an observable result of value to an actor."
 
 \subsection{Use case Refactoring}\label{section:selection_by_use_case/use_case_refactoring}
-According to \cite{Jacobson:1987aa} it is not always intuitive to modularize use cases directly. As per the definitions provided in \ref{section:selection_by_use_case/use_case}, a use case consists of a number of ordered functions together to accomplish a certain goal. \cite{Jacobson:1987aa} defines these cohesive functionalites distributed across usecases as clusters. And the process of identifying the clusters scattered around the use cases is the process of identifying services. \cite{Ng:2004aa} and \cite{Jacobson:2003aa} describes use case possibly consisting of various cross-cutting concerns. The papers use the term 'use case module' to define the cohesive set of tasks. The figure \ref{fig:selection_by_use_case/use_case_one} demonstrate the cross cutting functionalities needed by a use case in order to accomplish its goal. For example, the use case 'does A' has to perform separate functionalities on different domain entities X and Y. Similarly, the use case 'does B' needs to perform distinct functions on entities X, Y and Z.
+According to \cite{Jacobson:1987aa} it is not always intuitive to modularize use cases directly. As per the definitions provided in Section \ref{section:selection_by_use_case/use_case}, a use case consists of a number of ordered functions together to accomplish a certain goal. \cite{Jacobson:1987aa} defines these cohesive functionalites distributed across usecases as clusters. And the process of identifying the clusters scattered around the use cases is the process of identifying services. \cite{Ng:2004aa} and \cite{Jacobson:2003aa} describes use case possibly consisting of various cross-cutting concerns. The papers use the term 'use case module' to define the cohesive set of tasks. The Figure \ref{fig:selection_by_use_case/use_case_one} demonstrate the cross cutting functionalities needed by a use case in order to accomplish its goal. For example, the use case 'does A' has to perform separate functionalities on different domain entities X and Y. Similarly, the use case 'does B' needs to perform distinct functions on entities X, Y and Z.
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{figures/use-case-one}
@@ -40,7 +40,7 @@ In order to refactor the use cases and finally map use cases to the service, the
 In this step, the initial use case model created during domain analysis is used to create task trees for each distinct use case. The task trees provide sequence of individual tasks required to accomplish in order to achieve the goal of the use case.
 \\
 \item \textbf{Use Case Refactoring}\\
-In this step, the task tree generated in the previous step is analysed. As already mentioned in the section \ref{section:selection_by_use_case/use_case_refactoring}, that the initial use case consists of various cross cutting functionalities which runs through large number of business entities. In order to minimize that, refactoring is performed. The detail rules are provided in section \ref{section:selection_by_use_case/rules_for_use_case_refactoring}.
+In this step, the task tree generated in the previous step is analysed. As already mentioned in the Section \ref{section:selection_by_use_case/use_case_refactoring}, that the initial use case consists of various cross cutting functionalities which runs through large number of business entities. In order to minimize that, refactoring is performed. The detail rules are provided in Section \ref{section:selection_by_use_case/rules_for_use_case_refactoring}.
 \\
 \item \textbf{Service Identification}\\
 The use cases achieved after refactoring have correct level of abstractions and granularity representing cohesive business functionality. The unit use cases thus achieved appreciate reuse of common functionality.  \cite{Doh:2007aa} Furthermore, the approach considers the concerns of stakeholders in terms of cohesive business functionalities to be represented by use cases.\cite{Fareghzadeh:2008aa} Additionally, the process also clarifies the dependencies between various use cases. Thus, the final use cases obtained can be directly maped to individual services.
@@ -58,7 +58,7 @@ A refactoring rule R is defined as a 3-tuple (Parameters, Preconditions, Postcon
 The various refactoring rules are as listed below.
 \\
 \subsubsection{Decomposition Refactoring}\label{section:selection_by_use_case/guidelines_for_use_case_refactoring/decomposition_refactoring}
-When the usecase is complex and composed of various functionally independent tasks, the tasks can be ejected out of the task tree of the usecase and represented as a new use case. The table \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/decomposition_rule} shows the decomposition rule in detail.
+When the usecase is complex and composed of various functionally independent tasks, the tasks can be ejected out of the task tree of the usecase and represented as a new use case. The Table \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/decomposition_rule} shows the decomposition rule in detail.
 \begin{table}[H]
   \centering
   \begin{adjustbox}{max width=\textwidth}
@@ -89,7 +89,7 @@ When the usecase is complex and composed of various functionally independent tas
 \\
 
 \subsubsection{Equivalence Refactoring}\label{section:selection_by_use_case/guidelines_for_use_case_refactoring/equivalence_refactoring}
-If the two use cases share their tasks in the task tree, we can conclude that they are equivalent and redundant in the use case model. The table \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/equivalence_rule} shows the rule for the refactoring.
+If the two use cases share their tasks in the task tree, we can conclude that they are equivalent and redundant in the use case model. The Table \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/equivalence_rule} shows the rule for the refactoring.
 \begin{table}[H]
   \centering
   \begin{adjustbox}{max width=\textwidth}
@@ -148,7 +148,7 @@ When there are two or more small-grained use cases such that they have related t
 \\
 
 \subsubsection{Generalization Refactoring}\label{section:selection_by_use_case/guidelines_for_use_case_refactoring/generalization_refactoring}
-When multiple use cases share some volume of dependent set of tasks in their task trees, it can be implied that the common tasks set can be represented by a new use case. The table \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/generalization_rule} provides the specific of the rule.
+When multiple use cases share some volume of dependent set of tasks in their task trees, it can be implied that the common tasks set can be represented by a new use case. The Table \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/generalization_rule} provides the specific of the rule.
 \begin{table}[H]
   \centering
   \begin{adjustbox}{max width=\textwidth}
@@ -240,7 +240,7 @@ In this section, a case study will be taken as an example. The case study will b
 The case study is about an international hotel named 'XYZ' which has branches in various locations. In each location, it offers rooms with varying facilities as well as prices. In order to make it easy for customers to find room irrespective of the location of customer, it is planning to offer an online room booking application. Using this application, any registered customer can search for a room according to his/her requirement in any location. When he/she is satisfied, can book the room online as well. The customer will be sent notification by email regarding booking. At present, the payment will be accepted in person, only after the customer gets into the respective branch. Finally, if the customer wants to cancel the room, he/she can do online anytime. The customer will also be notified by e-mail to confirm the cancelation of booking. It is an initial case study so only priority cases and conditions are considered here.
 \\
 \\
-The remaining part of this section presents the steps to indentify the services using use case refactoring following the process defined in section \ref{section:selection_by_use_case/process_for_use_case_refactoring} and rules presented in the section \ref{section:selection_by_use_case/rules_for_use_case_refactoring}
+The remaining part of this section presents the steps to indentify the services using use case refactoring following the process defined in Section \ref{section:selection_by_use_case/process_for_use_case_refactoring} and rules presented in the Section \ref{section:selection_by_use_case/rules_for_use_case_refactoring}
 \\
 \\
 \textbf{\underline{Step 1:}}
@@ -313,7 +313,7 @@ For each initial use case, task trees are generated which are needed to accompli
 \\
 \textbf{\underline{Step 3:}}
 \\
-The initial task trees created for each use case at Step 2 is analysed. There are quite a few set of tasks which are functionally independent of the use case goal and also few tasks which are common in more use use cases. The following table \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/common_and_independent_tasks} lists those tasks from the tasks trees \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/initial_task_tree} which are either functionally independent from their corresponding use cases or common in more use cases.
+The initial task trees created for each use case at Step 2 is analysed. There are quite a few set of tasks which are functionally independent of the use case goal and also few tasks which are common in more use use cases. The following Table \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/common_and_independent_tasks} lists those tasks from the tasks trees \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/initial_task_tree} which are either functionally independent from their corresponding use cases or common in more use cases.
 \\
 \begin{table}[H]
   \centering
@@ -372,7 +372,7 @@ The use case model \ref{fig:selection_by_use_case/use_case_three} obtained in St
 \\
 \textbf{\underline{Step 5:}}
 \\
-Finally, the use case obtained in step 4 is used to identify the service candidates. The final use cases obtained in Step 4 have appropriate level of granularity and cohesive functionalities to be identified as individual services. Most importantly, the refactoring has now separated the cross cutting concerns in terms of various reusable fine grained use cases as shown by the figure. If we compare the the final use case model \ref{fig:selection_by_use_case/use_case_five} with respect to figure \ref{fig:selection_by_use_case/use_case_one}, then it can be implied that the functionalities operating on business entities as well as the business logic serving the candidate concerns are separated and represented by individual use cases. So, the each use case can be mapped to individual services. The services are as listed in the bottom of the figure \ref{fig:selection_by_use_case/use_case_five}.
+Finally, the use case obtained in step 4 is used to identify the service candidates. The final use cases obtained in Step 4 have appropriate level of granularity and cohesive functionalities to be identified as individual services. Most importantly, the refactoring has now separated the cross cutting concerns in terms of various reusable fine grained use cases as shown by the figure. If we compare the the final use case model \ref{fig:selection_by_use_case/use_case_five} with respect to Figure \ref{fig:selection_by_use_case/use_case_one}, then it can be implied that the functionalities operating on business entities as well as the business logic serving the candidate concerns are separated and represented by individual use cases. So, the each use case can be mapped to individual services. The services are as listed in the bottom of the Figure \ref{fig:selection_by_use_case/use_case_five}.
 \\
 \begin{figure}[H]
 \begin{center}
@@ -382,8 +382,8 @@ Finally, the use case obtained in step 4 is used to identify the service candida
 \end{center}
 \end{figure}
 \\
-\textbf{Services Layers}\\
-The services or use cases obtained as shown in the figure \ref{fig:selection_by_use_case/use_case_five} from the refactoring process, creates various levels of abstractions. The levels of abstractions represents different level of functionality. The services at the bottom layer are core services which serve many higher level services. These services are not dependent on any other services. 'Notification' and 'Authentication' are core services obtained from refactoring. The layer above the core layer is business layer. The business service can either have entity services, which control some related business entities or can have task services which provides some specific business logic to higher level services. 'Room' and 'Booking Number' are the entity services obtained from refactoring. Finally, the top layer is mashup layer which contains high level business logic and collaborates with business services as well as core services. 'Room mashup' , 'Booking' and 'Booking Cancelation' are orchestration layer services obtained. The individual services as well as their respective layers are given in figure \ref{fig:selection_by_use_case/use_case_five}. \cite{Fareghzadeh:2008aa}\cite{Emig:2015aa}\cite{Zimmermann:2005aa}
+\textbf{Microservices Layers}\\
+The services or use cases obtained as shown in the Figure \ref{fig:selection_by_use_case/use_case_five} from the refactoring process, creates various levels of abstractions. The levels of abstractions represents different level of functionality. The services at the bottom layer are core services which serve many higher level services. These services are not dependent on any other services. 'Notification' and 'Authentication' are core services obtained from refactoring. The layer above the core layer is business layer. The business service can either have entity services, which control some related business entities or can have task services which provides some specific business logic to higher level services. 'Room' and 'Booking Number' are the entity services obtained from refactoring. Finally, the top layer is mashup layer which contains high level business logic and collaborates with business services as well as core services. 'Room mashup' , 'Booking' and 'Booking Cancelation' are orchestration layer services obtained. The individual services as well as their respective layers are given in Figure \ref{fig:selection_by_use_case/use_case_five}. \cite{Fareghzadeh:2008aa}\cite{Emig:2015aa}\cite{Zimmermann:2005aa}
 
 %-------------------------------------------------Domain Driven Design-------------------------------------------------
 \section{Modeling using Domain Driven Design}\label{section:domain_driven_design/introduction}
@@ -414,7 +414,7 @@ Along with the common vocabulary and concepts, domain models provide backbone to
 \end{center}
 \end{figure}
 \\
-The figure \ref{fig:domain_driven_design/ubiquitous_language_process} visualizes the process of discovering the ubiquitous language in any domain. It is not a discretely timed phenomenon but a continous procedure with various phases occuring in a cycle throughout the development.
+The Figure \ref{fig:domain_driven_design/ubiquitous_language_process} visualizes the process of discovering the ubiquitous language in any domain. It is not a discretely timed phenomenon but a continous procedure with various phases occuring in a cycle throughout the development.
 \\
 On arrival of any new term, concept or any confusion, the contextual meaning of those terms are made clear before adding to the domain vocabulary. Next, the vocabularies and concepts are used to create various domain models following \acrshort{UML}. The domain models and various vocabularies for the common laguage among domain experts and developers within the team. It is very important to use only domain vocabularies for communication and understanding which will not only help to reflect the hidden domain concepts in the implementation but also create opportunities to create new vocabularies or refine existing ones in the event of confusion and disagreement.\cite{Evans:2003aa}
 \\
@@ -470,12 +470,12 @@ There can be a necessity of independent technical functionality required to acco
 \end{enumerate}
 \\
 \subsection{Microservices and Bounded Context}\label{section:domain_driven_design/microservices_and_bounded_context}
-Analyzing various definitions of microservices provided in section \ref{section:context/microservices_architecture_style}, a list of important features with respect to specific category such as granularity or quality was compiled in the table \ref{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice}. In addition to the definitions of bounded context provided in section \ref{bounded_context_definition_1}, the following definition of Domain Driven Design can be helpful to find analogy between a microservice and a bounded context.
+Analyzing various definitions of microservices provided in Section \ref{section:context/microservices_architecture_style}, a list of important features with respect to specific category such as granularity or quality was compiled in the table \ref{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice}. In addition to the definitions of bounded context provided in Section \ref{bounded_context_definition_1}, the following definition of Domain Driven Design can be helpful to find analogy between a microservice and a bounded context.
 \begin{shaded}Definition: Domain Driven Design\end{shaded}
 "Domain Driven Design is about explaining what your company does in isolated parts, in performing these specific parts and you can have a dedicated team to do this stuff, and you can have different tools for different teams." \cite{Riggins:2015aa}
 \\
 \\
-Using table \ref{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice} and concepts extracted from various definitions of bounded context as well as Domain Driven Design provided, the table \ref{tab:domain_driven_design/microservices_and_bounded_context/Analogy_of_Microservice_and_Bounded_Context} is generated. 
+Using Table \ref{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice} and concepts extracted from various definitions of bounded context as well as Domain Driven Design provided, the Table \ref{tab:domain_driven_design/microservices_and_bounded_context/Analogy_of_Microservice_and_Bounded_Context} is generated. 
 \\
 \begin{table}[h!]
   \centering
@@ -498,7 +498,7 @@ Using table \ref{tab:context/microservices_architecture_style/keywords_extracted
   \label{tab:domain_driven_design/microservices_and_bounded_context/Analogy_of_Microservice_and_Bounded_Context}
 \end{table}
 \\
-The table \ref{tab:domain_driven_design/microservices_and_bounded_context/Analogy_of_Microservice_and_Bounded_Context} lists various features expected by a microservices. Again, it shows that the tabulated features are fulfilled by a bounded context. It can be implied that a microservice is conceptually analogous to a bounded context. The section \ref{section:domain_driven_design/process_to_domain_driven_design} provided the detailed process to discover bounded contexts within a large domain, which ultimately also provides guidelines to determine microservices using domain driven design principles.
+The Table \ref{tab:domain_driven_design/microservices_and_bounded_context/Analogy_of_Microservice_and_Bounded_Context} lists various features expected by a microservices. Again, it shows that the tabulated features are fulfilled by a bounded context. It can be implied that a microservice is conceptually analogous to a bounded context. The Section \ref{section:domain_driven_design/process_to_domain_driven_design} provided the detailed process to discover bounded contexts within a large domain, which ultimately also provides guidelines to determine microservices using domain driven design principles.
 \\
 Furthermore, there can be found enough evidence regarding the analogy as well as practical implementation of the concept. The table lists various articles which agree on the analogy and in most cases, have utilized the concepts to create microservices in real world.
 \begin{table}[h!]
@@ -528,19 +528,19 @@ Furthermore, there can be found enough evidence regarding the analogy as well as
 \\
 
 \subsection{Example Scenario}\label{section:domain_driven_design/example_scenario}
-In this section, a case study will be discussed. The case study will be used to design the system using microservices architecture following the domain driven design given supported by the section \ref{section:domain_driven_design/process_to_domain_driven_design}.
+In this section, a case study will be discussed. The case study will be used to design the system using microservices architecture following the domain driven design given supported by the Section \ref{section:domain_driven_design/process_to_domain_driven_design}.
 
 \begin{shaded} Case Study \end{shaded} \label{section:domain_driven_design/example_scenario/case_study}
-The case study is for the same hotel introduced in the section \ref{section:selection_by_use_case/refactoring_example}. The hotel 'XYZ' is thinking of upgrading its current system and adding new business usecases in order to tune its competitive edge in the market.\\
+The case study is for the same hotel introduced in the Section \ref{section:selection_by_use_case/refactoring_example}. The hotel 'XYZ' is thinking of upgrading its current system and adding new business usecases in order to tune its competitive edge in the market.\\
 Previously, the hotel only supported booking of the rooms, payment by cash, cancelation of booking and finally viewing of the room details.\\
 The hotel has planned to provide various package offerings to the either general customers or specific group of customers satisfying certain profile. Firstly, a hotel staff creates a package with name, description, valid time period, applicable type of room and location and discount associated with the package. Furthermore, the package will also contain certain constraints such as maximum number of offerings and maximum number of offerings per customer. The offering is represented by coupon and has unique identity. Once a package is created, the package has to be activated either by the hotel staff or by the activation time trigger. Only, the activated packages are visible to the customers. The customers can apply for the active packages. The customer profile is validated against the expected profile for the package and then a new coupon is sent to the customer.\\
 The room booking workflow has no changes from the old system where a customer can view list of rooms with various information and send room booking request to the system. The system will then send confirmation with unique booking code to the customer.\\
 Finally, the payment can be done by debit card or by paypal. During the payment, the customer can specify a valid coupon. The payment system will then redeem the coupon so that the respective discount represented by the coupon is deducted from the overal price.\\
 Additionally, a detailed report is planned to be made available for customers showing various transactions with the hotel for the room bookings along with the information of the rooms till date. Similarly, hotel staff has various types of reports such as profit statement and room booking status.\\
-The steps listed in \ref{section:domain_driven_design/process_to_domain_driven_design} can be used to design the system defined by the case study \ref{section:domain_driven_design/example_scenario/case_study}.
+The steps listed in \ref{section:domain_driven_design/process_to_domain_driven_design} can be used to design the system defined by the Case Study \ref{section:domain_driven_design/example_scenario/case_study}.
 \textbf{\underline{Step 1:}}
 \\
-With reference to the steps shown by the figure \ref{fig:domain_driven_design/ubiquitous_language_process}, the first step would be to find out new domain vocabularies, understand the meaning, agree on them and use them as the common vocabularies. The table \ref{tab:domain_driven_design/example_scenario/domain_keywords} lists some important domain terms taken from the case study \ref{section:domain_driven_design/example_scenario/case_study} and clarifies the meaning for each. It is interesting to notice that the term 'Profile' has two different meaning depending upon the context of package and customer and it is a polyseme.
+With reference to the steps shown by the Figure \ref{fig:domain_driven_design/ubiquitous_language_process}, the first step would be to find out new domain vocabularies, understand the meaning, agree on them and use them as the common vocabularies. The Table \ref{tab:domain_driven_design/example_scenario/domain_keywords} lists some important domain terms taken from the case study \ref{section:domain_driven_design/example_scenario/case_study} and clarifies the meaning for each. It is interesting to notice that the term 'Profile' has two different meaning depending upon the context of package and customer and it is a polyseme.
 \begin{table}[H]
   \centering
   \begin{adjustbox}{max width=\textwidth}
@@ -621,8 +621,8 @@ The supporting domain "User Management" has different stragegy for Customer and 
 \\
 \textbf{\underline{Step 3:}}
 \\
-The next action is to identify bounded context following the process described in step \ref{section:domain_driven_design/process_to_domain_driven_design/strategical_design/step_2}. The process is implemented in each subdomains. In order to accomplish this, domain models can be constructed for each subdomain. Along the process, the various ambguities in the domain models and clear understanding of the concept of the models can be clarified. This will highly help to achieve consistent ubiquitious language with the unification of domain models as well as shared vocabulary inside each subdomain. The boundary around the uniform and consistent domain represents the bounded contexts. Additionally, the rules given in the section \ref{section:domain_driven_design/process_to_domain_driven_design/strategical_design/step_2} can be applied when appropriate to identify bounded contexts.
-The following section will provide the analysis of major subdomains to identify the bounded contexts within.\\
+The next action is to identify bounded context following the process described in step \ref{section:domain_driven_design/process_to_domain_driven_design/strategical_design/step_2}. The process is implemented in each subdomains. In order to accomplish this, domain models can be constructed for each subdomain. Along the process, the various ambguities in the domain models and clear understanding of the concept of the models can be clarified. This will highly help to achieve consistent ubiquitious language with the unification of domain models as well as shared vocabulary inside each subdomain. The boundary around the uniform and consistent domain represents the bounded contexts. Additionally, the rules given in the Section \ref{section:domain_driven_design/process_to_domain_driven_design/strategical_design/step_2} can be applied when appropriate to identify bounded contexts.
+The following Section will provide the analysis of major subdomains to identify the bounded contexts within.\\
 \begin{shaded} Customer Management \end{shaded}
 \\
 \begin{figure}[H]
@@ -645,7 +645,7 @@ The management of customer includes two distinct broad task which are managing t
 \end{center}
 \end{figure}
 \\
-The figure \ref{fig:domain_driven_design/example_scenario/subdomains/booking} shows the domain models of "Booking" subdomain. All the domain models and terms inside the subdomain are consistent and clear. However, the models 'Room', 'Customer', 'Booking' and 'Code' are closely related to booking functionality whereas the functionality of generating the booking code can be considered independent of booking. This gives two loosely coupled bounded contexts: "Booking" and "Booking Code". It is also interesting to notice that the models 'Customer' and 'Room' are polysemes with regard to other 'Customer' and 'Room' bounded contexts.\\
+The Figure \ref{fig:domain_driven_design/example_scenario/subdomains/booking} shows the domain models of "Booking" subdomain. All the domain models and terms inside the subdomain are consistent and clear. However, the models 'Room', 'Customer', 'Booking' and 'Code' are closely related to booking functionality whereas the functionality of generating the booking code can be considered independent of booking. This gives two loosely coupled bounded contexts: "Booking" and "Booking Code". It is also interesting to notice that the models 'Customer' and 'Room' are polysemes with regard to other 'Customer' and 'Room' bounded contexts.\\
 \begin{shaded} Checkout \end{shaded}
 \\
 \begin{figure}[H]
@@ -671,7 +671,7 @@ The logic of package management can be considered independent of the way coupon 
 The same process can be applied to identify bounded contexts for rest of the subdomains.
 
 \section{Conclusion}\label{section:modeling_microservices/conclusion}
-The use case refactoring process discussed in section \ref{section:selection_by_use_case/use_case} highlights an important concept regarding usecases fulfilling multiple cross-cutting concerns and thus provides solutions by breaking down these concerns into individual usecase modules, each focused on cohesive tasks. This kind of decomposition truely relates to the characteristics of microservices. On the other hand, domain driven design technique presented in section \ref{section:domain_driven_design/introduction} provides a different approach of understanding the problem domain well using ubiquitous language, dividing the big problem domain into multiple manageable sub-domains and then finally using the concept of bounded context to determine individual microservices. The microservices thus obtained are autonomous and focus on single responsibility.\\
+The use case refactoring process discussed in Section \ref{section:selection_by_use_case/use_case} highlights an important concept regarding usecases fulfilling multiple cross-cutting concerns and thus provides solutions by breaking down these concerns into individual usecase modules, each focused on cohesive tasks. This kind of decomposition truely relates to the characteristics of microservices. On the other hand, domain driven design technique presented in Section \ref{section:domain_driven_design/introduction} provides a different approach of understanding the problem domain well using ubiquitous language, dividing the big problem domain into multiple manageable sub-domains and then finally using the concept of bounded context to determine individual microservices. The microservices thus obtained are autonomous and focus on single responsibility.\\
 The usecase refactoring process utilizes usecases as its modeling tool, which is not only easy but the familiar tool to architects and developers. This makes usecase refactoring a faster approach to decompose a problem domain. Whereas, domain driven design has ubiquitous language and bounded context at its core. Both of these concepts are complex and new to most architects as well as developers. At the same time, understanding problem domain correctly at the first attempt is rare and it will take quite a few iterations to get the decomposition right. Thus, domain driven design is not the faster approach of modeling microservices.\\
 Visualizing a problem domain in terms of diferent usecases seems like a natural way but dividing a big problem domain into smaller independent manageable sub-domains as stated by domain driven desing, can be a smart way to decompose. So, in case of big and complex problem domain, it can be very difficult to visualize in terms of large number of big usecase trees and task trees. This may lead to microservices without appropriate level of granularity and quality attributes.\\
 A good thing about usecase refactoring is that it provides very easy way to break down usecase along various level of functionalites or abstraction. However, it undermines another crucial concept which is data ownership and data decompostion. An explicit assumption is made about an entity model being a single source of truth for whole domain, but it is rarely true. Using this approach will not necessarily produce autonomous services. However, the concept of ubiquitous lanugage and bounded context used by domain driven design, highly focus on different and unique local representation of same entity. This highly favors the autonomy of the resulting microservices. At the same time, the bounded context are responsible for small sets of cohesive functionality. This adheres to single responsibility principle. Thus, bounded context represents the appropriate size for a microservice.
