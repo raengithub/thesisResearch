@@ -1,19 +1,17 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
-[1] Config.pm:327> INFO - Logfile is 'main.blg'
-[77] biber-darwin:276> INFO - === Wed Mar  2, 2016, 10:43:50
-[77] Biber.pm:333> INFO - Reading 'main.bcf'
-[236] Biber.pm:645> INFO - Found 116 citekeys in bib section 0
-[270] Biber.pm:2977> INFO - Processing section 0
-[303] Biber.pm:3115> INFO - Looking for bibtex format file 'bibliography/literature.bib' for section 0
-[320] 6ce97eef.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[335] 6ce97eef.pm:895> INFO - Found BibTeX data source 'bibliography/literature.bib'
-[346] Utils.pm:146> WARN - Duplicate entry key: 'cite-key' in file 'bibliography/literature.bib', skipping ...
-[489] Utils.pm:146> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
-[489] Utils.pm:146> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
-[2205] 76c5e630.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2206] 76c5e630.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2206] Biber.pm:2854> INFO - Sorting list 'anyt' of type 'entry' with scheme 'anyt' and locale 'en-US'
-[2206] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-US'
-[2513] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[2525] bbl.pm:596> INFO - Output to main.bbl
-[2531] Biber.pm:106> INFO - WARNINGS: 3
+[0] Config.pm:327> INFO - Logfile is 'main.blg'
+[56] biber-darwin:276> INFO - === Wed Mar  2, 2016, 14:51:49
+[57] Biber.pm:333> INFO - Reading 'main.bcf'
+[185] Biber.pm:645> INFO - Found 28 citekeys in bib section 0
+[210] Biber.pm:2977> INFO - Processing section 0
+[230] Biber.pm:3115> INFO - Looking for bibtex format file 'bibliography/literature.bib' for section 0
+[248] 6ce97eef.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[264] 6ce97eef.pm:895> INFO - Found BibTeX data source 'bibliography/literature.bib'
+[272] Utils.pm:146> WARN - Duplicate entry key: 'cite-key' in file 'bibliography/literature.bib', skipping ...
+[729] 76c5e630.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[729] 76c5e630.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[729] Biber.pm:2854> INFO - Sorting list 'anyt' of type 'entry' with scheme 'anyt' and locale 'en-US'
+[730] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-US'
+[792] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[797] bbl.pm:596> INFO - Output to main.bbl
+[803] Biber.pm:106> INFO - WARNINGS: 1
