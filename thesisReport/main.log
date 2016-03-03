@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  2 MAR 2016 14:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  3 MAR 2016 12:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1989,13 +1989,13 @@ LaTeX Info: Redefining \nameref on input line 15.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
 line 15.
  (./pages/cover.tex
-<logos/tum.png, id=147, 53.4798pt x 28.6671pt>
+<logos/tum.png, id=107, 53.4798pt x 28.6671pt>
 File: logos/tum.png Graphic file (type png)
  <use logos/tum.png>
 Package pdftex.def Info: logos/tum.png used on input line 13.
 (pdftex.def)             Requested size: 113.81102pt x 61.01012pt.
 
-<logos/faculty.png, id=148, 34.2078pt x 37.0986pt>
+<logos/faculty.png, id=108, 34.2078pt x 37.0986pt>
 File: logos/faculty.png Graphic file (type png)
  <use logos/faculty.png>
 Package pdftex.def Info: logos/faculty.png used on input line 31.
@@ -2093,159 +2093,107 @@ LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <20.74> not available
 ]
 Package tocbasic Info: character protrusion at toc deactivated on input line 26
 .
- (./main.toc
-[5
-
-
-])
+ (./main.toc)
 \tf@toc=\write9
 \openout9 = `main.toc'.
 
-LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/pplx/m/it' tried instead on input line 30.
- [6] (./chapters/introduction.tex
+
+[5
+
+
+] (./chapters/modeling_microservices.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 4.
-<figures/context-monolith-example.png, id=221, 633.36626pt x 236.885pt>
-File: figures/context-monolith-example.png Graphic file (type png)
-
-<use figures/context-monolith-example.png>
-Package pdftex.def Info: figures/context-monolith-example.png used on input lin
-e 9.
-(pdftex.def)             Requested size: 292.7776pt x 109.50337pt.
-
-
-Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 12.
-
-LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 15.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 3.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 \item M
-            odule Monolith: If all the code to realize an application share ...
-[1
+l.11 
+      [1
 
 
 
- <./figures/context-monolith-example.png>]
-<figures/context-module-monolith.png, id=237, 962.59625pt x 501.875pt>
-File: figures/context-module-monolith.png Graphic file (type png)
+]
 
-<use figures/context-module-monolith.png>
-Package pdftex.def Info: figures/context-module-monolith.png used on input line
- 21.
-(pdftex.def)             Requested size: 334.60571pt x 174.44891pt.
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 17.
 
 
-Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 24.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.27 \item
-           Allocation Monolith: An Allocation Monolith is created when all c...
-
-? 
-<figures/context-allocation-monolith.png, id=241, 958.58125pt x 421.575pt>
-File: figures/context-allocation-monolith.png Graphic file (type png)
-
-<use figures/context-allocation-monolith.png>
-Package pdftex.def Info: figures/context-allocation-monolith.png used on input 
-line 30.
-(pdftex.def)             Requested size: 334.60571pt x 147.15462pt.
-
-
-Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 33.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.36 \item
-           Runtime Monolith: In Runtime Monolith, the whole application is r...
-
-? 
-[2 <./figures/context-module-monolith.png>]
-<figures/context-runtime-monolith.png, id=255, 959.585pt x 349.305pt>
-File: figures/context-runtime-monolith.png Graphic file (type png)
-
-<use figures/context-runtime-monolith.png>
-Package pdftex.def Info: figures/context-runtime-monolith.png used on input lin
-e 39.
-(pdftex.def)             Requested size: 334.60571pt x 121.8002pt.
-
-
-Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 42.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.47 \subsection
-                {Advantages of Monolith Architecture Style}\label{subsection...
-
-? 
-LaTeX Font Info:    Try loading font information for OMS+pplx on input line 50.
-
-LaTeX Font Info:    No file OMSpplx.fd. on input line 50.
-
-LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 50.
-
-[3 <./figures/context-allocation-monolith.png> <./figures/context-runtime-monol
-ith.png>]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.56 \subsection
-                {Disadvantages of Monolith Architecture Style}\label{subsect...
-
-? 
-
-Overfull \hbox (0.23668pt too wide) in paragraph at lines 57--58
-\T1/pplx/m/n/10.95 (-20) mono-lith ar-chi-tec-ture are as given be-low:[[]NS14[
-]][[]New15[]][[]Abr14[]][[]Ric14a[]][[]Ric14c[]][[]Gup15[]] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--61
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--63
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 20.
+
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 23.
+<figures/use-case-one.jpg, id=172, 606.265pt x 332.24126pt>
+File: figures/use-case-one.jpg Graphic file (type jpg)
+
+<use figures/use-case-one.jpg>
+Package pdftex.def Info: figures/use-case-one.jpg used on input line 27.
+(pdftex.def)             Requested size: 334.60571pt x 183.37201pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 30.
+
+LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
+(Font)              Font shape `T1/pplx/m/it' tried instead on input line 31.
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 32--36
+
+ []
+
+[3 <./figures/use-case-one.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 39--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--65
+Underfull \hbox (badness 10000) in paragraph at lines 42--45
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 \subsection
+                {Rules for Use Case Refactoring}\label{section:selection_by_...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--52
+
+ []
+
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 52.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--55
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 55.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--60
 
  []
 
@@ -2256,24 +2204,9 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.70 
+l.90 
      
 ? 
-[5] <figures/context-scale-cube.jpg, id=301, 620.3175pt x 432.11438pt>
-File: figures/context-scale-cube.jpg Graphic file (type jpg)
-
-<use figures/context-scale-cube.jpg>
-Package pdftex.def Info: figures/context-scale-cube.jpg used on input line 83.
-(pdftex.def)             Requested size: 209.12778pt x 145.67735pt.
-
-! Extra }, or forgotten \endgroup.
-l.84 ...ion{Scale Cube from \cite{Fisher:2015aa}}}
-                                                  
-? 
-
-Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 86.
-
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2281,305 +2214,634 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.90 T
-      he scaling along each dimensions are described below. \cite{Fisher:201...
-
+l.116 
+      
 ? 
-[6 <./figures/context-scale-cube.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 92--94
+[5]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149 
+      
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 
+      
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.215 
+      
+? 
+[6]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.235 
+      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--96
-
- []
-
-[7]
-
-LaTeX Warning: Reference `section:challanges_of_microservices_architecture/intr
-oduction/challenges' on page 8 undefined on input line 101.
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 239.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--105
+Underfull \hbox (badness 10000) in paragraph at lines 240--250
 
  []
 
 
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 105.
+Underfull \hbox (badness 10000) in paragraph at lines 240--250
+
+ []
 
 
-! LaTeX Error: There's no line here to end.
+Underfull \hbox (badness 10000) in paragraph at lines 240--250
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.109 \begin
-            {shaded}Definition 2: \cite{Wootton:2014aa}\end{shaded}
-? 
+ []
 
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 109.
+[7] <figures/use-case-two.jpg, id=247, 370.38374pt x 290.08376pt>
+File: figures/use-case-two.jpg Graphic file (type jpg)
 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.114 \begin
-            {shaded}Definition 3: \cite{Cockcroft:2015aa}\end{shaded}
-? 
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 114.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.119 \begin
-            {shaded}Definition 4: \cite{Fowler:2014aa}\cite{Radchenko:2015aa...
-
-? 
-[8]
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 119.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.124 \begin
-            {shaded}Definition 5: \cite{Fowler:2014aa}\end{shaded}
-? 
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 124.
-
-[9]
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 160.
-
-[10]
-<figures/introduction_data_collection_phase.jpg, id=361, 1091.07625pt x 488.826
-25pt>
-File: figures/introduction_data_collection_phase.jpg Graphic file (type jpg)
- <use figures/introduction_data_collection_phase.jpg>
-Package pdftex.def Info: figures/introduction_data_collection_phase.jpg used on
- input line 182.
-(pdftex.def)             Requested size: 334.60571pt x 149.90852pt.
+<use figures/use-case-two.jpg>
+Package pdftex.def Info: figures/use-case-two.jpg used on input line 253.
+(pdftex.def)             Requested size: 209.12778pt x 163.79138pt.
 
 
 Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 185.
+(nag)                Maybe you want \centering instead on input line 256.
 
-[11 <./figures/introduction_data_collection_phase.jpg>]
-<figures/introduction_data_synthesis_phase.jpg, id=378, 1091.07625pt x 488.8262
-5pt>
-File: figures/introduction_data_synthesis_phase.jpg Graphic file (type jpg)
- <use figures/introduction_data_synthesis_phase.jpg>
-Package pdftex.def Info: figures/introduction_data_synthesis_phase.jpg used on 
-input line 221.
-(pdftex.def)             Requested size: 334.60571pt x 149.90852pt.
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.259 \\
+        
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.260 \textbf
+             {\underline{Step 2:}}
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--312
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--312
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.314 \textbf
+             {\underline{Step 3:}}
+? 
+[8 <./figures/use-case-two.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 314--349
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.351 N
+       ow, for independent tasks the docomposition rule given by \ref{tab:se...
+
+? 
+[9] <figures/use-case-three.jpg, id=264, 829.0975pt x 711.65875pt>
+File: figures/use-case-three.jpg Graphic file (type jpg)
+
+<use figures/use-case-three.jpg>
+Package pdftex.def Info: figures/use-case-three.jpg used on input line 355.
+(pdftex.def)             Requested size: 292.7776pt x 251.29953pt.
 
 
 Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 224.
-
-[12 <./figures/introduction_data_synthesis_phase.jpg>] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 277--283
-
- []
-
-) (./chapters/granularity.tex [14]
-Chapter 2.
-[15
+(nag)                Maybe you want \centering instead on input line 358.
 
 
-] [16] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 58--60
+Underfull \hbox (badness 10000) in paragraph at lines 351--359
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--62
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.361 \textbf
+             {\underline{Step 4:}}
+? 
+<figures/use-case-four.jpg, id=268, 829.0975pt x 566.115pt>
+File: figures/use-case-four.jpg Graphic file (type jpg)
+
+<use figures/use-case-four.jpg>
+Package pdftex.def Info: figures/use-case-four.jpg used on input line 367.
+(pdftex.def)             Requested size: 334.60571pt x 228.47197pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 370.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--371
+
+ []
+
+[10 <./figures/use-case-three.jpg>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.373 \textbf
+             {\underline{Step 5:}}
+? 
+<figures/use-case-five.jpg, id=277, 1048.91875pt x 908.39375pt>
+File: figures/use-case-five.jpg Graphic file (type jpg)
+
+<use figures/use-case-five.jpg>
+Package pdftex.def Info: figures/use-case-five.jpg used on input line 379.
+(pdftex.def)             Requested size: 334.60571pt x 289.77711pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 382.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--383
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--70
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.385 \textbf
+             {Microservices Layers}\\
+? 
+[11 <./figures/use-case-four.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 390--394
 
  []
+
+[12 <./figures/use-case-five.jpg>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.403 A
+       s the focus is to describe the process of modeling microservices, onl...
+
+? 
+[13]
+<figures/domain-driven-design-one.jpg, id=316, 1034.86626pt x 866.23625pt>
+File: figures/domain-driven-design-one.jpg Graphic file (type jpg)
+
+<use figures/domain-driven-design-one.jpg>
+Package pdftex.def Info: figures/domain-driven-design-one.jpg used on input lin
+e 411.
+(pdftex.def)             Requested size: 334.60571pt x 280.08272pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 414.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.417 T
+       he Figure \ref{fig:domain_driven_design/ubiquitous_language_process} ...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--423
+
+ []
+
+[14 <./figures/domain-driven-design-one.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 424--428
+
+ []
+
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 428.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.430 T
+       he domain represents the problem being solved by the software. The do...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--435
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 435--438
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.442 \begin
+            {shaded}Step 2: Indentify bounded contexts\end{shaded} \label{se...
+
+? 
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 442.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.444 A
+       s stated earlier of this section, the attempt to use a single set of ...
+
+? 
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 459--463
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--467
+
+ []
+
+[17]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.472 \subsection
+                 {Microservices and Bounded Context}\label{section:domain_dr...
+
+? 
+
+LaTeX Warning: Reference `section:context/microservices_architecture_style' on 
+page 18 undefined on input line 473.
+
+
+LaTeX Warning: Reference `tab:context/microservices_architecture_style/keywords
+_extracted_from_various_definitions_of_microservice' on page 18 undefined on in
+put line 473.
+
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 474.
+
+
+LaTeX Warning: Reference `tab:context/microservices_architecture_style/keywords
+_extracted_from_various_definitions_of_microservice' on page 18 undefined on in
+put line 478.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 475--529
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 475--529
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
-
- []
-
-LaTeX Font Info:    Font shape `T1/pplx/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/pplx/b/it' tried instead on input line 76.
 
 Package nag Warning: Command \centerline is TeX. 
 (nag)                Use \centering or center environment instead on input line
- 79.
+ 533.
 
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 82.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 82.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 82.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 82.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 82.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 82.
-LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <9> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 82.
+[19]
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 82.
+! LaTeX Error: There's no line here to end.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 82.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 82.
-
-[19] <figures/Granularity-R3-one.png, id=500, 614.295pt x 324.21124pt>
-File: figures/Granularity-R3-one.png Graphic file (type png)
-
-<use figures/Granularity-R3-one.png>
-Package pdftex.def Info: figures/Granularity-R3-one.png used on input line 87.
-(pdftex.def)             Requested size: 334.60571pt x 176.6001pt.
-
-
-Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 90.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--96
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.567 
+      
+? 
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 568--617
 
  []
 
-<figures/Granularity-R3-two.png, id=508, 515.9275pt x 133.49875pt>
-File: figures/Granularity-R3-two.png Graphic file (type png)
 
-<use figures/Granularity-R3-two.png>
-Package pdftex.def Info: figures/Granularity-R3-two.png used on input line 99.
-(pdftex.def)             Requested size: 334.60571pt x 86.5837pt.
-
-
-Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 102.
-
-[20 <./figures/Granularity-R3-one.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 104--109
+Underfull \hbox (badness 10000) in paragraph at lines 568--617
 
  []
 
-<figures/Granularity-R3-three.png, id=538, 615.29875pt x 253.94875pt>
-File: figures/Granularity-R3-three.png Graphic file (type png)
 
-<use figures/Granularity-R3-three.png>
-Package pdftex.def Info: figures/Granularity-R3-three.png used on input line 11
-6.
-(pdftex.def)             Requested size: 334.60571pt x 138.10289pt.
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.619 
+      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 620--626
+
+ []
+
+[21]
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 626.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.628 \begin
+            {figure}[H]
+? 
+<figures/domain-driven-design-two.jpg, id=423, 546.04pt x 244.915pt>
+File: figures/domain-driven-design-two.jpg Graphic file (type jpg)
+
+<use figures/domain-driven-design-two.jpg>
+Package pdftex.def Info: figures/domain-driven-design-two.jpg used on input lin
+e 630.
+(pdftex.def)             Requested size: 334.60571pt x 150.0818pt.
 
 
 Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 119.
-
-[21 <./figures/Granularity-R3-two.png>]
-<figures/Granularity-R3-four.png, id=550, 619.31375pt x 191.71625pt>
-File: figures/Granularity-R3-four.png Graphic file (type png)
-
-<use figures/Granularity-R3-four.png>
-Package pdftex.def Info: figures/Granularity-R3-four.png used on input line 124
-.
-(pdftex.def)             Requested size: 334.60571pt x 103.58372pt.
+(nag)                Maybe you want \centering instead on input line 633.
 
 
-Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 127.
+! LaTeX Error: There's no line here to end.
 
-! Misplaced alignment tab character &.
-l.137 ...is held. The study was done at KBC Bank &
-                                                   Insurance Group of centra...
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.636 T
+       he management of customer includes two distinct broad task which are ...
 
 ? 
-[22 <./figures/Granularity-R3-three.png> <./figures/Granularity-R3-four.png>]
-[23]
+
+Underfull \hbox (badness 10000) in paragraph at lines 636--637
+
+ []
+
+[22 <./figures/domain-driven-design-two.jpg>]
 
 Package nag Warning: Command \centerline is TeX. 
 (nag)                Use \centering or center environment instead on input line
- 154.
+ 638.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.640 \begin
+            {figure}[H]
+? 
+<figures/domain-driven-design-three.jpg, id=429, 686.565pt x 285.065pt>
+File: figures/domain-driven-design-three.jpg Graphic file (type jpg)
+
+<use figures/domain-driven-design-three.jpg>
+Package pdftex.def Info: figures/domain-driven-design-three.jpg used on input l
+ine 642.
+(pdftex.def)             Requested size: 334.60571pt x 138.92621pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 645.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.648 T
+       he Figure \ref{fig:domain_driven_design/example_scenario/subdomains/b...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 648--649
+
+ []
 
 
 Package nag Warning: Command \centerline is TeX. 
 (nag)                Use \centering or center environment instead on input line
- 162.
+ 649.
 
-) (./main.acr [24]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.651 \begin
+            {figure}[H]
+? 
+<figures/domain-driven-design-four.jpg, id=431, 742.775pt x 199.74625pt>
+File: figures/domain-driven-design-four.jpg Graphic file (type jpg)
+
+<use figures/domain-driven-design-four.jpg>
+Package pdftex.def Info: figures/domain-driven-design-four.jpg used on input li
+ne 653.
+(pdftex.def)             Requested size: 334.60571pt x 89.98251pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 656.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.659 T
+       he overall billing price calculation during checkout, which includes ...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--660
+
+ []
+
+[23 <./figures/domain-driven-design-three.jpg> <./figures/domain-driven-design-
+four.jpg>]
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 660.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.662 \begin
+            {figure}[H]
+? 
+<figures/domain-driven-design-five.jpg, id=439, 726.715pt x 311.1625pt>
+File: figures/domain-driven-design-five.jpg Graphic file (type jpg)
+
+<use figures/domain-driven-design-five.jpg>
+Package pdftex.def Info: figures/domain-driven-design-five.jpg used on input li
+ne 664.
+(pdftex.def)             Requested size: 334.60571pt x 143.27417pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 667.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.670 T
+       he logic of package management can be considered independent of the w...
+
+? 
+[24 <./figures/domain-driven-design-five.jpg>] [25]) (./main.acr [26]
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 5.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmss.fd
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [25
-
-
-
-
-]) [26]
-Package tocbasic Info: character protrusion at lof deactivated on input line 54
-.
- (./main.lof)
-\tf@lof=\write10
-\openout10 = `main.lof'.
-
  [27
 
 
+
+
+]) [28]
+Package tocbasic Info: character protrusion at lof deactivated on input line 55
+.
+
+(./main.lof)
+\tf@lof=\write10
+\openout10 = `main.lof'.
+
+ [29
+
+
 ]
-Package tocbasic Info: character protrusion at lot deactivated on input line 55
+Package tocbasic Info: character protrusion at lot deactivated on input line 56
 .
  (./main.lot)
 \tf@lot=\write11
 \openout11 = `main.lot'.
 
- [28
+ [30
 
 
 ]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 57.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 58.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -2591,77 +2853,40 @@ Package microtype Info: Loading generic settings for font family
 
 
 Package biblatex Warning: No driver for entry type 'webpage'.
-(biblatex)                Using fallback driver on input line 57.
-
-! Misplaced alignment tab character &.
-<argument> John Wiley &
-                        Sons
-l.57 \printbibliography{
-                        }
-? 
-
-Overfull \hbox (0.36229pt too wide) in paragraph at lines 57--57
-[]\T1/pplx/m/n/10.95 (-20) M. Fowler and J. Lewis. \T1/pplx/m/it/10.95 (-20) Mi
--croser-vices\T1/pplx/m/n/10.95 (-20) . Mar. 2014. \T1/pplx/m/sc/10.95 (-20) ur
-l\T1/pplx/m/n/10.95 (-20) : []$\T1/cmtt/m/n/10.95 http : / / martinfowler .
- []
+(biblatex)                Using fallback driver on input line 58.
 
 
 Package biblatex Warning: No driver for entry type 'webpage'.
-(biblatex)                Using fallback driver on input line 57.
+(biblatex)                Using fallback driver on input line 58.
 
-
-Package biblatex Warning: No driver for entry type 'webpage'.
-(biblatex)                Using fallback driver on input line 57.
-
-! Misplaced alignment tab character &.
-<argument> John Wiley &
-                        Sons
-l.57 \printbibliography{
-                        }
-? 
-
-Package biblatex Warning: No driver for entry type 'webpage'.
-(biblatex)                Using fallback driver on input line 57.
-
-
-Package biblatex Warning: No driver for entry type 'webpage'.
-(biblatex)                Using fallback driver on input line 57.
-
-[29
+[31
 
 
 ]
 
 Package biblatex Warning: No driver for entry type 'webpage'.
-(biblatex)                Using fallback driver on input line 57.
+(biblatex)                Using fallback driver on input line 58.
 
 
 Package biblatex Warning: No driver for entry type 'webpage'.
-(biblatex)                Using fallback driver on input line 57.
+(biblatex)                Using fallback driver on input line 58.
 
 
-Overfull \hbox (22.94649pt too wide) in paragraph at lines 57--57
-[]\T1/pplx/m/n/10.95 (-20) C. Richard-son. \T1/pplx/m/it/10.95 (-20) Pat-tern: 
-Mono-lithic Ar-chi-tec-ture\T1/pplx/m/n/10.95 (-20) . 2014. \T1/pplx/m/sc/10.95
- (-20) url\T1/pplx/m/n/10.95 (-20) : []$\T1/cmtt/m/n/10.95 http : / / microserv
-ices .
- []
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 58.
 
+[32]
 
-Package nag Warning: 20 complaints in total.
+Package nag Warning: 23 complaints in total.
 
-[30]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
+[33]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 60.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 60.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 60.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 60.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1AA052CC16F4D18E938EA6E222049368;1947.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+(rerunfilecheck)             Checksum: D90B3077E262507A5D10E1CDD50B75DA;1251.
 
 
 LaTeX Warning: There were undefined references.
@@ -2674,27 +2899,27 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46832 strings out of 493089
- 988074 string characters out of 6134843
- 1663343 words of memory out of 5000000
- 48892 multiletter control sequences out of 15000+600000
- 70185 words of font info for 280 fonts, out of 8000000 for 9000
+ 46735 strings out of 493089
+ 987739 string characters out of 6134843
+ 1662736 words of memory out of 5000000
+ 48818 multiletter control sequences out of 15000+600000
+ 60272 words of font info for 278 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,95p,1814b,2418s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,26n,95p,1814b,2424s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (37 pages, 770820 bytes).
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (39 pages, 532608 bytes).
 PDF statistics:
- 762 PDF objects out of 1000 (max. 8388607)
- 660 compressed objects within 7 object streams
- 211 named destinations out of 1000 (max. 500000)
- 43926 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 629 PDF objects out of 1000 (max. 8388607)
+ 544 compressed objects within 6 object streams
+ 169 named destinations out of 1000 (max. 500000)
+ 36161 words of extra memory for PDF output out of 42996 (max. 10000000)
 
