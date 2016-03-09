@@ -6,52 +6,218 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\nonumberline Abstract}{iv}{chapter*.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Modeling Microservices}{1}{chapter.1}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
+\contentsline {section}{\numberline {1.1}Monolith Architecture Style}{1}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Modeling Using Use cases}{2}{section.1.2}
+\contentsline {subsection}{\numberline {1.1.1}Types of Monolith Architecture Style}{2}{subsection.1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}Use case Refactoring}{2}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.1.2}Advantages of Monolith Architecture Style}{3}{subsection.1.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}Process for Use Case Refactoring}{3}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.1.3}Disadvantages of Monolith Architecture Style}{4}{subsection.1.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.3}Rules for Use Case Refactoring}{4}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.2}Microservice Architecture Style}{6}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.3.1}Decomposition Refactoring}{5}{subsubsection.1.2.3.1}
+\contentsline {subsection}{\numberline {1.2.1}Decomposition of an Application}{6}{subsection.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.3.2}Equivalence Refactoring}{5}{subsubsection.1.2.3.2}
+\contentsline {subsubsection}{\numberline {1.2.1.1}Scale Cube}{6}{subsubsection.1.2.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.3.3}Composition Refactoring}{6}{subsubsection.1.2.3.3}
+\contentsline {subsubsection}{\numberline {1.2.1.2}Shared Libraries}{8}{subsubsection.1.2.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.3.4}Generalization Refactoring}{6}{subsubsection.1.2.3.4}
+\contentsline {subsection}{\numberline {1.2.2}Definitions}{8}{subsection.1.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.3.5}Merge Refactoring}{6}{subsubsection.1.2.3.5}
+\contentsline {section}{\numberline {1.3}Motivation}{9}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.3.6}Deletion Refactoring}{7}{subsubsection.1.2.3.6}
+\contentsline {section}{\numberline {1.4}Research Approach}{10}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.4}Example Scenario}{7}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.4.1}Data Collection Phase}{11}{subsection.1.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Modeling using Domain Driven Design}{13}{section.1.3}
+\contentsline {subsection}{\numberline {1.4.2}Data Synthesis Phase}{12}{subsection.1.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.1}Process to implementing Domain Driven Design}{13}{subsection.1.3.1}
+\contentsline {section}{\numberline {1.5}Research Strategy}{13}{section.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.3.1.1}Ubiquitous Language}{13}{subsubsection.1.3.1.1}
+\contentsline {section}{\numberline {1.6}Problem Statement}{14}{section.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.3.1.2}Strategical Design}{15}{subsubsection.1.3.1.2}
+\contentsline {chapter}{\numberline {2}Granularity}{15}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}Microservices and Bounded Context}{18}{subsection.1.3.2}
+\contentsline {section}{\numberline {2.1}Introduction}{15}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.3}Example Scenario}{19}{subsection.1.3.3}
+\contentsline {section}{\numberline {2.2}Basic Principles to Service Granularity}{16}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Conclusion}{25}{section.1.4}
+\contentsline {section}{\numberline {2.3}Dimensions of Granularity}{17}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Problem Statement}{26}{section.1.5}
+\contentsline {subsection}{\numberline {2.3.1}Dimension by Interface}{17}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyms}{27}{section*.25}
+\contentsline {subsection}{\numberline {2.3.2}Dimension by Interface Realization}{18}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{29}{appendix*.27}
+\contentsline {subsection}{\numberline {2.3.3}R\textsuperscript {3} Dimension}{20}{subsection.2.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{30}{appendix*.28}
+\contentsline {subsection}{\numberline {2.3.4}Retrospective}{22}{subsection.2.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{31}{appendix*.29}
+\contentsline {section}{\numberline {2.4}Problem Statement}{24}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Quality Attributes of Microservices}{25}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Introduction}{25}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Quality Attributes}{26}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Quality Metrics}{27}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}Context and Notations}{27}{subsection.3.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.2}Coupling Metrics}{28}{subsection.3.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.3}Cohesion Metrics}{30}{subsection.3.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.4}Granularity Metrics}{33}{subsection.3.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.5}Complexity Metrics}{35}{subsection.3.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.6}Autonomy Metrics}{36}{subsection.3.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.7}Reusability Metrics}{38}{subsection.3.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Basic Quality Metrics}{38}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Principles defined by Quality Attributes}{39}{section.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}Relationship among Quality Attributes}{41}{section.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.7}Conclusion}{42}{section.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.8}Problem Statement}{43}{section.3.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Modeling Microservices}{44}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Introduction}{44}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Modeling Using Use cases}{45}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Use case Refactoring}{45}{subsection.4.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}Process for Use Case Refactoring}{46}{subsection.4.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.3}Rules for Use Case Refactoring}{47}{subsection.4.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.3.1}Decomposition Refactoring}{48}{subsubsection.4.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.3.2}Equivalence Refactoring}{48}{subsubsection.4.2.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.3.3}Composition Refactoring}{49}{subsubsection.4.2.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.3.4}Generalization Refactoring}{49}{subsubsection.4.2.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.3.5}Merge Refactoring}{49}{subsubsection.4.2.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.3.6}Deletion Refactoring}{50}{subsubsection.4.2.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.4}Example Scenario}{50}{subsection.4.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Modeling using Domain Driven Design}{56}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}Process to implement Domain Driven Design}{56}{subsection.4.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.1.1}Ubiquitous Language}{56}{subsubsection.4.3.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.1.2}Strategical Design}{58}{subsubsection.4.3.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}Microservices and Bounded Context}{61}{subsection.4.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.3}Example Scenario}{62}{subsection.4.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Conclusion}{68}{section.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Problem Statement}{69}{section.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Architecture at SAP Hybris}{70}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Overview}{70}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Vision}{71}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}SAP Hybris Architecture Principles}{71}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Modeling Microservices at SAP Hybris}{74}{section.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.1}Hypothesis}{74}{subsection.5.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.2}Interview Compilation}{76}{subsection.5.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.3}Interview Reflection on Hypothesis}{80}{subsection.5.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}Derivation of Modeling Approach at SAP Hybris derived by interview compilation}{82}{section.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.6}Case Study}{84}{section.5.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.7}Deployment Workflow}{88}{section.5.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.7.1}SourceCode Management}{88}{subsection.5.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.7.2}Continuous Deployment}{89}{subsection.5.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.8}Problem Statement}{91}{section.5.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Challanges of Microservices Architecture}{92}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Introduction}{92}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Integration}{93}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.1}Sharing Data}{93}{subsection.6.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.2}Inter-Service Communication}{95}{subsection.6.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.2.1}Synchronous and Asynchronous}{96}{subsubsection.6.2.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.2.2}Example}{97}{subsubsection.6.2.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Distributed System Complexity}{97}{section.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.1}Breaking Change}{97}{subsection.6.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.2}Handling Failures}{99}{subsection.6.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}Operational Complexity}{101}{section.6.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4.1}Monitoring}{101}{subsection.6.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4.2}Deployment}{103}{subsection.6.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.5}Conclusion}{105}{section.6.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Guidelines}{106}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Context}{106}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Process to Implement Microservices Architecture}{107}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Principles And Guidelines}{108}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Conclusion}{114}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}Related Work}{117}{chapter.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {10}Future Directions}{119}{chapter.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {11}Appendices}{120}{chapter.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.1}CAP Theorem}{120}{section.11.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.2}Eventual Consistency}{120}{section.11.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.3}Command Query Responsibility Segregation(CQRS)}{121}{section.11.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.4}Single Responsibility Principle}{121}{section.11.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.5}BlueGreen Deployment}{121}{section.11.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.6}Canary Release}{122}{section.11.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acronyms}{123}{section*.79}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Figures}{125}{appendix*.81}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Tables}{127}{appendix*.82}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{128}{appendix*.83}

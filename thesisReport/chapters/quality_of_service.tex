@@ -15,7 +15,7 @@ use the formula to calculate quality metrics for the services at hybris to give 
 
 
 \chapter{Quality Attributes of Microservices}\label{chapter:quality_of_service}
-This chapter will attempt to find out various factors defining quality of microservices. Also, it will provide quantitative approach to evaluate the overall quality of microservice. At first, the Section \ref{section:quality_of_service/quality_attributes} presents a list of quality attributes compiled from various research papers, which are considered important when defining quality of service. Next, in Section \ref{section:quality_of_service/quality_metrics}, various metrices to evaluate these attributes are given. Furthermore, in Section \ref{section:quality_of_service/basic_quality_metrics}, a list of basic metrices being derived from complex metrices introduced in section are created. Again, Section \ref{section:quality_of_service/quality_attributes_principle} lists various principles which shows impact of various attributes on the quality of microservices. Finally, based on the previous result on metrics and principles, relationship amongst quality attributes is tabulated in Section \ref{section:quality_of_service/quality_attributes_relationship}.
+This chapter will attempt to find out various factors defining quality of microservices. Also, it will provide quantitative approach to evaluate the overall quality of microservice. At first, the Section \ref{section:quality_of_service/quality_attributes} presents a list of quality attributes compiled from various research papers, which are considered important when defining quality of service. Next, in Section \ref{section:quality_of_service/quality_metrics}, various metrices to evaluate these attributes are explained. Furthermore, in Section \ref{section:quality_of_service/basic_quality_metrics}, a list of basic metrices being derived from complex metrices introduced in section are created. Again, Section \ref{section:quality_of_service/quality_attributes_principle} lists various principles which shows impact of various attributes on the quality of microservices. Finally, based on the previous result on metrics and principles, relationship amongst quality attributes is tabulated in Section \ref{section:quality_of_service/quality_attributes_relationship}.
 
 \section{Introduction}\label{section:quality_of_service/introduction}
 In addition to allign with the business requirements, an important goal of software engineering is to provide high quality. The quality assessment in the context of service oriented product becomes more crucial as the complexity of the system is getting higher by time. \cite{Zhang:2009aa, Goeb:2011aa, Nematzadeh:2014aa} Quality models have been devised over time to evaluate quality of a software. A quality model is defined by quality attributes and quality metrics. Quality attributes are the expected properties of software artifacts defined by the chosen quality model. And, quality metrics give the techniques to measure the quality attributes. \cite{Mancioppi:2015aa} The software quality attributes can again be categorized into two types: internal and external attributes. \cite{Mancioppi:2015aa, Briand:1996aa} The internal quality attributes are the design time attributes which should be fulfilled during the design of the software. Some of the internal quality attributes are loose coupling, cohesion, granularity, autonomy etc.\cite{Rostampour:2011aa, Sindhgatta:2015aa, Elhag:2014aa} On the other hand, external quality attributes are the traits of the software artifacts produced at the end of Software Development Life Cycle \acrshort [{SDLC}]. Some of them are reusability, maintainability etc. \cite{Elhag:2014aa, Mancioppi:2015aa, Feuerlicht:2007aa, Feuerlicht:2013aa} For that reason, the external quality attributes can only be measured after the end of development. However, it has been evident that internal quality attributes have huge impact upon the value of external quality attributes and thus can be used to predict them. \cite{Henry:1990aa, Briand:2015aa, Alshayeb:2003aa, Bingu-Shim:2008aa}The evaluation of both internal and external quality attributes are valuable in order to produce high quality software.\cite{Mancioppi:2015aa, Perepletchikov:2007aa, Mikhail-Perepletchikov:2015aa}
@@ -45,7 +45,7 @@ As already mentioned in Section \ref{section:quality_of_service/introduction}, t
   \label{tab:quality_of_service/quality_attributes}
 \end{table}
 
-The Table \ref{tab:quality_of_service/quality_attributes} gives a picture of the studies done so far around service quality attributes. It can be deduced that most of the papers focus on coupling and granularity of the service and only few of them focus on other attributes such as complexity and autonomy.
+The Table \ref{tab:quality_of_service/quality_attributes} gives a picture of the studies performed so far around service quality attributes. It can be deduced that most of the papers focus on coupling and granularity of the service and only few of them focus on other attributes such as complexity and autonomy.
 
 Coupling refers to the dependency and interaction among services. The interaction becomes inevitable when a service requires a functionality provided by another service in order to accomplish its own goals. Similarly, Cohesion of any system is the extent of appropriate arrangement of elements to perform the functionalities. It affects the degree of understandability and sensibility of its interface for its consumers. Whereas, the complexity attribute provides the way to evaluate the difficulty in understanding and reasoning the context of the service or component.\cite{Elhag:2014aa}
 \\
@@ -54,8 +54,8 @@ The reusability attribute for a service measures the degree to which it can be u
 Autonomy is a broad term which refers to the ability of a service for self-containment, self-controlling, self-governance. Autonomy defines the boundary and context of the service. \cite{Ma:2007aa} Finally, granularity is described in Chapter \ref{chapter:granularity} in detail. The basic signifance of granularity is the diversity and size of the functionalities offered by the service. \cite{Elhag:2014aa}
 
 \section{Quality Metrics}\label{section:quality_of_service/quality_metrics}
-There have been many studies made to define metrics for quality components. A major portion of the research have been done for object oriented and component based development. These metrics are refined to be used in service oriented systems.\cite{Xiao-jun:2015aa, Sindhgatta:2015aa} Firslty, various papers related to quality metrics of service oriented systems are collected. The papers which conducted their findings or proposition based on decent amount of scientific studies and have produced convincing result are only selected.\\
-It is interesting to notice that the evaluation presented in the research papers were only done using the case studies of their own and not real life scenarios. Also, they have used diversity of equations to define the quality metrics. On the basis of case studies made in the papers only, a fair comparision and choice of only one way to evaluate the quality metrics cannot be made. This is further added by the fact that the few papers cover most of the quality metrics, most of them focus on only few quality metrics such as coupling but not all of them focus on all the quality metrics. Nevertheless, not all of them discuss about the relationship between all quality metrics. \cite{Elhag:2014aa} This creates difficulty to map all the quality metrics into a common calculation family. 
+There have been many studies made to define metrics for quality components. A major portion of the research have been made for object oriented and component based development. These metrics are refined to be used in service oriented systems.\cite{Xiao-jun:2015aa, Sindhgatta:2015aa} Firslty, various papers related to quality metrics of service oriented systems are collected. The papers which conducted their findings or proposition based on decent amount of scientific studies and have produced convincing result are only selected.\\
+It is interesting to notice that the evaluation presented in the research papers were only performed using the case studies of their own and not real life scenarios. Also, they have used diversity of equations to define the quality metrics. On the basis of case studies made in the papers only, a fair comparision and choice of only one way to evaluate the quality metrics cannot be made. This is further added by the fact that the few papers cover most of the quality metrics, most of them focus on only few quality metrics such as coupling but not all of them focus on all the quality metrics. Nevertheless, not all of them discuss about the relationship between all quality metrics. \cite{Elhag:2014aa} This creates difficulty to map all the quality metrics into a common calculation family. 
 \\
 Around such situation, this section will focus on facilitating the understanding of the metrics. Despite the case that there is no idea of threshold value of metrics discussed to define the optimal quality level, the discussed method can still be used to evaualte the quality along various metrics and compare the various design artifacts. This will definitely help to choose the optimum design based on the criteria of quality attributes. Also, there is complexity in understanding and confusion to follow a single proposed metrics procudure. But, the existing procedures can be broken down further to the simple understandable terms. By doing so, the basic terms which are the driving factors for the quality attributes and at the same time followed by most of the procedures as defined in the papers, can be identified.
 \\
@@ -71,7 +71,7 @@ Before looking into the definitions of metrics, it will be helpful to know relat
 \item for any service $ s \epsilon S$, the set of operations provided by s is given by $O(s) = \{o_1, o_2,...o_o\}$ and $ |O(s)| $ = O
 \item if an operation $ o \epsilon O(s) $ has a set of input and output messages given by M(o). Then the set of messages of all operations of the service is given by $ M(s) = \cup_{o \epsilon O(s)} M(o)$
 \item the consumers of the service $ s \epsilon S $ is given by $ S_{consumer}(s) = \{ S_{c1}, S_{2},...S{{n_c}\}$; $n_c$ gives the number of consumer services
-\item the producers for the service or the number of services to which the given service $ s \epsilon S $ is dependent upon is given by $ S_{producer}(s) = \{ S_{c1}, S_{2},...S{{n_p}\}$; $n_p$ gives the number of producer services
+\item the producers for the service or the number of services to which the service $ s \epsilon S $ is dependent upon is given by $ S_{producer}(s) = \{ S_{c1}, S_{2},...S{{n_p}\}$; $n_p$ gives the number of producer services
 \end{itemize}
 
 \\
@@ -145,9 +145,9 @@ where,
                     \begin{tabular}{cl}
                     \multirow{6}{*}
                     &\acrshort{SOCI} : number of operation of other services \\
-                    &invoked by the given service\\
+                    &invoked by the service\\
                     &\acrshort{ISCI} : number of services invoked \\
-                    &by a given service\\
+                    &by a service\\
                     &\acrshort{SMCI} : total number of messages from \\
                     &information model required by the operations\\
                     \end{tabular}\\
@@ -176,7 +176,7 @@ where,
                     \end{tabular}\\
                     \hline
    4 & \cite{Bingu-Shim:2008aa} & 
-                    given by the average number of directly connected services\\
+                    evaluated by the average number of directly connected services\\
   \hline
    5 & \cite{Saad-Alahmari:2011aa} & 
                     \begin{tabular}{cl}
@@ -272,7 +272,7 @@ where,
    3 & \cite{Bingu-Shim:2008aa} & 
                     \begin{tabular}{cl}
                     \multirow{2}{*}
-                    &cohesion is given by the inverse of average number of consumed \\
+                    &cohesion is evaluated by the inverse of average number of consumed \\
                     &messages by a service\\
                     \end{tabular}\\
                     \hline
@@ -346,7 +346,7 @@ where,
    1 & \cite{Sindhgatta:2015aa} & 
                     \begin{tabular}{cl}
                     \multirow{3}{*}
-                    &the service capability granularity is given by the number of\\
+                    &the service capability granularity is calculated by the number of\\
                     &operations in a service and the data granularity by the\\ 
                     &number of messages consumed by the operations of the service\\
                     \end{tabular}\\
@@ -400,7 +400,7 @@ where,
 \item $IS(s_i)$ gives importance weight of a service in an application
 \end{itemize}
 
-The complexity is rather given by relative coupling than by coupling on its own. A low value of RCS indicates that the coupling is lower than the count of services where as RCS with value 1 indicates that the coupling is equal to the number of services. This represents high amount of complexity.
+The complexity is rather obtained by relative coupling than by coupling on its own. A low value of RCS indicates that the coupling is lower than the count of services where as RCS with value 1 indicates that the coupling is equal to the number of services. This represents high amount of complexity.
 \\
 Similarly, a high value of RIS indicates that a lot of services are dependent upon the service and the service is of critical value for other services. This increases complexity as any changes or problem in the service affects a large number of services to a high extent.
 \\
@@ -427,7 +427,7 @@ where,
    1 & \cite{Zhang:2009aa} & 
                     \begin{tabular}{cl}
                     \multirow{6}{*}
-                    &\acrshort{RCS} : complexity given by the degree of coupling\\ 
+                    &\acrshort{RCS} : complexity evaluated by the degree of coupling\\ 
                     &for a service and evaluated as the fraction of its coupling\\
                     &to the total number of services\\
                     &\acrshort{RIS} : measured as the fraction of total \\
@@ -490,7 +490,7 @@ where,
                     \multirow{6}{*}
                     &\acrshort{SLC} : defined as the degree of control of a \\
                     &service upon its operations to act on its Business entities only\\
-                    &\acrshort{DEP} : given by the degree of coupling of the given \\
+                    &\acrshort{DEP} : given by the degree of coupling of the \\
                     &service with other services\\
                     &autonomy is given by the difference of \acrshort{SLC} and \acrshort{DEP}\\
                     &if SLC > DEP else it is taken as 0\\
@@ -718,7 +718,7 @@ The Section \ref{section:quality_of_service/quality_metrics} presents various me
   \label{tab:quality_of_service/quality_attributes/basic_quality_metrics}
   \\
   Additionally, the effect of the basic metrics upon various quality attributes are also evaluated and stated under each column such as 'coupling', 'cohesion' etc.
-  Here, the meaning of the various symbols to demonstrate the affect are as given below:
+  Here, the meaning of the various symbols to demonstrate the affect are as listed below:
   \\
 \begin{itemize}[leftmargin=.5in]
 \item + the basic metric affect the quality attribute proportionlly
@@ -726,7 +726,7 @@ The Section \ref{section:quality_of_service/quality_metrics} presents various me
 \item   there is no evidence found regarding the relationship from the papers
 \end{itemize}
 \end{table}
-Considering the Table \ref{tab:quality_of_service/quality_attributes/basic_quality_metrics}, it can be deduced that cohesion of a service increases with the number of operations using similar messages, using similar parameters and serving same consumer. The same can be done for other quality attributes.
+Considering the Table \ref{tab:quality_of_service/quality_attributes/basic_quality_metrics}, it can be deduced that cohesion of a service increases with the number of operations using similar messages, using similar parameters and serving same consumer. The same process can be followed for other quality attributes.
 
 %principles based on quality quality attributes
 \section{Principles defined by Quality Attributes}{\label{section:quality_of_service/quality_attributes_principle}
@@ -795,7 +795,7 @@ In order to determine the appropriate level of quality for a service, it is also
   \label{tab:quality_of_service/quality_attributes/quality_attributes_relationship}
 \end{table}
 
-Here, the meaning of the various symbols showing nature of relationship are as given below:
+Here, the meaning of the various symbols showing nature of relationship are as listed below:
   \\
 \begin{itemize}[leftmargin=.5in]
 \item + the quality attribute on the column affects the quality attribute on the corresponding row positively

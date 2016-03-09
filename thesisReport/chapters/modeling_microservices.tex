@@ -234,7 +234,7 @@ When a use case is defined but no relationship can be agreed with other use case
 \\
 
 \subsection{Example Scenario}\label{section:selection_by_use_case/refactoring_example}
-In this section, a case study will be taken as an example. The case study will be modeled using use case. Finally, the use case will be refactored using the rules given by \ref{section:selection_by_use_case/rules_for_use_case_refactoring}.
+In this section, a case study will be taken as an example. The case study will be modeled using use case. Finally, the use case will be refactored using the rules listed by \ref{section:selection_by_use_case/rules_for_use_case_refactoring}.
 \\
 \begin{shaded} Case Study \end{shaded}
 The case study is about an international hotel named 'XYZ' which has branches in various locations. In each location, it offers rooms with varying facilities as well as prices. In order to make it easy for customers to find room irrespective of the location of customer, it is planning to offer an online room booking application. Using this application, any registered customer can search for a room according to his/her requirement in any location. When he/she is satisfied, can book the room online as well. The customer will be sent notification by email regarding booking. At present, the payment will be accepted in person, only after the customer gets into the respective branch. Finally, if the customer wants to cancel the room, he/she can do online anytime. The customer will also be notified by e-mail to confirm the cancelation of booking. It is an initial case study so only priority cases and conditions are considered here.
@@ -246,7 +246,7 @@ The remaining part of this section presents the steps to indentify the services 
 \textbf{\underline{Step 1:}}
 \\
 \\
-The initial analysis of the case study will produce use case model as given by figure \ref{fig:selection_by_use_case/use_case_two}.
+The initial analysis of the case study will produce use case model as shown by figure \ref{fig:selection_by_use_case/use_case_two}.
 
 \begin{figure}[H]
 \begin{center}
@@ -348,7 +348,7 @@ The initial task trees created for each use case at Step 2 is analysed. There ar
   \label{tab:selection_by_use_case/guidelines_for_use_case_refactoring/common_and_independent_tasks}
 \end{table}
 \\
-Now, for independent tasks the docomposition rule given by \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/decomposition_rule} can be applied and for common tasks, the generalization rule given by \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/generalization_rule} can be applied. The use cases obtained after applying these rules is shown by the figure \ref{fig:selection_by_use_case/use_case_three}
+Now, for independent tasks the docomposition rule explained by \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/decomposition_rule} can be applied and for common tasks, the generalization rule given by \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/generalization_rule} can be applied. The use cases obtained after applying these rules is shown by the figure \ref{fig:selection_by_use_case/use_case_three}
 \\
 \begin{figure}[H]
 \begin{center}
@@ -360,7 +360,7 @@ Now, for independent tasks the docomposition rule given by \ref{tab:selection_by
 \\
 \textbf{\underline{Step 4:}}
 \\
-The use case model \ref{fig:selection_by_use_case/use_case_three} obtained in Step 3 is analysed again for further refactoring. It can seen that the use cases 'fetch room details' and 'update room' are fine grained and related to same business model 'Room'. Similarly, the use cases 'generate booking number' and 'validate booking number' are related to business entity 'Booking Number'. The composition rule given by \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/composition_rule} can be applied to these use cases, which will then result in use case model given by figure \ref{fig:selection_by_use_case/use_case_four}
+The use case model \ref{fig:selection_by_use_case/use_case_three} obtained in Step 3 is analysed again for further refactoring. It can seen that the use cases 'fetch room details' and 'update room' are fine grained and related to same business model 'Room'. Similarly, the use cases 'generate booking number' and 'validate booking number' are related to business entity 'Booking Number'. The composition rule explained by \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/composition_rule} can be applied to these use cases, which will then result in use case model shown by figure \ref{fig:selection_by_use_case/use_case_four}
 \\
 \begin{figure}[H]
 \begin{center}
@@ -383,7 +383,7 @@ Finally, the use case obtained in step 4 is used to identify the service candida
 \end{figure}
 \\
 \textbf{Microservices Layers}\\
-The services obtained as shown in the Figure \ref{fig:selection_by_use_case/use_case_five} from the refactoring process, creates various levels of abstractions. The levels of abstractions represents different level of functionality. The services at the bottom layer are core services which serve many higher level services. These services are not dependent on any other services. 'Notification' and 'Authentication' are core services obtained from refactoring. The layer above the core layer is business layer. The business service can either have entity services, which control some related business entities or can have task services which provides some specific business logic to higher level services. 'Room' and 'Booking Number' are the entity services obtained from refactoring. Finally, the top layer is mashup layer which contains high level business logic and collaborates with business services as well as core services. 'Room mashup' , 'Booking' and 'Booking Cancelation' are orchestration layer services obtained. The individual services as well as their respective layers are given in Figure \ref{fig:selection_by_use_case/use_case_five}. \cite{Fareghzadeh:2008aa}\cite{Emig:2015aa}\cite{Zimmermann:2005aa}
+The services obtained as shown in the Figure \ref{fig:selection_by_use_case/use_case_five} from the refactoring process, creates various levels of abstractions. The levels of abstractions represents different level of functionality. The services at the bottom layer are core services which serve many higher level services. These services are not dependent on any other services. 'Notification' and 'Authentication' are core services obtained from refactoring. The layer above the core layer is business layer. The business service can either have entity services, which control some related business entities or can have task services which provides some specific business logic to higher level services. 'Room' and 'Booking Number' are the entity services obtained from refactoring. Finally, the top layer is mashup layer which contains high level business logic and collaborates with business services as well as core services. 'Room mashup' , 'Booking' and 'Booking Cancelation' are orchestration layer services obtained. The individual services as well as their respective layers are shown in Figure \ref{fig:selection_by_use_case/use_case_five}. \cite{Fareghzadeh:2008aa}\cite{Emig:2015aa}\cite{Zimmermann:2005aa}
 
 %-------------------------------------------------Domain Driven Design-------------------------------------------------
 \section{Modeling using Domain Driven Design}\label{section:domain_driven_design/introduction}
@@ -392,7 +392,7 @@ Understanding the problem space can be a very useful way to design software. The
 Domain Driven Design provides a way to represent the real world problem space so that all the important concepts and data from real world remains intact in the model. The domain model thus captured respects the differences as well as the agreement in the concepts across various parts of the problem space. Moreover, it also provides a way to divide the problem space into manageable independent partitions and makes it easy for developers as well as stakeholders to focus on the area of concern and be more agile. Finally, the domain models act as the understandable and common view of the business for both domain experts as well as the developers. This will make sure that the software developed using domain driven design will comply with business need.\cite{Evans:2003aa}\cite{Vernon:2013aa}
 \\
 
-\subsection{Process to implementing Domain Driven Design}\label{section:domain_driven_design/process_to_domain_driven_design}
+\subsection{Process to implement Domain Driven Design}\label{section:domain_driven_design/process_to_domain_driven_design}
 There are three basic parts to implement domain driven design:
 \begin{enumerate}
 \item{Ubiquitous Language}
@@ -528,14 +528,14 @@ Furthermore, there can be found enough evidence regarding the analogy as well as
 \\
 
 \subsection{Example Scenario}\label{section:domain_driven_design/example_scenario}
-In this section, a case study will be discussed. The case study will be used to design the system using microservices architecture following the domain driven design given supported by the Section \ref{section:domain_driven_design/process_to_domain_driven_design}.
+In this section, a case study will be discussed. The case study will be used to design the system using microservices architecture following the domain driven design supported by the Section \ref{section:domain_driven_design/process_to_domain_driven_design}.
 
 \begin{shaded} Case Study \end{shaded} \label{section:domain_driven_design/example_scenario/case_study}
 The case study is for the same hotel introduced in the Section \ref{section:selection_by_use_case/refactoring_example}. The hotel 'XYZ' is thinking of upgrading its current system and adding new business use cases in order to tune its competitive edge in the market.\\
 Previously, the hotel only supported booking of the rooms, payment by cash, cancelation of booking and finally viewing of the room details.\\
 The hotel has planned to provide various package offerings to the either general customers or specific group of customers satisfying certain profile. Firstly, a hotel staff creates a package with name, description, valid time period, applicable type of room and location and discount associated with the package. Furthermore, the package will also contain certain constraints such as maximum number of offerings and maximum number of offerings per customer. The offering is represented by coupon and has unique identity. Once a package is created, the package has to be activated either by the hotel staff or by the activation time trigger. Only, the activated packages are visible to the customers. The customers can apply for the active packages. The customer profile is validated against the expected profile for the package and then a new coupon is sent to the customer.\\
 The room booking workflow has no changes from the old system where a customer can view list of rooms with various information and send room booking request to the system. The system will then send confirmation with unique booking code to the customer.\\
-Finally, the payment can be done by debit card or by paypal. During the payment, the customer can specify a valid coupon. The payment system will then redeem the coupon so that the respective discount represented by the coupon is deducted from the overal price.\\
+Finally, the payment can be performed by debit card or by paypal. During the payment, the customer can specify a valid coupon. The payment system will then redeem the coupon so that the respective discount represented by the coupon is deducted from the overal price.\\
 Additionally, a detailed report is planned to be made available for customers showing various transactions with the hotel for the room bookings along with the information of the rooms till date. Similarly, hotel staff has various types of reports such as profit statement and room booking status.\\
 The steps listed in \ref{section:domain_driven_design/process_to_domain_driven_design} can be used to design the system defined by the Case Study \ref{section:domain_driven_design/example_scenario/case_study}.
 \textbf{\underline{Step 1:}}
@@ -621,7 +621,7 @@ The supporting domain "User Management" has different stragegy for Customer and 
 \\
 \textbf{\underline{Step 3:}}
 \\
-The next action is to identify bounded context following the process described in step \ref{section:domain_driven_design/process_to_domain_driven_design/strategical_design/step_2}. The process is implemented in each subdomains. In order to accomplish this, domain models can be constructed for each subdomain. Along the process, the various ambguities in the domain models and clear understanding of the concept of the models can be clarified. This will highly help to achieve consistent ubiquitious language with the unification of domain models as well as shared vocabulary inside each subdomain. The boundary around the uniform and consistent domain represents the bounded contexts. Additionally, the rules given in the Section \ref{section:domain_driven_design/process_to_domain_driven_design/strategical_design/step_2} can be applied when appropriate to identify bounded contexts.
+The next action is to identify bounded context following the process described in step \ref{section:domain_driven_design/process_to_domain_driven_design/strategical_design/step_2}. The process is implemented in each subdomains. In order to accomplish this, domain models can be constructed for each subdomain. Along the process, the various ambguities in the domain models and clear understanding of the concept of the models can be clarified. This will highly help to achieve consistent ubiquitious language with the unification of domain models as well as shared vocabulary inside each subdomain. The boundary around the uniform and consistent domain represents the bounded contexts. Additionally, the rules listed in the Section \ref{section:domain_driven_design/process_to_domain_driven_design/strategical_design/step_2} can be applied when appropriate to identify bounded contexts.
 The following Section will provide the analysis of major subdomains to identify the bounded contexts within.\\
 \begin{shaded} Customer Management \end{shaded}
 \\
