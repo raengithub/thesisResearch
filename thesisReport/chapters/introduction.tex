@@ -1,8 +1,8 @@
 \chapter{Introduction}\label{chapter:introduction}
-Architecture is the set of principles assisting software architect and developers for system or application design. \cite{Dashofy:2009aa} It defines process to decompose a system into modules, components and specifies their interactions. \cite{Brown:2015aa} In this chapter, two different architectural approaches will be taken. Firstly, a conceptual understanding of monolithic architecture style will be presented, which will then be followed by its various advantages and disadvantages. Then, an overview of microservices architecture will be explained. In Section \ref{section:context/motivation}, the motivation for the current research is explained which is then followed by  list of various reseach questions \ref{list:introduction/research_questions} being focused. Finally, in Section \ref{section:context/approach} and Section \ref{section:context/research_strategy}, the approach which will be used to conduct current research is presented. The purpose of this chapter is to provide a basic background context for the following chapters.
+The software architecture is the set of principles assisting software architect and developers for system or application design \cite{Dashofy:2009aa}. It defines a process to decompose a system into modules, components and specifies their interactions \cite{Brown:2015aa}. In this chapter, two different architectural approaches namely monolithic architectural approach and microservices achitectural approach are discussed. Firstly, a conceptual understanding of the monolithic architecture approach is presented, which is followed by its various advantages and disadvantages. Secondly, an overview of the microservices architecture approach is explained. In Section \ref{section:context/motivation}, the motivation for the current research is discussed which is then followed by a list of reseach questions. Finally, in Section \ref{section:context/approach} and Section \ref{section:context/research_strategy}, the approach that is used to conduct the current research is presented. The purpose of this chapter is to provide a basic background context for the following chapters.
 
-\section{Monolith Architecture Style}\label{section:context/monolith}
-A Mononlith Architecture Style is one in which an application is deployed as a single artifact. The architecture inside the application can be modular and clean. In order to clarify, the figure \ref{fig:context/monolith-example} shows architecture of an Online-Store application. The application has clear separation of components such as Catalog, Order and Service as well as respective models such as Product, Order etc. Despite of that, all the units of the application are deployed in tomcat as a single war file.\cite{Richardson:2014aa}\cite{Richardson:2014ab}
+\section{Monolithic Architectural Approach}\label{section:context/monolith}
+A mononlithic architectural approach is one in which even a modular application is deployed as a single artifact. Figure \ref{fig:context/monolith-example} shows the architecture of an Online-Store application that has a clear separation of components such as Catalog, Order etc., as well as respective models such as Product, Order etc. Despite the modular decomposition of the application, all the components are deployed as a single application artifact on the server.\cite{Richardson:2014aa}\cite{Richardson:2014ab}
 
 \begin{figure}[H]
 \begin{center}
@@ -15,37 +15,37 @@ A Mononlith Architecture Style is one in which an application is deployed as a s
 \subsection{Types of Monolith Architecture Style}\label{subsection:context/monolith-types}
 According to \cite{Annett:2014aa}, a monolith can be of several types depending upon the viewpoint, as shown below:
 \begin{enumerate}
-\item Module Monolith: If all the code to realize an application share the same codebase and need to be compiled together to create a single artifact for the whole application then the architecture is Module Monolith Architecture. An example is show in Figure \ref {fig:context/module-monolith-example}. The application on the left of the figure, has all the code in the same codebase in the form of packages and classes without clear definition of modules and get compiled to a single artifact. However, the application on the right is developed as a number of modular codebase, each has separate codebase and can be compiled to different artifact. The modules uses the produced artifacts which is different than the earlier case where the code referenced each other directly.
+\item \textbf{Module Monolith}: If all the code to realize an application share the same codebase and need to be compiled together to create a single artifact for the whole application then the architecture is called Module Monolithic Architecture. An example of this architecture is shown in Figure \ref {fig:context/module-monolith-example}. The application on the left side of the figure, has all the code in the same codebase in the form of packages and classes without clear definition of modules and gets compiled to a single artifact. However, the application on the right side is developed as a number of modular codebase, each has separate codebase and can be compiled to different artifact. In the application shown in the left side of the figure, the various parts of the codebase can reference each other directly.
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{figures/context-module-monolith}
-\caption{Module Monolith Example from \cite{Annett:2014aa}}
+\caption{Module Monolith-Example from \cite{Annett:2014aa}}
 \label{fig:context/module-monolith-example}
 \end{center}
 \end{figure}
 \\
-\item Allocation Monolith: An Allocation Monolith is created when all code is deployed to all the servers as a single version. This means that all the components running on the servers have the same versions at any time. The Figure \ref{fig:context/allocation-monolith-example} gives an example of allocation monolith. The system on the left have same version of artifact for all the components on all the servers. It does not make any differenct whether or not the system has single codebase and artifact. However, the system on the right as shown in the figure is realized with multiple version of the artifacts in different servers at any time.
+\item \textbf{Allocation Monolith}: An Allocation Monolith is created when code is deployed to all the servers as a single version. This means that all the components running on the servers have the same versions at any time. The Figure \ref{fig:context/allocation-monolith-example} gives an example of the allocation monolith. The system on the left of Figure \ref{fig:context/allocation-monolith-example} has the same version of the artifact for all the components on all the servers. It does not make any differenct whether or not the system has a single codebase and artifact. However, the system on the right as shown in the figure is realized with multiple versions of the artifacts in different servers at any time.
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{figures/context-allocation-monolith}
-\caption{Allocation Monolith Example from \cite{Annett:2014aa}}
+\caption{Allocation Monolith-Example from \cite{Annett:2014aa}}
 \label{fig:context/allocation-monolith-example}
 \end{center}
 \end{figure}
 \\
-\item Runtime Monolith: In Runtime Monolith, the whole application is run under a single process. The left system in the Figure \ref{fig:context/runtime-monolith-example} shows an example of runtime monolith where a single server process is responsible for whole application. Whereas the system on the right has allocated multiple server process to run distinct set of component artifacts of the application.
+\item \textbf{Runtime Monolith}: In the Runtime Monolith, the whole application is run under a single process. The application on the left side of Figure \ref{fig:context/runtime-monolith-example} shows an example of runtime monolith where a single server process is responsible for the whole application. Whereas the application on the right has allocated multiple server processes to run distinct set of component artifacts of the application.
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{figures/context-runtime-monolith}
-\caption{Runtime Monolith Example from \cite{Annett:2014aa}}
+\caption{Runtime Monolith-Example from \cite{Annett:2014aa}}
 \label{fig:context/runtime-monolith-example}
 \end{center}
 \end{figure}
 \end{enumerate}
 
 \\
-\subsection{Advantages of Monolith Architecture Style}\label{subsection:context/monolith-advantages}
-The Monolith architecture is appropriate for small application and has following benifits:\cite{Richardson:2014ab}\cite{Fowler:2014aa}\cite{Gupta:2015aa}\cite{Abram:2014aa}
+\subsection{Advantages of the Monolithic Architectural Approach}\label{subsection:context/monolith-advantages}
+The Monolithic architectural approach is appropriate for small applications and has the following benifits:\cite{Richardson:2014ab}\cite{Fowler:2014aa}\cite{Gupta:2015aa}\cite{Abram:2014aa}
 \begin{itemize}[leftmargin=.5in]
 \item It is easy to develop a monolith application since various development tools including \acrshort{IDE}s are created around the single application concept. Furthermore, it is also easy to test the application by creating appropriate environment on the developer's machine.
 \item The deployment can be simply achieved by moving the single artifact for the application to an appropriate directory in the server.
@@ -53,30 +53,30 @@ The Monolith architecture is appropriate for small application and has following
 \item The different teams are working on the same codebase so sharing the functionality can be easier.
 \end{itemize}
 \\
-\subsection{Disadvantages of Monolith Architecture Style}\label{subsection:context/monolith-disadvantages}
-As the requirement grows with time, alongside application becomes huge and the size of team increases, then the monolith architecture faces many problems. The challenges of monolith architecture are as explained below:\cite{Namiot:2014aa}\cite{Newman:2015aa}\cite{Abram:2014aa}\cite{Richardson:2014aa}\cite{Richardson:2014ab}\cite{Gupta:2015aa}
+\subsection{Disadvantages of Monolithic Architectural Approach}\label{subsection:context/monolith-disadvantages}
+As the requirements of the system grows over time, the corresponding system's codebase becomes large and the size of team increases. Under such circumstances, the monolithic architecture faces many challenges as explained below \cite{Namiot:2014aa} \cite{Newman:2015aa}\cite{Abram:2014aa} \cite{Richardson:2014aa} \cite{Richardson:2014ab} \cite{Gupta:2015aa} :
 \begin{itemize}[leftmargin=.5in]
-\item Limited Agility: As the whole application has single codebase, even changing a small feature to release it in production takes time. Firstly, the small change can also trigger changes to other dependent code. In huge monolith application it is very difficult to manage modularity especially when all the team members are working on the same codebase. Secondly, to deploy a small change in production, the whole application has to be deployed. Thus continuous delivery gets slower. This will be more problematic when multiple changes have to be released on a daily basis. The slow pace and low frequency of release will highly affect agility.
+\item \textbf{Limited Agility}: As the whole application has a single codebase, even changing a small feature to release it in the production takes time. Firstly, a small change can trigger changes to other dependent code. In huge monolithic applications, it is very difficult to manage modularity especially when all the team members are working on the same codebase. Secondly, to deploy a small change in the production, the whole application has to be deployed. Thus continuous delivery gets slower. This is more problematic when multiple changes have to be released on a daily basis. The slow pace and low frequency of release will highly affect agility.
 \\
-\item Decrease in Productivity: It is difficult to understand the application especially for a new developer because of the size of codebase. Although it also depends upon the structure of the codebase, it will still be difficult to grasp the significance of the code when there is no hard modular boundary. Additionally, a developer can be intimidated due to need to see the whole application at once from outwards to inwards direction. Secondly, the development environment can be slow to load the whole application and at the same time the deployment will also be slow. In overall, it will slow down the speed of understandability, execution and testing.
+\item \textbf{Decrease in Productivity}: It is difficult to understand the application especially for a new developer because of the size of codebase. Although it also depends upon the structure of the codebase, it will still be difficult to grasp the significance of the code when there is no hard modular boundary. Additionally, a developer can be intimidated due to need to see the whole application at once from outwards to inwards direction. Secondly, the development environment can be slow to load the whole application and at the same time the deployment will also be slow. Overall, it will slow down the speed of understandability, execution and testing.
 \\
-\item Difficult Team Structure: The division of team as well as assigning tasks to the team can be tricky. Most common ways to partition teams in monolith are by technology and by geography. However, each one cannot be used in all the situations. In any case, the communication among the teams can be difficult and slow. Additionally, it is not easy to assign complete vertical ownership to a team for a particular feature from development to release. If something goes wrong in the deployment, there is always a confusion who should find the problem, either operations team or the last person to commit etc. The approprate team structure and ownership are very important for agility.
+\item \textbf{Difficult Team Structure}: The division of a team as well as assigning tasks to the team members can be challenging. Most common ways to partition teams in monolith are by technology and by geography. However, partitioning either by technology or by geography may not be appropriate in all cases. In any case, the communication among the teams can be difficult and slow. Additionally, it is not easy to assign complete vertical ownership to a team for a particular feature from development to release. If something goes wrong in the deployment, there is always a question who should find the problem, is it either the operations team or the last person to commit the code. The approprate team structure and the ownership of code are very important for agility.
 \\
-\item Longterm Commitment to Technology stack: The technology to use is chosen before the development phase by analysing the requirements and the maturity of current technology at that time. All the teams in the architecture need to follow the same techonology stack throughout the lifecycle of application. However, if the requirement changes then there can be situation when the features can be best solved by different sets of technology. Additionally, not all the features in the application are same so cannot be treated accordingly and cannot be solved by same technology as well. Nevertheless, the technology advances rapidly. So, the solution thought right at the time of planning can be outdated and there can be a better solution available at present. In monolith application, it is very difficult to migrate to new technology stack and it can rather be a painfull process.
+\item \textbf{Longterm Commitment to Technology stack}: The technology to use is chosen before the development phase by analysing the requirements and the maturity of current technology at that time. All the teams in the project need to follow the same techonology stack throughout the lifecycle of an application. However, if the requirement changes then there can be situations when specific features can be best solved by different set of technology. Additionally, not all the features in the application are the same and hence cannot be solved using same technology. Nevertheless, the technology advances rapidly. So, the solution thought right at the time of planning can be outdated and there can be a better solution available at present. In monolithic applications, it is very difficult to migrate to a newer technology stack and it can rather be a painfull process.
 \\
-\item Limited Scalability: The scaling of monolith application can be performed in either of two ways. The first way is to replicate the application along many servers and dividing the incoming request using a load balancer in front of the servers. Another approach is using identical copies of the application in multiple servers as in previous case but partitioning the database access instead of user request. Both of these scaling approaches improves the capacity and availability of the application. However, the individual requirement regarding scaling for each component can be different but cannot be fulfilled with this approach. Also, the complexity of the monolith application remains the same because we are replicating the whole application. Additionally, if there is a problem in a component the same problem can affect all the servers running the copies of the application, this does not improve resilency.\cite{MacVittie:2014aa}\cite{Namiot:2014aa}
+\item \textbf{Limited Scalability}: The scaling of monolith application can be performed in either of two ways. The first way is to replicate the application along many servers and dividing the incoming request using a load balancer in front of the servers. Another approach is using identical copies of the application in multiple servers as in previous case but partitioning the database access instead of user request. Both of these scaling approaches improves the capacity and availability of the application. However, the individual requirement regarding scaling for each component can be different but cannot be fulfilled with this approach. Also, the complexity of the monolith application remains the same because we are replicating the whole application. Additionally, if there is a problem in a component the same problem can affect all the servers running the copies of the application, this does not improve resilency.\cite{MacVittie:2014aa}\cite{Namiot:2014aa}
 \end{itemize}
 \\
 
-\section{Microservice Architecture Style}\label{section:context/microservices_architecture_style}
-With monolith, it is easy to start development. But as the system gets bigger and complicated along time, it becomes very difficult to be agile and productive. The disadvantages listed in Section \ref{subsection:context/monolith-disadvantages} outweighs its advantages as the system gets old. The various qualities such as scalability, agility need to be maintained for the whole lifetime of the application and it becomes complicated by the fact that the system needs to be updated side by side because the requirements always keeps coming. In order to tackle these disadvantages, microservices architecture style is followed.\\
-Microservices architecture uses the approach of decomposing an application into smaller autonomous components. The following Section \ref{section:context/microservices_architecture_style/decompostion_of_an_application} provides details of various decomposition techniques.
+\section{Microservices Architectural Approach}\label{section:context/microservices_architecture_style}
+With monolith, it is easy to start development. But as the system gets bigger and complicated over time, it becomes very difficult to be agile and productive. The disadvantages listed in Section \ref{subsection:context/monolith-disadvantages} outweighs its advantages as the system gets old. The various qualities such as scalability and agility need to be maintained for the whole lifetime of the application. It becomes complicated due to the fact that the system needs to be updated continuously as the as the requirements keep changing and evolving over time. In order to tackle these disadvantages, microservices architecture style is followed.\\
+The microservices architecture uses the approach of decomposing an application into smaller autonomous components. The following Section \ref{section:context/microservices_architecture_style/decompostion_of_an_application} provides details of the various decomposition techniques.
 
 \subsection{Decomposition of an Application}\label{section:context/microservices_architecture_style/decompostion_of_an_application}
 There are various ways to decompose an application. This section discuss two different ways of breaking down an application.
 
 \subsubsection{Scale Cube}\label{section:context/microservices_architecture_style/decompostion_of_an_application/scale_cube}
-The Section \ref{subsection:context/monolith-disadvantages} specified various disadvantages related to monolith architecture style. The book \cite{Fisher:2015aa} provides a way to solve most of the discussed problems related to agility, scalability, productivity etc. It provides three dimensions of scalability as shown in figure \ref{fig:context/scale-cube} which can be applied alone or simultaneously depending upon the situation and desired goals.
+The Section \ref{subsection:context/monolith-disadvantages} captured various disadvantages related to the monolithic architectural approach. In \cite{Fisher:2015aa}, authors propose an approach called scale cube to address the challenges related to agility, scalability and productivity. The scale cube provides three dimensions of scalability as shown in Figure \ref{fig:context/scale-cube} which can be applied alone or simultaneously depending upon the situation and desired goals of the system.
 
 \begin{figure}[H]
 \begin{center}
@@ -89,18 +89,18 @@ The Section \ref{subsection:context/monolith-disadvantages} specified various di
 \\
 The scaling along each dimensions are described below. \cite{Fisher:2015aa}\cite{MacVittie:2014aa}\cite{Richardson:2014aa}
 \begin{enumerate}
-\item X-axis Scaling: It is achieved by cloning the application and data along multiple servers. A pool of requests are applied into a load balancer and the requests are deligated to any of the servers. Each of the server has the full capability of the application and full access to all the data required so in this respect it does not make any difference which server fulfills the request. Rather, it is about how many requests are fulfilled at any time. It is easy to scale along X-axis as the number of requests increases. The solution is as simple as to add additional clones. However, with this type of scaling, it does not scale with the increase in data. Moreover, it also does not scale when there are large variation in the frequency of any type of requests or there are dominant requests types because all the requests are handled in an unbiased way and allocated to servers in the same way.
+\item X-axis Scaling: It is achieved by cloning the application and data along multiple servers. A pool of requests are sent to a load balancer and the requests are deligated to the servers. Each of the server has the latest version of the application and access to all the data required. In this respect it does not make any difference which server fulfills the request. Rather, it is about how many requests are fulfilled at any time. It is easy to scale along X-axis as the number of requests increases. The solution is as simple as to add additional clones. However, with this type of scaling, it does not scale with the increase in data. Moreover, it also does not scale when there are large variation in the frequency of any type of requests because all the requests are handled in an unbiased way and allocated to servers in the same way.
 \\
-\item Z-axis Scaling: The scaling is obtained by spliting the request based on certain criteria or information regarding the requestor or customer affected by the request. It is different than X-axis scaling in the way that the servers are responsible for different kinds of requests. Normally, the servers have same copy of the application but some can have additional functionalies depending upon the requests expected. The Z-axis scaling helps in fault isolation and transaction scalability. Using this scaling, certain group of customers can be provided added functionality or a new functionality can be tested to a small group and thus minimizing the risk.
+\item Z-axis Scaling: The scaling is obtained by spliting the request based on certain criteria or information regarding the requestor or customer affected by the request. It is different than X-axis scaling in the way that the servers are responsible for different kinds of requests. Normally, the servers have the same copy of the application but some can have additional functionalies depending upon the requests expected. The Z-axis scaling helps in fault isolation and transaction scalability. Using this scaling, certain group of customers can be provided added functionality or a new functionality can be tested to a small group and thus minimizes the risk.
 \\
-\item Y-axis Scaling: The scaling along this dimension means the spliting of the application responsibility. The separation can be done either by data, by the actions performed on the data or by combination of both. The respective ways can be referred to as resoure-oriented or service-oriented splits. While the x-axis or z-axis split were rather duplication of work along servers, y-axis is more about specialization of work along servers. The major advantage of this scaling is that each request is scaled and handled differently according to its necessity. As the logic along with the data to be worked on are separated, developers can focus and work on small section at a time. This will increase productivity as well as agility. Additionally, a fault on a component is isolated and can be handled gracefully without affecting rest of the application. However, scaling along Y-axis can be costly compared to scaling along other dimensions.
+\item Y-axis Scaling: The scaling along this dimension means the spliting of the application's responsibility. The separation can be done either by data, by the actions performed on the data or by the combination of both. The respective ways can be referred to as resoure-oriented or service-oriented splits. While the x-axis or z-axis split are rather duplication of work along servers, y-axis is more about specialization of work along servers. The major advantage of this scaling is that each request is scaled and handled differently according to its necessity. As the logic along with the data to be worked on are separated, developers can focus and work on small section at a time. This will increase productivity as well as agility. Additionally, a fault in a component is isolated and can be handled gracefully without affecting rest of the application. However, scaling along Y-axis can be costly compared to scaling along other dimensions.
 \end{enumerate}
 \subsubsection{Shared Libraries}\label{section:context/microservices_architecture_style/decompostion_of_an_application/shared_libraries}
-Libraries is a standard way of sharing functionalities among various services and teams. The capability is provided by the feature of programming language. However there are various downsides to this approach. Firstly, it does not provide technology heterogeneity. Next, unless the library is dynamically linked, independent scaling, deployment and maintainance cannot be achieved. So, in other cases, any small change in the library leads to redeployment of whole system. Sharing code is a form of coupling which should be avoided.
+Libraries are a standard way of sharing functionalities among various services and teams. This capability is provided as a feature of the programming languages. The shared libraries however do not provide technology heterogeneity. Furthermore,  independent scaling, independent deployment and independent maintainance cannot be achieved unless the libraries are dynamically linked. In such cases, any small change in the library leads to redeployment of the whole system. Moreover, sharing the code is a form of coupling which should be avoided.
 
-Decomposing an application in terms of composition of individual features where each feature can be scaled and deployed independently, gives various advantages along agility, performance and team organization as well. Thus, microservices uses the decomposition technique presented by scale cube. A detail advantages of microservices are discussed further in Section \ref{section:challanges_of_microservices_architecture/introduction/challenges}.
+Decomposing an application in terms of composition of individual features gives various advantages such that each feature can be a) scaled independently b) deployed independently c) agile d) assigned easily to teams. Thus, microservices uses the decomposition technique presented by the scale cube. The detail advantages of microservices architectural approach are discussed further in Section \ref{section:challanges_of_microservices_architecture/introduction/challenges}.
 \subsection{Definitions}\label{section:context/microservices_architecture_style/definitions}
-There are several definitions given by several pioneers and early adapters of the style.
+There are several definitions given by several pioneers and early adapters of the microservices architectural approach.
 \\
 \begin{shaded}Definition 1: \cite{Richardson:2014ac} \end{shaded}
 "It is the way to functionally decompose an application into a set of collaborating services, each with a set of narrow, related functions, developed and deployed independently, with its own database."
@@ -122,20 +122,20 @@ There are several definitions given by several pioneers and early adapters of th
 
 \\
 \begin{shaded}Definition 5: \cite{Fowler:2014aa}\end{shaded}
-"Microservice architecture style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery. There is a bare minimum of centralized management of these services, which may be written in different programming languages and use different data storage technologies."
+"Microservices architecture style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery. There is a bare minimum of centralized management of these services, which may be written in different programming languages and use different data storage technologies."
 \\
-As other architectural styles, microservices presents its approach by increasing cohesion and decreasing coupling. Besides that, it breaks down system along business domains following single responsibility principle into granular and autonomous services running on separate processes. Additionally, the architecture focus on the collaboration of these services using light weight mechanisms.
+Similar to other architectural styles, microservices presents its approach by increasing cohesion and decreasing coupling. Besides that, it breaks down the system along business domains (following single responsibility principle) into granular and autonomous services running on separate processes. Additionally, the architecture focuses on the collaboration of these services using light weight mechanisms.
 
 \section{Motivation}\label{section:context/motivation}
-The various definitions presented in section highlights different key terms such as:
+The various definitions presented in the previous section highlights different key terms such as:
 \begin{enumerate}
 \item collaborating services
 \item developed and deployed independently
 \item build around business capabilities
 \item small, granular services
 \end{enumerate}
-These concepts are very important to be understood in order to approach microservices correctly and effectively. The first two terms relate to runtime operational qualities of microservices whereas the next two address modeling qualities. With that consideration, it indicates that the definitions provided are complete which focus on both aspects of any software applications. \\
-However, if attempt is made to have clear indepth understanding of each of the key terms then various questions can be raised without appropriate answers. The various questions (shown in column 'Questions') related to modeling and operations (shown in column 'Type') are listed in the Table \ref{tab:context/microservices_architecture_style/various_questions_related_to_microservices}.
+These concepts are very important to understand and realize the microservices architecture correctly and effectively. The first two terms relate to the runtime operational qualities of microservices whereas the later two address modeling qualities. With that consideration, it indicates that the definitions provided highlights on both modeling as well as operational aspects of any software applications. \\
+However, if an attempt is made to have a clear indepth understanding of each of the key terms then various questions can be raised without suitable answers. The different questions (shown in column 'Questions') related to modeling and operations (shown in column 'Type') are listed in the Table \ref{tab:context/microservices_architecture_style/various_questions_related_to_microservices}.
 \begin{table}[H]
   \centering
   \begin{adjustbox}{max width=\textwidth}
@@ -144,39 +144,38 @@ However, if attempt is made to have clear indepth understanding of each of the k
   \# & Questions & Type\\
   \hline
   \hline
-   1 & How small should be size of microservices? &  Modeling  \\ \hline
-   2 & How does the collaboration among services happen? & Operation  \\ \hline
-   3 & How to deploy and maintain independently when there are dependencies among services?& Operation   \\ \hline
-   4 & How to map microservices from business capabilities? & Modeling\\ \hline
-   5 & What are the challenges need to be tackled and how to? & Operation\\ \hline \hline
+   1 & How small should be the size of microservices? &  Modeling  \\ \hline
+   2 & How do services interact and coordinate with eachother? & Operation  \\ \hline
+   3 & How to deploy and maintain services independently when there are dependencies among services?& Operation   \\ \hline
+   4 & How to derive and map microservices from business capabilities? & Modeling\\ \hline
+   5 & What are the challenges need to be tackled when implementing microservices and how to tackle the challenges? & Operation\\ \hline \hline
    \end{tabular}
 \end{adjustbox}
   \caption{Various Questions related to Microservices}
   \label{tab:context/microservices_architecture_style/various_questions_related_to_microservices}
 \end{table}
-Without clear answer to these questions, it is difficult to say that the definitions presented in Section \ref{section:context/microservices_architecture_style/definitions} are complete and enough to follow the microservices architecture. The process of creating microservices is not clearly documented. There is no enough research papers defining a thorough process of modeling and operating microservices. Additionally, a lot of industries such as amazon, netflix etc are following this architecture but it is not clear about the process they are using to define and implement microservices. The purpose of the research is to have a clear understanding about the process of designing microservices by focusing on following questions.
+Without clear answers to these questions, it is difficult to say that the definitions presented in Section \ref{section:context/microservices_architecture_style/definitions} are completely enough to follow the microservices architecture. To a large extent, the process of creating microservices is not clearly documented. The research in this area of formalizing the process of modeling and operating microservices is still in its infancy. Additionally, eventhough a lot of industries such as amazon, netflix etc. are following this architecture, the process of modeling and implementing microservices is not clear. The purpose is to provide a clear understanding about the process of designing microservices by focusing on the following questions.
 \begin{shaded}
 \textbf{Research Questions}\label{list:introduction/research_questions}
 \end{shaded}
 \begin{enumerate}
-\item How are boundary and size of microservices defined?
-\item How business capabilities are mapped to define microservices?
-\item What are the best practices to tackle challenges introduced by microservices?
+\item How are boundary and the size of microservices defined?
+\item How to map business capabilities to define microservices?
+\item What are the best practices to tackle the challenges introduced by microservices?
     \begin{enumerate}
-    \item How does the collaboration among services happen?
-    \item How to deploy and maintain independently when there are dependencies among services?
+    \item How does the collaboration among microservices happen?
+    \item How to deploy and maintain microservices independently when there are dependencies among them?
     \item How to monitor microservices?
     \end{enumerate}
 \end{enumerate}
 \section{Research Approach}\label{section:context/approach}
-A research is an iterative procedure with a goal of collecting as many relevant documents as possible so that the research questions could be answered rationally. So, it becomes very important to follow a consistent research procedure. For the current research, the approach is chosen by refering to \cite{np:2007aa}. It consists of two major phases.
-\begin{enumerate}
-\item {Data Collection Phase}
-\item {Data Synthesis Phase}
-\end{enumerate}
-The following sections explains each phase in detail.
+A research is an iterative procedure with the goal of collecting as many relevant documents as possible so that the research questions could be answered rationally. Therefore, it becomes very important to follow a consistent research procedure. For the current research, the approach is chosen by refering to \cite{np:2007aa}. It consists of two major phases.
+a. {Data Collection Phase} and 
+b. {Data Synthesis Phase}
+\\
+The following sections explain each of the phases in detail.
 \subsection{Data Collection Phase}\label{section:context/approach/data_collection_phase}
-In this phase, papers related to the reseach questions are collected. The Figure \ref{fig:context/data_collection_phase} shows basic steps in this phase.
+In this phase, research papers related to the reseach questions are collected. The Figure \ref{fig:context/data_collection_phase} shows basic steps of this phase.
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{figures/introduction_data_collection_phase}
@@ -187,7 +186,7 @@ In this phase, papers related to the reseach questions are collected. The Figure
 
 \begin{enumerate}
 \item \textbf{Select Search Terms}\\
-At first, various search terms which defines the research topics and questions well, are selected using following strategies.
+At first, various search terms which defines the research topics and questions are selected using the following strategies.
 \begin{enumerate}
 \item keywords from research questions and various definitions
 \item synonyms of keywords
@@ -196,7 +195,7 @@ At first, various search terms which defines the research topics and questions w
 \end{enumerate}
 A consise list of initial keywords which are selected from various definitions of microservices are listed in Table \ref{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice}.
 \item \textbf{Search and Gather Papers}\\
-The search terms selected in previous step are utilized to discover various papers. In order to achieve that, the search terms are used against various resources listed below.
+The search terms selected in the previous step are utilized to discover various research papers. In order to achieve that, the search terms are used against various resources listed below.
 \begin{enumerate}
 \item google scholar
 \item IEEExplore
@@ -206,16 +205,16 @@ The search terms selected in previous step are utilized to discover various pape
 \item Technical Articles
 \end{enumerate}
 \item \textbf{Filter the Papers}
-Finally, the various papers collected from various resources are filtered first to check if the papers have profound base to back up their result. Using only authentic papers is important to provide rational base to current research. The various criteria used to filter the papers are listed below.
+Finally, the research papers collected from various resources are filtered first to check if they have profound base to back up their result. Using only authentic papers is important to provide rational base to the current research. The various criteria used to filter the papers are listed below.
 \begin{enumerate}
 \item Is the paper relevant to answer the research question?
-\item Does the paper have good base in terms of sources and provide references of the past studies? 
-\item Are there any case studies or examples provided to verify result of the reseach?
+\item Does the paper have a good base in terms of sources and provide references of the past studies? 
+\item Are there any case studies or examples provided to verify the result of the reseach?
 \end{enumerate}
 \end{enumerate}
 
 \subsection{Data Synthesis Phase}\label{section:context/approach/data_synthesis_phase}
-The next phase is to gather data from the selected papers to create meaningful output and provide direction to the research. The Figure \ref{fig:context/data_synthesis_phase} shows various steps within this phase.
+During the data synthesis phase, data is gathered from the selected research papers to create meaningful output and provide direction to the research. The Figure \ref{fig:context/data_synthesis_phase} shows various steps within this phase.
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{figures/introduction_data_synthesis_phase}
@@ -226,17 +225,17 @@ The next phase is to gather data from the selected papers to create meaningful o
 
 \begin{enumerate}
 \item \textbf{Extract Data from selected papers individually}\\
-Firstly, each papers are scanned and important data relevant to research are collected.
+Firstly, each research paper is scanned and important data relevant to research are collected.
 \item \textbf{Synthesize Data}\\
-The data collected from each paper are revised and compared for their similarities in concepts as well as differences in opinion. These individual contents from all papers are then synthesized.
+The data collected from each paper are revised and compared for their similarities in concepts as well as differences in opinion. These individual content from all research papers are then synthesized.
 \item \textbf{Create Draft}\\
-Finally, draft for the observations are created for future reference which will be used later for creating final report.
+Finally, draft for the observations are created for future reference which will be used later for creating the final report.
 \end{enumerate}
 
 
 \section{Research Strategy}\label{section:context/research_strategy}
-The Section \ref{section:context/approach} emphasize the importance of having consistent research procedure. Additionally, it is important to define a good strategy for achieving goals of the research. A good strategy is to narrow down the areas for conducting research. In this section, a list of areas will be identified.\\
-The various definitions in Section \ref{section:context/microservices_architecture_style/definitions} show that the authors have their own interpretation of microservices but at the same time agree upon some basic concepts. Nevertheless, each definition can be used to understand different aspect of the microservices. A distinct set of keywords can be identified from these definitions which represents different aspects. The Table \ref{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice} shows various keywords to focus. Additionally, there are other columns in the table which represents various aspects of microservices architecture. These columns are checked or unchecked to represent the relevancy of each keyword. 
+The Section \ref{section:context/approach} emphasizes the importance of having a consistent research procedure. Additionally, it is also important to define a good strategy for achieving goals of the research. A good strategy is to narrow down the areas for conducting research. In this section, a list of areas is identified.\\
+The various definitions in Section \ref{section:context/microservices_architecture_style/definitions} show that the authors have their own interpretation of microservices but at the same time agree upon some basic concepts. Nevertheless, each definition can be used to understand different aspect of the microservices. A distinct set of keywords can be identified from these definitions which represents different aspects. The Table \ref{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice} shows various keywords to focus. Additionally, there are other columns in the table which represents various aspects of microservices architecture. These columns are checked or unchecked to represent the relevance of each keyword. 
 
 \begin{table}[H]
   \centering
@@ -262,24 +261,24 @@ The various definitions in Section \ref{section:context/microservices_architectu
   \caption{Keywords extracted from various definitions of Microservice}
   \label{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice}
 \end{table}
-Finally, answering various questions around these keywords can be the \textbf{first approach} to understand the topics shown in columns such as size, quality of microservices etc.
+Finally, answering various questions around these keywords is the \textbf{first approach} to understand the topics shown in columns such as size, quality of microservices etc.
 \\
-The \textbf{next approach} to look around the architecture process is to understand its various drivers. According to \cite{Brown:2015aa}, the important drivers which clarify the architecture are: 
+The \textbf{next approach} is to understand various drivers for defining microservices architecture. According to \cite{Brown:2015aa}, the important drivers for software architecture are: 
 \label{list:introduction/drivers}
 \begin{enumerate}
 \item \textbf{Quality Attributes}\\
 The non-functional requirements have high impact on the resulting architecture. It is important to consider various quality attributes to define the process of architecture.
 \item \textbf{Constraints}\\
-There are always limitations or disadvantages faced by any architecture however the better knowledge is useful in the process of explaining the architecture with satisfaction.
+There are always limitations or disadvantages faced by any architectural approach.  The better knowledge of the constraint and moreover the solution to these constraints is useful in the process of explaining the architecture.
 \item \textbf{Principles}\\
 The various principles provides a consistent approaches to tackle various limitations. They are the keys to define guidelines.
 \end{enumerate}
-So, in order to define the process of modeling microservices, the key aspects related to \textbf{quality attributes}, \textbf{constraints} and \textbf{principles} will be studied thoroughly.
+So, in order to define the process of modeling microservices, the key aspects related to \textbf{quality attributes}, \textbf{constraints} and \textbf{principles} is studied thoroughly.
 \\
 \\
-Considering both the Table \ref{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice} and List \ref{list:introduction/drivers}, the approach to be used to define the guidelines will be to first look deep into various quality attributes influencing microservices architecture. Then, the process of identifying or modeling individual microservices from problem domain will be defined. At first, the research is performed based on various research papers. Then, the approach used by industry adopting microservices architecture will be studied in order to answer the research questions. The study will be performed on SAP Hybris.
-Finally, the various constraints or challenges which affects microservices will be identified. 
-The results of previous research will be mapped into a form of various principles and these principles will ultimately provide sufficient ground to create guidelines for microservices architecture.
+Considering both the Table \ref{tab:context/microservices_architecture_style/keywords_extracted_from_various_definitions_of_microservice} and List \ref{list:introduction/drivers}, the first area is to understand various quality attributes influencing microservices architecture. Additionally, the process of identifying and modeling individual microservices from problem domain is defined. These areas are first reseached based on various academic research papers. Then, the approach used by the industry for adopting microservices architecture is studied in order to answer the research questions. The industrial case study is performed in SAP Hybris.
+Finally, the various constraints and challenges which affect microservices is identified. 
+The results of the previous research is used to create various principles for implementing microservices architecture. These principles provide sufficient ground to create guidelines for modeling and operating microservices.
 
 \section{Problem Statement}\label{section:context/problem_statement}
-Considering the case that the size of microservice is an important concept and is discussed a lot, but no concrete answer regarding this topic exists. Moreover, the idea of size has a lot of interpretations and no definite answer regarding how small a microservice should be. So, the first step should be to understand the concept of granularity in the context of microservices. Additionally, it would be great if some answers regarding the appropriate size of microservices could be found.
+Considering the case that the size of microservice is an important concept and is discussed a lot, but no concrete answer about what defines the size of a microservice. Moreover, the idea of size has a lot of interpretations and no definite answer regarding how small a microservice should be. So, the first step is to understand the concept of granularity in the context of microservices.

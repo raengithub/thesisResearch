@@ -11,7 +11,7 @@
 \makeglossaries
 \input{glossary/terms} 
 \input{glossary/acronyms}
-\documentclass[varwidth]{article}
+%\documentclass[varwidth]{article}
 \begin{document}
 
 \input{pages/cover}
@@ -28,7 +28,17 @@
 
 
 \mainmatter{}
+\input{chapters/granularity}
+\input{chapters/quality_of_service}
+\input{chapters/modeling_microservices}
+\input{chapters/hybris_architecture}
+\input{chapters/challenges}
+\input{chapters/guidelines}
+\input{chapters/conclusion}
+\input{chapters/related_work}
+\input{chapters/future_directions}
 
+\begin{comment}
 \input{chapters/introduction}
 \input{chapters/granularity}
 \input{chapters/quality_of_service}
@@ -39,8 +49,8 @@
 \input{chapters/conclusion}
 \input{chapters/related_work}
 \input{chapters/future_directions}
-\input{chapters/appendices}
-
+%\input{chapters/appendices}
+\end{comment}
 \appendix{}
 
 \glsaddall{} % add all defined terms to glossary, even if not referenced in text
