@@ -4,7 +4,7 @@ The software architecture is the set of principles assisting software architect 
 \section{Monolithic Architectural Approach}\label{section:context/monolith}
 A mononlithic architectural approach is one in which even a modular application is deployed as a single artifact. Figure \ref{fig:context/monolith-example} shows the architecture of an Online-Store application that has a clear separation of components such as Catalog, Order etc., as well as respective models such as Product, Order etc. Despite the modular decomposition of the application, all the components are deployed as a single application artifact on the server.\cite{Richardson:2014aa}\cite{Richardson:2014ab}
 
-\begin{figure}[H]
+\begin{figure}[h!]
 \begin{center}
 \includegraphics[width=0.7\textwidth]{figures/context-monolith-example}
 \caption{Monolith Example from \cite{Richardson:2014aa}}
@@ -12,29 +12,35 @@ A mononlithic architectural approach is one in which even a modular application 
 \end{center}
 \end{figure}
 
+
 \subsection{Types of Monolith Architecture Style}\label{subsection:context/monolith-types}
 According to \cite{Annett:2014aa}, a monolith can be of several types depending upon the viewpoint, as shown below:
 \begin{enumerate}
-\item \textbf{Module Monolith}: If all the code to realize an application share the same codebase and need to be compiled together to create a single artifact for the whole application then the architecture is called Module Monolithic Architecture. An example of this architecture is shown in Figure \ref {fig:context/module-monolith-example}. The application on the left side of the figure, has all the code in the same codebase in the form of packages and classes without clear definition of modules and gets compiled to a single artifact. However, the application on the right side is developed as a number of modular codebase, each has separate codebase and can be compiled to different artifact. In the application shown in the left side of the figure, the various parts of the codebase can reference each other directly.
-\begin{figure}[H]
+\item \textbf{Module Monolith}: If all the code to realize an application share the same codebase and need to be compiled together to create a single artifact for the whole application then the architecture is called Module Monolithic Architecture. An example of this architecture is shown in Figure \ref{fig:context/module-monolith-example}. The application on the left side of the figure, has all the code in the same codebase in the form of packages and classes without clear definition of modules and gets compiled to a single artifact. However, the application on the right side is developed as a number of modular codebase, each has separate codebase and can be compiled to different artifact. In the application shown in the left side of the figure, the various parts of the codebase can reference each other directly.
+
+\begin{figure}[h!]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{figures/context-module-monolith}
 \caption{Module Monolith-Example from \cite{Annett:2014aa}}
 \label{fig:context/module-monolith-example}
 \end{center}
 \end{figure}
+
 \\
-\item \textbf{Allocation Monolith}: An Allocation Monolith is created when code is deployed to all the servers as a single version. This means that all the components running on the servers have the same versions at any time. The Figure \ref{fig:context/allocation-monolith-example} gives an example of the allocation monolith. The system on the left of Figure \ref{fig:context/allocation-monolith-example} has the same version of the artifact for all the components on all the servers. It does not make any differenct whether or not the system has a single codebase and artifact. However, the system on the right as shown in the figure is realized with multiple versions of the artifacts in different servers at any time.
-\begin{figure}[H]
+\item \textbf{Allocation Monolith}: An Allocation Monolith is created when code is deployed to all the servers as a single version. This means that all the components running on the servers have the same versions at any time. The Figure \ref{fig:context/allocation-monolith-example} gives an example of the allocation monolith. The system on the left of Figure \ref{fig:context/allocation-monolith-example} has the same version of the artifact for all the components on all the servers. It does not make any difference whether or not the system has a single codebase and artifact. However, the system on the right as shown in the figure is realized with multiple versions of the artifacts in different servers at any time.
+
+\begin{figure}[h!]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{figures/context-allocation-monolith}
 \caption{Allocation Monolith-Example from \cite{Annett:2014aa}}
 \label{fig:context/allocation-monolith-example}
 \end{center}
 \end{figure}
+
 \\
 \item \textbf{Runtime Monolith}: In the Runtime Monolith, the whole application is run under a single process. The application on the left side of Figure \ref{fig:context/runtime-monolith-example} shows an example of runtime monolith where a single server process is responsible for the whole application. Whereas the application on the right has allocated multiple server processes to run distinct set of component artifacts of the application.
-\begin{figure}[H]
+\begin{comment}
+\begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{figures/context-runtime-monolith}
 \caption{Runtime Monolith-Example from \cite{Annett:2014aa}}
@@ -42,7 +48,7 @@ According to \cite{Annett:2014aa}, a monolith can be of several types depending 
 \end{center}
 \end{figure}
 \end{enumerate}
-
+\end{comment}
 \\
 \subsection{Advantages of the Monolithic Architectural Approach}\label{subsection:context/monolith-advantages}
 The Monolithic architectural approach is appropriate for small applications and has the following benifits:\cite{Richardson:2014ab}\cite{Fowler:2014aa}\cite{Gupta:2015aa}\cite{Abram:2014aa}
@@ -78,14 +84,15 @@ There are various ways to decompose an application. This section discuss two dif
 \subsubsection{Scale Cube}\label{section:context/microservices_architecture_style/decompostion_of_an_application/scale_cube}
 The Section \ref{subsection:context/monolith-disadvantages} captured various disadvantages related to the monolithic architectural approach. In \cite{Fisher:2015aa}, authors propose an approach called scale cube to address the challenges related to agility, scalability and productivity. The scale cube provides three dimensions of scalability as shown in Figure \ref{fig:context/scale-cube} which can be applied alone or simultaneously depending upon the situation and desired goals of the system.
 
-\begin{figure}[H]
+\begin{comment}
+\begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{figures/context-scale-cube}
 \caption{Scale Cube from \cite{Fisher:2015aa}}}
 \label{fig:context/scale-cube}
 \end{center}
 \end{figure}
-
+\end{comment}
 \\
 The scaling along each dimensions are described below. \cite{Fisher:2015aa}\cite{MacVittie:2014aa}\cite{Richardson:2014aa}
 \begin{enumerate}
@@ -176,14 +183,15 @@ b. {Data Synthesis Phase}
 The following sections explain each of the phases in detail.
 \subsection{Data Collection Phase}\label{section:context/approach/data_collection_phase}
 In this phase, research papers related to the reseach questions are collected. The Figure \ref{fig:context/data_collection_phase} shows basic steps of this phase.
-\begin{figure}[H]
+\begin{comment}
+\begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{figures/introduction_data_collection_phase}
 \caption{Data Collection Phase}
 \label{fig:context/data_collection_phase}
 \end{center}
 \end{figure}
-
+\end{comment}
 \begin{enumerate}
 \item \textbf{Select Search Terms}\\
 At first, various search terms which defines the research topics and questions are selected using the following strategies.
@@ -215,14 +223,15 @@ Finally, the research papers collected from various resources are filtered first
 
 \subsection{Data Synthesis Phase}\label{section:context/approach/data_synthesis_phase}
 During the data synthesis phase, data is gathered from the selected research papers to create meaningful output and provide direction to the research. The Figure \ref{fig:context/data_synthesis_phase} shows various steps within this phase.
-\begin{figure}[H]
+\begin{comment}
+\begin{figure}[!h]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{figures/introduction_data_synthesis_phase}
 \caption{Data Synthesis Phase}
 \label{fig:context/data_synthesis_phase}
 \end{center}
 \end{figure}
-
+\end{comment}
 \begin{enumerate}
 \item \textbf{Extract Data from selected papers individually}\\
 Firstly, each research paper is scanned and important data relevant to research are collected.

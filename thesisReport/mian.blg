@@ -1,5 +1,0 @@
-[0] Config.pm:324> INFO - This is Biber 2.1
-[0] Config.pm:327> INFO - Logfile is 'mian.blg'
-[56] biber-darwin:276> INFO - === Fri Mar  4, 2016, 15:41:10
-[167] Utils.pm:162> ERROR - Cannot find control file 'mian.bcf'! - did you pass the "backend=biber" option to BibLaTeX?
-[167] Biber.pm:110> INFO - ERRORS: 1

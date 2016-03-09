@@ -25,53 +25,6 @@
 \BOOKMARK [1][-]{section.2.6}{Relationship among Quality Attributes}{chapter.2}% 25
 \BOOKMARK [1][-]{section.2.7}{Conclusion}{chapter.2}% 26
 \BOOKMARK [1][-]{section.2.8}{Problem Statement}{chapter.2}% 27
-\BOOKMARK [0][-]{chapter.3}{Modeling Microservices}{}% 28
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 29
-\BOOKMARK [1][-]{section.3.2}{Modeling Using Use cases}{chapter.3}% 30
-\BOOKMARK [2][-]{subsection.3.2.1}{Use case Refactoring}{section.3.2}% 31
-\BOOKMARK [2][-]{subsection.3.2.2}{Process for Use Case Refactoring}{section.3.2}% 32
-\BOOKMARK [2][-]{subsection.3.2.3}{Rules for Use Case Refactoring}{section.3.2}% 33
-\BOOKMARK [2][-]{subsection.3.2.4}{Example Scenario}{section.3.2}% 34
-\BOOKMARK [1][-]{section.3.3}{Modeling using Domain Driven Design}{chapter.3}% 35
-\BOOKMARK [2][-]{subsection.3.3.1}{Process to implement Domain Driven Design}{section.3.3}% 36
-\BOOKMARK [2][-]{subsection.3.3.2}{Microservices and Bounded Context}{section.3.3}% 37
-\BOOKMARK [2][-]{subsection.3.3.3}{Example Scenario}{section.3.3}% 38
-\BOOKMARK [1][-]{section.3.4}{Conclusion}{chapter.3}% 39
-\BOOKMARK [1][-]{section.3.5}{Problem Statement}{chapter.3}% 40
-\BOOKMARK [0][-]{chapter.4}{Architecture at SAP Hybris}{}% 41
-\BOOKMARK [1][-]{section.4.1}{Overview}{chapter.4}% 42
-\BOOKMARK [1][-]{section.4.2}{Vision}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.3}{SAP Hybris Architecture Principles}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.4}{Modeling Microservices at SAP Hybris}{chapter.4}% 45
-\BOOKMARK [2][-]{subsection.4.4.1}{Hypothesis}{section.4.4}% 46
-\BOOKMARK [2][-]{subsection.4.4.2}{Interview Compilation}{section.4.4}% 47
-\BOOKMARK [2][-]{subsection.4.4.3}{Interview Reflection on Hypothesis}{section.4.4}% 48
-\BOOKMARK [1][-]{section.4.5}{Derivation of Modeling Approach at SAP Hybris derived by interview compilation}{chapter.4}% 49
-\BOOKMARK [1][-]{section.4.6}{Case Study}{chapter.4}% 50
-\BOOKMARK [1][-]{section.4.7}{Deployment Workflow}{chapter.4}% 51
-\BOOKMARK [2][-]{subsection.4.7.1}{SourceCode Management}{section.4.7}% 52
-\BOOKMARK [2][-]{subsection.4.7.2}{Continuous Deployment}{section.4.7}% 53
-\BOOKMARK [1][-]{section.4.8}{Problem Statement}{chapter.4}% 54
-\BOOKMARK [0][-]{chapter.5}{Challanges of Microservices Architecture}{}% 55
-\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 56
-\BOOKMARK [1][-]{section.5.2}{Integration}{chapter.5}% 57
-\BOOKMARK [2][-]{subsection.5.2.1}{Sharing Data}{section.5.2}% 58
-\BOOKMARK [2][-]{subsection.5.2.2}{Inter-Service Communication}{section.5.2}% 59
-\BOOKMARK [1][-]{section.5.3}{Distributed System Complexity}{chapter.5}% 60
-\BOOKMARK [2][-]{subsection.5.3.1}{Breaking Change}{section.5.3}% 61
-\BOOKMARK [2][-]{subsection.5.3.2}{Handling Failures}{section.5.3}% 62
-\BOOKMARK [1][-]{section.5.4}{Operational Complexity}{chapter.5}% 63
-\BOOKMARK [2][-]{subsection.5.4.1}{Monitoring}{section.5.4}% 64
-\BOOKMARK [2][-]{subsection.5.4.2}{Deployment}{section.5.4}% 65
-\BOOKMARK [1][-]{section.5.5}{Conclusion}{chapter.5}% 66
-\BOOKMARK [0][-]{chapter.6}{Guidelines}{}% 67
-\BOOKMARK [1][-]{section.6.1}{Context}{chapter.6}% 68
-\BOOKMARK [1][-]{section.6.2}{Process to Implement Microservices Architecture}{chapter.6}% 69
-\BOOKMARK [1][-]{section.6.3}{Principles And Guidelines}{chapter.6}% 70
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 71
-\BOOKMARK [0][-]{chapter.8}{Related Work}{}% 72
-\BOOKMARK [0][-]{chapter.9}{Future Directions}{}% 73
-\BOOKMARK [0][-]{section*.69}{Acronyms}{}% 74
-\BOOKMARK [0][-]{appendix*.71}{List of Figures}{}% 75
-\BOOKMARK [0][-]{appendix*.72}{List of Tables}{}% 76
-\BOOKMARK [0][-]{appendix*.73}{Bibliography}{}% 77
+\BOOKMARK [0][-]{appendix*.16}{List of Figures}{}% 28
+\BOOKMARK [0][-]{appendix*.17}{List of Tables}{}% 29
+\BOOKMARK [0][-]{appendix*.18}{Bibliography}{}% 30
