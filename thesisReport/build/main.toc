@@ -30,7 +30,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.4}Basic Quality Metrics}{14}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Principles defined by Quality Attributes}{15}{section.1.5}
+\contentsline {section}{\numberline {1.5}Principles based on Quality Attributes}{15}{section.1.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.6}Relationship among Quality Attributes}{17}{section.1.6}
 \defcounter {refsection}{0}\relax 

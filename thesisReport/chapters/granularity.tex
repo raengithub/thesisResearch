@@ -41,7 +41,7 @@ In addition to the quantitative perspective of granularity, it can be helpful to
 
 \item The level of abstraction of the services should reflect the real world business activities. The situation will help to map business requirements and technical capabilities easily. \cite{Pierre-Reldin:2007aa}
 
-\item If there are ordering dependencies between operations, it can be easy to implement and test if the dependent operations are all combined into a single service. \cite{Bianco:2007aa}
+\item If there are ordering dependencies between operations, it can be easy to implement and test if the dependent operations are all combined into a single service \cite{Bianco:2007aa}.
 
 \item There can be two better approaches for breaking down an abstraction. One way is to separate redundant data or data with different semantic meaning. The other approach is to divide services with limited control and scope. For example: A Customer Enrollment service which deals with registration of new customers and assignment of unique customer code can be divided into two independent fine-grained services: Customer Registration and Code Generation, each service will have limited scope and separate context of Customer.\cite{Pierre-Reldin:2007aa}
 

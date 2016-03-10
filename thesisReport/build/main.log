@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  10 MAR 2016 15:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  10 MAR 2016 17:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2128,17 +2128,6 @@ LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 1 undefined on input line 2
 LaTeX Warning: Citation 'Elhag:2014aa' on page 1 undefined on input line 21.
 
 
-! Package glossaries Error: Glossary entry `.' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21 ...evelopment Life Cycle \acrshort [{SDLC}]. 
-                                                  Some of them are reusabili...
-
-? 
-
 LaTeX Warning: Citation 'Elhag:2014aa' on page 1 undefined on input line 21.
 
 
@@ -2239,12 +2228,6 @@ LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 2 undefined on input line 5
 
 
 LaTeX Warning: Citation 'Elhag:2014aa' on page 2 undefined on input line 58.
-
-
-Overfull \hbox (9.49313pt too wide) in paragraph at lines 57--63
-\T1/pplx/m/n/10.95 (-20) op-ment. These met-rics are re-fined to be used in ser
--vice ori-ented systems.[[];
- []
 
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
 (Font)              Font shape `T1/pplx/m/it' tried instead on input line 63.
@@ -2532,10 +2515,6 @@ l.381 T
 
 ? 
 
-LaTeX Warning: Reference `chapter:granularity' on page 10 undefined on input li
-ne 381.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 381--383
 
  []
@@ -2712,122 +2691,104 @@ LaTeX Warning: Citation 'Bianco:2007aa' on page 16 undefined on input line 736.
 
 
 
-LaTeX Warning: Citation 'Kazemi:2011aa' on page 16 undefined on input line 738.
+LaTeX Warning: Citation 'Kazemi:2011aa' on page 16 undefined on input line 740.
 
 
 
-LaTeX Warning: Citation 'Erl:2005aa' on page 16 undefined on input line 738.
+LaTeX Warning: Citation 'Erl:2005aa' on page 16 undefined on input line 740.
 
 
-LaTeX Warning: Citation 'Josuttis:2007aa' on page 16 undefined on input line 73
-8.
-
-
-Overfull \hbox (21.91469pt too wide) in paragraph at lines 738--739
-\T1/pplx/m/n/10.95 (-20) high cou-pling de-creases main-tain-abil-ity. [[]][[]]
-[[]] 
- []
-
-
-LaTeX Warning: Citation 'Xiao-jun:2015aa' on page 16 undefined on input line 74
+LaTeX Warning: Citation 'Josuttis:2007aa' on page 16 undefined on input line 74
 0.
 
 
-LaTeX Warning: Citation 'np:2001aa' on page 16 undefined on input line 742.
+LaTeX Warning: Citation 'Xiao-jun:2015aa' on page 16 undefined on input line 74
+2.
+
+
+LaTeX Warning: Citation 'np:2001aa' on page 16 undefined on input line 744.
 
 
 LaTeX Warning: Citation 'Washizakia:2003aa' on page 16 undefined on input line 
-744.
-
-
-LaTeX Warning: Citation 'Feuerlicht:2007aa' on page 16 undefined on input line 
-744.
-
-
-LaTeX Warning: Citation 'Ma:2009aa' on page 16 undefined on input line 744.
-
-
-LaTeX Warning: Citation 'Perepletchikov:2007aa' on page 16 undefined on input l
-ine 746.
-
-
-LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 16 undefined on input line 
 746.
 
 
-Overfull \hbox (80.69466pt too wide) in paragraph at lines 746--747
-\T1/pplx/m/n/10.95 (-20) al-ity. This highly fol-lows the con-cept of low cou-p
-ling. [[]][[]] 
- []
+LaTeX Warning: Citation 'Feuerlicht:2007aa' on page 16 undefined on input line 
+746.
 
 
-LaTeX Warning: Citation 'np:2001aa' on page 16 undefined on input line 748.
+LaTeX Warning: Citation 'Ma:2009aa' on page 16 undefined on input line 746.
 
 
 LaTeX Warning: Citation 'Perepletchikov:2007aa' on page 16 undefined on input l
 ine 748.
 
 
-LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 16 undefined on input li
-ne 752.
+LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 16 undefined on input line 
+748.
+
+
+LaTeX Warning: Citation 'np:2001aa' on page 16 undefined on input line 750.
+
+
+LaTeX Warning: Citation 'Perepletchikov:2007aa' on page 16 undefined on input l
+ine 750.
 
 
 LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 16 undefined on input li
 ne 754.
 
 
+LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 16 undefined on input li
+ne 758.
+
+
 LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 16 undefined on input line 
-754.
+758.
 
 
-LaTeX Warning: Citation 'Lee:2001aa' on page 16 undefined on input line 754.
-
-
-Overfull \hbox (170.54538pt too wide) in paragraph at lines 754--755
-\T1/pplx/m/n/10.95 (-20) num-ber and size of mes-sages used by the ser-vice ope
-rations.[[]][[]][[]] 
- []
-
-
-LaTeX Warning: Citation 'Jamshidi:2008aa' on page 16 undefined on input line 75
-7.
+LaTeX Warning: Citation 'Lee:2001aa' on page 16 undefined on input line 758.
 
 [16]
 
-LaTeX Warning: Citation 'Ma:2009aa' on page 17 undefined on input line 759.
+LaTeX Warning: Citation 'Jamshidi:2008aa' on page 17 undefined on input line 76
+1.
 
 
-LaTeX Warning: Citation 'Ma:2009aa' on page 17 undefined on input line 761.
+LaTeX Warning: Citation 'Ma:2009aa' on page 17 undefined on input line 763.
 
 
-LaTeX Warning: Citation 'Bianco:2007aa' on page 17 undefined on input line 761.
+LaTeX Warning: Citation 'Ma:2009aa' on page 17 undefined on input line 765.
+
+
+LaTeX Warning: Citation 'Bianco:2007aa' on page 17 undefined on input line 765.
 
 
 
 LaTeX Warning: Citation 'Feuerlicht:2007aa' on page 17 undefined on input line 
-764.
+767.
 
 
-LaTeX Warning: Citation 'Bianco:2007aa' on page 17 undefined on input line 766.
+LaTeX Warning: Citation 'Bianco:2007aa' on page 17 undefined on input line 769.
 
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 798--800
+Underfull \hbox (badness 10000) in paragraph at lines 801--803
 
  []
 
 [17] [18]
 
 LaTeX Warning: Reference `section:context/approach' on page 19 undefined on inp
-ut line 813.
+ut line 816.
 
 
 LaTeX Warning: Reference `tab:context/microservices_architecture_style/keywords
 _extracted_from_various_definitions_of_microservice' on page 19 undefined on in
-put line 813.
+put line 816.
 
 )
 No file main.acr.
@@ -2911,7 +2872,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C93C81F5CB46C92D422C01ED6773F046;1365.
+(rerunfilecheck)             Checksum: A4DDB5A708D955A50929399F803DCAC8;1363.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2930,7 +2891,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  )
 (\end occurred inside a group at level 10)
 
-### simple group (level 10) entered at line 773 ({)
+### simple group (level 10) entered at line 776 ({)
 ### simple group (level 9) entered at line 732 ({)
 ### simple group (level 8) entered at line 553 ({)
 ### simple group (level 7) entered at line 508 ({)
@@ -2942,13 +2903,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 ### simple group (level 1) entered at line 64 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 46561 strings out of 493089
- 982477 string characters out of 6134843
- 1682360 words of memory out of 5000000
+ 46558 strings out of 493089
+ 982450 string characters out of 6134843
+ 1682358 words of memory out of 5000000
  48753 multiletter control sequences out of 15000+600000
- 63623 words of font info for 260 fonts, out of 8000000 for 9000
+ 63400 words of font info for 257 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,19n,95p,2012b,2522s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,19n,95p,2015b,2521s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:SRI} has been referenced but do
 es not exist, replaced by a fixed one
 
@@ -3000,6 +2961,9 @@ eplaced by a fixed one
 pdfTeX warning (dest): name{glo:SOCI} has been referenced but does not exist, r
 eplaced by a fixed one
 
+pdfTeX warning (dest): name{glo:SDLC} has been referenced but does not exist, r
+eplaced by a fixed one
+
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
 usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texliv
@@ -3013,10 +2977,10 @@ t/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
 w/palatino/uplri8a.pfb>
-Output written on build/main.pdf (29 pages, 206138 bytes).
+Output written on build/main.pdf (29 pages, 205567 bytes).
 PDF statistics:
- 482 PDF objects out of 1000 (max. 8388607)
- 417 compressed objects within 5 object streams
- 107 named destinations out of 1000 (max. 500000)
+ 484 PDF objects out of 1000 (max. 8388607)
+ 419 compressed objects within 5 object streams
+ 108 named destinations out of 1000 (max. 500000)
  34591 words of extra memory for PDF output out of 35830 (max. 10000000)
 
