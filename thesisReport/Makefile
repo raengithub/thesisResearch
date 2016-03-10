@@ -1,4 +1,4 @@
-=FILE := main
+FILE := main
 OUT  := build
 
 latexmk:

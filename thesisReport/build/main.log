@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.7.5)  10 MAR 2016 11:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  10 MAR 2016 15:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -630,10 +630,11 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: dvips.def on input line 94.
+Package graphics Info: Driver file: pdftex.def on input line 94.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/dvips.def
-File: dvips.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count216
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
@@ -642,23 +643,23 @@ File: dvips.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
 Package: scrhack 2015/05/06 v3.17a KOMA-Script package 
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count216
+\lst@mode=\count217
 \lst@gtempboxa=\box27
 \lst@token=\toks18
-\lst@length=\count217
+\lst@length=\count218
 \lst@currlwidth=\dimen106
-\lst@column=\count218
-\lst@pos=\count219
+\lst@column=\count219
+\lst@pos=\count220
 \lst@lostspace=\dimen107
 \lst@width=\dimen108
-\lst@newlines=\count220
-\lst@lineno=\count221
+\lst@newlines=\count221
+\lst@lineno=\count222
 \lst@maxwidth=\dimen109
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count222
-\lst@skipnumbers=\count223
+\c@lstnumber=\count223
+\lst@skipnumbers=\count224
 \lst@framebox=\box28
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
@@ -677,7 +678,7 @@ Package: listings 2014/09/06 1.5e (Carsten Heinz)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lstaddons/lstautogobble.sty
 Package: lstautogobble 2012/05/03 v0.1 Implements 'autogobble' option for 'list
 ings'
-\lstag@spacecount=\count224
+\lstag@spacecount=\count225
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
@@ -721,10 +722,10 @@ ode.tex
 \pgf@yc=\dimen119
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
-\c@pgf@counta=\count225
-\c@pgf@countb=\count226
-\c@pgf@countc=\count227
-\c@pgf@countd=\count228
+\c@pgf@counta=\count226
+\c@pgf@countb=\count227
+\c@pgf@countc=\count228
+\c@pgf@countd=\count229
 \t@pgf@toka=\toks23
 \t@pgf@tokb=\toks24
 \t@pgf@tokc=\toks25
@@ -732,16 +733,15 @@ ode.tex
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Driver file for pgf: pgfsys-dvips.def
+Driver file for pgf: pgfsys-pdftex.def
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvips.de
-f
-File: pgfsys-dvips.def 2013/07/16  (rcs-revision 1.23)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
-ostscript.def
-File: pgfsys-common-postscript.def 2008/10/01  (rcs-revision 1.22)
-\pgf@objectcount=\count229
+df.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
@@ -758,7 +758,7 @@ Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package xcolor Info: Driver file: dvips.def on input line 225.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
@@ -776,6 +776,7 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 )
 \rownum=\count232
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
@@ -1049,7 +1050,7 @@ s.surfshading.code.tex
 \c@pgfplotslibrarysurf@no=\count283
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
-.surfshading.pgfsys-dvips.def)))
+.surfshading.pgfsys-pdftex.def)))
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.
 code.tex
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.cod
@@ -1196,7 +1197,7 @@ Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 Package hobsub Info: Skipping package `etexcmds' (already loaded).
 Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
@@ -1205,7 +1206,7 @@ Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package pdftexcmds Info: \pdfdraftmode found.
 Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
 Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
 )
@@ -1272,20 +1273,12 @@ Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             need that hack, on input line 28.
 
 
-Package hyperref Message: Driver (default): hdvips.
+Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hdvips.def
-File: hdvips.def 2012/11/06 v6.83m Hyperref driver for dvips
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pdfmark.def
-File: pdfmark.def 2012/11/06 v6.83m Hyperref definitions for pdfmark specials
-\pdf@docset=\toks38
-\pdf@box=\box41
-\pdf@toks=\toks39
-\pdf@defaulttoks=\toks40
-\HyField@AnnotCount=\count301
-\Fld@listcount=\count302
-\c@bookmark@seq@number=\count303
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count301
+\c@bookmark@seq@number=\count302
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -1293,7 +1286,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip66
-))
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2015/03/16 v4.15 (NLCT)
 
@@ -1302,16 +1295,16 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks41
-\XKV@tempa@toks=\toks42
+\XKV@toks=\toks38
+\XKV@tempa@toks=\toks39
 )
-\XKV@depth=\count304
+\XKV@depth=\count303
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/base/mfirstuc.sty
 Package: mfirstuc 2015/02/03 v1.10 (NLCT)
-\@glsmfirst=\toks43
-\@glsmrest=\toks44
+\@glsmfirst=\toks40
+\@glsmrest=\toks41
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
@@ -1332,7 +1325,7 @@ Package: amstext 2000/06/29 v2.01
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks45
+\@emptytoks=\toks42
 \ex@=\dimen197
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -1342,47 +1335,47 @@ Package: amsbsy 1999/11/29 v1.2d
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count305
+\inf@bad=\count304
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count306
-\leftroot@=\count307
+\uproot@=\count305
+\leftroot@=\count306
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count308
-\DOTSCASE@=\count309
+\classnum@=\count307
+\DOTSCASE@=\count308
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box42
-\strutbox@=\box43
+\Mathstrutbox@=\box41
+\strutbox@=\box42
 \big@size=\dimen199
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count310
-\c@MaxMatrixCols=\count311
+\macc@depth=\count309
+\c@MaxMatrixCols=\count310
 \dotsspace@=\muskip11
-\c@parentequation=\count312
-\dspbrk@lvl=\count313
-\tag@help=\toks46
-\row@=\count314
-\column@=\count315
-\maxfields@=\count316
-\andhelp@=\toks47
+\c@parentequation=\count311
+\dspbrk@lvl=\count312
+\tag@help=\toks43
+\row@=\count313
+\column@=\count314
+\maxfields@=\count315
+\andhelp@=\toks44
 \eqnshift@=\dimen200
 \alignsep@=\dimen201
 \tagshift@=\dimen202
 \tagwidth@=\dimen203
 \totwidth@=\dimen204
 \lineht@=\dimen205
-\@envbody=\toks48
+\@envbody=\toks45
 \multlinegap=\skip68
 \multlinetaggap=\skip69
-\mathdisplay@stack=\toks49
+\mathdisplay@stack=\toks46
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count317
+\c@su@anzahl=\count316
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/datatool/datatool-fp.sty
 Package: datatool-fp 2013/08/29 v2.17 (NLCT)
@@ -1393,19 +1386,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count318
+\actioncount=\count317
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count319
-\FP@xia=\count320
-\FP@xib=\count321
-\FP@xfa=\count322
-\FP@xfb=\count323
-\FP@rega=\count324
-\FP@regb=\count325
-\FP@regs=\count326
-\FP@times=\count327
+\FP@xs=\count318
+\FP@xia=\count319
+\FP@xib=\count320
+\FP@xfa=\count321
+\FP@xfb=\count322
+\FP@rega=\count323
+\FP@regb=\count324
+\FP@regs=\count325
+\FP@times=\count326
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -1424,7 +1417,7 @@ Package: fp-pas 1994/08/29
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count328
+\FPseed=\count327
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -1435,15 +1428,15 @@ Package: fp-upn 1996/10/21
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
-\@dtl@toks=\toks50
-\@dtl@tmpcount=\count329
+\@dtl@toks=\toks47
+\@dtl@tmpcount=\count328
 \dtl@tmplength=\skip70
-\dtl@sortresult=\count330
-\@dtl@numgrpsepcount=\count331
-\@dtl@datatype=\count332
-\dtl@codeA=\count333
-\dtl@codeB=\count334
-\@dtl@foreach@level=\count335
+\dtl@sortresult=\count329
+\@dtl@numgrpsepcount=\count330
+\@dtl@datatype=\count331
+\dtl@codeA=\count332
+\dtl@codeB=\count333
+\@dtl@foreach@level=\count334
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/base/glossaries-compat
 ible-307.sty
@@ -1462,13 +1455,13 @@ uage-mappings.tex))
 lish.ldf
 File: glossaries-english.ldf 2014/11/23 v1.0
 )
-\gls@level=\count336
-\@gls@tmpb=\toks51
+\gls@level=\count335
+\@gls@tmpb=\toks48
 \gls@tmplen=\skip71
-\glskeylisttok=\toks52
-\glslabeltok=\toks53
-\glsshorttok=\toks54
-\glslongtok=\toks55
+\glskeylisttok=\toks49
+\glslabeltok=\toks50
+\glsshorttok=\toks51
+\glslongtok=\toks52
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/styles/glossary-hypern
 av.sty
@@ -1488,17 +1481,17 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTright=\skip74
 \LTpre=\skip75
 \LTpost=\skip76
-\LTchunksize=\count337
+\LTchunksize=\count336
 \LTcapwidth=\dimen206
-\LT@head=\box44
-\LT@firsthead=\box45
-\LT@foot=\box46
-\LT@lastfoot=\box47
-\LT@cols=\count338
-\LT@rows=\count339
-\c@LT@tables=\count340
-\c@LT@chunks=\count341
-\LT@p@ftn=\toks56
+\LT@head=\box43
+\LT@firsthead=\box44
+\LT@foot=\box45
+\LT@lastfoot=\box46
+\LT@cols=\count337
+\LT@rows=\count338
+\c@LT@tables=\count339
+\c@LT@chunks=\count340
+\LT@p@ftn=\toks53
 )
 Class scrbook Info: longtable captions redefined on input line 43.
 \glsdescwidth=\skip77
@@ -1509,7 +1502,7 @@ sty
 Package: glossary-super 2013/11/14 v4.0 (NLCT)
  (/usr/local/texlive/2015/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count342
+\c@tracingst=\count341
 \ST@wd=\dimen207
 \ST@rightskip=\skip79
 \ST@leftskip=\skip80
@@ -1524,7 +1517,7 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \ST@prevht=\dimen215
 \ST@toadd=\dimen216
 \ST@dimen=\dimen217
-\ST@pbox=\box48
+\ST@pbox=\box47
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/styles/glossary-tree.s
 ty
@@ -1535,11 +1528,11 @@ Package: placeins 2005/04/18  v 2.2
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count343
-\float@exts=\toks57
-\float@box=\box49
-\@float@everytoks=\toks58
-\@floatcapt=\box50
+\c@float@type=\count342
+\float@exts=\toks54
+\float@box=\box48
+\@float@everytoks=\toks55
+\@floatcapt=\box49
 )
 Package scrhack Info: loading float hack on input line 39.
 
@@ -1573,19 +1566,14 @@ File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.0 (rcs-revision 1.2)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings
 .code.tex
 File: pgflibraryfadings.code.tex 2008/02/07 v3.0.0 (rcs-revision 1.3)
-
-
-Package pgf Warning: Your graphic driver pgfsys-dvips.def does not support fadi
-ngs. This warning is given only once on input line 31.
-
 )))
-\c@preinst=\count344
-\c@instnum=\count345
-\c@threadnum=\count346
-\c@seqlevel=\count347
-\c@callevel=\count348
-\c@callselflevel=\count349
-\c@blocklevel=\count350
+\c@preinst=\count343
+\c@instnum=\count344
+\c@threadnum=\count345
+\c@seqlevel=\count346
+\c@callevel=\count347
+\c@callselflevel=\count348
+\c@blocklevel=\count349
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarysnakes.code.tex
@@ -1603,13 +1591,13 @@ brarydecorations.shapes.code.tex)))
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.0 (rcs-revision 1.3)
-\pgf@layerbox@background=\box51
-\pgf@layerboxsaved@background=\box52
+\pgf@layerbox@background=\box50
+\pgf@layerboxsaved@background=\box51
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks59
-\verbatim@line=\toks60
+\every@verbatim=\toks56
+\verbatim@line=\toks57
 \verbatim@in@stream=\read3
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pbox/pbox.sty
@@ -1617,15 +1605,15 @@ Package: pbox 2011/12/07 v1.2 Dynamic parboxes
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count351
-\calc@Bcount=\count352
+\calc@Acount=\count350
+\calc@Bcount=\count351
 \calc@Adimen=\dimen219
 \calc@Bdimen=\dimen220
 \calc@Askip=\skip83
 \calc@Bskip=\skip84
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count353
+\calc@Ccount=\count352
 \calc@Cskip=\skip85
 )
 \pb@xlen=\skip86
@@ -1650,16 +1638,16 @@ Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box53
+\collectedbox=\box52
 )
 \tc@llx=\dimen225
 \tc@lly=\dimen226
 \tc@urx=\dimen227
 \tc@ury=\dimen228
-Package trimclip Info: Using driver 'tc-dvips.def'.
+Package trimclip Info: Using driver 'tc-pdftex.def'.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/adjustbox/tc-dvips.def
-File: tc-dvips.def 2012/05/13 v1.0 Clipping driver for dvips
+(/usr/local/texlive/2015/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 ))
 \adjbox@Width=\dimen229
 \adjbox@Height=\dimen230
@@ -1668,12 +1656,12 @@ File: tc-dvips.def 2012/05/13 v1.0 Clipping driver for dvips
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
-\c@checkoddpage=\count354
+\c@checkoddpage=\count353
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box54
-\sift@deathcycles=\count355
+\@vwid@box=\box53
+\sift@deathcycles=\count354
 \@vwid@loff=\dimen233
 \@vwid@roff=\dimen256
 ))
@@ -1692,55 +1680,56 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2015/03/04 v2.20.2
-\thm@style=\toks61
-\thm@bodyfont=\toks62
-\thm@headfont=\toks63
-\thm@notefont=\toks64
-\thm@headpunct=\toks65
+\thm@style=\toks58
+\thm@bodyfont=\toks59
+\thm@headfont=\toks60
+\thm@notefont=\toks61
+\thm@headpunct=\toks62
 \thm@preskip=\skip88
 \thm@postskip=\skip89
 \thm@headsep=\skip90
-\dth@everypar=\toks66
+\dth@everypar=\toks63
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip91
 \enit@outerparindent=\dimen258
-\enit@toks=\toks67
-\enit@inbox=\box55
-\enitdp@description=\count356
+\enit@toks=\toks64
+\enit@inbox=\box54
+\enitdp@description=\count355
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
-\c@r@tfl@t=\count357
+\c@r@tfl@t=\count356
 \rotFPtop=\skip92
 \rotFPbot=\skip93
-\rot@float@box=\box56
-\rot@mess@toks=\toks68
+\rot@float@box=\box55
+\rot@mess@toks=\toks65
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
-\c@tracingmulticols=\count358
-\mult@box=\box57
+\c@tracingmulticols=\count357
+\mult@box=\box56
 \multicol@leftmargin=\dimen259
-\c@unbalance=\count359
-\c@collectmore=\count360
-\doublecol@number=\count361
-\multicoltolerance=\count362
-\multicolpretolerance=\count363
+\c@unbalance=\count358
+\c@collectmore=\count359
+\doublecol@number=\count360
+\multicoltolerance=\count361
+\multicolpretolerance=\count362
 \full@width=\dimen260
 \page@free=\dimen261
 \premulticols=\dimen262
 \postmulticols=\dimen263
 \multicolsep=\skip94
 \multicolbaselineskip=\skip95
-\partial@page=\box58
-\last@line=\box59
+\partial@page=\box57
+\last@line=\box58
 \maxbalancingoverflow=\dimen264
-\mult@rightbox=\box60
-\mult@grightbox=\box61
-\mult@gfirstbox=\box62
-\mult@firstbox=\box63
+\mult@rightbox=\box59
+\mult@grightbox=\box60
+\mult@gfirstbox=\box61
+\mult@firstbox=\box62
+\@tempa=\box63
 \@tempa=\box64
 \@tempa=\box65
 \@tempa=\box66
@@ -1757,15 +1746,14 @@ Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
 \@tempa=\box77
 \@tempa=\box78
 \@tempa=\box79
-\@tempa=\box80
-\c@columnbadness=\count364
-\c@finalcolumnbadness=\count365
+\c@columnbadness=\count363
+\c@finalcolumnbadness=\count364
 \last@try=\dimen265
 \multicolovershoot=\dimen266
 \multicolundershoot=\dimen267
-\mult@nat@firstbox=\box81
-\colbreak@box=\box82
-\mc@col@check@num=\count366
+\mult@nat@firstbox=\box80
+\colbreak@box=\box81
+\mc@col@check@num=\count365
 ))
 
 Class scrbook Warning: Usage of package `titlesec' together
@@ -1780,12 +1768,12 @@ Class scrbook Warning: Usage of package `titlesec' together
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
-\ttl@box=\box83
+\ttl@box=\box82
 \beforetitleunit=\skip96
 \aftertitleunit=\skip97
 \ttl@plus=\dimen268
 \ttl@minus=\dimen269
-\ttl@toksa=\toks69
+\ttl@toksa=\toks66
 \titlewidth=\dimen270
 \titlewidthlast=\dimen271
 \titlewidthfirst=\dimen272
@@ -1873,7 +1861,7 @@ Package biblatex Info: ... file 'english.lbx' found.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 ))
-(./main.aux)
+(build/main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -1906,21 +1894,52 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
-
-(./main.bbl)
+ (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 15.
 Package biblatex Info: Reference segment=0 on input line 15.
-\c@lstlisting=\count367
+
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count366
+\scratchdimen=\dimen273
+\scratchbox=\box83
+\nofMPsegments=\count367
+\nofMParguments=\count368
+\everyMPshowfont=\toks67
+\MPscratchCnt=\count369
+\MPscratchDim=\dimen274
+\MPnumerator=\count370
+\makeMPintoPDFobject=\count371
+\everyMPtoPDFconversion=\toks68
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@lstlisting=\count372
 Package scrhack Info: undefining \float@addtolists on input line 15.
- ABD: EveryShipout initializing macros
+
+ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.12} (current compat level: 1.9).
 
 LaTeX Info: Redefining \microtypecontext on input line 15.
-Package microtype Info: Generating DVI output.
+Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
-Package microtype Info: No font expansion.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1947,61 +1966,45 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count368
+\c@section@level=\count373
 )
 LaTeX Info: Redefining \ref on input line 15.
 LaTeX Info: Redefining \pageref on input line 15.
 LaTeX Info: Redefining \nameref on input line 15.
 
-(./main.out) (./main.out)
+(build/main.out) (build/main.out)
 \@outlinefile=\write8
 \openout8 = `main.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
 line 15.
-(./pages/cover.tex
+ (./pages/cover.tex
+<logos/tum.png, id=115, 53.4798pt x 28.6671pt>
+File: logos/tum.png Graphic file (type png)
+ <use logos/tum.png>
+Package pdftex.def Info: logos/tum.png used on input line 13.
+(pdftex.def)             Requested size: 113.81102pt x 61.01012pt.
 
-! LaTeX Error: File `logos/tum' not found.
+<logos/faculty.png, id=116, 34.2078pt x 37.0986pt>
+File: logos/faculty.png Graphic file (type png)
+ <use logos/faculty.png>
+Package pdftex.def Info: logos/faculty.png used on input line 31.
+(pdftex.def)             Requested size: 56.9055pt x 61.71553pt.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.13   \includegraphics[width=40mm]{logos/tum}
-                                              
-? 
-
-! LaTeX Error: File `logos/faculty' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31   \includegraphics[width=20mm]{logos/faculty}
-                                                  
-? 
 [1
 
 \openout5 = `main.ist'.
 
 
 
-]) (./pages/title.tex
-
-! LaTeX Error: File `logos/tum' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.5   \includegraphics[width=40mm]{logos/tum}
-                                             
-? 
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logos
+/tum.png> <./logos/faculty.png>]) (./pages/title.tex
+File: logos/tum.png Graphic file (type png)
+ <use logos/tum.png>
+Package pdftex.def Info: logos/tum.png used on input line 5.
+(pdftex.def)             Requested size: 113.81102pt x 61.01012pt.
 LaTeX Font Info:    Try loading font information for OT1+pplx on input line 23.
+
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
@@ -2054,37 +2057,966 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 8.33606pt on input line 23.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 23.
+File: logos/faculty.png Graphic file (type png)
+
+<use logos/faculty.png>
+Package pdftex.def Info: logos/faculty.png used on input line 31.
+(pdftex.def)             Requested size: 56.9055pt x 61.71553pt.
+ [1
 
 
-! LaTeX Error: File `logos/faculty' not found.
+
+]) (./pages/disclaimer.tex [2])
+(./pages/acknowledgements.tex [3
+
+
+]) (./pages/abstract.tex
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 1.
+) [4
+
+
+
+
+]
+Package tocbasic Info: character protrusion at toc deactivated on input line 26
+.
+ (build/main.toc)
+\tf@toc=\write9
+\openout9 = `main.toc'.
+
+
+[5
+
+
+] (./chapters/quality_of_service.tex
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 20.
+
+LaTeX Warning: Citation 'Zhang:2009aa' on page 1 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Goeb:2011aa' on page 1 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Nematzadeh:2014aa' on page 1 undefined on input line 2
+1.
+
+
+LaTeX Warning: Citation 'Mancioppi:2015aa' on page 1 undefined on input line 21
+.
+
+
+LaTeX Warning: Citation 'Mancioppi:2015aa' on page 1 undefined on input line 21
+.
+
+
+LaTeX Warning: Citation 'Briand:1996aa' on page 1 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Rostampour:2011aa' on page 1 undefined on input line 2
+1.
+
+
+LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 1 undefined on input line 2
+1.
+
+
+LaTeX Warning: Citation 'Elhag:2014aa' on page 1 undefined on input line 21.
+
+
+! Package glossaries Error: Glossary entry `.' has not been defined.
+
+See the glossaries package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ...evelopment Life Cycle \acrshort [{SDLC}]. 
+                                                  Some of them are reusabili...
+
+? 
+
+LaTeX Warning: Citation 'Elhag:2014aa' on page 1 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Mancioppi:2015aa' on page 1 undefined on input line 21
+.
+
+
+LaTeX Warning: Citation 'Feuerlicht:2007aa' on page 1 undefined on input line 2
+1.
+
+
+LaTeX Warning: Citation 'Feuerlicht:2013aa' on page 1 undefined on input line 2
+1.
+
+
+LaTeX Warning: Citation 'Henry:1990aa' on page 1 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Briand:2015aa' on page 1 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Alshayeb:2003aa' on page 1 undefined on input line 21.
+
+
+
+LaTeX Warning: Citation 'Bingu-Shim:2008aa' on page 1 undefined on input line 2
+1.
+
+
+LaTeX Warning: Citation 'Mancioppi:2015aa' on page 1 undefined on input line 21
+.
+
+
+LaTeX Warning: Citation 'Perepletchikov:2007aa' on page 1 undefined on input li
+ne 21.
+
+
+LaTeX Warning: Citation 'Mikhail-Perepletchikov:2015aa' on page 1 undefined on 
+input line 21.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.22 
+      [1
+
+
+
+]
+
+LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 2 undefined on input line 3
+1.
+
+
+LaTeX Warning: Citation 'Xiao-jun:2015aa' on page 2 undefined on input line 31.
+
+
+
+LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 2 undefined on input lin
+e 31.
+
+
+LaTeX Warning: Citation 'Bingu-Shim:2008aa' on page 2 undefined on input line 3
+1.
+
+
+LaTeX Warning: Citation 'Ma:2009aa' on page 2 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'Feuerlicht:2007aa' on page 2 undefined on input line 3
+1.
+
+
+LaTeX Warning: Citation 'Elhag:2014aa' on page 2 undefined on input line 50.
+
+
+LaTeX Warning: Citation 'Feuerlicht:2007aa' on page 2 undefined on input line 5
+2.
+
+
+LaTeX Warning: Citation 'Ma:2007aa' on page 2 undefined on input line 54.
+
+
+LaTeX Warning: Reference `chapter:granularity' on page 2 undefined on input lin
+e 54.
+
+
+LaTeX Warning: Citation 'Elhag:2014aa' on page 2 undefined on input line 54.
+
+
+LaTeX Warning: Citation 'Xiao-jun:2015aa' on page 2 undefined on input line 57.
+
+
+
+LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 2 undefined on input line 5
+7.
+
+
+LaTeX Warning: Citation 'Elhag:2014aa' on page 2 undefined on input line 58.
+
+
+Overfull \hbox (9.49313pt too wide) in paragraph at lines 57--63
+\T1/pplx/m/n/10.95 (-20) op-ment. These met-rics are re-fined to be used in ser
+-vice ori-ented systems.[[];
+ []
+
+LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
+(Font)              Font shape `T1/pplx/m/it' tried instead on input line 63.
+[2]
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 64.
+LaTeX Font Info:    Try loading font information for OMS+pplx on input line 69.
+
+LaTeX Font Info:    No file OMSpplx.fd. on input line 69.
+
+
+LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 69.
+
+
+Overfull \hbox (6.93349pt too wide) in paragraph at lines 69--70
+[]\T1/pplx/m/n/10.95 (-20) the busi-ness do-main is re-al-ized with var-i-ous p
+ro-cesses de-fined as $\OML/zplm/m/it/10.95 P \OT1/zplm/m/n/10.95 = \OMS/zplm/m
+/n/10.95 f\OML/zplm/m/it/10.95 p[]\OT1/pplx/m/n/10.95 (-20) , \OML/zplm/m/it/10
+.95 p[]\OT1/pplx/m/n/10.95 (-20) ...\OML/zplm/m/it/10.95 p[]\OMS/zplm/m/n/10.95
+ g$ 
+ []
+
+[3]
+! Missing } inserted.
+<inserted text> 
+                }
+l.73 ...sumer}(s) = \{ S_{c1}, S_{2},...S{{n_c}\}$
+                                                  ; $n_c$ gives the number o...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.74 ...ducer}(s) = \{ S_{c1}, S_{2},...S{{n_p}\}$
+                                                  ; $n_p$ gives the number o...
+
+? 
+
+! LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.31   \includegraphics[width=20mm]{logos/faculty}
-                                                  
-? 
-! Interruption.
-\GenericError  ...                                
-                                                  \endgroup 
-l.31   \includegraphics[width=20mm]{logos/faculty}
-                                                  
-? 
-! Emergency stop.
-\GenericError  ...                                
-                                                  \endgroup 
-l.31   \includegraphics[width=20mm]{logos/faculty}
-                                                  
-End of file on the terminal!
+l.79 \subsection
+                {Coupling Metrics}{\label{section:quality_of_service/quality...
 
- 
+? 
+
+LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 4 undefined on input line 8
+1.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 \cite
+          {Xiao-jun:2015aa} defines
+? 
+
+LaTeX Warning: Citation 'Xiao-jun:2015aa' on page 4 undefined on input line 96.
+
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.107 \cite
+           {Kazemi:2011aa} defines
+? 
+
+LaTeX Warning: Citation 'Kazemi:2011aa' on page 5 undefined on input line 107.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--110
+
+ []
+
+
+LaTeX Warning: Citation 'Bingu-Shim:2008aa' on page 5 undefined on input line 1
+16.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--119
+
+ []
+
+[5]
+
+LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 6 undefined on input lin
+e 124.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--129
+
+ []
+
+
+LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 6 undefined on input line 1
+44.
+
+
+LaTeX Warning: Citation 'Xiao-jun:2015aa' on page 6 undefined on input line 155
+.
+
+
+LaTeX Warning: Citation 'Kazemi:2011aa' on page 6 undefined on input line 166.
+
+
+LaTeX Warning: Citation 'Bingu-Shim:2008aa' on page 6 undefined on input line 1
+78.
+
+
+LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 6 undefined on input lin
+e 181.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 T
+       he Table \ref{tab:quality_of_service/quality_attributes/coupling_metr...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--196
+
+ []
+
+
+LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 6 undefined on input line 2
+00.
+
+
+LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 6 undefined on input line 2
+08.
+
+[6]
+
+LaTeX Warning: Citation 'Bingu-Shim:2008aa' on page 7 undefined on input line 2
+11.
+
+
+LaTeX Warning: Citation 'Perepletchikov:2007aa' on page 7 undefined on input li
+ne 214.
+
+[7]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 \\w
+         here,
+? 
+
+LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 8 undefined on input lin
+e 232.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.236 w
+       here,
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--238
+
+ []
+
+
+LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 8 undefined on input line 2
+51.
+
+
+LaTeX Warning: Citation 'Perepletchikov:2007aa' on page 8 undefined on input li
+ne 259.
+
+
+LaTeX Warning: Citation 'Bingu-Shim:2008aa' on page 8 undefined on input line 2
+72.
+
+
+LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 8 undefined on input lin
+e 279.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.295 T
+       he Table \ref{tab:quality_of_service/quality_attributes/cohesion_metr...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
+
+ []
+
+[8]
+
+LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 9 undefined on input line 3
+02.
+
+
+LaTeX Warning: Citation 'Bingu-Shim:2008aa' on page 9 undefined on input line 3
+11.
+
+
+LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 9 undefined on input lin
+e 314.
+
+[9]
+! Display math should end with $$.
+<to be read again> 
+                    
+l.318 ...frac{W_i(o)}{ \sum_{i=1}^{|O(S)|}W_i(o)}$
+                                                  
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--325
+
+ []
+
+
+LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 10 undefined on input line 
+346.
+
+
+LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 10 undefined on input li
+ne 354.
+
+
+LaTeX Warning: Citation 'Bingu-Shim:2008aa' on page 10 undefined on input line 
+367.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.381 T
+       he Table \ref{tab:quality_of_service/quality_attributes/granularity_m...
+
+? 
+
+LaTeX Warning: Reference `chapter:granularity' on page 10 undefined on input li
+ne 381.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--383
+
+ []
+
+
+LaTeX Warning: Citation 'Zhang:2009aa' on page 10 undefined on input line 387.
+
+[10]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.391 
+      
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.395 w
+       here,
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 395--397
+
+ []
+
+
+LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 11 undefined on input li
+ne 407.
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 408--412
+
+ []
+
+
+LaTeX Warning: Citation 'Zhang:2009aa' on page 12 undefined on input line 427.
+
+
+LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 12 undefined on input li
+ne 438.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.451 T
+       he Table \ref{tab:quality_of_service/quality_attributes/complexity_me...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 451--454
+
+ []
+
+
+LaTeX Warning: Citation 'Rostampour:2011aa' on page 12 undefined on input line 
+455.
+
+[12]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.471 w
+       here,
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 471--473
+
+ []
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.476 \item $ V_{sr_{jk} $
+                           is the corresponding value of the action in jkth ...
+
+? 
+
+LaTeX Warning: Citation 'Rostampour:2011aa' on page 13 undefined on input line 
+488.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.505 T
+       he Table \ref{tab:quality_of_service/quality_attributes/autonomy_metr...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 505--508
+
+ []
+
+
+LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 13 undefined on input line 
+509.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.516 \\ \cite
+              {Bingu-Shim:2008aa} defines
+? 
+
+LaTeX Warning: Citation 'Bingu-Shim:2008aa' on page 13 undefined on input line 
+516.
+
+[13]
+
+LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 14 undefined on input line 
+526.
+
+
+LaTeX Warning: Citation 'Bingu-Shim:2008aa' on page 14 undefined on input line 
+533.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 517--550
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 554--556
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.719   \\
+          
+? 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14] [15]
+
+LaTeX Warning: Citation 'Feuerlicht:2007aa' on page 16 undefined on input line 
+736.
+
+
+LaTeX Warning: Citation 'Xiao-jun:2015aa' on page 16 undefined on input line 73
+6.
+
+
+LaTeX Warning: Citation 'Bianco:2007aa' on page 16 undefined on input line 736.
+
+
+
+LaTeX Warning: Citation 'Kazemi:2011aa' on page 16 undefined on input line 738.
+
+
+
+LaTeX Warning: Citation 'Erl:2005aa' on page 16 undefined on input line 738.
+
+
+LaTeX Warning: Citation 'Josuttis:2007aa' on page 16 undefined on input line 73
+8.
+
+
+Overfull \hbox (21.91469pt too wide) in paragraph at lines 738--739
+\T1/pplx/m/n/10.95 (-20) high cou-pling de-creases main-tain-abil-ity. [[]][[]]
+[[]] 
+ []
+
+
+LaTeX Warning: Citation 'Xiao-jun:2015aa' on page 16 undefined on input line 74
+0.
+
+
+LaTeX Warning: Citation 'np:2001aa' on page 16 undefined on input line 742.
+
+
+LaTeX Warning: Citation 'Washizakia:2003aa' on page 16 undefined on input line 
+744.
+
+
+LaTeX Warning: Citation 'Feuerlicht:2007aa' on page 16 undefined on input line 
+744.
+
+
+LaTeX Warning: Citation 'Ma:2009aa' on page 16 undefined on input line 744.
+
+
+LaTeX Warning: Citation 'Perepletchikov:2007aa' on page 16 undefined on input l
+ine 746.
+
+
+LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 16 undefined on input line 
+746.
+
+
+Overfull \hbox (80.69466pt too wide) in paragraph at lines 746--747
+\T1/pplx/m/n/10.95 (-20) al-ity. This highly fol-lows the con-cept of low cou-p
+ling. [[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'np:2001aa' on page 16 undefined on input line 748.
+
+
+LaTeX Warning: Citation 'Perepletchikov:2007aa' on page 16 undefined on input l
+ine 748.
+
+
+LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 16 undefined on input li
+ne 752.
+
+
+LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 16 undefined on input li
+ne 754.
+
+
+LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 16 undefined on input line 
+754.
+
+
+LaTeX Warning: Citation 'Lee:2001aa' on page 16 undefined on input line 754.
+
+
+Overfull \hbox (170.54538pt too wide) in paragraph at lines 754--755
+\T1/pplx/m/n/10.95 (-20) num-ber and size of mes-sages used by the ser-vice ope
+rations.[[]][[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'Jamshidi:2008aa' on page 16 undefined on input line 75
+7.
+
+[16]
+
+LaTeX Warning: Citation 'Ma:2009aa' on page 17 undefined on input line 759.
+
+
+LaTeX Warning: Citation 'Ma:2009aa' on page 17 undefined on input line 761.
+
+
+LaTeX Warning: Citation 'Bianco:2007aa' on page 17 undefined on input line 761.
+
+
+
+LaTeX Warning: Citation 'Feuerlicht:2007aa' on page 17 undefined on input line 
+764.
+
+
+LaTeX Warning: Citation 'Bianco:2007aa' on page 17 undefined on input line 766.
+
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 798--800
+
+ []
+
+[17] [18]
+
+LaTeX Warning: Reference `section:context/approach' on page 19 undefined on inp
+ut line 813.
+
+
+LaTeX Warning: Reference `tab:context/microservices_architecture_style/keywords
+_extracted_from_various_definitions_of_microservice' on page 19 undefined on in
+put line 813.
+
+)
+No file main.acr.
+[19]
+Package tocbasic Info: character protrusion at lof deactivated on input line 53
+.
+ (build/main.lof)
+\tf@lof=\write10
+\openout10 = `main.lof'.
+
+ [20
+
+
+]
+Package tocbasic Info: character protrusion at lot deactivated on input line 54
+.
+ (build/main.lot)
+\tf@lot=\write11
+\openout11 = `main.lot'.
+
+ [21
+
+
+]
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplx/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 56.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 56.
+
+! Misplaced alignment tab character &.
+<argument> John Wiley &
+                        Sons
+l.56 \printbibliography{
+                        }
+? 
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 56.
+
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 56.
+
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 56.
+
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 56.
+
+
+Overfull \hbox (20.02286pt too wide) in paragraph at lines 56--56
+[]\T1/pplx/m/n/10.95 (-20) C. Richard-son. \T1/pplx/m/it/10.95 (-20) Pat-tern: 
+Mono-lithic Ar-chi-tec-ture\T1/pplx/m/n/10.95 (-20) . 2014. \T1/pplx/m/sc/10.95
+ (-20) url\T1/pplx/m/n/10.95 (-20) : []$\T1/cmtt/m/n/10.95 http : / / microserv
+ices .
+ []
+
+[22
+
+
+]
+No complaints by nag.
+[23]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
+ (build/main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: C93C81F5CB46C92D422C01ED6773F046;1365.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ )
+(\end occurred inside a group at level 10)
+
+### simple group (level 10) entered at line 773 ({)
+### simple group (level 9) entered at line 732 ({)
+### simple group (level 8) entered at line 553 ({)
+### simple group (level 7) entered at line 508 ({)
+### simple group (level 6) entered at line 454 ({)
+### simple group (level 5) entered at line 385 ({)
+### simple group (level 4) entered at line 300 ({)
+### simple group (level 3) entered at line 198 ({)
+### simple group (level 2) entered at line 79 ({)
+### simple group (level 1) entered at line 64 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 45353 strings out of 493090
- 964359 string characters out of 6134869
- 1643719 words of memory out of 5000000
- 47972 multiletter control sequences out of 15000+600000
- 20533 words of font info for 42 fonts, out of 8000000 for 9000
+ 46561 strings out of 493089
+ 982477 string characters out of 6134843
+ 1682360 words of memory out of 5000000
+ 48753 multiletter control sequences out of 15000+600000
+ 63623 words of font info for 260 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,95p,1818b,1478s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on main.dvi (1 page, 9412 bytes).
+ 75i,19n,95p,2012b,2522s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{glo:SRI} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:DEP} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:SLC} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:RCS} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:RIS} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:SOG} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:SDG} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:SCG} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:SSUC} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{glo:ODG} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:OFG} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:SIUC} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{glo:SIDC} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{glo:SFCI} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{glo:SMCI} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{glo:ISCI} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{glo:SOCI} has been referenced but does not exist, r
+eplaced by a fixed one
+
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
+usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
+ype1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
+w/palatino/uplri8a.pfb>
+Output written on build/main.pdf (29 pages, 206138 bytes).
+PDF statistics:
+ 482 PDF objects out of 1000 (max. 8388607)
+ 417 compressed objects within 5 object streams
+ 107 named destinations out of 1000 (max. 500000)
+ 34591 words of extra memory for PDF output out of 35830 (max. 10000000)
+

@@ -6,58 +6,40 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\nonumberline Abstract}{iv}{chapter*.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Granularity}{1}{chapter.1}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
+\contentsline {section}{\numberline {1.1}Monolithic Architectural Approach}{1}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Basic Principles to Service Granularity}{2}{section.1.2}
+\contentsline {subsection}{\numberline {1.1.1}Types of the Monolithic Architectural Approach}{2}{subsection.1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Dimensions of Granularity}{3}{section.1.3}
+\contentsline {subsection}{\numberline {1.1.2}Advantages of the Monolithic Architectural Approach}{3}{subsection.1.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.1}Dimension by Interface}{3}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.1.3}Disadvantages of the Monolithic Architectural Approach}{4}{subsection.1.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}Dimension by Interface Realization}{4}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.2}Microservices Architectural Approach}{6}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.3}R\textsuperscript {3} Dimension}{6}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.2.1}Decomposition of an Application}{6}{subsection.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.4}Retrospective}{8}{subsection.1.3.4}
+\contentsline {subsubsection}{\numberline {1.2.1.1}Scale Cube}{6}{subsubsection.1.2.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Problem Statement}{10}{section.1.4}
+\contentsline {subsubsection}{\numberline {1.2.1.2}Shared Libraries}{8}{subsubsection.1.2.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Quality Attributes of Microservices}{11}{chapter.2}
+\contentsline {subsection}{\numberline {1.2.2}Definitions}{8}{subsection.1.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Introduction}{11}{section.2.1}
+\contentsline {section}{\numberline {1.3}Motivation}{9}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Quality Attributes}{12}{section.2.2}
+\contentsline {section}{\numberline {1.4}Research Approach}{10}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Quality Metrics}{13}{section.2.3}
+\contentsline {subsection}{\numberline {1.4.1}Data Collection Phase}{11}{subsection.1.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Context and Notations}{13}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {1.4.2}Data Synthesis Phase}{12}{subsection.1.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Coupling Metrics}{14}{subsection.2.3.2}
+\contentsline {section}{\numberline {1.5}Research Strategy}{13}{section.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Cohesion Metrics}{16}{subsection.2.3.3}
+\contentsline {section}{\numberline {1.6}Problem Statement}{14}{section.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.4}Granularity Metrics}{19}{subsection.2.3.4}
+\contentsline {chapter}{\nonumberline List of Figures}{15}{appendix*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.5}Complexity Metrics}{21}{subsection.2.3.5}
+\contentsline {chapter}{\nonumberline List of Tables}{16}{appendix*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.6}Autonomy Metrics}{22}{subsection.2.3.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.7}Reusability Metrics}{24}{subsection.2.3.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Basic Quality Metrics}{24}{section.2.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Principles defined by Quality Attributes}{25}{section.2.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Relationship among Quality Attributes}{27}{section.2.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Conclusion}{28}{section.2.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}Problem Statement}{29}{section.2.8}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{30}{appendix*.16}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{31}{appendix*.17}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{32}{appendix*.18}
+\contentsline {chapter}{\nonumberline Bibliography}{17}{appendix*.14}

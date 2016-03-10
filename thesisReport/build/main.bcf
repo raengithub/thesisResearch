@@ -2237,3 +2237,131 @@
     <bcf:datasource type="file" datatype="bibtex">bibliography/literature.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">Zhang:2009aa</bcf:citekey>
+    <bcf:citekey order="1">Goeb:2011aa</bcf:citekey>
+    <bcf:citekey order="1">Nematzadeh:2014aa</bcf:citekey>
+    <bcf:citekey order="2">Mancioppi:2015aa</bcf:citekey>
+    <bcf:citekey order="3">Mancioppi:2015aa</bcf:citekey>
+    <bcf:citekey order="3">Briand:1996aa</bcf:citekey>
+    <bcf:citekey order="4">Rostampour:2011aa</bcf:citekey>
+    <bcf:citekey order="4">Sindhgatta:2015aa</bcf:citekey>
+    <bcf:citekey order="4">Elhag:2014aa</bcf:citekey>
+    <bcf:citekey order="5">Elhag:2014aa</bcf:citekey>
+    <bcf:citekey order="5">Mancioppi:2015aa</bcf:citekey>
+    <bcf:citekey order="5">Feuerlicht:2007aa</bcf:citekey>
+    <bcf:citekey order="5">Feuerlicht:2013aa</bcf:citekey>
+    <bcf:citekey order="6">Henry:1990aa</bcf:citekey>
+    <bcf:citekey order="6">Briand:2015aa</bcf:citekey>
+    <bcf:citekey order="6">Alshayeb:2003aa</bcf:citekey>
+    <bcf:citekey order="6">Bingu-Shim:2008aa</bcf:citekey>
+    <bcf:citekey order="7">Mancioppi:2015aa</bcf:citekey>
+    <bcf:citekey order="7">Perepletchikov:2007aa</bcf:citekey>
+    <bcf:citekey order="7">Mikhail-Perepletchikov:2015aa</bcf:citekey>
+    <bcf:citekey order="8">Sindhgatta:2015aa</bcf:citekey>
+    <bcf:citekey order="9">Xiao-jun:2015aa</bcf:citekey>
+    <bcf:citekey order="10">Saad-Alahmari:2011aa</bcf:citekey>
+    <bcf:citekey order="11">Bingu-Shim:2008aa</bcf:citekey>
+    <bcf:citekey order="12">Ma:2009aa</bcf:citekey>
+    <bcf:citekey order="13">Feuerlicht:2007aa</bcf:citekey>
+    <bcf:citekey order="14">Elhag:2014aa</bcf:citekey>
+    <bcf:citekey order="15">Feuerlicht:2007aa</bcf:citekey>
+    <bcf:citekey order="16">Ma:2007aa</bcf:citekey>
+    <bcf:citekey order="17">Elhag:2014aa</bcf:citekey>
+    <bcf:citekey order="18">Xiao-jun:2015aa</bcf:citekey>
+    <bcf:citekey order="18">Sindhgatta:2015aa</bcf:citekey>
+    <bcf:citekey order="19">Elhag:2014aa</bcf:citekey>
+    <bcf:citekey order="20">Sindhgatta:2015aa</bcf:citekey>
+    <bcf:citekey order="21">Xiao-jun:2015aa</bcf:citekey>
+    <bcf:citekey order="22">Kazemi:2011aa</bcf:citekey>
+    <bcf:citekey order="23">Bingu-Shim:2008aa</bcf:citekey>
+    <bcf:citekey order="24">Saad-Alahmari:2011aa</bcf:citekey>
+    <bcf:citekey order="25">Sindhgatta:2015aa</bcf:citekey>
+    <bcf:citekey order="26">Xiao-jun:2015aa</bcf:citekey>
+    <bcf:citekey order="27">Kazemi:2011aa</bcf:citekey>
+    <bcf:citekey order="28">Bingu-Shim:2008aa</bcf:citekey>
+    <bcf:citekey order="29">Saad-Alahmari:2011aa</bcf:citekey>
+    <bcf:citekey order="30">Sindhgatta:2015aa</bcf:citekey>
+    <bcf:citekey order="31">Sindhgatta:2015aa</bcf:citekey>
+    <bcf:citekey order="32">Bingu-Shim:2008aa</bcf:citekey>
+    <bcf:citekey order="33">Perepletchikov:2007aa</bcf:citekey>
+    <bcf:citekey order="34">Saad-Alahmari:2011aa</bcf:citekey>
+    <bcf:citekey order="35">Sindhgatta:2015aa</bcf:citekey>
+    <bcf:citekey order="36">Perepletchikov:2007aa</bcf:citekey>
+    <bcf:citekey order="37">Bingu-Shim:2008aa</bcf:citekey>
+    <bcf:citekey order="38">Saad-Alahmari:2011aa</bcf:citekey>
+    <bcf:citekey order="39">Sindhgatta:2015aa</bcf:citekey>
+    <bcf:citekey order="40">Bingu-Shim:2008aa</bcf:citekey>
+    <bcf:citekey order="41">Saad-Alahmari:2011aa</bcf:citekey>
+    <bcf:citekey order="42">Sindhgatta:2015aa</bcf:citekey>
+    <bcf:citekey order="43">Saad-Alahmari:2011aa</bcf:citekey>
+    <bcf:citekey order="44">Bingu-Shim:2008aa</bcf:citekey>
+    <bcf:citekey order="45">Zhang:2009aa</bcf:citekey>
+    <bcf:citekey order="46">Saad-Alahmari:2011aa</bcf:citekey>
+    <bcf:citekey order="47">Zhang:2009aa</bcf:citekey>
+    <bcf:citekey order="48">Saad-Alahmari:2011aa</bcf:citekey>
+    <bcf:citekey order="49">Rostampour:2011aa</bcf:citekey>
+    <bcf:citekey order="50">Rostampour:2011aa</bcf:citekey>
+    <bcf:citekey order="51">Sindhgatta:2015aa</bcf:citekey>
+    <bcf:citekey order="52">Bingu-Shim:2008aa</bcf:citekey>
+    <bcf:citekey order="53">Sindhgatta:2015aa</bcf:citekey>
+    <bcf:citekey order="54">Bingu-Shim:2008aa</bcf:citekey>
+    <bcf:citekey order="55">Feuerlicht:2007aa</bcf:citekey>
+    <bcf:citekey order="55">Xiao-jun:2015aa</bcf:citekey>
+    <bcf:citekey order="56">Bianco:2007aa</bcf:citekey>
+    <bcf:citekey order="57">Kazemi:2011aa</bcf:citekey>
+    <bcf:citekey order="58">Erl:2005aa</bcf:citekey>
+    <bcf:citekey order="59">Josuttis:2007aa</bcf:citekey>
+    <bcf:citekey order="60">Xiao-jun:2015aa</bcf:citekey>
+    <bcf:citekey order="61">np:2001aa</bcf:citekey>
+    <bcf:citekey order="62">Washizakia:2003aa</bcf:citekey>
+    <bcf:citekey order="63">Feuerlicht:2007aa</bcf:citekey>
+    <bcf:citekey order="64">Ma:2009aa</bcf:citekey>
+    <bcf:citekey order="65">Perepletchikov:2007aa</bcf:citekey>
+    <bcf:citekey order="66">Sindhgatta:2015aa</bcf:citekey>
+    <bcf:citekey order="67">np:2001aa</bcf:citekey>
+    <bcf:citekey order="68">Perepletchikov:2007aa</bcf:citekey>
+    <bcf:citekey order="69">Saad-Alahmari:2011aa</bcf:citekey>
+    <bcf:citekey order="70">Saad-Alahmari:2011aa</bcf:citekey>
+    <bcf:citekey order="71">Sindhgatta:2015aa</bcf:citekey>
+    <bcf:citekey order="72">Lee:2001aa</bcf:citekey>
+    <bcf:citekey order="73">Jamshidi:2008aa</bcf:citekey>
+    <bcf:citekey order="74">Ma:2009aa</bcf:citekey>
+    <bcf:citekey order="75">Ma:2009aa</bcf:citekey>
+    <bcf:citekey order="76">Bianco:2007aa</bcf:citekey>
+    <bcf:citekey order="77">Feuerlicht:2007aa</bcf:citekey>
+    <bcf:citekey order="78">Bianco:2007aa</bcf:citekey>
+  </bcf:section>
+  <bcf:sortlist section="0" name="anyt" type="entry" sortscheme="anyt">
+  <bcf:sorting>
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">presort</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="2">
+      <bcf:sortitem order="1">labelalpha</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="3" final="1">
+      <bcf:sortitem order="1">sortkey</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="4">
+      <bcf:sortitem order="1">sortname</bcf:sortitem>
+      <bcf:sortitem order="2">author</bcf:sortitem>
+      <bcf:sortitem order="3">editor</bcf:sortitem>
+      <bcf:sortitem order="4">translator</bcf:sortitem>
+      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="6">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="5">
+      <bcf:sortitem order="1">sortyear</bcf:sortitem>
+      <bcf:sortitem order="2">year</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="6">
+      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="2">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="7">
+      <bcf:sortitem order="1" pad_side="left" pad_width="4" pad_char="0">volume</bcf:sortitem>
+      <bcf:sortitem order="2">0000</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sorting>
+  </bcf:sortlist>
+</bcf:controlfile>
