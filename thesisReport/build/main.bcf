@@ -2237,45 +2237,14 @@
     <bcf:datasource type="file" datatype="bibtex">bibliography/literature.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Fowler:2015aa</bcf:citekey>
-    <bcf:citekey order="2">Factor:2014aa</bcf:citekey>
+    <bcf:citekey order="1">Newman:2015aa</bcf:citekey>
+    <bcf:citekey order="2">Stine:2014aa</bcf:citekey>
     <bcf:citekey order="3">Newman:2015aa</bcf:citekey>
     <bcf:citekey order="4">Newman:2015aa</bcf:citekey>
-    <bcf:citekey order="5">Richardson:2015aa</bcf:citekey>
-    <bcf:citekey order="6">Richardson:2016aa</bcf:citekey>
-    <bcf:citekey order="7">Richardson:2015aa</bcf:citekey>
-    <bcf:citekey order="8">Richardson:2015ab</bcf:citekey>
-    <bcf:citekey order="9">Richardson:2015ab</bcf:citekey>
-    <bcf:citekey order="10">Richardson:2015ab</bcf:citekey>
-    <bcf:citekey order="11">Newman:2015aa</bcf:citekey>
-    <bcf:citekey order="12">Richardson:2014aa</bcf:citekey>
-    <bcf:citekey order="13">Morris:2015aa</bcf:citekey>
-    <bcf:citekey order="14">Newman:2015aa</bcf:citekey>
-    <bcf:citekey order="15">Fowler:2011aa</bcf:citekey>
-    <bcf:citekey order="16">Newman:2015aa</bcf:citekey>
-    <bcf:citekey order="17">Richardson:2015ab</bcf:citekey>
-    <bcf:citekey order="18">Nygard:2007aa</bcf:citekey>
-    <bcf:citekey order="19">Fowler:2014ac</bcf:citekey>
-    <bcf:citekey order="20">Newman:2015aa</bcf:citekey>
-    <bcf:citekey order="21">Nygard:2007aa</bcf:citekey>
-    <bcf:citekey order="22">Fowler:2014ac</bcf:citekey>
-    <bcf:citekey order="23">Fowler:2014ac</bcf:citekey>
-    <bcf:citekey order="24">Newman:2015aa</bcf:citekey>
-    <bcf:citekey order="25">Nygard:2007aa</bcf:citekey>
-    <bcf:citekey order="26">Newman:2015aa</bcf:citekey>
-    <bcf:citekey order="27">Simone:2014aa</bcf:citekey>
-    <bcf:citekey order="28">Anicas:2014aa</bcf:citekey>
-    <bcf:citekey order="29">Newman:2015aa</bcf:citekey>
-    <bcf:citekey order="30">Simone:2014aa</bcf:citekey>
-    <bcf:citekey order="31">Newman:2015aa</bcf:citekey>
-    <bcf:citekey order="32">Newman:2015aa</bcf:citekey>
-    <bcf:citekey order="33">Fowler:2006ab</bcf:citekey>
-    <bcf:citekey order="34">Newman:2015aa</bcf:citekey>
-    <bcf:citekey order="35">Newman:2015aa</bcf:citekey>
-    <bcf:citekey order="36">Newman:2015aa</bcf:citekey>
-    <bcf:citekey order="37">Newman:2015aa</bcf:citekey>
-    <bcf:citekey order="38">Newman:2015aa</bcf:citekey>
-    <bcf:citekey order="39">Fowler:2013aa</bcf:citekey>
+    <bcf:citekey order="5">Ma:2007aa</bcf:citekey>
+    <bcf:citekey order="6">Bloch:2016aa</bcf:citekey>
+    <bcf:citekey order="7">Blanchette:2008aa</bcf:citekey>
+    <bcf:citekey order="8">Factor:2014aa</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="anyt" type="entry" sortscheme="anyt">
   <bcf:sorting>

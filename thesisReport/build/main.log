@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  11 MAR 2016 18:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  11 MAR 2016 20:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1979,13 +1979,13 @@ LaTeX Info: Redefining \nameref on input line 15.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
 line 15.
  (./pages/cover.tex
-<logos/tum.png, id=103, 53.4798pt x 28.6671pt>
+<logos/tum.png, id=63, 53.4798pt x 28.6671pt>
 File: logos/tum.png Graphic file (type png)
  <use logos/tum.png>
 Package pdftex.def Info: logos/tum.png used on input line 13.
 (pdftex.def)             Requested size: 113.81102pt x 61.01012pt.
 
-<logos/faculty.png, id=104, 34.2078pt x 37.0986pt>
+<logos/faculty.png, id=64, 34.2078pt x 37.0986pt>
 File: logos/faculty.png Graphic file (type png)
  <use logos/faculty.png>
 Package pdftex.def Info: logos/faculty.png used on input line 31.
@@ -2091,37 +2091,51 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 26
 [5
 
 
-] (./chapters/challenges.tex
+] (./chapters/guidelines.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 3.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 2.
 
-LaTeX Warning: Reference `subsection:context/monolith-disadvantages' on page 1 
-undefined on input line 4.
-
-
-LaTeX Warning: Reference `question:hybris_architecture/interview/question_1.5' 
-on page 1 undefined on input line 4.
+LaTeX Warning: Reference `chapter:granularity' on page 1 undefined on input lin
+e 5.
 
 
-LaTeX Warning: Citation 'Fowler:2015aa' on page 1 undefined on input line 4.
+LaTeX Warning: Reference `chapter:quality_of_service' on page 1 undefined on in
+put line 7.
 
 
-LaTeX Warning: Citation 'Factor:2014aa' on page 1 undefined on input line 17.
+LaTeX Warning: Reference `chapter:service_candidate' on page 1 undefined on inp
+ut line 9.
+
+
+LaTeX Warning: Reference `chapter:hybris_architecture' on page 1 undefined on i
+nput line 11.
+
+
+LaTeX Warning: Reference `chapter:challanges_of_microservices_architecture' on 
+page 1 undefined on input line 13.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.21   \textbf
-              {Independent Deployment} \\Due to the automony characteristic ...
-[1
+l.18 \item
+           \textbf{modeling microservices} \\ [1
 
 
 
 ]
+<figures/chapter_nine_process.jpg, id=105, 1929.2075pt x 1470.49374pt>
+File: figures/chapter_nine_process.jpg Graphic file (type jpg)
 
-LaTeX Warning: Citation 'Newman:2015aa' on page 2 undefined on input line 21.
+<use figures/chapter_nine_process.jpg>
+Package pdftex.def Info: figures/chapter_nine_process.jpg used on input line 25
+.
+(pdftex.def)             Requested size: 292.7776pt x 223.1449pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 28.
 
 
 ! LaTeX Error: There's no line here to end.
@@ -2130,581 +2144,138 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.34 I
-      n the following sections of this chapter, various ways to tackle the c...
+l.31 T
+      he microservices architecture follows a process which guides all the w...
 
 ? 
-LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 39.
-
-LaTeX Warning: Citation 'Newman:2015aa' on page 2 undefined on input line 40.
-
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/pplx/m/it' tried instead on input line 44.
-[2]
+(Font)              Font shape `T1/pplx/m/it' tried instead on input line 32.
+[2 <./figures/chapter_nine_process.jpg>]
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.48 \\
-       
-? 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.49 \textbf
-            {Alternatives}\label{section:challanges_of_microservices_archite...
-
-? 
-
-LaTeX Warning: Citation 'Richardson:2015aa' on page 3 undefined on input line 5
-1.
+LaTeX Warning: Citation 'Newman:2015aa' on page 3 undefined on input line 34.
 
 
-Overfull \hbox (15.17886pt too wide) in paragraph at lines 49--53
-\T1/pplx/m/n/10.95 (-20) There are three dis-tinct al-ter-na-tives to tackle th
-e prob-lems listed above.[[]] 
+LaTeX Warning: Reference `section:granularity/dimensions' on page 3 undefined o
+n input line 37.
+
+
+LaTeX Warning: Reference `section:granularity/principles' on page 3 undefined o
+n input line 37.
+
+
+LaTeX Warning: Citation 'Stine:2014aa' on page 3 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Newman:2015aa' on page 3 undefined on input line 39.
+
+
+LaTeX Warning: Reference `section:hybris_architecture/interview/interview_compi
+lation' on page 3 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Newman:2015aa' on page 3 undefined on input line 40.
+
+
+LaTeX Warning: Reference `section:quality_of_service/quality_metrics/autonomy' 
+on page 3 undefined on input line 40.
+
+
+LaTeX Warning: Reference `section:granularity/principles' on page 3 undefined o
+n input line 40.
+
+
+LaTeX Warning: Citation 'Ma:2007aa' on page 3 undefined on input line 40.
+
+
+Overfull \hbox (20.84358pt too wide) in paragraph at lines 40--41
+\T1/pplx/m/n/10.95 (-20) vice should be able to be de-ployed and up-dated in-de
+-pen-dently [[]].
  []
 
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.58 \begin
-           {shaded}Techniques\end{shaded}\label{section:challanges_of_micros...
-
-? 
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 58.
+LaTeX Warning: Reference `principle:granularity/IT_infrastructure' on page 3 un
+defined on input line 41.
 
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.60 T
-      he logical separation of data among services discussed in the Section ...
-
-? 
-
-LaTeX Warning: Citation 'Richardson:2016aa' on page 3 undefined on input line 6
-0.
-
-
-LaTeX Warning: Citation 'Richardson:2015aa' on page 3 undefined on input line 6
-0.
-
-
-! Package glossaries Error: Glossary entry `CAP' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.62 ...not recommended because of \acrshort{CAP} 
-                                                  Theorem \ref{section:appen...
-
-? 
-
-LaTeX Warning: Reference `section:appendices/CAP_theorem' on page 3 undefined o
-n input line 62.
-
-
-LaTeX Warning: Reference `section:appendices/eventual_consistency' on page 3 un
-defined on input line 62.
-
-
-LaTeX Warning: Reference `section:appendices/CQRS' on page 3 undefined on input
- line 66.
+LaTeX Warning: Reference `section:hybris_architecture/interview/interview_compi
+lation' on page 3 undefined on input line 41.
 
 [3]
 
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 76.
+LaTeX Warning: Reference `section:hybris_architecture/interview/interview_compi
+lation' on page 4 undefined on input line 42.
 
 
-LaTeX Warning: Citation 'Richardson:2015ab' on page 4 undefined on input line 7
-9.
+LaTeX Warning: Reference `section:granularity/dimensions' on page 4 undefined o
+n input line 42.
 
 
-<figures/challenges_one_interaction_styles.jpg, id=188, 427.5975pt x 200.75pt>
-File: figures/challenges_one_interaction_styles.jpg Graphic file (type jpg)
-
-<use figures/challenges_one_interaction_styles.jpg>
-Package pdftex.def Info: figures/challenges_one_interaction_styles.jpg used on 
-input line 82.
-(pdftex.def)             Requested size: 334.60571pt x 157.09285pt.
+LaTeX Warning: Reference `tab:quality_of_service/quality_attributes/basic_quali
+ty_metrics' on page 4 undefined on input line 46.
 
 
-LaTeX Warning: Citation 'Richardson:2015ab' on page 4 undefined on input line 8
-3.
+LaTeX Warning: Reference `tab:quality_of_service/quality_attributes/quality_att
+ributes_relationship' on page 4 undefined on input line 46.
 
 
-LaTeX Warning: Citation 'Richardson:2015ab' on page 4 undefined on input line 8
-3.
+LaTeX Warning: Reference `chapter:service_candidate' on page 4 undefined on inp
+ut line 49.
 
 
-Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 85.
+LaTeX Warning: Reference `chapter:service_candidate' on page 4 undefined on inp
+ut line 51.
+
+[4] [5]
+
+LaTeX Warning: Reference `section:challanges_of_microservices_architecture/inte
+gration/sharing_data' on page 6 undefined on input line 68.
 
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88 \\
-       
-? 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.89 \textbf
-            {One to One interactions}
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--92
-
- []
-
-[4 <./figures/challenges_one_interaction_styles.jpg>]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.97 \\
-       
-? 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.98 \textbf
-            {One to Many interactions}
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--101
-
- []
+LaTeX Warning: Reference `section:challanges_of_microservices_architecture/inte
+gration/inter_service_communication' on page 6 undefined on input line 69.
 
 
-! LaTeX Error: There's no line here to end.
+LaTeX Warning: Reference `section:challanges_of_microservices_architecture/inte
+gration/breaking_change' on page 6 undefined on input line 75.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.105 \\
-        
-? 
+[6]
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.106 
-      
-? 
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 107.
+LaTeX Warning: Reference `section:appendices/blue_green_deployment' on page 7 u
+ndefined on input line 80.
 
 
-LaTeX Warning: Citation 'Newman:2015aa' on page 5 undefined on input line 109.
+LaTeX Warning: Reference `section:appendices/canary_release' on page 7 undefine
+d on input line 80.
 
 
-LaTeX Warning: Citation 'Richardson:2014aa' on page 5 undefined on input line 1
-09.
+LaTeX Warning: Citation 'Bloch:2016aa' on page 7 undefined on input line 85.
 
 
-LaTeX Warning: Citation 'Morris:2015aa' on page 5 undefined on input line 109.
+LaTeX Warning: Citation 'Blanchette:2008aa' on page 7 undefined on input line 8
+5.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--114
-
- []
+LaTeX Warning: Citation 'Factor:2014aa' on page 7 undefined on input line 89.
 
 
-! LaTeX Error: There's no line here to end.
+LaTeX Warning: Reference `section:challanges_of_microservices_architecture/hand
+ling_failures' on page 7 undefined on input line 89.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.120 \begin
-            {shaded}
-? 
-[5]
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 122.
-
-
-<figures/challanges_two_interaction_example.jpg, id=209, 629.35126pt x 256.96pt
->
-File: figures/challanges_two_interaction_example.jpg Graphic file (type jpg)
- <use figures/challanges_two_interaction_example.jpg>
-Package pdftex.def Info: figures/challanges_two_interaction_example.jpg used on
- input line 127.
-(pdftex.def)             Requested size: 334.60571pt x 136.61552pt.
-
-
-Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 130.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.133 
-      
-? 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.137 A
-       lthough microservices are autonomous components, they still need to c...
-
-? 
-
-LaTeX Warning: Citation 'Newman:2015aa' on page 6 undefined on input line 137.
-
-[6 <./figures/challanges_two_interaction_example.jpg>]
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 138.
-
-
-LaTeX Warning: Citation 'Fowler:2011aa' on page 7 undefined on input line 141.
-
-! Undefined control sequence.
-l.144 ... current update may breaks their \arshort
-                                                  {API} or not. For example,...
-
-? 
-! Undefined control sequence.
-l.144 ...sing 1.1.3 version of provider's \arshort
-                                                  {API} and the new updated ...
-
-? 
 [7]
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.149 \begin
-            {shaded}
-? 
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 151.
-
-
-LaTeX Warning: Citation 'Newman:2015aa' on page 8 undefined on input line 153.
-
-
-LaTeX Warning: Citation 'Richardson:2015ab' on page 8 undefined on input line 1
-53.
-
-
-LaTeX Warning: Citation 'Nygard:2007aa' on page 8 undefined on input line 153.
-
-[8]
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 154.
-
-
-LaTeX Warning: Citation 'Fowler:2014ac' on page 9 undefined on input line 157.
-
-
-LaTeX Warning: Citation 'Newman:2015aa' on page 9 undefined on input line 157.
-
-
-LaTeX Warning: Citation 'Nygard:2007aa' on page 9 undefined on input line 157.
-
-<figures/challanges_three_circuit_breaker.jpg, id=236, 413.545pt x 285.065pt>
-File: figures/challanges_three_circuit_breaker.jpg Graphic file (type jpg)
-
-<use figures/challanges_three_circuit_breaker.jpg>
-Package pdftex.def Info: figures/challanges_three_circuit_breaker.jpg used on i
-nput line 160.
-(pdftex.def)             Requested size: 334.60571pt x 230.65344pt.
-
-
-LaTeX Warning: Citation 'Fowler:2014ac' on page 9 undefined on input line 161.
-
-
-LaTeX Warning: Citation 'Fowler:2014ac' on page 9 undefined on input line 161.
-
-
-Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 163.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.166 \item
-            \textbf{Bulk Head} \\ Bulk Head is the approach of segregating v...
-
-? 
-[9]
-
-LaTeX Warning: Citation 'Newman:2015aa' on page 10 undefined on input line 166.
-
-
-
-LaTeX Warning: Citation 'Nygard:2007aa' on page 10 undefined on input line 166.
-
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.170 \begin
-            {shaded}
-? 
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 172.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 175--178
-
- []
-
-[10 <./figures/challanges_three_circuit_breaker.jpg>]
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 178.
-
-
-LaTeX Warning: Citation 'Newman:2015aa' on page 11 undefined on input line 179.
-
-
-
-LaTeX Warning: Citation 'Simone:2014aa' on page 11 undefined on input line 179.
-
-
-
-Overfull \hbox (41.23276pt too wide) in paragraph at lines 179--181
-[]\T1/pplx/m/n/10.95 (-20) There are var-i-ous ways to work around these com-pl
-ex-i-ties [[]] [[]]. 
- []
-
-
-LaTeX Warning: Citation 'Anicas:2014aa' on page 11 undefined on input line 182.
-
-
-
-LaTeX Warning: Citation 'Newman:2015aa' on page 11 undefined on input line 182.
-
-
-<figures/challenges_four_elk_stack.jpg, id=251, 525.965pt x 255.95625pt>
-File: figures/challenges_four_elk_stack.jpg Graphic file (type jpg)
-
-<use figures/challenges_four_elk_stack.jpg>
-Package pdftex.def Info: figures/challenges_four_elk_stack.jpg used on input li
-ne 185.
-(pdftex.def)             Requested size: 334.60571pt x 162.83894pt.
-
-
-Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 188.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.191 T
-       he ELK stack consists of following major components.
-? 
-[11 <./figures/challenges_four_elk_stack.jpg>]
-
-LaTeX Warning: Citation 'Simone:2014aa' on page 12 undefined on input line 201.
-
-
-
-LaTeX Warning: Citation 'Newman:2015aa' on page 12 undefined on input line 201.
-
-
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 207.
-
-[12]
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 207.
-
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 213.
-
-
-LaTeX Warning: Citation 'Newman:2015aa' on page 13 undefined on input line 218.
-
-
-
-LaTeX Warning: Citation 'Fowler:2006ab' on page 13 undefined on input line 218.
-
-
-
-<figures/challenges_five_continuous_integration.jpg, id=270, 628.3475pt x 275.0
-275pt>
-File: figures/challenges_five_continuous_integration.jpg Graphic file (type jpg
-)
- <use figures/challenges_five_continuous_integration.jpg>
-Package pdftex.def Info: figures/challenges_five_continuous_integration.jpg use
-d on input line 221.
-(pdftex.def)             Requested size: 334.60571pt x 146.45631pt.
-
-
-LaTeX Warning: Citation 'Newman:2015aa' on page 13 undefined on input line 222.
-
-
-
-LaTeX Warning: Citation 'Newman:2015aa' on page 13 undefined on input line 222.
-
-
-
-Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 224.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.227 \item
-            Continuous Delivery
-? 
-[13]
-<figures/challenges_six_continuous_delivery.jpg, id=279, 587.19376pt x 44.165pt
->
-File: figures/challenges_six_continuous_delivery.jpg Graphic file (type jpg)
- <use figures/challenges_six_continuous_delivery.jpg>
-Package pdftex.def Info: figures/challenges_six_continuous_delivery.jpg used on
- input line 233.
-(pdftex.def)             Requested size: 334.60571pt x 25.16689pt.
-
-
-LaTeX Warning: Citation 'Newman:2015aa' on page 14 undefined on input line 234.
-
-
-
-LaTeX Warning: Citation 'Newman:2015aa' on page 14 undefined on input line 234.
-
-
-
-Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 236.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--237
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.239 A
-        version of build pipeline is shown in the Figure \ref{fig:challanges...
-
-? 
-
-LaTeX Warning: Citation 'Newman:2015aa' on page 14 undefined on input line 240.
-
-
-
-LaTeX Warning: Citation 'Fowler:2013aa' on page 14 undefined on input line 240.
-
-
-[14 <./figures/challenges_five_continuous_integration.jpg> <./figures/challenge
-s_six_continuous_delivery.jpg>]
-
-LaTeX Warning: Reference `section:hybris_architecture/deployment_workflow' on p
-age 15 undefined on input line 244.
-
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 245.
+LaTeX Warning: Reference `section:challanges_of_microservices_architecture/moni
+toring' on page 8 undefined on input line 97.
 
 )
 No file main.acr.
-[15]
+[8]
 Package tocbasic Info: character protrusion at lof deactivated on input line 53
 .
  (build/main.lof)
 \tf@lof=\write10
 \openout10 = `main.lof'.
 
- [16
+ [9
 
 
 ]
@@ -2719,9 +2290,9 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 54
 LaTeX Warning: Empty bibliography on input line 56.
 
 
-Package nag Warning: 19 complaints in total.
+Package nag Warning: 1 complaints in total.
 
-[17
+[10
 
 
 ]
@@ -2731,7 +2302,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BC714C211ABA10C30B339F002B7287B5;1166.
+(rerunfilecheck)             Checksum: 7412FD396B48DC22F65C09753C9D7D1E;459.
 
 
 LaTeX Warning: There were undefined references.
@@ -2746,33 +2317,36 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46438 strings out of 493089
- 981706 string characters out of 6134843
- 1648142 words of memory out of 5000000
- 48710 multiletter control sequences out of 15000+600000
- 46588 words of font info for 205 fonts, out of 8000000 for 9000
+ 46358 strings out of 493089
+ 978757 string characters out of 6134843
+ 1646977 words of memory out of 5000000
+ 48658 multiletter control sequences out of 15000+600000
+ 44281 words of font info for 202 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,95p,1818b,2346s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{glo:YaaS} has been referenced but does not exist,
- replaced by a fixed one
+ 75i,8n,95p,1818b,1904s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{glo:RPC} has been referenced but does not exist, 
+replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:REST} has been referenced but does not exist, r
 eplaced by a fixed one
 
-pdfTeX warning (dest): name{glo:CQRS} has been referenced but does not exist, r
+pdfTeX warning (dest): name{glo:API} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:PaaS} has been referenced but does not exist, r
 eplaced by a fixed one
 
-pdfTeX warning (dest): name{glo:API} has been referenced but does not exist, re
+pdfTeX warning (dest): name{glo:SRP} has been referenced but does not exist, re
 placed by a fixed one
 
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/20
 15/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texm
 f-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on build/main.pdf (23 pages, 193354 bytes).
+Output written on build/main.pdf (16 pages, 201822 bytes).
 PDF statistics:
- 340 PDF objects out of 1000 (max. 8388607)
- 285 compressed objects within 3 object streams
- 87 named destinations out of 1000 (max. 500000)
- 26917 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 237 PDF objects out of 1000 (max. 8388607)
+ 195 compressed objects within 2 object streams
+ 66 named destinations out of 1000 (max. 500000)
+ 26300 words of extra memory for PDF output out of 29859 (max. 10000000)
 
