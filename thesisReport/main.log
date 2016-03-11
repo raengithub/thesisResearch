@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.7.5)  10 MAR 2016 11:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.7.5)  10 MAR 2016 20:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
+**main
 (./main.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
@@ -1957,13 +1957,9 @@ LaTeX Info: Redefining \nameref on input line 15.
 \@outlinefile=\write8
 \openout8 = `main.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
 line 15.
-(./pages/cover.tex
+ (./pages/cover.tex
 
 ! LaTeX Error: File `logos/tum' not found.
 
@@ -2065,26 +2061,1281 @@ Type  H <return>  for immediate help.
 l.31   \includegraphics[width=20mm]{logos/faculty}
                                                   
 ? 
-! Interruption.
-\GenericError  ...                                
-                                                  \endgroup 
-l.31   \includegraphics[width=20mm]{logos/faculty}
+[1
+
+
+
+]) (./pages/disclaimer.tex [2]) (./pages/acknowledgements.tex [3
+
+
+])
+(./pages/abstract.tex
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 1.
+)
+Overfull \hbox (4.35892pt too wide) in paragraph at lines 2--26
+\T1/pplx/m/n/10.95 Various key-words from def-i-ni-tions pro-vided by dif-fer-e
+nt au-thors are taken and cateogo-
+ []
+
+[4
+
+
+
+
+]
+Package tocbasic Info: character protrusion at toc deactivated on input line 26
+.
+ (./main.toc)
+\tf@toc=\write9
+\openout9 = `main.toc'.
+
+ [5
+
+
+] (./chapters/modeling_microservices.tex
+Chapter 1.
+
+LaTeX Warning: Reference `section:selection_by_use_case/use_case' on page 1 und
+efined on input line 2.
+
+
+LaTeX Warning: Reference `section:domain_driven_design/introduction' on page 1 
+undefined on input line 2.
+
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 3.
+
+LaTeX Warning: Citation 'Pierre-Reldin:2007aa' on page 1 undefined on input lin
+e 9.
+
+
+LaTeX Warning: Citation 'Arsanjani:2004aa' on page 1 undefined on input line 9.
+
+
+[1
+
+
+
+]
+
+LaTeX Warning: Citation 'Ng:2004aa' on page 2 undefined on input line 14.
+
+
+LaTeX Warning: Citation 'Jacobson:1987aa' on page 2 undefined on input line 17.
+
+
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 17.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
+
+ []
+
+
+LaTeX Warning: Citation 'Rumbaugh:1999aa' on page 2 undefined on input line 20.
+
+
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 20.
+
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 23.
+
+LaTeX Warning: Citation 'Jacobson:1987aa' on page 2 undefined on input line 24.
+
+
+
+LaTeX Warning: Reference `section:selection_by_use_case/use_case' on page 2 und
+efined on input line 24.
+
+
+LaTeX Warning: Citation 'Jacobson:1987aa' on page 2 undefined on input line 24.
+
+
+
+LaTeX Warning: Citation 'Ng:2004aa' on page 2 undefined on input line 24.
+
+
+LaTeX Warning: Citation 'Jacobson:2003aa' on page 2 undefined on input line 24.
+
+
+
+LaTeX Warning: Reference `fig:selection_by_use_case/use_case_one' on page 2 und
+efined on input line 24.
+
+
+! LaTeX Error: File `figures/use-case-one' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 ...width=0.8\textwidth]{figures/use-case-one}
                                                   
 ? 
-! Emergency stop.
-\GenericError  ...                                
-                                                  \endgroup 
-l.31   \includegraphics[width=20mm]{logos/faculty}
-                                                  
-End of file on the terminal!
 
- 
+LaTeX Warning: Citation 'Ng:2004aa' on page 2 undefined on input line 28.
+
+
+LaTeX Warning: Citation 'Ng:2004aa' on page 2 undefined on input line 28.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 30.
+
+LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
+(Font)              Font shape `T1/pplx/m/it' tried instead on input line 31.
+[2]
+
+LaTeX Warning: Citation 'Doh:2007aa' on page 3 undefined on input line 32.
+
+
+LaTeX Warning: Citation 'Ng:2004aa' on page 3 undefined on input line 34.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--36
+
+ []
+
+
+LaTeX Warning: Citation 'Kim:2006aa' on page 3 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'Yun:2006aa' on page 3 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'Doh:2007aa' on page 3 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'Fareghzadeh:2008aa' on page 3 undefined on input line 
+37.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--42
+
+ []
+
+
+LaTeX Warning: Reference `section:selection_by_use_case/use_case_refactoring' o
+n page 3 undefined on input line 43.
+
+
+LaTeX Warning: Reference `section:selection_by_use_case/rules_for_use_case_refa
+ctoring' on page 3 undefined on input line 43.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--45
+
+ []
+
+[3]
+
+LaTeX Warning: Citation 'Doh:2007aa' on page 4 undefined on input line 46.
+
+
+LaTeX Warning: Citation 'Fareghzadeh:2008aa' on page 4 undefined on input line 
+46.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 \subsection
+                {Rules for Use Case Refactoring}\label{section:selection_by_...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--52
+
+ []
+
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 52.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--55
+
+ []
+
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 55.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--60
+
+ []
+
+
+LaTeX Warning: Reference `tab:selection_by_use_case/guidelines_for_use_case_ref
+actoring/decomposition_rule' on page 4 undefined on input line 61.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 
+     
+? 
+[4]
+
+LaTeX Warning: Reference `tab:selection_by_use_case/guidelines_for_use_case_ref
+actoring/equivalence_rule' on page 5 undefined on input line 92.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 
+      
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149 
+      
+? 
+
+LaTeX Warning: Reference `tab:selection_by_use_case/guidelines_for_use_case_ref
+actoring/generalization_rule' on page 5 undefined on input line 151.
+
+[5]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 
+      
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.215 
+      
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.235 
+      
+? 
+[6]
+
+LaTeX Warning: Reference `section:selection_by_use_case/rules_for_use_case_refa
+ctoring' on page 7 undefined on input line 237.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--239
+
+ []
+
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 239.
+
+
+LaTeX Warning: Reference `section:selection_by_use_case/process_for_use_case_re
+factoring' on page 7 undefined on input line 243.
+
+
+LaTeX Warning: Reference `section:selection_by_use_case/rules_for_use_case_refa
+ctoring' on page 7 undefined on input line 243.
+
+
+LaTeX Warning: Reference `fig:selection_by_use_case/use_case_two' on page 7 und
+efined on input line 249.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--250
+
+ []
+
+
+! LaTeX Error: File `figures/use-case-two' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.253 ...idth=0.5\textwidth]{figures/use-case-two}
+                                                  
+? 
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 256.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.259 \\
+        
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.260 \textbf
+             {\underline{Step 2:}}
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--312
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--312
+
+ []
+
+[7]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.314 \textbf
+             {\underline{Step 3:}}
+? 
+
+LaTeX Warning: Reference `tab:selection_by_use_case/guidelines_for_use_case_ref
+actoring/common_and_independent_tasks' on page 8 undefined on input line 316.
+
+
+LaTeX Warning: Reference `tab:selection_by_use_case/guidelines_for_use_case_ref
+actoring/initial_task_tree' on page 8 undefined on input line 316.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--349
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.351 N
+       ow, for independent tasks the docomposition rule explained by \ref{ta...
+
+? 
+[8]
+
+LaTeX Warning: Reference `tab:selection_by_use_case/guidelines_for_use_case_ref
+actoring/decomposition_rule' on page 9 undefined on input line 351.
+
+
+LaTeX Warning: Reference `tab:selection_by_use_case/guidelines_for_use_case_ref
+actoring/generalization_rule' on page 9 undefined on input line 351.
+
+
+LaTeX Warning: Reference `fig:selection_by_use_case/use_case_three' on page 9 u
+ndefined on input line 351.
+
+
+! LaTeX Error: File `figures/use-case-three' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.355 ...th=0.7\textwidth]{figures/use-case-three}
+                                                  
+? 
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 358.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--359
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.361 \textbf
+             {\underline{Step 4:}}
+? 
+
+LaTeX Warning: Reference `fig:selection_by_use_case/use_case_three' on page 9 u
+ndefined on input line 363.
+
+
+LaTeX Warning: Reference `tab:selection_by_use_case/guidelines_for_use_case_ref
+actoring/composition_rule' on page 9 undefined on input line 363.
+
+
+LaTeX Warning: Reference `fig:selection_by_use_case/use_case_four' on page 9 un
+defined on input line 363.
+
+
+! LaTeX Error: File `figures/use-case-four' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.367 ...dth=0.8\textwidth]{figures/use-case-four}
+                                                  
+? 
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 370.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--371
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.373 \textbf
+             {\underline{Step 5:}}
+? 
+
+LaTeX Warning: Reference `fig:selection_by_use_case/use_case_five' on page 9 un
+defined on input line 375.
+
+
+LaTeX Warning: Reference `fig:selection_by_use_case/use_case_one' on page 9 und
+efined on input line 375.
+
+
+LaTeX Warning: Reference `fig:selection_by_use_case/use_case_five' on page 9 un
+defined on input line 375.
+
+
+! LaTeX Error: File `figures/use-case-five' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.379 ...dth=0.8\textwidth]{figures/use-case-five}
+                                                  
+? 
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 382.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--383
+
+ []
+
+[9]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.385 \textbf
+             {Microservices Layers}\\
+? 
+
+LaTeX Warning: Reference `fig:selection_by_use_case/use_case_five' on page 10 u
+ndefined on input line 386.
+
+
+LaTeX Warning: Reference `fig:selection_by_use_case/use_case_five' on page 10 u
+ndefined on input line 386.
+
+
+LaTeX Warning: Citation 'Fareghzadeh:2008aa' on page 10 undefined on input line
+ 386.
+
+
+LaTeX Warning: Citation 'Emig:2015aa' on page 10 undefined on input line 386.
+
+
+LaTeX Warning: Citation 'Zimmermann:2005aa' on page 10 undefined on input line 
+386.
+
+
+LaTeX Warning: Citation 'Evans:2003aa' on page 10 undefined on input line 392.
+
+
+LaTeX Warning: Citation 'Vernon:2013aa' on page 10 undefined on input line 392.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--394
+
+ []
+
+[10]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.403 A
+       s the focus is to describe the process of modeling microservices, onl...
+
+? 
+
+LaTeX Warning: Citation 'Evans:2003aa' on page 11 undefined on input line 405.
+
+
+LaTeX Warning: Citation 'Vernon:2013aa' on page 11 undefined on input line 405.
+
+
+
+LaTeX Warning: Citation 'Evans:2003aa' on page 11 undefined on input line 407.
+
+
+LaTeX Warning: Citation 'Fowler:2006aa' on page 11 undefined on input line 407.
+
+
+
+LaTeX Warning: Citation 'Fowler:2003aa' on page 11 undefined on input line 407.
+
+
+
+LaTeX Warning: Citation 'Scott:2001aa' on page 11 undefined on input line 407.
+
+[11]
+
+! LaTeX Error: File `figures/domain-driven-design-one' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411 ...twidth]{figures/domain-driven-design-one}
+                                                  
+? 
+
+LaTeX Warning: Citation 'Evans:2003aa' on page 12 undefined on input line 412.
+
+
+LaTeX Warning: Citation 'Evans:2003aa' on page 12 undefined on input line 412.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 414.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.417 T
+       he Figure \ref{fig:domain_driven_design/ubiquitous_language_process} ...
+
+? 
+
+LaTeX Warning: Reference `fig:domain_driven_design/ubiquitous_language_process'
+ on page 12 undefined on input line 417.
+
+
+LaTeX Warning: Citation 'Evans:2003aa' on page 12 undefined on input line 419.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--423
+
+ []
+
+
+LaTeX Warning: Citation 'Fowler:2014ab' on page 12 undefined on input line 424.
+
+
+
+LaTeX Warning: Citation 'Evans:2003aa' on page 12 undefined on input line 424.
+
+
+LaTeX Warning: Citation 'Vernon:2013aa' on page 12 undefined on input line 424.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--428
+
+ []
+
+[12]
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 428.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.430 T
+       he domain represents the problem being solved by the software. The do...
+
+? 
+
+LaTeX Warning: Citation 'Engels:2015aa' on page 13 undefined on input line 430.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--435
+
+ []
+
+
+LaTeX Warning: Citation 'Vernon:2013aa' on page 13 undefined on input line 436.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--438
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.442 \begin
+            {shaded}Step 2: Indentify bounded contexts\end{shaded} \label{se...
+
+? 
+[13]
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 442.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.444 A
+       s stated earlier of this section, the attempt to use a single set of ...
+
+? 
+
+LaTeX Warning: Citation 'Evans:2003aa' on page 14 undefined on input line 448.
+
+
+LaTeX Warning: Citation 'Vernon:2013aa' on page 14 undefined on input line 452.
+
+
+
+LaTeX Warning: Citation 'Mike:2012aa' on page 14 undefined on input line 455.
+
+
+Overfull \hbox (27.90152pt too wide) in paragraph at lines 444--459
+\T1/pplx/m/n/10.95 fines bound-ary around team or-ga-ni-za-tion, code bases and
+ database schemas."[[]] 
+ []
+
+
+LaTeX Warning: Citation 'Fowler:2014ab' on page 14 undefined on input line 461.
+
+
+
+LaTeX Warning: Citation 'Gorodinski:2013aa' on page 14 undefined on input line 
+461.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 459--463
+
+ []
+
+[14]
+
+LaTeX Warning: Citation 'Fowler:2014ab' on page 15 undefined on input line 465.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--467
+
+ []
+
+
+LaTeX Warning: Citation 'Gorodinski:2013aa' on page 15 undefined on input line 
+469.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.472 \subsection
+                 {Microservices and Bounded Context}\label{section:domain_dr...
+
+? 
+
+LaTeX Warning: Reference `section:context/microservices_architecture_style' on 
+page 15 undefined on input line 473.
+
+
+LaTeX Warning: Reference `tab:context/microservices_architecture_style/keywords
+_extracted_from_various_definitions_of_microservice' on page 15 undefined on in
+put line 473.
+
+
+LaTeX Warning: Reference `bounded_context_definition_1' on page 15 undefined on
+ input line 473.
+
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 474.
+
+
+LaTeX Warning: Citation 'Riggins:2015aa' on page 15 undefined on input line 475
+.
+
+
+LaTeX Warning: Reference `tab:context/microservices_architecture_style/keywords
+_extracted_from_various_definitions_of_microservice' on page 15 undefined on in
+put line 478.
+
+
+LaTeX Warning: Reference `tab:domain_driven_design/microservices_and_bounded_co
+ntext/Analogy_of_Microservice_and_Bounded_Context' on page 15 undefined on inpu
+t line 478.
+
+
+LaTeX Warning: Reference `tab:domain_driven_design/microservices_and_bounded_co
+ntext/Analogy_of_Microservice_and_Bounded_Context' on page 15 undefined on inpu
+t line 501.
+
+
+LaTeX Warning: Reference `section:domain_driven_design/process_to_domain_driven
+_design' on page 15 undefined on input line 501.
+
+
+LaTeX Warning: Citation 'Mauro:2015aa' on page 15 undefined on input line 512.
+
+
+LaTeX Warning: Citation 'Hughson:2014aa' on page 15 undefined on input line 513
+.
+
+
+LaTeX Warning: Citation 'Sokhan:2015aa' on page 15 undefined on input line 515.
+
+
+
+LaTeX Warning: Citation 'Daya:2015aa' on page 15 undefined on input line 516.
+
+
+LaTeX Warning: Citation 'Riggins:2015aa' on page 15 undefined on input line 517
+.
+
+
+LaTeX Warning: Citation 'Beard:2015aa' on page 15 undefined on input line 518.
+
+
+LaTeX Warning: Citation 'Krylovskiy:2015aa' on page 15 undefined on input line 
+519.
+
+
+LaTeX Warning: Citation 'Viennot:2015aa' on page 15 undefined on input line 520
+.
+
+
+LaTeX Warning: Citation 'Balalaie:2015aa' on page 15 undefined on input line 52
+1.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 475--529
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 475--529
+
+ []
+
+[15]
+
+LaTeX Warning: Reference `section:domain_driven_design/process_to_domain_driven
+_design' on page 16 undefined on input line 531.
+
+[16]
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 533.
+
+
+LaTeX Warning: Reference `section:selection_by_use_case/refactoring_example' on
+ page 17 undefined on input line 534.
+
+
+LaTeX Warning: Reference `section:domain_driven_design/process_to_domain_driven
+_design' on page 17 undefined on input line 540.
+
+
+LaTeX Warning: Reference `section:domain_driven_design/example_scenario/case_st
+udy' on page 17 undefined on input line 540.
+
+
+LaTeX Warning: Reference `fig:domain_driven_design/ubiquitous_language_process'
+ on page 17 undefined on input line 543.
+
+
+LaTeX Warning: Reference `tab:domain_driven_design/example_scenario/domain_keyw
+ords' on page 17 undefined on input line 543.
+
+
+LaTeX Warning: Reference `section:domain_driven_design/example_scenario/case_st
+udy' on page 17 undefined on input line 543.
+
+[17]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.567 
+      
+? 
+
+LaTeX Warning: Reference `section:domain_driven_design/process_to_domain_driven
+_design/strategical_design/step_1' on page 18 undefined on input line 570.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 568--617
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 568--617
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.619 
+      
+? 
+
+LaTeX Warning: Reference `section:domain_driven_design/process_to_domain_driven
+_design/strategical_design/step_2' on page 18 undefined on input line 624.
+
+
+LaTeX Warning: Reference `section:domain_driven_design/process_to_domain_driven
+_design/strategical_design/step_2' on page 18 undefined on input line 624.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 620--626
+
+ []
+
+[18]
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 626.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.628 \begin
+            {figure}[H]
+? 
+
+! LaTeX Error: File `figures/domain-driven-design-two' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.630 ...twidth]{figures/domain-driven-design-two}
+                                                  
+? 
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 633.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.636 T
+       he management of customer includes two distinct broad task which are ...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 636--637
+
+ []
+
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 638.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.640 \begin
+            {figure}[H]
+? 
+
+! LaTeX Error: File `figures/domain-driven-design-three' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.642 ...idth]{figures/domain-driven-design-three}
+                                                  
+? 
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 645.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.648 T
+       he Figure \ref{fig:domain_driven_design/example_scenario/subdomains/b...
+
+? 
+
+LaTeX Warning: Reference `fig:domain_driven_design/example_scenario/subdomains/
+booking' on page 19 undefined on input line 648.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 648--649
+
+ []
+
+[19]
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 649.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.651 \begin
+            {figure}[H]
+? 
+
+! LaTeX Error: File `figures/domain-driven-design-four' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.653 ...width]{figures/domain-driven-design-four}
+                                                  
+? 
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 656.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.659 T
+       he overall billing price calculation during checkout, which includes ...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--660
+
+ []
+
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 660.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.662 \begin
+            {figure}[H]
+? 
+
+! LaTeX Error: File `figures/domain-driven-design-five' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.664 ...width]{figures/domain-driven-design-five}
+                                                  
+? 
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 667.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.670 T
+       he logic of package management can be considered independent of the w...
+
+? 
+[20]
+
+LaTeX Warning: Reference `section:selection_by_use_case/use_case' on page 21 un
+defined on input line 674.
+
+
+LaTeX Warning: Reference `section:domain_driven_design/introduction' on page 21
+ undefined on input line 674.
+
+[21])
+No file main.acr.
+[22]
+Package tocbasic Info: character protrusion at lof deactivated on input line 53
+.
+ (./main.lof)
+\tf@lof=\write10
+\openout10 = `main.lof'.
+
+ [23
+
+
+]
+Package tocbasic Info: character protrusion at lot deactivated on input line 54
+.
+ (./main.lot)
+\tf@lot=\write11
+\openout11 = `main.lot'.
+
+ [24
+
+
+]
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplx/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 56.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (137.49951pt too wide) in paragraph at lines 56--56
+[]\T1/pplx/m/n/10.95 S. Abram. \T1/pplx/m/it/10.95 Mi-croser-vices\T1/pplx/m/n/
+10.95 . Oct. 2014. \T1/pplx/m/sc/10.95 url\T1/pplx/m/n/10.95 : [][][][]. 
+ []
+
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 56.
+
+
+Overfull \hbox (294.98352pt too wide) in paragraph at lines 56--56
+[]\T1/pplx/m/n/10.95 A. Cock-croft. \T1/pplx/m/it/10.95 State of the Art in Mir
+-croser-vices\T1/pplx/m/n/10.95 . Feb. 2015. \T1/pplx/m/sc/10.95 url\T1/pplx/m/
+n/10.95 : [][][][]. 
+ []
+
+! Misplaced alignment tab character &.
+<argument> John Wiley &
+                        Sons
+l.56 \printbibliography{
+                        }
+? 
+
+Overfull \hbox (182.35226pt too wide) in paragraph at lines 56--56
+[]\T1/pplx/m/n/10.95 M. Fowler and J. Lewis. \T1/pplx/m/it/10.95 Mi-croser-vice
+s\T1/pplx/m/n/10.95 . Mar. 2014. \T1/pplx/m/sc/10.95 url\T1/pplx/m/n/10.95 : []
+[][][]. 
+ []
+
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 56.
+
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 56.
+
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 56.
+
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 56.
+
+
+Overfull \hbox (182.73347pt too wide) in paragraph at lines 56--56
+[]\T1/pplx/m/n/10.95 C. Richard-son. \T1/pplx/m/it/10.95 Pat-tern: Mono-lithic 
+Ar-chi-tec-ture\T1/pplx/m/n/10.95 . 2014. \T1/pplx/m/sc/10.95 url\T1/pplx/m/n/1
+0.95 : [][][][]. 
+ []
+
+
+Overfull \hbox (356.09836pt too wide) in paragraph at lines 56--56
+[]\T1/pplx/m/n/10.95 B. Woot-ton. \T1/pplx/m/it/10.95 Mi-croser-vices - Not A F
+ree Lunch! \T1/pplx/m/n/10.95 Apr. 2014. \T1/pplx/m/sc/10.95 url\T1/pplx/m/n/10
+.95 : [][][][]. 
+ []
+
+
+Package nag Warning: 23 complaints in total.
+
+[25
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
+ (./main.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 58.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  E13A9CC60E7B2FA155B54FF641E5339F;1885.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 45353 strings out of 493090
- 964359 string characters out of 6134869
- 1643719 words of memory out of 5000000
- 47972 multiletter control sequences out of 15000+600000
- 20533 words of font info for 42 fonts, out of 8000000 for 9000
+ 45660 strings out of 493090
+ 972051 string characters out of 6134869
+ 1659804 words of memory out of 5000000
+ 48213 multiletter control sequences out of 15000+600000
+ 30710 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,95p,1818b,1478s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on main.dvi (1 page, 9412 bytes).
+ 75i,26n,95p,1814b,2403s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on main.dvi (31 pages, 137128 bytes).

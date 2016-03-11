@@ -1,17 +1,19 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
 [0] Config.pm:327> INFO - Logfile is 'main.blg'
-[94] biber-darwin:276> INFO - === Thu Mar 10, 2016, 11:23:56
-[94] Biber.pm:333> INFO - Reading 'main.bcf'
-[264] Biber.pm:645> INFO - Found 17 citekeys in bib section 0
-[303] Biber.pm:2977> INFO - Processing section 0
-[336] Biber.pm:3115> INFO - Looking for bibtex format file 'bibliography/literature.bib' for section 0
-[354] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[370] bibtex.pm:895> INFO - Found BibTeX data source 'bibliography/literature.bib'
-[379] Utils.pm:146> WARN - Duplicate entry key: 'cite-key' in file 'bibliography/literature.bib', skipping ...
-[756] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[756] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[756] Biber.pm:2854> INFO - Sorting list 'anyt' of type 'entry' with scheme 'anyt' and locale 'en-US'
-[756] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-US'
-[797] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[799] bbl.pm:596> INFO - Output to main.bbl
-[804] Biber.pm:106> INFO - WARNINGS: 1
+[57] biber-darwin:276> INFO - === Thu Mar 10, 2016, 20:21:38
+[57] Biber.pm:333> INFO - Reading 'main.bcf'
+[199] Biber.pm:645> INFO - Found 31 citekeys in bib section 0
+[230] Biber.pm:2977> INFO - Processing section 0
+[256] Biber.pm:3115> INFO - Looking for bibtex format file 'bibliography/literature.bib' for section 0
+[272] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[288] bibtex.pm:895> INFO - Found BibTeX data source 'bibliography/literature.bib'
+[297] Utils.pm:146> WARN - Duplicate entry key: 'cite-key' in file 'bibliography/literature.bib', skipping ...
+[421] Utils.pm:146> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[422] Utils.pm:146> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
+[981] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[982] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[982] Biber.pm:2854> INFO - Sorting list 'anyt' of type 'entry' with scheme 'anyt' and locale 'en-US'
+[982] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-US'
+[1052] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1057] bbl.pm:596> INFO - Output to main.bbl
+[1063] Biber.pm:106> INFO - WARNINGS: 3

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  10 MAR 2016 17:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  10 MAR 2016 20:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1979,13 +1979,13 @@ LaTeX Info: Redefining \nameref on input line 15.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
 line 15.
  (./pages/cover.tex
-<logos/tum.png, id=115, 53.4798pt x 28.6671pt>
+<logos/tum.png, id=135, 53.4798pt x 28.6671pt>
 File: logos/tum.png Graphic file (type png)
  <use logos/tum.png>
 Package pdftex.def Info: logos/tum.png used on input line 13.
 (pdftex.def)             Requested size: 113.81102pt x 61.01012pt.
 
-<logos/faculty.png, id=116, 34.2078pt x 37.0986pt>
+<logos/faculty.png, id=136, 34.2078pt x 37.0986pt>
 File: logos/faculty.png Graphic file (type png)
  <use logos/faculty.png>
 Package pdftex.def Info: logos/faculty.png used on input line 31.
@@ -2091,201 +2091,131 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 26
 [5
 
 
-] (./chapters/quality_of_service.tex
+] (./chapters/modeling_microservices.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 20.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 3.
 
-LaTeX Warning: Citation 'Zhang:2009aa' on page 1 undefined on input line 21.
-
-
-LaTeX Warning: Citation 'Goeb:2011aa' on page 1 undefined on input line 21.
+LaTeX Warning: Citation 'Pierre-Reldin:2007aa' on page 1 undefined on input lin
+e 9.
 
 
-LaTeX Warning: Citation 'Nematzadeh:2014aa' on page 1 undefined on input line 2
-1.
+LaTeX Warning: Citation 'Arsanjani:2004aa' on page 1 undefined on input line 9.
 
-
-LaTeX Warning: Citation 'Mancioppi:2015aa' on page 1 undefined on input line 21
-.
-
-
-LaTeX Warning: Citation 'Mancioppi:2015aa' on page 1 undefined on input line 21
-.
-
-
-LaTeX Warning: Citation 'Briand:1996aa' on page 1 undefined on input line 21.
-
-
-LaTeX Warning: Citation 'Rostampour:2011aa' on page 1 undefined on input line 2
-1.
-
-
-LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 1 undefined on input line 2
-1.
-
-
-LaTeX Warning: Citation 'Elhag:2014aa' on page 1 undefined on input line 21.
-
-
-LaTeX Warning: Citation 'Elhag:2014aa' on page 1 undefined on input line 21.
-
-
-LaTeX Warning: Citation 'Mancioppi:2015aa' on page 1 undefined on input line 21
-.
-
-
-LaTeX Warning: Citation 'Feuerlicht:2007aa' on page 1 undefined on input line 2
-1.
-
-
-LaTeX Warning: Citation 'Feuerlicht:2013aa' on page 1 undefined on input line 2
-1.
-
-
-LaTeX Warning: Citation 'Henry:1990aa' on page 1 undefined on input line 21.
-
-
-LaTeX Warning: Citation 'Briand:2015aa' on page 1 undefined on input line 21.
-
-
-LaTeX Warning: Citation 'Alshayeb:2003aa' on page 1 undefined on input line 21.
-
-
-
-LaTeX Warning: Citation 'Bingu-Shim:2008aa' on page 1 undefined on input line 2
-1.
-
-
-LaTeX Warning: Citation 'Mancioppi:2015aa' on page 1 undefined on input line 21
-.
-
-
-LaTeX Warning: Citation 'Perepletchikov:2007aa' on page 1 undefined on input li
-ne 21.
-
-
-LaTeX Warning: Citation 'Mikhail-Perepletchikov:2015aa' on page 1 undefined on 
-input line 21.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.22 
+l.11 
       [1
 
 
 
 ]
 
-LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 2 undefined on input line 3
-1.
+LaTeX Warning: Citation 'Ng:2004aa' on page 2 undefined on input line 14.
 
 
-LaTeX Warning: Citation 'Xiao-jun:2015aa' on page 2 undefined on input line 31.
-
-
-
-LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 2 undefined on input lin
-e 31.
-
-
-LaTeX Warning: Citation 'Bingu-Shim:2008aa' on page 2 undefined on input line 3
-1.
-
-
-LaTeX Warning: Citation 'Ma:2009aa' on page 2 undefined on input line 31.
-
-
-LaTeX Warning: Citation 'Feuerlicht:2007aa' on page 2 undefined on input line 3
-1.
-
-
-LaTeX Warning: Citation 'Elhag:2014aa' on page 2 undefined on input line 50.
-
-
-LaTeX Warning: Citation 'Feuerlicht:2007aa' on page 2 undefined on input line 5
-2.
-
-
-LaTeX Warning: Citation 'Ma:2007aa' on page 2 undefined on input line 54.
-
-
-LaTeX Warning: Reference `chapter:granularity' on page 2 undefined on input lin
-e 54.
-
-
-LaTeX Warning: Citation 'Elhag:2014aa' on page 2 undefined on input line 54.
-
-
-LaTeX Warning: Citation 'Xiao-jun:2015aa' on page 2 undefined on input line 57.
+LaTeX Warning: Citation 'Jacobson:1987aa' on page 2 undefined on input line 17.
 
 
 
-LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 2 undefined on input line 5
-7.
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 17.
 
 
-LaTeX Warning: Citation 'Elhag:2014aa' on page 2 undefined on input line 58.
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
+
+ []
+
+
+LaTeX Warning: Citation 'Rumbaugh:1999aa' on page 2 undefined on input line 20.
+
+
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 20.
+
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 23.
+
+LaTeX Warning: Citation 'Jacobson:1987aa' on page 2 undefined on input line 24.
+
+
+
+LaTeX Warning: Citation 'Jacobson:1987aa' on page 2 undefined on input line 24.
+
+
+
+LaTeX Warning: Citation 'Ng:2004aa' on page 2 undefined on input line 24.
+
+
+LaTeX Warning: Citation 'Jacobson:2003aa' on page 2 undefined on input line 24.
+
+
+<figures/use-case-one.jpg, id=199, 606.265pt x 332.24126pt>
+File: figures/use-case-one.jpg Graphic file (type jpg)
+
+<use figures/use-case-one.jpg>
+Package pdftex.def Info: figures/use-case-one.jpg used on input line 27.
+(pdftex.def)             Requested size: 334.60571pt x 183.37201pt.
+
+
+LaTeX Warning: Citation 'Ng:2004aa' on page 2 undefined on input line 28.
+
+
+LaTeX Warning: Citation 'Ng:2004aa' on page 2 undefined on input line 28.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 30.
 
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/pplx/m/it' tried instead on input line 63.
+(Font)              Font shape `T1/pplx/m/it' tried instead on input line 31.
 [2]
-LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 64.
-LaTeX Font Info:    Try loading font information for OMS+pplx on input line 69.
 
-LaTeX Font Info:    No file OMSpplx.fd. on input line 69.
+LaTeX Warning: Citation 'Doh:2007aa' on page 3 undefined on input line 32.
 
 
-LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 69.
+LaTeX Warning: Citation 'Ng:2004aa' on page 3 undefined on input line 34.
 
 
-Overfull \hbox (6.93349pt too wide) in paragraph at lines 69--70
-[]\T1/pplx/m/n/10.95 (-20) the busi-ness do-main is re-al-ized with var-i-ous p
-ro-cesses de-fined as $\OML/zplm/m/it/10.95 P \OT1/zplm/m/n/10.95 = \OMS/zplm/m
-/n/10.95 f\OML/zplm/m/it/10.95 p[]\OT1/pplx/m/n/10.95 (-20) , \OML/zplm/m/it/10
-.95 p[]\OT1/pplx/m/n/10.95 (-20) ...\OML/zplm/m/it/10.95 p[]\OMS/zplm/m/n/10.95
- g$ 
- []
-
-[3]
-! Missing } inserted.
-<inserted text> 
-                }
-l.73 ...sumer}(s) = \{ S_{c1}, S_{2},...S{{n_c}\}$
-                                                  ; $n_c$ gives the number o...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.74 ...ducer}(s) = \{ S_{c1}, S_{2},...S{{n_p}\}$
-                                                  ; $n_p$ gives the number o...
-
-? 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.79 \subsection
-                {Coupling Metrics}{\label{section:quality_of_service/quality...
-
-? 
-
-LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 4 undefined on input line 8
-1.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 32--36
 
  []
+
+
+LaTeX Warning: Citation 'Kim:2006aa' on page 3 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'Yun:2006aa' on page 3 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'Doh:2007aa' on page 3 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'Fareghzadeh:2008aa' on page 3 undefined on input line 
+37.
+
+[3 <./figures/use-case-one.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 39--42
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--45
+
+ []
+
+
+LaTeX Warning: Citation 'Doh:2007aa' on page 4 undefined on input line 46.
+
+
+LaTeX Warning: Citation 'Fareghzadeh:2008aa' on page 4 undefined on input line 
+46.
 
 
 ! LaTeX Error: There's no line here to end.
@@ -2294,15 +2224,33 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.96 \cite
-          {Xiao-jun:2015aa} defines
+l.49 \subsection
+                {Rules for Use Case Refactoring}\label{section:selection_by_...
+
 ? 
 
-LaTeX Warning: Citation 'Xiao-jun:2015aa' on page 4 undefined on input line 96.
+Underfull \hbox (badness 10000) in paragraph at lines 50--52
 
+ []
+
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 52.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--55
+
+ []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 55.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--60
 
  []
 
@@ -2313,224 +2261,28 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.107 \cite
-           {Kazemi:2011aa} defines
+l.90 
+     
 ? 
 
-LaTeX Warning: Citation 'Kazemi:2011aa' on page 5 undefined on input line 107.
+! LaTeX Error: There's no line here to end.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--110
-
- []
-
-
-LaTeX Warning: Citation 'Bingu-Shim:2008aa' on page 5 undefined on input line 1
-16.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--119
-
- []
-
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 
+      
+? 
 [5]
 
-LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 6 undefined on input lin
-e 124.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--129
-
- []
-
-
-LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 6 undefined on input line 1
-44.
-
-
-LaTeX Warning: Citation 'Xiao-jun:2015aa' on page 6 undefined on input line 155
-.
-
-
-LaTeX Warning: Citation 'Kazemi:2011aa' on page 6 undefined on input line 166.
-
-
-LaTeX Warning: Citation 'Bingu-Shim:2008aa' on page 6 undefined on input line 1
-78.
-
-
-LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 6 undefined on input lin
-e 181.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 ! LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.194 T
-       he Table \ref{tab:quality_of_service/quality_attributes/coupling_metr...
-
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--196
-
- []
-
-
-LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 6 undefined on input line 2
-00.
-
-
-LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 6 undefined on input line 2
-08.
-
-[6]
-
-LaTeX Warning: Citation 'Bingu-Shim:2008aa' on page 7 undefined on input line 2
-11.
-
-
-LaTeX Warning: Citation 'Perepletchikov:2007aa' on page 7 undefined on input li
-ne 214.
-
-[7]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.222 \\w
-         here,
-? 
-
-LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 8 undefined on input lin
-e 232.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.236 w
-       here,
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 236--238
-
- []
-
-
-LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 8 undefined on input line 2
-51.
-
-
-LaTeX Warning: Citation 'Perepletchikov:2007aa' on page 8 undefined on input li
-ne 259.
-
-
-LaTeX Warning: Citation 'Bingu-Shim:2008aa' on page 8 undefined on input line 2
-72.
-
-
-LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 8 undefined on input lin
-e 279.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.295 T
-       he Table \ref{tab:quality_of_service/quality_attributes/cohesion_metr...
-
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 295--297
-
- []
-
-[8]
-
-LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 9 undefined on input line 3
-02.
-
-
-LaTeX Warning: Citation 'Bingu-Shim:2008aa' on page 9 undefined on input line 3
-11.
-
-
-LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 9 undefined on input lin
-e 314.
-
-[9]
-! Display math should end with $$.
-<to be read again> 
-                    
-l.318 ...frac{W_i(o)}{ \sum_{i=1}^{|O(S)|}W_i(o)}$
-                                                  
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 321--325
-
- []
-
-
-LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 10 undefined on input line 
-346.
-
-
-LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 10 undefined on input li
-ne 354.
-
-
-LaTeX Warning: Citation 'Bingu-Shim:2008aa' on page 10 undefined on input line 
-367.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.381 T
-       he Table \ref{tab:quality_of_service/quality_attributes/granularity_m...
-
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 381--383
-
- []
-
-
-LaTeX Warning: Citation 'Zhang:2009aa' on page 10 undefined on input line 387.
-
-[10]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.391 
+l.149 
       
 ? 
 
@@ -2540,29 +2292,65 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.395 w
-       here,
+l.182 
+      
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--397
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.215 
+      
+? 
+[6]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.235 
+      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--239
 
  []
 
 
-LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 11 undefined on input li
-ne 407.
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 239.
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 408--412
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--250
 
  []
 
 
-LaTeX Warning: Citation 'Zhang:2009aa' on page 12 undefined on input line 427.
+Underfull \hbox (badness 10000) in paragraph at lines 240--250
+
+ []
 
 
-LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 12 undefined on input li
-ne 438.
+Underfull \hbox (badness 10000) in paragraph at lines 240--250
+
+ []
+
+[7] <figures/use-case-two.jpg, id=247, 370.38374pt x 290.08376pt>
+File: figures/use-case-two.jpg Graphic file (type jpg)
+
+<use figures/use-case-two.jpg>
+Package pdftex.def Info: figures/use-case-two.jpg used on input line 253.
+(pdftex.def)             Requested size: 209.12778pt x 163.79138pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 256.
 
 
 ! LaTeX Error: There's no line here to end.
@@ -2571,20 +2359,9 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.451 T
-       he Table \ref{tab:quality_of_service/quality_attributes/complexity_me...
-
+l.259 \\
+        
 ? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 451--454
-
- []
-
-
-LaTeX Warning: Citation 'Rostampour:2011aa' on page 12 undefined on input line 
-455.
-
-[12]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2592,24 +2369,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.471 w
-       here,
+l.260 \textbf
+             {\underline{Step 2:}}
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 471--473
+Underfull \hbox (badness 10000) in paragraph at lines 260--312
 
  []
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.476 \item $ V_{sr_{jk} $
-                           is the corresponding value of the action in jkth ...
 
-? 
+Underfull \hbox (badness 10000) in paragraph at lines 260--312
 
-LaTeX Warning: Citation 'Rostampour:2011aa' on page 13 undefined on input line 
-488.
+ []
 
 
 ! LaTeX Error: There's no line here to end.
@@ -2618,18 +2389,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.505 T
-       he Table \ref{tab:quality_of_service/quality_attributes/autonomy_metr...
-
+l.314 \textbf
+             {\underline{Step 3:}}
 ? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 505--508
+[8 <./figures/use-case-two.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 314--349
 
  []
-
-
-LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 13 undefined on input line 
-509.
 
 
 ! LaTeX Error: There's no line here to end.
@@ -2638,29 +2404,233 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.516 \\ \cite
-              {Bingu-Shim:2008aa} defines
+l.351 N
+       ow, for independent tasks the docomposition rule explained by \ref{ta...
+
+? 
+[9] <figures/use-case-three.jpg, id=264, 829.0975pt x 711.65875pt>
+File: figures/use-case-three.jpg Graphic file (type jpg)
+
+<use figures/use-case-three.jpg>
+Package pdftex.def Info: figures/use-case-three.jpg used on input line 355.
+(pdftex.def)             Requested size: 292.7776pt x 251.29953pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 358.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--359
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.361 \textbf
+             {\underline{Step 4:}}
+? 
+<figures/use-case-four.jpg, id=268, 829.0975pt x 566.115pt>
+File: figures/use-case-four.jpg Graphic file (type jpg)
+
+<use figures/use-case-four.jpg>
+Package pdftex.def Info: figures/use-case-four.jpg used on input line 367.
+(pdftex.def)             Requested size: 334.60571pt x 228.47197pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 370.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--371
+
+ []
+
+[10 <./figures/use-case-three.jpg>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.373 \textbf
+             {\underline{Step 5:}}
+? 
+<figures/use-case-five.jpg, id=277, 1048.91875pt x 908.39375pt>
+File: figures/use-case-five.jpg Graphic file (type jpg)
+
+<use figures/use-case-five.jpg>
+Package pdftex.def Info: figures/use-case-five.jpg used on input line 379.
+(pdftex.def)             Requested size: 334.60571pt x 289.77711pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 382.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--383
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.385 \textbf
+             {Microservices Layers}\\
+? 
+[11 <./figures/use-case-four.jpg>]
+
+LaTeX Warning: Citation 'Fareghzadeh:2008aa' on page 12 undefined on input line
+ 386.
+
+
+LaTeX Warning: Citation 'Emig:2015aa' on page 12 undefined on input line 386.
+
+
+LaTeX Warning: Citation 'Zimmermann:2005aa' on page 12 undefined on input line 
+386.
+
+
+LaTeX Warning: Citation 'Evans:2003aa' on page 12 undefined on input line 392.
+
+
+LaTeX Warning: Citation 'Vernon:2013aa' on page 12 undefined on input line 392.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--394
+
+ []
+
+[12 <./figures/use-case-five.jpg>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.403 A
+       s the focus is to describe the process of modeling microservices, onl...
+
 ? 
 
-LaTeX Warning: Citation 'Bingu-Shim:2008aa' on page 13 undefined on input line 
-516.
+LaTeX Warning: Citation 'Evans:2003aa' on page 13 undefined on input line 405.
+
+
+LaTeX Warning: Citation 'Vernon:2013aa' on page 13 undefined on input line 405.
+
+
+
+LaTeX Warning: Citation 'Evans:2003aa' on page 13 undefined on input line 407.
+
+
+LaTeX Warning: Citation 'Fowler:2006aa' on page 13 undefined on input line 407.
+
+
+
+LaTeX Warning: Citation 'Fowler:2003aa' on page 13 undefined on input line 407.
+
+
+
+LaTeX Warning: Citation 'Scott:2001aa' on page 13 undefined on input line 407.
 
 [13]
+<figures/domain-driven-design-one.jpg, id=300, 1034.86626pt x 866.23625pt>
+File: figures/domain-driven-design-one.jpg Graphic file (type jpg)
 
-LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 14 undefined on input line 
-526.
+<use figures/domain-driven-design-one.jpg>
+Package pdftex.def Info: figures/domain-driven-design-one.jpg used on input lin
+e 411.
+(pdftex.def)             Requested size: 334.60571pt x 280.08272pt.
 
 
-LaTeX Warning: Citation 'Bingu-Shim:2008aa' on page 14 undefined on input line 
-533.
+LaTeX Warning: Citation 'Evans:2003aa' on page 14 undefined on input line 412.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 517--550
+LaTeX Warning: Citation 'Evans:2003aa' on page 14 undefined on input line 412.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 414.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.417 T
+       he Figure \ref{fig:domain_driven_design/ubiquitous_language_process} ...
+
+? 
+
+LaTeX Warning: Citation 'Evans:2003aa' on page 14 undefined on input line 419.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--423
+
+ []
+
+[14 <./figures/domain-driven-design-one.jpg>]
+
+LaTeX Warning: Citation 'Fowler:2014ab' on page 15 undefined on input line 424.
+
+
+
+LaTeX Warning: Citation 'Evans:2003aa' on page 15 undefined on input line 424.
+
+
+LaTeX Warning: Citation 'Vernon:2013aa' on page 15 undefined on input line 424.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--428
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 554--556
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 428.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.430 T
+       he domain represents the problem being solved by the software. The do...
+
+? 
+
+LaTeX Warning: Citation 'Engels:2015aa' on page 15 undefined on input line 430.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--435
+
+ []
+
+[15]
+
+LaTeX Warning: Citation 'Vernon:2013aa' on page 16 undefined on input line 436.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--438
 
  []
 
@@ -2671,135 +2641,367 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.719   \\
-          
+l.442 \begin
+            {shaded}Step 2: Indentify bounded contexts\end{shaded} \label{se...
+
 ? 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[14] [15]
-
-LaTeX Warning: Citation 'Feuerlicht:2007aa' on page 16 undefined on input line 
-736.
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 442.
 
 
-LaTeX Warning: Citation 'Xiao-jun:2015aa' on page 16 undefined on input line 73
-6.
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.444 A
+       s stated earlier of this section, the attempt to use a single set of ...
+
+? 
+
+LaTeX Warning: Citation 'Evans:2003aa' on page 16 undefined on input line 448.
 
 
-LaTeX Warning: Citation 'Bianco:2007aa' on page 16 undefined on input line 736.
+LaTeX Warning: Citation 'Vernon:2013aa' on page 16 undefined on input line 452.
 
 
 
-LaTeX Warning: Citation 'Kazemi:2011aa' on page 16 undefined on input line 740.
-
-
-
-LaTeX Warning: Citation 'Erl:2005aa' on page 16 undefined on input line 740.
-
-
-LaTeX Warning: Citation 'Josuttis:2007aa' on page 16 undefined on input line 74
-0.
-
-
-LaTeX Warning: Citation 'Xiao-jun:2015aa' on page 16 undefined on input line 74
-2.
-
-
-LaTeX Warning: Citation 'np:2001aa' on page 16 undefined on input line 744.
-
-
-LaTeX Warning: Citation 'Washizakia:2003aa' on page 16 undefined on input line 
-746.
-
-
-LaTeX Warning: Citation 'Feuerlicht:2007aa' on page 16 undefined on input line 
-746.
-
-
-LaTeX Warning: Citation 'Ma:2009aa' on page 16 undefined on input line 746.
-
-
-LaTeX Warning: Citation 'Perepletchikov:2007aa' on page 16 undefined on input l
-ine 748.
-
-
-LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 16 undefined on input line 
-748.
-
-
-LaTeX Warning: Citation 'np:2001aa' on page 16 undefined on input line 750.
-
-
-LaTeX Warning: Citation 'Perepletchikov:2007aa' on page 16 undefined on input l
-ine 750.
-
-
-LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 16 undefined on input li
-ne 754.
-
-
-LaTeX Warning: Citation 'Saad-Alahmari:2011aa' on page 16 undefined on input li
-ne 758.
-
-
-LaTeX Warning: Citation 'Sindhgatta:2015aa' on page 16 undefined on input line 
-758.
-
-
-LaTeX Warning: Citation 'Lee:2001aa' on page 16 undefined on input line 758.
+LaTeX Warning: Citation 'Mike:2012aa' on page 16 undefined on input line 455.
 
 [16]
 
-LaTeX Warning: Citation 'Jamshidi:2008aa' on page 17 undefined on input line 76
+LaTeX Warning: Citation 'Fowler:2014ab' on page 17 undefined on input line 461.
+
+
+
+LaTeX Warning: Citation 'Gorodinski:2013aa' on page 17 undefined on input line 
+461.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 459--463
+
+ []
+
+
+LaTeX Warning: Citation 'Fowler:2014ab' on page 17 undefined on input line 465.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--467
+
+ []
+
+[17]
+
+LaTeX Warning: Citation 'Gorodinski:2013aa' on page 18 undefined on input line 
+469.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.472 \subsection
+                 {Microservices and Bounded Context}\label{section:domain_dr...
+
+? 
+
+LaTeX Warning: Reference `section:context/microservices_architecture_style' on 
+page 18 undefined on input line 473.
+
+
+LaTeX Warning: Reference `tab:context/microservices_architecture_style/keywords
+_extracted_from_various_definitions_of_microservice' on page 18 undefined on in
+put line 473.
+
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 474.
+
+
+LaTeX Warning: Citation 'Riggins:2015aa' on page 18 undefined on input line 475
+.
+
+
+LaTeX Warning: Reference `tab:context/microservices_architecture_style/keywords
+_extracted_from_various_definitions_of_microservice' on page 18 undefined on in
+put line 478.
+
+
+LaTeX Warning: Citation 'Mauro:2015aa' on page 18 undefined on input line 512.
+
+
+LaTeX Warning: Citation 'Hughson:2014aa' on page 18 undefined on input line 513
+.
+
+
+LaTeX Warning: Citation 'Sokhan:2015aa' on page 18 undefined on input line 515.
+
+
+
+LaTeX Warning: Citation 'Daya:2015aa' on page 18 undefined on input line 516.
+
+
+LaTeX Warning: Citation 'Riggins:2015aa' on page 18 undefined on input line 517
+.
+
+
+LaTeX Warning: Citation 'Beard:2015aa' on page 18 undefined on input line 518.
+
+
+LaTeX Warning: Citation 'Krylovskiy:2015aa' on page 18 undefined on input line 
+519.
+
+
+LaTeX Warning: Citation 'Viennot:2015aa' on page 18 undefined on input line 520
+.
+
+
+LaTeX Warning: Citation 'Balalaie:2015aa' on page 18 undefined on input line 52
 1.
 
 
-LaTeX Warning: Citation 'Ma:2009aa' on page 17 undefined on input line 763.
+Underfull \hbox (badness 10000) in paragraph at lines 475--529
+
+ []
 
 
-LaTeX Warning: Citation 'Ma:2009aa' on page 17 undefined on input line 765.
+Underfull \hbox (badness 10000) in paragraph at lines 475--529
 
-
-LaTeX Warning: Citation 'Bianco:2007aa' on page 17 undefined on input line 765.
-
-
-
-LaTeX Warning: Citation 'Feuerlicht:2007aa' on page 17 undefined on input line 
-767.
-
-
-LaTeX Warning: Citation 'Bianco:2007aa' on page 17 undefined on input line 769.
-
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[18]
 
-Underfull \hbox (badness 10000) in paragraph at lines 801--803
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 533.
+
+[19]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.567 
+      
+? 
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 568--617
 
  []
 
-[17] [18]
 
-LaTeX Warning: Reference `section:context/approach' on page 19 undefined on inp
-ut line 816.
+Underfull \hbox (badness 10000) in paragraph at lines 568--617
+
+ []
 
 
-LaTeX Warning: Reference `tab:context/microservices_architecture_style/keywords
-_extracted_from_various_definitions_of_microservice' on page 19 undefined on in
-put line 816.
+! LaTeX Error: There's no line here to end.
 
-)
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.619 
+      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 620--626
+
+ []
+
+[21]
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 626.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.628 \begin
+            {figure}[H]
+? 
+<figures/domain-driven-design-two.jpg, id=365, 546.04pt x 244.915pt>
+File: figures/domain-driven-design-two.jpg Graphic file (type jpg)
+
+<use figures/domain-driven-design-two.jpg>
+Package pdftex.def Info: figures/domain-driven-design-two.jpg used on input lin
+e 630.
+(pdftex.def)             Requested size: 334.60571pt x 150.0818pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 633.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.636 T
+       he management of customer includes two distinct broad task which are ...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 636--637
+
+ []
+
+[22 <./figures/domain-driven-design-two.jpg>]
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 638.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.640 \begin
+            {figure}[H]
+? 
+<figures/domain-driven-design-three.jpg, id=371, 686.565pt x 285.065pt>
+File: figures/domain-driven-design-three.jpg Graphic file (type jpg)
+
+<use figures/domain-driven-design-three.jpg>
+Package pdftex.def Info: figures/domain-driven-design-three.jpg used on input l
+ine 642.
+(pdftex.def)             Requested size: 334.60571pt x 138.92621pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 645.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.648 T
+       he Figure \ref{fig:domain_driven_design/example_scenario/subdomains/b...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 648--649
+
+ []
+
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 649.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.651 \begin
+            {figure}[H]
+? 
+<figures/domain-driven-design-four.jpg, id=373, 742.775pt x 199.74625pt>
+File: figures/domain-driven-design-four.jpg Graphic file (type jpg)
+
+<use figures/domain-driven-design-four.jpg>
+Package pdftex.def Info: figures/domain-driven-design-four.jpg used on input li
+ne 653.
+(pdftex.def)             Requested size: 334.60571pt x 89.98251pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 656.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.659 T
+       he overall billing price calculation during checkout, which includes ...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--660
+
+ []
+
+[23 <./figures/domain-driven-design-three.jpg> <./figures/domain-driven-design-
+four.jpg>]
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 660.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.662 \begin
+            {figure}[H]
+? 
+<figures/domain-driven-design-five.jpg, id=380, 726.715pt x 311.1625pt>
+File: figures/domain-driven-design-five.jpg Graphic file (type jpg)
+
+<use figures/domain-driven-design-five.jpg>
+Package pdftex.def Info: figures/domain-driven-design-five.jpg used on input li
+ne 664.
+(pdftex.def)             Requested size: 334.60571pt x 143.27417pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 667.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.670 T
+       he logic of package management can be considered independent of the w...
+
+? 
+[24 <./figures/domain-driven-design-five.jpg>] [25])
 No file main.acr.
-[19]
+[26]
 Package tocbasic Info: character protrusion at lof deactivated on input line 53
 .
  (build/main.lof)
 \tf@lof=\write10
 \openout10 = `main.lof'.
 
- [20
+ [27
 
 
 ]
@@ -2809,7 +3011,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 54
 \tf@lot=\write11
 \openout11 = `main.lot'.
 
- [21
+ [28
 
 
 ]
@@ -2860,22 +3062,21 @@ Mono-lithic Ar-chi-tec-ture\T1/pplx/m/n/10.95 (-20) . 2014. \T1/pplx/m/sc/10.95
 ices .
  []
 
-[22
+[29
 
 
 ]
-No complaints by nag.
-[23]
+
+Package nag Warning: 23 complaints in total.
+
+[30]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
  (build/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A4DDB5A708D955A50929399F803DCAC8;1363.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+(rerunfilecheck)             Checksum: E13A9CC60E7B2FA155B54FF641E5339F;1885.
 
 
 LaTeX Warning: There were undefined references.
@@ -2888,99 +3089,32 @@ Package biblatex Warning: Please (re)run Biber on the file:
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
- )
-(\end occurred inside a group at level 10)
-
-### simple group (level 10) entered at line 776 ({)
-### simple group (level 9) entered at line 732 ({)
-### simple group (level 8) entered at line 553 ({)
-### simple group (level 7) entered at line 508 ({)
-### simple group (level 6) entered at line 454 ({)
-### simple group (level 5) entered at line 385 ({)
-### simple group (level 4) entered at line 300 ({)
-### simple group (level 3) entered at line 198 ({)
-### simple group (level 2) entered at line 79 ({)
-### simple group (level 1) entered at line 64 ({)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 46558 strings out of 493089
- 982450 string characters out of 6134843
- 1682358 words of memory out of 5000000
- 48753 multiletter control sequences out of 15000+600000
- 63400 words of font info for 257 fonts, out of 8000000 for 9000
+ 46613 strings out of 493089
+ 986016 string characters out of 6134843
+ 1663064 words of memory out of 5000000
+ 48811 multiletter control sequences out of 15000+600000
+ 55951 words of font info for 237 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,19n,95p,2015b,2521s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{glo:SRI} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{glo:DEP} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{glo:SLC} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{glo:RCS} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{glo:RIS} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{glo:SOG} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{glo:SDG} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{glo:SCG} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{glo:SSUC} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{glo:ODG} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{glo:OFG} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{glo:SIUC} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{glo:SIDC} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{glo:SFCI} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{glo:SMCI} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{glo:ISCI} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{glo:SOCI} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{glo:SDLC} has been referenced but does not exist, r
-eplaced by a fixed one
+ 75i,26n,95p,1818b,2346s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{glo:UML} has been referenced but does not exist, 
+replaced by a fixed one
 
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
 usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
-w/palatino/uplri8a.pfb>
-Output written on build/main.pdf (29 pages, 205567 bytes).
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/urw/palatino/uplri8a.pfb>
+Output written on build/main.pdf (36 pages, 523311 bytes).
 PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
- 419 compressed objects within 5 object streams
- 108 named destinations out of 1000 (max. 500000)
- 34591 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 521 PDF objects out of 1000 (max. 8388607)
+ 442 compressed objects within 5 object streams
+ 114 named destinations out of 1000 (max. 500000)
+ 33657 words of extra memory for PDF output out of 35830 (max. 10000000)
 
