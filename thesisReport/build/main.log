@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  11 MAR 2016 15:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.5)  11 MAR 2016 18:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2114,7 +2114,7 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.21   \textbf
-              {Independent Deployment} \\Due the nature of microservices bei...
+              {Independent Deployment} \\Due to the automony characteristic ...
 [1
 
 
@@ -2139,14 +2139,8 @@ LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
 
 LaTeX Warning: Citation 'Newman:2015aa' on page 2 undefined on input line 40.
 
-
-Overfull \hbox (14.40698pt too wide) in paragraph at lines 40--43
-\T1/pplx/m/n/10.95 (-20) source. How-ever, us-ing this kind of in-te-gra-tion c
-re-ates var-i-ous problems.[[]] 
- []
-
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/pplx/m/it' tried instead on input line 45.
+(Font)              Font shape `T1/pplx/m/it' tried instead on input line 44.
 [2]
 
 ! LaTeX Error: There's no line here to end.
@@ -2172,6 +2166,12 @@ l.49 \textbf
 
 LaTeX Warning: Citation 'Richardson:2015aa' on page 3 undefined on input line 5
 1.
+
+
+Overfull \hbox (15.17886pt too wide) in paragraph at lines 49--53
+\T1/pplx/m/n/10.95 (-20) There are three dis-tinct al-ter-na-tives to tackle th
+e prob-lems listed above.[[]] 
+ []
 
 
 ! LaTeX Error: There's no line here to end.
@@ -2242,7 +2242,7 @@ LaTeX Warning: Citation 'Richardson:2015ab' on page 4 undefined on input line 7
 9.
 
 
-<figures/challenges_one_interaction_styles.jpg, id=190, 427.5975pt x 200.75pt>
+<figures/challenges_one_interaction_styles.jpg, id=188, 427.5975pt x 200.75pt>
 File: figures/challenges_one_interaction_styles.jpg Graphic file (type jpg)
 
 <use figures/challenges_one_interaction_styles.jpg>
@@ -2416,7 +2416,7 @@ Package nag Warning: Command \centerline is TeX.
 LaTeX Warning: Citation 'Fowler:2011aa' on page 7 undefined on input line 141.
 
 ! Undefined control sequence.
-l.144 ... current update will break their \arshort
+l.144 ... current update may breaks their \arshort
                                                   {API} or not. For example,...
 
 ? 
@@ -2451,21 +2451,22 @@ LaTeX Warning: Citation 'Richardson:2015ab' on page 8 undefined on input line 1
 
 LaTeX Warning: Citation 'Nygard:2007aa' on page 8 undefined on input line 153.
 
+[8]
 
 Package nag Warning: Command \centerline is TeX. 
 (nag)                Use \centering or center environment instead on input line
  154.
 
 
-LaTeX Warning: Citation 'Fowler:2014ac' on page 8 undefined on input line 157.
+LaTeX Warning: Citation 'Fowler:2014ac' on page 9 undefined on input line 157.
 
 
-LaTeX Warning: Citation 'Newman:2015aa' on page 8 undefined on input line 157.
+LaTeX Warning: Citation 'Newman:2015aa' on page 9 undefined on input line 157.
 
 
-LaTeX Warning: Citation 'Nygard:2007aa' on page 8 undefined on input line 157.
+LaTeX Warning: Citation 'Nygard:2007aa' on page 9 undefined on input line 157.
 
-<figures/challanges_three_circuit_breaker.jpg, id=230, 413.545pt x 285.065pt>
+<figures/challanges_three_circuit_breaker.jpg, id=236, 413.545pt x 285.065pt>
 File: figures/challanges_three_circuit_breaker.jpg Graphic file (type jpg)
 
 <use figures/challanges_three_circuit_breaker.jpg>
@@ -2474,16 +2475,15 @@ nput line 160.
 (pdftex.def)             Requested size: 334.60571pt x 230.65344pt.
 
 
-LaTeX Warning: Citation 'Fowler:2014ac' on page 8 undefined on input line 161.
+LaTeX Warning: Citation 'Fowler:2014ac' on page 9 undefined on input line 161.
 
 
-LaTeX Warning: Citation 'Fowler:2014ac' on page 8 undefined on input line 161.
+LaTeX Warning: Citation 'Fowler:2014ac' on page 9 undefined on input line 161.
 
 
 Package nag Warning: `center' environment in figure.
 (nag)                Maybe you want \centering instead on input line 163.
 
-[8]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2492,16 +2492,18 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.166 \item
-            Bulk Head \\ Bulk Head is the approach of segregating various re...
+            \textbf{Bulk Head} \\ Bulk Head is the approach of segregating v...
 
 ? 
+[9]
 
-LaTeX Warning: Citation 'Newman:2015aa' on page 9 undefined on input line 166.
+LaTeX Warning: Citation 'Newman:2015aa' on page 10 undefined on input line 166.
 
 
-LaTeX Warning: Citation 'Nygard:2007aa' on page 9 undefined on input line 166.
 
-[9 <./figures/challanges_three_circuit_breaker.jpg>]
+LaTeX Warning: Citation 'Nygard:2007aa' on page 10 undefined on input line 166.
+
+
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2522,28 +2524,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--178
 
  []
 
+[10 <./figures/challanges_three_circuit_breaker.jpg>]
 
 Package nag Warning: Command \centerline is TeX. 
 (nag)                Use \centering or center environment instead on input line
  178.
 
 
-LaTeX Warning: Citation 'Newman:2015aa' on page 10 undefined on input line 179.
+LaTeX Warning: Citation 'Newman:2015aa' on page 11 undefined on input line 179.
 
 
 
-LaTeX Warning: Citation 'Simone:2014aa' on page 10 undefined on input line 179.
+LaTeX Warning: Citation 'Simone:2014aa' on page 11 undefined on input line 179.
 
 
 
-LaTeX Warning: Citation 'Anicas:2014aa' on page 10 undefined on input line 182.
+Overfull \hbox (41.23276pt too wide) in paragraph at lines 179--181
+[]\T1/pplx/m/n/10.95 (-20) There are var-i-ous ways to work around these com-pl
+ex-i-ties [[]] [[]]. 
+ []
+
+
+LaTeX Warning: Citation 'Anicas:2014aa' on page 11 undefined on input line 182.
 
 
 
-LaTeX Warning: Citation 'Newman:2015aa' on page 10 undefined on input line 182.
+LaTeX Warning: Citation 'Newman:2015aa' on page 11 undefined on input line 182.
 
 
-<figures/challenges_four_elk_stack.jpg, id=246, 525.965pt x 255.95625pt>
+<figures/challenges_four_elk_stack.jpg, id=251, 525.965pt x 255.95625pt>
 File: figures/challenges_four_elk_stack.jpg Graphic file (type jpg)
 
 <use figures/challenges_four_elk_stack.jpg>
@@ -2555,7 +2564,6 @@ ne 185.
 Package nag Warning: `center' environment in figure.
 (nag)                Maybe you want \centering instead on input line 188.
 
-[10]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2566,15 +2574,21 @@ Type  H <return>  for immediate help.
 l.191 T
        he ELK stack consists of following major components.
 ? 
-
-LaTeX Warning: Citation 'Simone:2014aa' on page 11 undefined on input line 201.
-
-
-
-LaTeX Warning: Citation 'Newman:2015aa' on page 11 undefined on input line 201.
-
-
 [11 <./figures/challenges_four_elk_stack.jpg>]
+
+LaTeX Warning: Citation 'Simone:2014aa' on page 12 undefined on input line 201.
+
+
+
+LaTeX Warning: Citation 'Newman:2015aa' on page 12 undefined on input line 201.
+
+
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 207.
+
+[12]
 
 Package nag Warning: Command \centerline is TeX. 
 (nag)                Use \centering or center environment instead on input line
@@ -2586,15 +2600,15 @@ Package nag Warning: Command \centerline is TeX.
  213.
 
 
-LaTeX Warning: Citation 'Newman:2015aa' on page 12 undefined on input line 218.
+LaTeX Warning: Citation 'Newman:2015aa' on page 13 undefined on input line 218.
 
 
 
-LaTeX Warning: Citation 'Fowler:2006ab' on page 12 undefined on input line 218.
+LaTeX Warning: Citation 'Fowler:2006ab' on page 13 undefined on input line 218.
 
 
 
-<figures/challenges_five_continuous_integration.jpg, id=265, 628.3475pt x 275.0
+<figures/challenges_five_continuous_integration.jpg, id=270, 628.3475pt x 275.0
 275pt>
 File: figures/challenges_five_continuous_integration.jpg Graphic file (type jpg
 )
@@ -2604,18 +2618,17 @@ d on input line 221.
 (pdftex.def)             Requested size: 334.60571pt x 146.45631pt.
 
 
-LaTeX Warning: Citation 'Newman:2015aa' on page 12 undefined on input line 222.
+LaTeX Warning: Citation 'Newman:2015aa' on page 13 undefined on input line 222.
 
 
 
-LaTeX Warning: Citation 'Newman:2015aa' on page 12 undefined on input line 222.
+LaTeX Warning: Citation 'Newman:2015aa' on page 13 undefined on input line 222.
 
 
 
 Package nag Warning: `center' environment in figure.
 (nag)                Maybe you want \centering instead on input line 224.
 
-[12]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2626,8 +2639,8 @@ Type  H <return>  for immediate help.
 l.227 \item
             Continuous Delivery
 ? 
-
-<figures/challenges_six_continuous_delivery.jpg, id=272, 587.19376pt x 44.165pt
+[13]
+<figures/challenges_six_continuous_delivery.jpg, id=279, 587.19376pt x 44.165pt
 >
 File: figures/challenges_six_continuous_delivery.jpg Graphic file (type jpg)
  <use figures/challenges_six_continuous_delivery.jpg>
@@ -2636,11 +2649,11 @@ Package pdftex.def Info: figures/challenges_six_continuous_delivery.jpg used on
 (pdftex.def)             Requested size: 334.60571pt x 25.16689pt.
 
 
-LaTeX Warning: Citation 'Newman:2015aa' on page 13 undefined on input line 234.
+LaTeX Warning: Citation 'Newman:2015aa' on page 14 undefined on input line 234.
 
 
 
-LaTeX Warning: Citation 'Newman:2015aa' on page 13 undefined on input line 234.
+LaTeX Warning: Citation 'Newman:2015aa' on page 14 undefined on input line 234.
 
 
 
@@ -2660,10 +2673,9 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.239 A
-        version of build pipeline is shown in Figure \ref{fig:challanges_of_...
+        version of build pipeline is shown in the Figure \ref{fig:challanges...
 
 ? 
-[13 <./figures/challenges_five_continuous_integration.jpg>]
 
 LaTeX Warning: Citation 'Newman:2015aa' on page 14 undefined on input line 240.
 
@@ -2672,9 +2684,11 @@ LaTeX Warning: Citation 'Newman:2015aa' on page 14 undefined on input line 240.
 LaTeX Warning: Citation 'Fowler:2013aa' on page 14 undefined on input line 240.
 
 
+[14 <./figures/challenges_five_continuous_integration.jpg> <./figures/challenge
+s_six_continuous_delivery.jpg>]
 
 LaTeX Warning: Reference `section:hybris_architecture/deployment_workflow' on p
-age 14 undefined on input line 244.
+age 15 undefined on input line 244.
 
 
 Package nag Warning: Command \centerline is TeX. 
@@ -2683,15 +2697,14 @@ Package nag Warning: Command \centerline is TeX.
 
 )
 No file main.acr.
-[14 <./figures/challenges_six_continuous_delivery.jpg>]
+[15]
 Package tocbasic Info: character protrusion at lof deactivated on input line 53
 .
  (build/main.lof)
 \tf@lof=\write10
 \openout10 = `main.lof'.
 
-
-[15
+ [16
 
 
 ]
@@ -2706,9 +2719,9 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 54
 LaTeX Warning: Empty bibliography on input line 56.
 
 
-Package nag Warning: 18 complaints in total.
+Package nag Warning: 19 complaints in total.
 
-[16
+[17
 
 
 ]
@@ -2733,13 +2746,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46437 strings out of 493089
- 981699 string characters out of 6134843
- 1648141 words of memory out of 5000000
+ 46438 strings out of 493089
+ 981706 string characters out of 6134843
+ 1648142 words of memory out of 5000000
  48710 multiletter control sequences out of 15000+600000
  46588 words of font info for 205 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,9n,95p,1818b,2346s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,8n,95p,1818b,2346s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:YaaS} has been referenced but does not exist,
  replaced by a fixed one
 
@@ -2756,10 +2769,10 @@ placed by a fixed one
 live/2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/20
 15/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texm
 f-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on build/main.pdf (22 pages, 191836 bytes).
+Output written on build/main.pdf (23 pages, 193354 bytes).
 PDF statistics:
- 336 PDF objects out of 1000 (max. 8388607)
- 282 compressed objects within 3 object streams
- 86 named destinations out of 1000 (max. 500000)
+ 340 PDF objects out of 1000 (max. 8388607)
+ 285 compressed objects within 3 object streams
+ 87 named destinations out of 1000 (max. 500000)
  26917 words of extra memory for PDF output out of 29859 (max. 10000000)
 
