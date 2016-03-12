@@ -7,7 +7,7 @@ Basically, there are three high level approaches to identify services: Top-down,
 The top-down approach defines the process on the basis of the business model. At first, various models are designed to capture the overall system. Using the overall design, services are identified upfront in the analysis phase.\\
 The next approach is bottom-up, which relies on the existing architecture and existing application. The existing application and architecture are studied to identify the cohesion and consistency of the features provided by various components of the system. This information is used to aggregate the features and identify services in order to overcome the problems in the existing system.\\
 Finally, the meet-in-the-middle approach is a hybrid approach of both top-down and bottom-up approaches. In this approach, the complete analysis of system is not performed upfront as the case of top-down approach. Where as, a set of priority areas are identified and used to analyse their business model resulting in a set of services. The services thus achieved are further analysed critically using bottom-up approach to identify problems. The problems are handled in next iterations where the same process as before is followed. The approach is continued for other areas of the system in the order of their priority. \cite{Pierre-Reldin:2007aa}\cite{Arsanjani:2004aa}\\
-Considering the motive of the thesis, which is mainly concerned with green field development, top-down approaches is taken into consideration. In this chapter, two different strategies discussed in literature which belong to the category of top-down approache, are explained in detail.
+Considering the motive of the thesis, which is mainly concerned with green field development, top-down approaches is taken into consideration. In this chapter, two different top-down approaches are explained in detail.
 
 %-------------------------------------------------Modeling Using Use cases-------------------------------------------------
 \section{Modeling Using Use cases}\label{section:selection_by_use_case/use_case}
@@ -313,6 +313,7 @@ For each use case, task trees are generated listing the functionalities needed t
 \\
 \textbf{\underline{Step 3:}}
 \\
+\\
 The initial task trees created for each use case at Step 2 is analysed. There are quite a few set of tasks which are functionally independent of the goal for respective use case. Similarly, there are few tasks which are common in multiple use cases. The following Table \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/common_and_independent_tasks} lists those tasks from the tasks trees \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/initial_task_tree} which are either functionally independent from their corresponding use cases or common in multiple use cases.
 \\
 \begin{table}[H]
@@ -348,7 +349,7 @@ The initial task trees created for each use case at Step 2 is analysed. There ar
   \label{tab:selection_by_use_case/guidelines_for_use_case_refactoring/common_and_independent_tasks}
 \end{table}
 \\
-Now, for independent tasks the docomposition rule explained by \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/decomposition_rule} can be applied and for common tasks, the generalization rule given by \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/generalization_rule} can be applied. The use cases obtained after applying these rules are shown by the Figure \ref{fig:selection_by_use_case/use_case_three}
+Now, for independent tasks the decomposition rule explained by \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/decomposition_rule} can be applied and for common tasks, the generalization rule given by \ref{tab:selection_by_use_case/guidelines_for_use_case_refactoring/generalization_rule} can be applied. The use cases obtained after applying these rules are shown by the Figure \ref{fig:selection_by_use_case/use_case_three}
 \\
 \begin{figure}[H]
 \begin{center}
@@ -402,9 +403,10 @@ There are three basic parts to implement domain driven design:
 \\
 As the focus is to describe the process of modeling microservices, only the first two parts are relevant and are focused in the later part of this chapter.
 \subsubsection{Ubiquitous Language}\label{section:domain_driven_design/process_to_domain_driven_design/ubiquitous_language}
-Ubiquitous Language is a common language agreed among domain experts and developers in a team. It is important to have a common understanding about the concepts of a problem doomain and ubiquitous language is the way to assure that. Domain Experts understand the domain in terms of their own jargon and concept. It is difficult for a developer to understand them. Usually, during desing and development, developers translates those jargons into the terms that they understand easily. However along the way of translation, major domain concepts can get lost and the immediate value of the resulting solution might decrease tremendously. In order to prevent creation of such low valued solution, there should be an approach to define common vocabularies and concepts understood by all domain experts as well as the developers. These common vocabularies and concepts make the core of the ubiquitous language.\cite{Evans:2003aa}\cite{Vernon:2013aa}
+Ubiquitous Language is a common language agreed among domain experts and developers in a team. It is important to have a common understanding about the concepts of a problem domain and ubiquitous language is the way to assure that. Domain Experts understand the domain in terms of their own jargon and concept. It is difficult for a developer to understand them. Usually, during desing and development, developers translates those jargons into the terms that they understand easily. However along the way of translation, major domain concepts can get lost and the immediate value of the resulting solution might decrease tremendously. In order to prevent creation of such low valued solution, there should be an approach to define common vocabularies and concepts understood by all domain experts as well as the developers. These common vocabularies and concepts make the core of the ubiquitous language.\cite{Evans:2003aa}\cite{Vernon:2013aa}
 \\
-In addition to the common vocabularies and concepts, domain models provide backbone to create ubiquitous language. The domain models represent not only artifacts but also define functionalities, rules and strategies. It is a way to express the common understanding in a visual form, providing an easy tool to comprehend.\cite{Evans:2003aa}\cite{Fowler:2006aa} According to \cite{Fowler:2003aa}, domain model should not be confused with data model. The data model represents the business in datacentric view however each domain object contains data as well as logic closely related to the data contained. Domain models are conceptual models rather than software artifacts but can be effectively visualized using \acrshort{UML}. \cite{Scott:2001aa}
+In addition to the common vocabularies and concepts, domain models provide backbone to create ubiquitous language. The domain models represent not only artifacts but also define functionalities, rules and strategies. It is a way to express the common understanding in a visual form, providing an easy tool to comprehend.\cite{Evans:2003aa}\\
+\cite{Fowler:2006aa} According to \cite{Fowler:2003aa}, domain model should not be confused with data model. The data model represents the business in datacentric view however each domain object contains data as well as logic closely related to the data contained. Domain models are conceptual models rather than software artifacts but can be effectively visualized using \acrshort{UML}. \cite{Scott:2001aa}
 
 \begin{figure}[H]
 \begin{center}
@@ -567,7 +569,7 @@ With reference to the steps shown by the Figure \ref{fig:domain_driven_design/ub
 
 \textbf{\underline{Step 2:}}
 \\
-Next, the subdomains are identified following the step 1 \ref{section:domain_driven_design/process_to_domain_driven_design/strategical_design/step_1} of strategical design. The core domains, supporting domains and generic domains are identified and listed in the table.
+Next, the subdomains are identified following strategical design discussed in Section  \ref{section:domain_driven_design/process_to_domain_driven_design/strategical_design/step_1}. The core domains, supporting domains and generic domains are identified and listed in the table.
 \\
 \\
 \begin{table}[H]
@@ -599,7 +601,7 @@ Next, the subdomains are identified following the step 1 \ref{section:domain_dri
                     & 2.1 Customer Management\\
                     & 2.2 Staff Management\\
                     \end{tabular}\\
-                    & 3 Room\\
+                    &  3 Room\\
                     \end{tabular}\\
                     \hline
                     
@@ -621,7 +623,7 @@ The supporting domain "User Management" has different stragegy for Customers and
 \\
 \textbf{\underline{Step 3:}}
 \\
-The next action is to identify bounded context following the process described in step \ref{section:domain_driven_design/process_to_domain_driven_design/strategical_design/step_2}. The process is implemented in each subdomains. In order to accomplish this, domain models can be constructed for each subdomain. Along the process, the various ambguities in the domain models and clear understanding of the concepts are made visible. This helps to achieve consistent ubiquitious language with the unification of domain models as well as shared vocabulary inside each subdomain. The boundary around the uniform and consistent domain models represents the bounded contexts. Additionally, the rules listed in the Section \ref{section:domain_driven_design/process_to_domain_driven_design/strategical_design/step_2} can be applied wherever appropriate to identify bounded contexts.
+The next action is to identify bounded context following the process described in Section \ref{section:domain_driven_design/process_to_domain_driven_design/strategical_design/step_2}. The process is implemented in each subdomains. In order to accomplish this, domain models can be constructed for each subdomain. Along the process, the various ambguities in the domain models and clear understanding of the concepts are made visible. This helps to achieve consistent ubiquitious language with the unification of domain models as well as shared vocabulary inside each subdomain. The boundary around the uniform and consistent domain models represents the bounded contexts. Additionally, the rules listed in the Section \ref{section:domain_driven_design/process_to_domain_driven_design/strategical_design/step_2} can be applied wherever appropriate to identify bounded contexts.
 The following Section will provide the analysis of major subdomains for identifying the bounded contexts within.\\
 \begin{shaded} Customer Management \end{shaded}
 \\
@@ -670,7 +672,7 @@ The overall billing price calculation during checkout, which includes a) validat
 The logic of package management can be considered independent of the way coupon is generated and validated. The packages are created by staff memeber whereas a coupon is created upon receiving a request from customer. Additionally, these are very specific and independent responsibilities, eligible of having own bounded contexts. The only data shared by these bounded contexts are about the information regarding eligible rooms and discount values. It should be made clear at this point that the 'Profile' domain model here is very different than 'Profile' domain model from 'Profile' boundend context of 'Customer Management' subdomain. In here, 'Profile' model defines the attributes of generic customer eligible for a specific package, however the 'Profile' domain model in 'Profile' bounded context provides the updated characteristics of any individual customer at the current moment. Similarly, the models such as 'Customer' and 'Room' are polysemes.\\
 The same process can be applied to identify bounded contexts for rest of the subdomains.
 
-\section{Conclusion}\label{section:modeling_microservices/conclusion}
+\section{Summary}\label{section:modeling_microservices/conclusion}
 The use cases refactoring process discussed in Section \ref{section:selection_by_use_case/use_case} highlights an important concept regarding use cases fulfilling multiple cross-cutting concerns and provides an approach of breaking down these concerns into individual use case modules, each focused on cohesive tasks. This kind of decomposition truely relates to the characteristics of microservices. On the other hand, domain driven design technique presented in Section \ref{section:domain_driven_design/introduction} provides a different approach and focus on understanding the problem domain well using ubiquitous language, dividing the big problem domain into multiple manageable sub-domains and then finally using the concept of bounded context to determine individual microservices. The microservices thus obtained are autonomous and focus on single responsibility.\\
 The use cases refactoring process utilizes use cases as its modeling tool, which is not only easy but also the familiar tool for architects and developers. This makes use cases refactoring a faster approach to decompose a problem domain. Whereas, domain driven design has ubiquitous language and bounded context at its core. Both of these concepts are complex and new to most architects as well as developers. At the same time, understanding problem domain correctly at the first attempt is difficult and the understanding process can take quite a few iterations to get the decomposition right. Thus, domain driven design is not the faster approach of modeling microservices.\\
 Visualizing a problem domain in terms of diferent use cases seems like a natural way but dividing a big problem domain into smaller independent manageable sub-domains as stated by domain driven desing, can be a smarter way to decompose. So, in case of big and complex problem domain, it can be very difficult to visualize in terms of large number of big use cases trees and task trees. This may lead to microservices without appropriate level of granularity and quality attributes.\\
